@@ -1,0 +1,446 @@
+/*
+ * EarthBound Text Dump
+ * Time: 21:34:20 - 24/01/2013
+ * Generated using CCScriptWriter.
+ */
+
+command e(label) "{long label}"
+
+// Text Data
+l_0xc7546f:
+    "@Okay...{wait}{window_closeall}" call(data_24.l_0xc695ba) eob
+
+l_0xc7547d:
+    "[06 F1 02 {e(l_0xc755ad)}][06 83 02 {e(l_0xc755c4)}]@Wow,{pause(10)} you've become such a strong,{pause(10)} young man." next
+    "@I'd like to hear all of your stories," next
+    "@but I don't want to annoy you as soon as you walk through the door." next
+    "[06 7E 02 {e(l_0xc7552d)}]@I want to have a chance to get to know your little girlfriend." next
+    "@It's good to meet you,{pause(15)} [1C 02 02]." next
+    goto(l_0xc7552d)
+
+l_0xc7552d:
+    "@After all your chats with people you met on your adventure are finally over," next
+    "@please come back here." next
+    "@The photo-man brought an album by." next
+    "@I'd like to look at it with you...{wait}{window_closeall}{set(flag 643)}{isset(flag 654)}[1B 02 {e(data_55.l_0xc9992f)}]{pause(60)}[1F F1 15 00 29 00]{set(flag 753)}" eob
+
+l_0xc755ad:
+    "@[1C 02 01],{pause(15)} не міг би ти взяти слухавку?" end
+
+l_0xc755c4:
+    "@Did you finish doing everything that you wanted to?" next
+    "[19 02]Yes" eob
+
+l_0xc755e6:
+    " [19 02]No" eob
+
+l_0xc755ec:
+    "[1C 07 02][11]{clearline}[09 02 {e(l_0xc7562f)} {e(l_0xc755fb)}]" goto(l_0xc755fb)
+
+l_0xc755fb:
+    "@You'd better do everything,{pause(15)} because once you start looking at the album," next
+    " @you can't stop!" end
+
+l_0xc7562f:
+    "@Okay!{pause(20)}  Now you can finally share your incredible experiences with me..." next
+    "@You did so well![03]{window_closeall}" call(data_24.l_0xc69082) call(data_36.l_0xc7dd6b) "{music(94)}[1F 14 05][06 7E 02 {e(l_0xc75695)}][1F EB 02 06][1F 15 02 00 0D 03 01]{pause(1)}[1F F2 02 00 0A 00]" goto(l_0xc75695)
+
+l_0xc75695:
+    "[1F EB 01 06][1F 15 01 00 0C 03 01]{pause(1)}[1F F2 01 00 0A 00][1F 16 0E 00 05][1F F1 0E 00 0A 00][1F 16 12 00 05][1F F1 12 00 0A 00]{pause(120)}{pause(120)}{pause(120)}{pause(120)}{pause(120)}{pause(60)}[1F 15 92 00 06 03 01]{pause(60)}{pause(100)}[1F 15 6A 00 7A 02 01][1F 61][1F 41 0B]" call(data_36.l_0xc7dd6b) "[1F EB FF 06][1F 21 E1]{music(95)}[1F 15 8F 00 F8 02 01][1F 61][1F 15 58 01 F9 02 01][1F 61][1F 15 C1 01 FA 02 01][1F 61][1F 41 0C]{pause(60)}" call(data_58.l_0xc9c7fa) eob
+
+l_0xc75717:
+    "[06 49 00 {e(l_0xc75899)}][06 4A 00 {e(l_0xc75865)}]{isset(flag 469)}[1B 02 {e(l_0xc7576b)}][06 64 00 {e(l_0xc75827)}][06 5E 00 {e(l_0xc7579e)}]@(Мені тут надокучають блохи,{pause(15)} тому зараз я просто тут лежу.)" end
+
+l_0xc7576b:
+    "@(Так само як і люди,{pause(15)} собаки теж сплять наніч.{pause(20)}  А чому ти не спиш?)" end
+
+l_0xc7579e:
+    "@(Хочеш, щоб я з тобою пішов?)" linebreak
+    "  [19 02]Так" eob
+
+l_0xc757b6:
+    "  [19 02]Ні" eob
+
+l_0xc757bd:
+    " [1C 07 02][11]{clearline}[09 02 {e(l_0xc757fb)} {e(l_0xc757cd)}]" goto(l_0xc757cd)
+
+l_0xc757cd:
+    "@(А,{pause(10)} зрозумів.{pause(20)}  Ти просто хотів зі мною поговорити, бо я такий прив'язливий.)" end
+
+l_0xc757fb:
+    "@(Гадаю, в мене немає вибору.{pause(20)}  Пішли.)[03]{sound(16)}" call(data_22.l_0xc680f2) "{unset(flag 304)}{set(flag 444)}" eob
+
+l_0xc75827:
+    "{isset(flag 444)}[1B 02 {e(l_0xc758cc)}]@(Я більше не хочу виходити на вулицю." next
+    "@Мені всеодно, що всі думають, що я там якийсь впертий дворняга.)" end
+
+l_0xc75865:
+    "@(At this point,{pause(15)} you guys just might be the strongest force in the world," next
+    "@don't you think?)" end
+
+l_0xc75899:
+    "@(Other dogs haven't figured it out yet," next
+    "@but I know that you guys saved the world!)" end
+
+l_0xc758cc:
+    "@(Я люблю бути в дома,{pause(10)} тихо відпочиваючи..." next
+    "@Не розумієш--{pause(15)}Я не хочу більше виходити!)" end
+
+l_0xc75909:
+    "[06 49 00 {e(l_0xc75b0f)}]" goto(l_0xc75910)
+
+l_0xc75910:
+    "{unset(flag 200)}{unset(flag 201)}[06 62 00 {e(data_22.l_0xc68017)}][06 5F 00 {e(l_0xc75936)}]{sound(11)}{pause(20)}" goto(l_0xc75929)
+
+l_0xc75929:
+    "@Біііп...{wait}{sound(11)}" eob
+
+l_0xc75936:
+    "@[1C 01 08] відповідає на дзвінок." next
+    "{sound(11)}{pause(20)}" call(data_16.l_0xc5e812) "@Алло,{pause(10)} це твій татко." next
+    "@<Працюй до виснаги поки молодий...>" next
+    "@Ти колись чув таку дивакувати приказку?" next
+    "@Просто запам'ятай,{pause(15)} я поряд з тобою завжди на 100%.  Тому не бійся." next
+    "@Я знаю, що ти хоробрий.{pause(20)}  Ти можеш це зробити!" next
+    "@Не забувай періодично дзвонити до мене під час своєї подорожі." next
+    "@Я можу тобі записати прогрес твоєї пригоди, коли ти мені дзвякнеш." next
+    "@Ах так,{pause(15)} я перерахував $30 тобі на банківський рахунок." next
+    "@В тебе ж є з собою Банківська карта?" next
+    "@Знімай гроші з будь-якого банкомату і купляй що тобі завгодно." next
+    "@Щасти,{pause(15)} мій хлопче!{pause(20)}  Я відчуваю себе неначе герой!" next
+    "@Що?{pause(10)}  А ну так,{pause(10)} як батько героя,{pause(10)} хоча б.  Ва ха ха!" next
+    "@Бувай!{pause(20)}  Біііііііп!{wait}{sound(11)}{set(flag 98)}{unset(flag 95)}{unset(flag 753)}{unset(flag 467)}{set(flag 199)}[1D 06 1E 00 00 00]{save}[19 26 01]" eob
+
+l_0xc75b0f:
+    "{isset(flag 753)}[1B 02 {e(l_0xc75910)}]{isset(flag 654)}[1B 02 {e(l_0xc75910)}]{sound(11)}{pause(20)}" call(data_16.l_0xc5e812) "{window_open(1)}@Hello?{pause(20)}  Is this [1C 02 01]'s residence?{pause(20)}  Is [1C 02 01] around?" next
+    "@Ah!{pause(20)}  You're [1C 02 01],{pause(15)} right?" next
+    "@It's me,{pause(15)} the tough business man!" next
+    "@You remember--{pause(15)}from the Deep Darkness." next
+    "@I never got the money back that you borrowed," next
+    "@but,{pause(15)} lucky you,{pause(15)} I bumped into your dad and he paid the debt for you." next
+    "@I just wanted to let you know." next
+    "@Gotta go now--{pause(15)}busy,{pause(10)} busy,{pause(10)} busy!" next
+    "@Slam.{pause(20)}  Beeeeep!{wait}{sound(11)}{window_closeall}{unset(flag 654)}{unset(flag 753)}" eob
+
+l_0xc75c33:
+    "[06 60 00 {e(l_0xc75f3b)}]{window_closeall}{pause(30)}{music(177)}{pause(120)}{pause(120)}{music_resume}{window_open(1)}@Агов!{pause(15)}  П-{pause(15)}П-{pause(15)}Послухай, що я тобі зараз розповім!" next
+    "@Коли я взяв Пікі до місця, де впав метеорит..." next
+    "[19 23 11 00 02 0E 00][1F 16 11 00 00]@О!{pause(20)}  Добрий вечір мем.{pause(20)}  Ви як завжди виглядаєте мило.  *хіхікає*" next
+    "[19 23 11 00 01 01 00][1F 16 11 00 00]@Але до діла,{pause(15)} як я й казав," next
+    "@поліція, яка охороняла той метеорит, раптом пішла," next
+    "@щоб протидіяти Акулам.{pause(15)}  Ти знаєш Акул,{pause(10)} тих місцевих забіяк," next
+    "@і вони зараз реально дичавіють.{pause(20)}  Раптом,{pause(20)} я помітив, що Пікі пропав." next
+    "@Я звинуватив копів... це ж не була зовсім моя провина." next
+    "@Коли тато повернеться,{pause(15)} то вже знаю, що буде зі мною..." next
+    "@Ти мій най-найкращій друг.{pause(20)}  Не хотів би ТИ допомогти мені в пошуку Пікі?" next
+    "[19 02]Так" eob
+
+l_0xc75e07:
+    " [19 02]Ні" eob
+
+l_0xc75e0d:
+    "[1C 07 02][11]{clearline}[09 02 {e(l_0xc75ebc)} {e(l_0xc75e1c)}]" goto(l_0xc75e1c)
+
+l_0xc75e1c:
+    "@Якщо ти мені відмовиш,{pause(15)} я скажу тобі те,{pause(15)} що пронзить тебе як ніж." next
+    "@Підеш зі мною?" linebreak
+    "[19 02]Так" eob
+
+l_0xc75e58:
+    " [19 02]Ні" eob
+
+l_0xc75e5e:
+    "[1C 07 02][11]{clearline}[09 02 {e(l_0xc75ebc)} {e(l_0xc75e6d)}]" goto(l_0xc75e6d)
+
+l_0xc75e6d:
+    "@Добре, добре... я не буде тобі казати нічого образливого." next
+    "@Підеш зі мною, будь-ласка?" linebreak
+    "[19 02]Так" eob
+
+l_0xc75ea2:
+    " [19 02]Ні" eob
+
+l_0xc75ea8:
+    "[1C 07 02][11]{clearline}[09 02 {e(l_0xc75ebc)} {e(l_0xc75e1c)}]" goto(l_0xc75e1c)
+
+l_0xc75ebc:
+    "{set(flag 96)}@Добре,{pause(15)} добрий друже!{pause(20)}  Давай двинемось вже звідси..." next
+    "@Але перед тим як ми підемо,{pause(15)} чому б тобі не сказати <бувай> своїй мамці.{pause(15)}" next
+    "[19 23 11 00 02 0E 00][1F 16 11 00 00]@Ви ж не заперечуєте,{pause(15)} мем?[03]{window_closeall}{pause(1)}[1F F1 0E 00 2B 00]" eob
+
+l_0xc75f3b:
+    "[06 5E 00 {e(l_0xc75f73)}]@Перед тим як ми підемо,{pause(15)} чому б тобі не сказати <бувай> своїй мамці.{wait}{window_closeall}{pause(1)}[1F F1 13 00 2B 00]" eob
+
+l_0xc75f73:
+    "[1D 04 01 11][1B 03 {e(l_0xc760b7)}][06 25 03 {e(l_0xc75fb6)}]@Ти нічого такого не береш на нашу подорож?" next
+    "@Чому тобі не взяту ту свою [1C 05 11] або щось інше?" end
+
+l_0xc75fb6:
+    "@Пробач за таку ігрову підказку,{pause(15)}[19 22 01 03 2C 00][1F 13 01 00] але ти маєш екіпірувати свою зброю!" next
+    "@Чи ти знаєш, що таке <екіперунок>?" linebreak
+    "[19 02]Так" eob
+
+l_0xc76005:
+    " [19 02]Ні" eob
+
+l_0xc7600b:
+    "[1C 07 02][11]{clearline}[09 02 {e(l_0xc76080)} {e(l_0xc7601a)}]" goto(l_0xc7601a)
+
+l_0xc7601a:
+    "@Це означає <використати> або <одягти.>" next
+    "@Ти мусиш їх екіпірувати, щоб їх використовувати або одягати." next
+    "@<Екіперунок> використовується в багатьох таких іграх," next
+    "@але ти вже про це знаєш...[03]" goto(l_0xc760b7)
+
+l_0xc76080:
+    "@Добре,{pause(15)} добре.{pause(20)}  Будь уважним до таких деталей." next
+    goto(l_0xc760b7)
+
+l_0xc760b7:
+    newline
+    "@Гаразд!{pause(20)}  Ти йдеш зпереду,{pause(15)} а я слідкуватиму з безпеченої відстані." next
+    "@Давай, пішли![03]{window_closeall}{set(flag 30)}{set(flag 21)}{set(flag 466)}" call(data_22.l_0xc68174) "{unset(flag 310)}{unset(flag 301)}{unset(flag 530)}{unset(flag 531)}" eob
+
+l_0xc76112:
+    "[06 49 00 {e(l_0xc7625e)}][06 73 02 {e(l_0xc761eb)}][06 4C 00 {e(data_19.l_0xc64672)}]@Я робитиму все, що я зможу для тебе!{pause(20)}  Хай щастить в твоїй подорожі." next
+    "@Ти можеш зголодніти по дорозі,{pause(15)} тому я дам тобі [1C 05 58]." next
+    "[1D 03 FF][1B 02 {e(l_0xc761dd)}][1D 0E 00 58]{set(flag 76)}" call(data_36.l_0xc7dccf) next
+    "@Ти можеш також залишити в мене те, що тобі не потрібно." next
+    "@Хочеш, щоб я щось залишила у себе?" linebreak
+    "[19 02]Так" eob
+
+l_0xc761b7:
+    " [19 02]Ні" eob
+
+l_0xc761bd:
+    "[1C 07 02][11]{clearline}[09 02 {e(l_0xc761d7)} {e(l_0xc761cc)}]" goto(l_0xc761cc)
+
+l_0xc761cc:
+    "@Бережи себе!" end
+
+l_0xc761d7:
+    call(data_20.l_0xc6474f) eob
+
+l_0xc761dd:
+    newline
+    "{sound(5)}@В тебе забагато речей." end
+
+l_0xc761eb:
+    "@Що?{pause(20)}  Музичний Камінь?" next
+    "@Я дивуюсь, коли це воно в мене з'явилося?{pause(20)}  Дай но я поверну його тобі..." next
+    "[1D 03 FF][1B 02 {e(l_0xc7623e)}][1D 0E 00 C4]{set(flag 76)}" call(data_36.l_0xc7dcb6) "{wait}{unset(flag 627)}" eob
+
+l_0xc7623e:
+    "@Ооой!{pause(20)}  В тебе, схоже, забагато речей!" end
+
+l_0xc7625e:
+    "[06 01 03 {e(l_0xc76357)}]@Goody!{pause(20)}  My brother is back!" next
+    "@You've got a lot of catching up to do with your schoolwork, *Hyork*!" next
+    "@If you have any problems with your assignments,{pause(15)} I'll help you." next
+    "@Don't get freaked out." next
+    "@Did Escargo Express,{pause(15)} my old company,{pause(15)} help you?" next
+    "@I've saved some money,{pause(15)} so we'll do the lunch thing sometime." next
+    "@You also got a new girlfriend?[03]@Your adventure must have been pretty good!" next
+    goto(l_0xc76357)
+
+l_0xc76357:
+    "@Do you need help with anything other than your schoolwork?" next
+    "[19 02]Yes" eob
+
+l_0xc7637c:
+    " [19 02]No" eob
+
+l_0xc76382:
+    "[1C 07 02][11]{clearline}[09 02 {e(data_19.l_0xc646ae)} {e(l_0xc76391)}]" goto(l_0xc76391)
+
+l_0xc76391:
+    "@Okay,{pause(15)} you relax now." end
+
+l_0xc763a3:
+    "[06 03 00 {e(l_0xc763b0)}]" call(data_13.l_0xc5d263) eob
+
+l_0xc763b0:
+    "@If you buy something from me," next
+    "@I'll give you a big discount,{pause(15)} tee hee hee." end
+
+l_0xc763dc:
+    "[06 02 00 {e(l_0xc763b0)}]" call(data_13.l_0xc5d26f) eob
+
+l_0xc763e9:
+    "@Мені здається, що я завжди тут...{pause(20)}  Надіюсь, ти не переймаєшся!" end
+
+l_0xc7640b:
+    "@Я така відпочинена тут..." next
+    "@Вони ніколи не питають мене{pause(30)} <Ви б хотіли картоплю фрі з тим шейком?>" end
+
+l_0xc76443:
+    call(data_13.l_0xc5d27b) eob
+
+l_0xc76449:
+    "[06 49 00 {e(l_0xc765cf)}][06 DA 02 {e(l_0xc7659c)}][06 02 00 {e(l_0xc7654c)}]@Я хочу розповісти тобі історію про створіння з овочевого супу," next
+    "@але не буду, бо я не хочу тебе турбувати історією," next
+    "@яка не має нічого спільного з твоєю пригодою." next
+    "@Якщо я почну розповідати про непов'язані між собою речі," next
+    "@ти можеш почати ігнорувати важливі слова." next
+    "@Тобі це дуже важливо, балакати з людьми." next
+    "@Також,{pause(15)} людина може казати тобі різні речі," next
+    "@в залежності від того, коли ти з нею говориш.{wait}{set(flag 2)}" eob
+
+l_0xc7654c:
+    "@Дякую, що ти витрачаєш час на те, щоб знову поговорити зі мною." next
+    "@Ах!{pause(30)}  Отже, ти розумієш, про що я!{pause(15)}  Важливо витрачати час на бесіди з багатьма людьми.{wait}{set(flag 730)}" eob
+
+l_0xc7659c:
+    "@Так!{pause(15)}  Тримай лінії комунікації відкритими.{pause(15)}  Прямо як ти робиш це зараз." end
+
+l_0xc765cf:
+    "@Хіба ж це нечудово, говорити з людьми?[06 DA 02 {e(l_0xc765ef)}]" end
+
+l_0xc765ef:
+    next
+    "@Я ж дала тобі підказку, коли я вперше з тобою балакала,{pause(15)} правда ж?" end
+
+l_0xc7661b:
+    "@Я обожнюю сирні сири в хлібах!" next
+    "@Ти ще не спробував?{pause(20)}  Це найостанніше божевілля в кулінарних колах!" end
+
+l_0xc76663:
+    "[06 49 00 {e(l_0xc766c5)}][06 15 00 {e(l_0xc76689)}]@Мій чоловік такий м'якосердечний." end
+
+l_0xc76689:
+    "@Де ви вбіса на погорбі були хлопці?" next
+    "@Я подумаю про підходяще покарання!" end
+
+l_0xc766c5:
+    "@As usual,{pause(15)} you're wearing your grubbies!{pause(20)}  So,{pause(10)} what do you want?" next
+    "@My son isn't at home now.{pause(20)}  He's walking around somewhere." next
+    "@My husband is also gone.{pause(30)}  Oh yes,{pause(15)} this is Mr. Prettyman." next
+    "@He always has great advice.{pause(15)}  He's a real gentleman,{pause(10)} he is." next
+    "@You'll be happy that you met him." end
+
+l_0xc7678a:
+    "@Salutations!{pause(20)}  You're the boy living next door." next
+    "@I heard that your family is in debt.{pause(20)}  Ms. Minch told me about it." next
+    "@Well, live and learn.{pause(20)}  You just have to keep plugging away." end
+
+l_0xc76804:
+    "@Мій тато дав мені доброго ляпаса." next
+    "@Він сказав, що в мене більше не буде десертів на решту десятиліття..." end
+
+l_0xc7683a:
+    "[06 49 00 {e(l_0xc7685a)}]@Я більше не піду дивитись на той метеорит." end
+
+l_0xc7685a:
+    "@I haven't seen you in a while.{pause(20)}  You look cool." next
+    "@I'm nowhere near as cool as you.{pause(20)}  I'm just average cool." end
+
+l_0xc7689d:
+    eob
+
+l_0xc7689e:
+    "@Наша ціна за ночівля недешева," next
+    "@але в нас зате чисті простерадла, і безпечні кімнати." next
+    "@Впевнений, ви розумієте, скільки часу нам дається на це." end
+
+l_0xc768f4:
+    "@Ти виглядаєш на того, хто б став справжньою ціллю для Акул." next
+    "@Краще б тобі бути обережніше." end
+
+l_0xc76924:
+    "@Можеш в це повірити?" next
+    "@Групка бандюків плюнула на мене своїми гумками, коли я проходив поруч..." end
+
+l_0xc7695f:
+    "@Ти дійсно вважаєш, що ти можеш підійти і побалакати зі мною у будь-який час?" end
+
+l_0xc76980:
+    "@Я тебе багато разів бачив поряд.  Хе хе хе." end
+
+l_0xc7699e:
+    "[06 49 00 {e(l_0xc76b36)}][06 69 00 {e(l_0xc76b0b)}][06 B6 00 {e(l_0xc76a1f)}]@Мешканці міста зараз в стані незрозумілості." next
+    "@В такі дні,{pause(15)} спалахують бунти,{pause(15)} або ж народ починає дичавіти," next
+    "@тому поліція зараз надзвичайно над усім цим пильнує." end
+
+l_0xc76a1f:
+    "@Чому дорога до Двосона закрита?{pause(20)}  Надзвичайна ситуація,{pause(10)} вочевидь." next
+    "@В такі дні,{pause(15)} такі діти як ти мають..." next
+    "@мають грати в якісь дурні відеоігри, де треба безкінечно рятувати принцес." next
+    "@У будь-якому випадку,{pause(15)} ти дійсно хочеш піти до Двосона?" linebreak
+    "[19 02]Так" eob
+
+l_0xc76a92:
+    " [19 02]Ні" eob
+
+l_0xc76a98:
+    "[1C 07 02][11]{clearline}[09 02 {e(l_0xc76ad6)} {e(l_0xc76aa7)}]" goto(l_0xc76aa7)
+
+l_0xc76aa7:
+    "@Добре, тоді,{pause(15)} можливо ти маєш поповзти до своєї шафки,{pause(15)} маленький принцик." end
+
+l_0xc76ad6:
+    "@Гаразд, *регоче*{pause(15)}  Слідуй за мною.[03]{set(flag 38)}{unset(flag 289)}{unset(flag 290)}{unset(flag 291)}{unset(flag 292)}{unset(flag 293)}{window_closeall}" goto(data_16.l_0xc5f859)
+
+l_0xc76b0a:
+    eob
+
+l_0xc76b0b:
+    "@Я тут грав в цю гру...{pause(20)}  І в мене щось тяжко виходить." end
+
+l_0xc76b36:
+    "@So you've traveled all over the world." next
+    "@I bet you didn't meet anyone stronger than I,{pause(10)} did you?" next
+    "@I know that you didn't...  Wa ha ha ha!" end
+
+l_0xc76b87:
+    "[06 69 00 {e(l_0xc76bd2)}]@Я б краще працювала як контрольюча паркінгу..." next
+    "@Тут так треба бути зайнятою.{pause(15)}  Я така заморена." end
+
+l_0xc76bd2:
+    "@Ну що ж,{pause(15)} заворушення закінчилися.{pause(15)}  Тепер я можу піти до контролю паркінгу!" next
+    "@Ураа!{pause(15)}  Життя таке чудове.{pause(20)}  Дам ді ді ді..." end
+
+l_0xc76c29:
+    "[06 69 00 {e(l_0xc76c55)}]@Чорт,{pause(15)} я такий запарений...{pause(20)}  Навіть не намагайся зі мною балакати." end
+
+l_0xc76c55:
+    "@Чому ти просиш про водійське посвідчення?" next
+    "@Ти ще за малий, щоб навіть думати за сідання за кермо,{pause(15)} ти малий шкідник." end
+
+l_0xc76ca1:
+    "[06 02 00 {e(l_0xc76d3d)}]@Отже ти тут." next
+    "@Ти малий мерзотник, який пішов до Сліду Гіганта!" next
+    "@Тепер послухай..." next
+    "@<Не Входити> означає, що--{pause(30)} ВХІД ЗАБОРОНЕНО!{pause(10)}  Зрозумів?" next
+    "@І крім того..." next
+    "@Бла{pause(10)} бла" next
+    "@Бла{pause(10)} бла" next
+    goto(l_0xc76d3d)
+
+l_0xc76d3d:
+    "@Це зазвичай ті неплатники податків, які..." next
+    "@Бла бла" next
+    "@Бла бла" next
+    "@Нам не дуже подобаються блокування доріг,{pause(15)} сам знаєш..." next
+    "@Бла бла" next
+    "@Бла бла" next
+    "@Це зазвичай місцеві скиглії, у який є велика справа щодо ситуації і метеоритів!" next
+    "@Бла бла" next
+    "@Бла бла" next
+    "@Бла бла{wait}{set(flag 2)}" eob
+
+l_0xc76e0c:
+    "@Ти ж бачив табличку з написом <Не Входити>?" next
+    "@Це означає, що я тут, щоб зупинити тебе, коли ти вийдеш!" next
+    "@Отже, будь уважнішим наступного разу..." next
+    "@І крім того..." next
+    "@Бла,{pause(10)} бла" next
+    "@Бла,{pause(10)} бла {wait}{set(flag 109)}" eob
+
+l_0xc76e92:
+    "@Псц!{pause(20)}  Я насправді не один з банди." next
+    "@Я коп,{pause(15)} навіть, якщо я на нього не схожий." end
+
+l_0xc76ec5:
+    "@Йдемо,{pause(15)} йдемо{pause(10)} демой!{pause(15)}  Ой!{pause(15)}  Помилився,{pause(10)} йдемо!{wait}" call(data_23.l_0xc6845d) "[1B 03 {e(data_23.l_0xc683de)}]{window_open(1)}" newline
+    "@Пробач!{pause(20)}  Ууууум... так.{wait}{set(flag 293)}" eob
+

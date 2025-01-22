@@ -1,0 +1,128 @@
+Ailments:
+  Ailment 01: Unconscious
+  Ailment 02: Diamondized
+  Ailment 03: Paralyzed
+  Ailment 04: Nauseous
+  Ailment 05: Poisoned
+  Ailment 06: Sunstroke
+  Ailment 07: Sniffling
+  Ailment 08: Mashroomized
+  Ailment 09: Possessed
+  Ailment 10: Homesick
+Battle Menu:
+  Auto Fight: 'Авто Бій'
+  Bash: 'Бити'
+  Defend: 'Захист'
+  Do Nothing: 'Нічого'
+  Goods: 'Речі'
+  Mirror: 'Люстро'
+  PSI: 'ПСІ'
+  Pray: 'Мол.'
+  Run Away: 'Втікти'
+  Shoot: 'Стріл'
+  Spy: 'Шп.'
+Equip Menu:
+  Arms: '     Руки'
+  Arms Window Title: Руки
+  Body: '      Тіло'
+  Body Window Title: Тіло
+  Defense: 'Захист'
+  No Equip: '(Нічого) '
+  Offense: 'Наступ'
+  Other: '      Інше'
+  Other Window Title: 'Інше'
+  To: 'До:'
+  Unequip: 'Немає'
+  Weapon: '   Зброя'
+  Weapon Window Title: 'Зброя'
+Item Menu:
+  Drop: 'Вики'
+  Give: 'Дай'
+  Help: 'Доп.!'
+  Use: 'Вик'
+Menu Action Targets:
+  Where: 'Куди?'
+  Where 2: 'Куди?'
+  Which: 'Яку?'
+  Who: 'Хто?'
+  Whom: 'Кому?'
+Other:
+  Lumine Hall Text: I'm ....  It's been a long road getting here...  Soon, I'll be...  Soon,
+    I'll be...  Soon, I'll be...  What will happen to us?  W...what's happening?  My
+    thoughts are being written out on the wall...  or are they?
+  Player Name Prompt: Register your name, please
+Out of Battle Menu:
+  Check: '[84][97][a5][97][93][9c]'
+  Equip: '[86][a4][a3][a5]'
+  Goods: '[85][97][b7][9c]'
+  PSI: '[84][86][7c]'
+  Status: '[86][a7][91][a7][a8]'
+  Talk to: '[74][a3][93][a3][a5][9b]'
+PSI Menu:
+  PP Cost: 'ПП Кошт'
+  Row Back: 'до Тилу'
+  Row Front: 'до Переду'
+  Row To: 'To '
+  To all enemies: 'Всім ворогам'
+  To all of us: 'Всім нам'
+  To all of us 2: 'Всім нам'
+  To enemy: 'Ворогу'
+  To one enemy: 'одн. ворогу'
+  To one enemy 2: 'одн. ворогу'
+  To one of us: 'одному з нас'
+  To one of us 2: 'Одному Другу'
+  To row of foes: 'Рядку супрот.'
+  himself: 'собі'
+PSI Types:
+  Assist: 'Допом.'
+  Offense: 'Наступ'
+  Other: 'Інші'
+  Recover: 'Віднов.'
+Starting Text:
+  Ask Name 1: 'Rajck msds, bxf[ba] pavoa.'
+  Ask Name 2: Waosi rajck nn.
+  Ask Name 3: Rajck vcsds fuxda.
+  Ask Name 4: Rajck [b9]g sfrsds fuxda.
+  Ask Name Food: Xp[bb]bpgra fsqa[b8]r[bc] nia?
+  Ask Name PSI: '[b5]oa wcs[bc] xp[bb]bpgra ul[b7]?'
+  Ask Name Pet: Rajck vcsds xp[bb]bpgr[b6][bc].
+  Confirm All: Ctgcrgrkm?
+  Confirm All No: Rh-a
+  Confirm All Yes: 'ТАК!'
+  Confirm Delete: '[b1]k wk flmvrs zs[b7]g[b8] ckfapkwk?'
+  Confirm Delete No: 'Rl'
+  Confirm Delete Yes: 'Wao'
+  Confirm Food: 'Xp[bb]bpgra nia:'
+  Confirm PSI: 'Ouxwa ul[b7]:'
+  Continue: Tusfscikwk
+  Copy: Ostl[bb]cawk
+  Copy to where?: Oxfk?
+  Delete: Ckfapkwk
+  Select Sound: Ckbgulw[ba] rap. jcxox.
+  Select Sound Mono: Qsrs
+  Select Sound Stereo: Vwgugs
+  Select Speed: Ckbgulw[ba] [b8]c. wgovwx.
+  Select Style: '[b5]okm vwkp[ba] closr caq fsctsfsbk?'
+  Set Up: Set Up
+  Start New Game: Ts[b7]. Rsca Dua
+  Text Speed: '[b2]c. wgovwx:'
+  Text Speed Fast: '[b2]ckfos'
+  Text Speed Medium: '[86][97][a5][97][96][a2]'
+  Text Speed Slow: '[84][a3][93][9c]'
+Status Window:
+  Defense: 'Захист:'
+  Exp. for next level: 'Дос. до наст. рівня.'
+  Experience Points: 'Пункти Досвіду:'
+  Guts: 'Впев:'
+  Hit Points: 'Здоров''я:'
+  IQ: 'ІК:'
+  Level: 'Рівен:'
+  Luck: 'Вдач:'
+  Offense: 'Наступ:'
+  PSI Prompt: '@Натисни Кнопку -A- для ПСІ інфи.'
+  Psychic Points: 'Психічність:'
+  Speed: 'Швид.:'
+  Vitality: 'Витрив.:'
+Window Titles:
+  Escargo Express Window Title: 'Збер. Речі'
+  Phone Window Title: 'Дзвн:'

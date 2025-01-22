@@ -1,0 +1,1079 @@
+import asm65816
+
+// <------------------------------------------------------------------------------------------------------------------------>
+
+// This script expands the max lengths of (almost) every misc text string and lets you change some offsets.
+// Make sure to not exceed the commented max lengths, otherwise it could crop/mess the text.
+
+// Keep in mind that this script overwrites anything you'd put in text_misc.yml.
+
+// <------------------------------------------------------------------------------------------------------------------------>
+
+///////// STATUS AILMENTS /////////
+
+// Max Length 31 //
+define StatusAilment1 = "Непритомність"
+define StatusAilment2 = "Діамантовість"
+define StatusAilment3 = "Оніміння"
+define StatusAilment4 = "Нудота"
+define StatusAilment5 = "Отруєння"
+define StatusAilment6 = "Сонячний удар"
+define StatusAilment7 = "Нежить"
+define StatusAilment8 = "Грибізація"
+define StatusAilment9 = "Оволодіння"
+define StatusAilment10 = "Туга за домом"
+
+
+///////// BATTLE MENU /////////
+
+// Max Length 31 //
+define AutoFight = "Авто Бій"
+define Bash = "Бити"
+define Defend = "Оборона"
+define DoNothing = "Робити нічого"
+define BattleGoods = "Речі"
+define Mirror = "Дзеркало"
+define BattlePSI = "ПСІ"
+define Pray = "Молитва"
+define RunAway = "Втікти"
+define Shoot = "Стріляти"
+define Spy = "Оглянути"
+
+// Offsets. //
+define OFFSET_X_Bash = 0
+define OFFSET_Y_Bash = 0
+
+define OFFSET_X_BattleGoods = 6
+define OFFSET_Y_BattleGoods = 0
+
+define OFFSET_X_AutoFight = 12
+define OFFSET_Y_AutoFight = 0
+
+define OFFSET_X_BattlePSI = 0
+define OFFSET_Y_BattlePSI = 1
+
+define OFFSET_X_Defend = 6
+define OFFSET_Y_Defend = 1
+
+define OFFSET_X_RunAway = 12
+define OFFSET_Y_RunAway = 1
+
+define OFFSET_X_Shoot = 0
+define OFFSET_Y_Shoot = 0
+
+define OFFSET_X_Pray = 11
+define OFFSET_Y_Pray = 0
+
+define OFFSET_X_Spy = 0
+define OFFSET_Y_Spy = 1
+
+define OFFSET_X_Mirror = 13
+define OFFSET_Y_Mirror = 0
+
+define OFFSET_X_DoNothing = 0
+define OFFSET_Y_DoNothing = 0
+
+
+///////// EQUIP MENU /////////
+
+// Max Length 15 //
+define Arms = "     Руки"
+define ArmsWindowTitle = "Руки"
+define Body = "      Тіло"
+define BodyWindowTitle = "Тіло"
+define Defense = " Захист:"
+define NoEquip = "(Нічого) "
+define Offense = " Наступ:"
+define Other = "      Інше"
+define OtherWindowTitle = "Інші"
+define To = "До:"
+define Unequip = "Нічого"
+define Weapon = "    Зброя"
+define WeaponWindowTitle = "Зброя"
+
+// Offsets. //
+define OFFSET_X_EquipLeftNumber = 55  // Offset for the current offense/defense num.
+define OFFSET_X_EquipRightNumber = 76  // Offset for the arrow and new offense/defense num.
+
+
+///////// ITEM MENU /////////
+
+// Max Length 15 //
+define Drop = "Викинь"
+define Give = "Дай"
+define Help = "Допомога"
+define Use = "Викор."
+
+
+///////// MENU ACTION TARGETS /////////
+
+// Max Length 15 //
+define Where = "Куди?"
+define Where2 = "Куди?"
+define Which = "Який?"
+define Who = "Хто?"
+define Whom = "Кому?"
+
+
+///////// OUT OF BATTLE MENU /////////
+
+// Max Length 15 //
+define Check = "[84][97][a5][97][93][9c][a5]"
+define Equip = "[77][9f][9c][a4][97][a5][a8][a2][a3][9f]"
+define Goods = "[85][97][b7][9c]"
+define PSI = "[84][86][7c]"
+define Status = "[86][a7][91][a7][a8][a6]"
+define TalkTo = "[74][a3][93][a3][a5][9b]"
+
+// Offsets. //
+define OFFSET_X_LeftOptions = 0  // Offsets for "Talk to", "PSI" and "Check".
+define OFFSET_X_RightOptions = 6  // Offsets for "Goods", "Equip" and "Status".
+
+
+///////// PSI MENU /////////
+
+// Max Length 19 //
+define PPCost = "Кошт ПП:"
+define RowBack = "[7a][91][96][a2][ba][a3][94][a3] [85][bc][96][a8]"
+define RowFront = "[84][97][a5][97][96][a2][ba][a3][94][a3] [85][bc][96][a8]"
+define RowTo = "[76][a3] "
+define ToAllEnemies = "[73][a6][9c][a1] [93][a3][a5][a3][94][91][a1]"
+define ToAllOfUs = "[73][a6][9c][a1] [a2][91][a1]"
+define ToAllOfUs2 = "[73][a6][9c][a1] [a2][91][a1]"
+define ToEnemy = "[73][a3][a5][a3][94][a8]"
+define ToOneEnemy = "[83][96][a2][a3][a1][a8] [93][a3][a5][a3][94][a8]"
+define ToOneEnemy2 = "[a3][96][a2][a3][a1][a8] [93][a3][a5][a3][94][a8]"
+define ToOneOfUs = "[83][96][a2][a3][a1][a8] [9a] [a2][91][a6]"
+define ToOneOfUs2 = "[a3][96][a2][a3][a1][a8] [96][a5][a8][94][a3][93][9c]"
+define ToRowOfFoes = "[85][bc][96][a8] [a6][a8][a4][a5][a3][a7][9b][93][a2][9b][9f][9c][93]"
+define Himself = "[a6][a3][92][9c]"
+
+
+///////// PSI TYPES /////////
+
+// Max Length 15 //
+define PsiAssist = "[76][a3][a4][a3][a1][9c][99][a2][9c]"
+define PsiOffense = "[82][91][a6][a7][a8][a4]"
+define PsiOther = "[7c][a2][b8][97]"
+define PsiRecover = "[73][9c][96][a2][a3][93][a0][97][a2][a2][bc]"
+
+
+///////// FILE SELECT AND SETUP TEXT /////////
+
+// Max Length 19 //
+define Continue = "[84][a5][a3][96][a3][93][99][9b][a7][9b]"
+define Copy = "[7f][a3][a4][9c][bb][93][91][a7][9b]"
+define Delete = "[73][9b][96][91][a0][9b][a7][9b]"
+define SetUp = "[82][91][a0][91][b8][a7][a8][93][91][a2][a2][bc]"
+
+// Max Length 63 //
+define SelectSpeed = "[83][92][97][a5][9c][a7][ba] [b8][93][9b][96]. [a7][97][9f][a6][a7][a8]."
+define SelectSound = "[83][92][97][a5][9c][a7][ba] [a2][91][a0][91][b8][a7][a8][93][91][a2][a2][bc] [9a][93][a8][9f][a8]."
+define WindowStyle = "[b5][9f][9b][9d] [a6][a7][9b][a0][ba] [93][9c][9f][a3][a2] [a7][a3][92][9c]   [96][a3][93][a4][a3][96][a3][92][9b]?"
+define ConfirmDelete = "[87][9b] [93][a4][97][93][a2][97][a2][9b][9d], [b9][a3] [aa][a3][b7][97][b8] [93][9b][96][91][a0][9b][a7][9b]?"
+
+// Max Length 9 //
+define ConfirmDeleteYes = "[87][91][9f]"
+define ConfirmDeleteNo = "[82][9c]"
+
+// Max Length 31 //
+define CopyToWhere = "[7f][a8][96][9b] [a6][9f][a3][a4][9c][bb][93][91][a7][9b]?"
+
+// Max Length 15 //
+define Mono = "[81][a3][a2][a3]"
+define Stereo = "[86][a7][97][a5][97][a3]"
+
+// Max Length 24 //
+define StartNewGame = ": [84][a3][b7][91][a7][9b] [82][a3][93][a8] [74][a5][a8]"
+
+// Max Length 15 //
+define TextSpeed = "[b2][93]. [a7][97][9f][a6][a7][a8]:"
+define Fast = "[b2][93][9b][96][9f][91]"
+define Medium = "[86][97][a5][97][96][a2][bc]"
+define Slow = "[84][a3][93][9c][a0][ba][a2][91]"
+define Level = "[85][9c][93][97][a2][ba]:"  // This one is not in text_misc.yml for some reason.
+
+// Offsets. //
+define OFFSET_X_Continue = 0
+define OFFSET_X_Copy = 7
+define OFFSET_X_Delete = 11
+define OFFSET_X_SetUp = 17
+
+define OFFSET_X_Level_FileSelect = 7  // Offset for "Level:" in the File Select menu.
+define OFFSET_X_Level_Number_FileSelect = 11  // Offset for the level number in the File Select menu.
+
+define OFFSET_X_Level_Delete = 8  // Offset for "Level:" in the Delete window.
+define OFFSET_X_Level_Number_Delete = 12  // Offset for the level number in the Delete window.
+
+define OFFSET_X_TextSpeed_Text = 14  // Offset for "Text Speed:" in the File Select menu.
+define OFFSET_X_TextSpeed_Setting = 21  // Offset for the text speed setting in the File Select menu.
+
+
+///////// NAMING SCREEN AND SUMMARY TEXT /////////
+
+// Max Length 63 //
+define AskName1 = "[82][91][9a][93][9b] [9d][a3][94][a3], [92][a8][96][ba]-[a0][91][a6][9f][91]."
+define AskName2 = "[82][91][9a][93][9b] [9e][9e] [a7][91][9f][a3][99]."
+define AskName3 = "[82][91][9a][93][9b] [a6][93][a3][94][a3] [96][a5][a8][94][91]."
+define AskName4 = "[82][91][9a][93][9b] [9c][a2][b8][a3][94][a3] [96][a5][a8][94][91]."
+define AskNamePet = "[82][91][9a][93][9b] [a6][93][a3][94][a3] [a4][a6][91]."
+define AskNameFood = "[88][a0][bb][92][a0][97][a2][91] [96][a3][a1][91][b8][a2][bc] [9e][99][91]?"
+define AskNamePSI = "[b5][9f][91] [a7][93][a3][bc] [a8][a0][bb][92][a0][97][a2][91] [a5][9c][b7]?"
+
+// Max Length 31 //
+define ConfirmFood = "[88][a0][bb][92][a0][97][a2][a2][91] [9e][99][91]:"
+define ConfirmPSI = "[82][91][9d][9f][a0][ba][a3][93][9c][b8][91] [a5][9c][b7]:"
+define ConfirmAll = "[b1][9b] [a7][9b] [93][a4][9b][93][a2][97][a2][9b][9d]?"
+
+// Max Length 9 //
+define ConfirmYep = "[87][71][7f]!"
+define ConfirmNope = "[87][91] [a2][9c]"
+
+
+///////// STATUS WINDOW /////////
+
+// Max Length 31 //
+define StatusDefense = "[7a][91][aa][9b][a6][a7]:"
+define ExpForNextLevel = "[76][a3][a6]. [96][a0][bc] [a2][91][a6][a7][a8][a4][a2][a3][94][a3] [a5][9c][93][a2][bc]."
+define ExpPoints = "[84][a8][a2][9f][a7][9b] [76][a3][a6][93][9c][96][a8]:"
+define Guts = "[73][a4][97][93][a2][97][a2][9c][a6][a7][ba]:"
+define HitPoints = "[84][a8][a2][9f][a7][9b] [7a][96][a3][a5][a3][93]'[bc]:"
+define IQ = "[7c][a2][a7][97][a0][97][9f][a7]:"
+define StatusLevel = "[85][9c][93][97][a2][ba]:"
+define Luck = "[73][96][91][b7][91]:"
+define StatusOffense = "[82][91][a6][a7][a8][a4]:"
+define PsychicPoints = "[84][a6][9b][aa][9c][b7][a2][9c] [84][a8][a2][9f][a7][9b]:"
+define Speed = "[b2][93][9b][96][9f][9c][a6][a7][ba]:"
+define Vitality = "[79][9b][93][a8][b7][9c][a6][a7][ba]:"
+
+// Max Length 63 //
+define PSIPrompt = "@[82][91][a7][9b][a6][a2][9b] [7f][a2][a3][a4][9f][a8] -[71]- [96][a0][bc] [9c][a2][a9][a3][a5][a1][91][b6][9c][9e] [a4][a5][a3] [84][86][7c]."
+
+// Offsets. //
+define OFFSET_X_Level_Status = 10
+define OFFSET_X_HitPoints = 10
+define OFFSET_X_PsychicPoints = 10
+define OFFSET_X_ExpPoints = 10
+define OFFSET_X_ExpForNextLevel = 35
+define OFFSET_X_Offense = 166
+define OFFSET_X_Defense = 165
+define OFFSET_X_Speed = 157
+define OFFSET_X_Guts = 150
+define OFFSET_X_Vitality = 155
+define OFFSET_X_IQ = 162
+define OFFSET_X_Luck = 164
+
+define OFFSET_X_Level_Number_Status = 42
+define OFFSET_X_ExpForNextLevel_Number = 437
+
+define OFFSET_X_PSIPrompt = 10
+
+
+///////// OTHER /////////
+
+// Max Length 15 //
+define EscargoExpressWindowTitle = "[7a][92][97][a5][97][99][97][a2][9c] [85][97][b7][9c]"
+
+// Max Length 15 //
+define PhoneWindowTitle = "[84][a3][96][9a][93][a3][a2][9b][a7][9b]:"
+
+// Max Length 63 //
+define PlayerNamePrompt = "[72][a8][96][ba]-[a0][91][a6][9f][91], [9a][91][a5][97][98][a6][a7][a5][a8][9d] [a6][93][a3][98] [9c][a1]'[bc]"
+
+
+///////// LUMINE HALL TEXT /////////
+
+// Max Length 255 //
+define LumineHallText = {
+	"[b5] ...  [b0][97] [92][a8][a0][91] [96][a3][93][94][91] [96][a3][a5][a3][94][91] [a6][bb][96][9b]...  "
+	"[86][9f][a3][a5][a3], [bc] [92][a8][96][a8]...  [86][9f][a3][a5][a3], [bc] [92][a8][96][a8]...  [86][9f][a3][a5][a3], [bc] [92][a8][96][a8]...  "
+	"[b3][a3] [9a] [a2][91][a1][9b] [a6][a7][91][a2][97][a7][ba][a6][bc]?  [b3]...[b9][a3] [93][9c][96][92][a8][93][91][98][a7][ba][a6][bc]?  "
+	"[81][a3][9e] [96][a8][a1][9f][9b] [a4][9b][b8][a8][a7][ba][a6][bc] [a2][91] [a6][a7][9c][a2][9c]...  [b7][9b] [a2][97] [a7][91][9f]?  "
+}
+
+// After how many characters should Ness' name appear? //
+define LumineHall_NessName = 4      // <-- Keep this number low (below 20), otherwise weird stuff happens.
+
+// <------------------------------------------------------------------------------------------------------------------------>
+
+// Customization ends here. CCScript and assembly stuff below.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// <----------------------------->
+
+// Defines.
+define Blank10 = "[00 00 00 00 00 00 00 00 00 00]"
+define Blank16 = "[00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00]"
+define Blank20 = "[00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00]" 
+define Blank32 = "[00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00]"
+define Blank64 = "[00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00]"
+
+// <----------------------------->
+
+// New tables.
+// First, we allocate ROM space with the null bytes defined above, and then use ROMTBL statements to fill the space with our text.
+
+// Status Ailments.
+StatusAilment_Table: Blank32 Blank32 Blank32 Blank32 Blank32 Blank32 Blank32 Blank32 Blank32
+StatusAilment_Homesick: Blank32
+ROMTBL[StatusAilment_Table, 32, 0] = StatusAilment1
+ROMTBL[StatusAilment_Table, 32, 1] = StatusAilment2
+ROMTBL[StatusAilment_Table, 32, 2] = StatusAilment3
+ROMTBL[StatusAilment_Table, 32, 3] = StatusAilment4
+ROMTBL[StatusAilment_Table, 32, 4] = StatusAilment5
+ROMTBL[StatusAilment_Table, 32, 5] = StatusAilment6
+ROMTBL[StatusAilment_Table, 32, 6] = StatusAilment7
+ROMTBL[StatusAilment_Table, 32, 7] = StatusAilment8
+ROMTBL[StatusAilment_Table, 32, 8] = StatusAilment9
+ROMTBL[StatusAilment_Homesick, 32, 0] = StatusAilment10
+
+// Battle Menu.
+BattleMenu_Bash: Blank32
+BattleMenu_Goods: Blank32
+BattleMenu_AutoFight: Blank32
+BattleMenu_PSI: Blank32
+BattleMenu_Defend: Blank32
+BattleMenu_Pray: Blank32
+BattleMenu_Shoot: Blank32
+BattleMenu_Spy: Blank32
+BattleMenu_RunAway: Blank32
+BattleMenu_Mirror: Blank32
+BattleMenu_DoNothing: Blank32
+ROMTBL[BattleMenu_Bash, 32, 0] = Bash
+ROMTBL[BattleMenu_Goods, 32, 0] = BattleGoods
+ROMTBL[BattleMenu_AutoFight, 32, 0] = AutoFight
+ROMTBL[BattleMenu_PSI, 32, 0] = BattlePSI
+ROMTBL[BattleMenu_Defend, 32, 0] = Defend
+ROMTBL[BattleMenu_Pray, 32, 0] = Pray
+ROMTBL[BattleMenu_Shoot, 32, 0] = Shoot
+ROMTBL[BattleMenu_Spy, 32, 0] = Spy
+ROMTBL[BattleMenu_RunAway, 32, 0] = RunAway
+ROMTBL[BattleMenu_Mirror, 32, 0] = Mirror
+ROMTBL[BattleMenu_DoNothing, 32, 0] = DoNothing
+
+// Equip Menu.
+EquipMenu_Offense: Blank16
+EquipMenu_Defense: Blank16
+ROMTBL[EquipMenu_Offense, 16, 0] = Offense
+ROMTBL[EquipMenu_Defense, 16, 0] = Defense
+
+EquipMenu_Text: Blank16 Blank16 Blank16 Blank16
+ROMTBL[EquipMenu_Text, 16, 0] = Weapon
+ROMTBL[EquipMenu_Text, 16, 1] = Body
+ROMTBL[EquipMenu_Text, 16, 2] = Arms
+ROMTBL[EquipMenu_Text, 16, 3] = Other
+
+EquipMenu_Title: Blank16 Blank16 Blank16 Blank16
+ROMTBL[EquipMenu_Title, 16, 0] = WeaponWindowTitle
+ROMTBL[EquipMenu_Title, 16, 1] = BodyWindowTitle
+ROMTBL[EquipMenu_Title, 16, 2] = ArmsWindowTitle
+ROMTBL[EquipMenu_Title, 16, 3] = OtherWindowTitle
+
+EquipMenu_NoEquip: Blank16
+ROMTBL[EquipMenu_NoEquip, 16, 0] = NoEquip
+
+EquipMenu_Unequip: Blank16
+ROMTBL[EquipMenu_Unequip, 16, 0] = Unequip
+
+EquipMenu_To: Blank16
+ROMTBL[EquipMenu_To, 16, 0] = To
+
+// Item Menu.
+ItemMenu: Blank16 Blank16 Blank16 Blank16
+ROMTBL[ItemMenu, 16, 0] = Use
+ROMTBL[ItemMenu, 16, 1] = Give
+ROMTBL[ItemMenu, 16, 2] = Drop
+ROMTBL[ItemMenu, 16, 3] = Help
+
+// Menu Action Targets.
+MenuActionTargets: Blank16 Blank16 Blank16 Blank16 Blank16
+ROMTBL[MenuActionTargets, 16, 0] = Who
+ROMTBL[MenuActionTargets, 16, 1] = Which
+ROMTBL[MenuActionTargets, 16, 2] = Where
+ROMTBL[MenuActionTargets, 16, 3] = Whom
+ROMTBL[MenuActionTargets, 16, 4] = Where2
+
+// Out of Battle Menu.
+OutOfBattleMenu: Blank16 Blank16 Blank16 Blank16 Blank16 Blank16
+ROMTBL[OutOfBattleMenu, 16, 0] = TalkTo
+ROMTBL[OutOfBattleMenu, 16, 1] = Goods
+ROMTBL[OutOfBattleMenu, 16, 2] = PSI
+ROMTBL[OutOfBattleMenu, 16, 3] = Equip
+ROMTBL[OutOfBattleMenu, 16, 4] = Check
+ROMTBL[OutOfBattleMenu, 16, 5] = Status
+
+// PSI Menu.
+PSIMenu_PPCost: Blank20
+ROMTBL[PSIMenu_PPCost, 20, 0] = PPCost
+
+PSIMenu_PSITarget: Blank20 Blank20 Blank20 Blank20 Blank20 Blank20 Blank20 Blank20 Blank20 Blank20
+ROMTBL[PSIMenu_PSITarget, 20, 0] = ToEnemy
+ROMTBL[PSIMenu_PSITarget, 20, 1] = ToOneEnemy
+ROMTBL[PSIMenu_PSITarget, 20, 2] = ToOneEnemy2
+ROMTBL[PSIMenu_PSITarget, 20, 3] = ToRowOfFoes
+ROMTBL[PSIMenu_PSITarget, 20, 4] = ToAllEnemies
+ROMTBL[PSIMenu_PSITarget, 20, 5] = Himself
+ROMTBL[PSIMenu_PSITarget, 20, 6] = ToOneOfUs
+ROMTBL[PSIMenu_PSITarget, 20, 7] = ToOneOfUs2
+ROMTBL[PSIMenu_PSITarget, 20, 8] = ToAllOfUs
+ROMTBL[PSIMenu_PSITarget, 20, 9] = ToAllOfUs2
+
+PSIMenu_RowTo: Blank20
+ROMTBL[PSIMenu_RowTo, 20, 0] = RowTo
+
+PSIMenu_RowFront: Blank20
+ROMTBL[PSIMenu_RowFront, 20, 0] = RowFront
+
+PSIMenu_RowBack: Blank20
+ROMTBL[PSIMenu_RowBack, 20, 0] = RowBack
+
+// PSI Types.
+PSITypes: Blank16 Blank16 Blank16 Blank16
+ROMTBL[PSITypes, 16, 0] = PsiOffense
+ROMTBL[PSITypes, 16, 1] = PsiRecover
+ROMTBL[PSITypes, 16, 2] = PsiAssist
+ROMTBL[PSITypes, 16, 3] = PsiOther
+
+// File Select Menu.
+FileSelect_Continue: Blank20
+FileSelect_Copy: Blank20
+FileSelect_Delete: Blank20
+FileSelect_SetUp: Blank20
+ROMTBL[FileSelect_Continue, 20, 0] = Continue
+ROMTBL[FileSelect_Copy, 20, 0] = Copy
+ROMTBL[FileSelect_Delete, 20, 0] = Delete
+ROMTBL[FileSelect_SetUp, 20, 0] = SetUp
+
+FileSelect_SelectSpeed: Blank64
+FileSelect_SelectSound: Blank64
+FileSelect_WindowStyle: Blank64
+FileSelect_ConfirmDelete: Blank64
+ROMTBL[FileSelect_SelectSpeed, 64, 0] = SelectSpeed
+ROMTBL[FileSelect_SelectSound, 64, 0] = SelectSound
+ROMTBL[FileSelect_WindowStyle, 64, 0] = WindowStyle
+ROMTBL[FileSelect_ConfirmDelete, 64, 0] = ConfirmDelete
+
+FileSelect_ConfirmDeleteYes: Blank10
+FileSelect_ConfirmDeleteNo: Blank10
+ROMTBL[FileSelect_ConfirmDeleteYes, 10, 0] = ConfirmDeleteYes
+ROMTBL[FileSelect_ConfirmDeleteNo, 10, 0] = ConfirmDeleteNo
+
+FileSelect_CopyToWhere: Blank32
+ROMTBL[FileSelect_CopyToWhere, 32, 0] = CopyToWhere
+
+FileSelect_Sound: Blank16 Blank16
+ROMTBL[FileSelect_Sound, 16, 0] = Stereo
+ROMTBL[FileSelect_Sound, 16, 1] = Mono
+
+FileSelect_StartNewGame: Blank32
+ROMTBL[FileSelect_StartNewGame, 32, 0] = StartNewGame
+
+FileSelect_Speed: Blank16
+ROMTBL[FileSelect_Speed, 16, 0] = TextSpeed
+
+FileSelect_TextSpeeds: Blank16 Blank16 Blank16
+ROMTBL[FileSelect_TextSpeeds, 16, 0] = Fast
+ROMTBL[FileSelect_TextSpeeds, 16, 1] = Medium
+ROMTBL[FileSelect_TextSpeeds, 16, 2] = Slow
+
+FileSelect_Level: Blank16
+ROMTBL[FileSelect_Level, 16, 0] = Level
+
+// Naming Screen.
+NamingScreen: Blank64 Blank64 Blank64 Blank64 Blank64 Blank64 Blank64
+ROMTBL[NamingScreen, 64, 0] = AskName1
+ROMTBL[NamingScreen, 64, 1] = AskName2
+ROMTBL[NamingScreen, 64, 2] = AskName3
+ROMTBL[NamingScreen, 64, 3] = AskName4
+ROMTBL[NamingScreen, 64, 4] = AskNamePet
+ROMTBL[NamingScreen, 64, 5] = AskNameFood
+ROMTBL[NamingScreen, 64, 6] = AskNamePSI
+
+// Summary.
+Summary_ConfirmFood: Blank32
+Summary_ConfirmPSI: Blank32
+Summary_ConfirmAll: Blank32
+ROMTBL[Summary_ConfirmFood, 32, 0] = ConfirmFood
+ROMTBL[Summary_ConfirmPSI, 32, 0] = ConfirmPSI
+ROMTBL[Summary_ConfirmAll, 32, 0] = ConfirmAll
+
+Summary_ConfirmAllYep: Blank10
+Summary_ConfirmAllNope: Blank10
+ROMTBL[Summary_ConfirmAllYep, 10, 0] = ConfirmYep
+ROMTBL[Summary_ConfirmAllNope, 10, 0] = ConfirmNope
+
+// Other.
+Other_PSIPrompt: Blank64
+ROMTBL[Other_PSIPrompt, 64, 0] = PSIPrompt
+
+Other_EscargoExpress: Blank16
+ROMTBL[Other_EscargoExpress, 16, 0] = EscargoExpressWindowTitle
+
+Other_PhoneTitle: Blank16
+ROMTBL[Other_PhoneTitle, 16, 0] = PhoneWindowTitle
+
+Other_PlayerName: Blank64
+ROMTBL[Other_PlayerName, 64, 0] = PlayerNamePrompt
+
+LumineText: Blank64 Blank64 Blank64 Blank64
+ROMTBL[LumineText, 256, 0] = LumineHallText
+
+// <----------------------------->
+
+// Repoints.
+
+ROM[0xC19822] = ASMLoadAddress06(StatusAilment_Table)
+ROM[0xC1983D] = ASMLoadAddress06(StatusAilment_Table)
+ROM[0xC1985B] = ASMLoadAddress06(StatusAilment_Homesick)
+
+ROM[0xC235F5] = ASMLoadAddress0E(BattleMenu_Bash)
+ROM[0xC23660] = ASMLoadAddress0A(BattleMenu_Bash)
+ROM[0xC2370C] = ASMLoadAddress06(BattleMenu_Bash)
+ROM[0xC237B8] = ASMLoadAddress0E(BattleMenu_PSI)
+ROM[0xC237EA] = { JSL(repoint_past_pray) NOP }
+ROM[0xC23620] = { JSL(repoint_past_shoot) NOP }
+ROM[0xC23795] = { JSL(repoint_past_spy) NOP }
+ROM[0xC23812] = { JSL(repoint_past_mirror) NOP }
+ROM[0xC23641] = { JSL(repoint_past_donothing) NOP }
+
+ROM[0xC1A200] = ASMLoadAddress0E(EquipMenu_Offense)
+ROM[0xC1A2F2] = ASMLoadAddress0E(EquipMenu_Defense)
+
+ROM[0xC19FA9] = ASMLoadAddress06(EquipMenu_Text)
+ROM[0xC19FF2] = ASMLoadAddress06(EquipMenu_Text)
+ROM[0xC1A03B] = ASMLoadAddress06(EquipMenu_Text)
+ROM[0xC1A083] = ASMLoadAddress06(EquipMenu_Text)
+
+ROM[0xC1A7C7] = ASMLoadAddress06(EquipMenu_Title)
+
+ROM[0xC1A163] = ASMLoadAddress0E(EquipMenu_NoEquip)
+ROM[0xC1A91C] = { JSL(repoint_past_unequip) NOP }
+ROM[0xC1AB24] = { JSL(repoint_past_to) BRA(0) }
+
+ROM[0xC1369D] = ASMLoadAddress06(ItemMenu)
+
+ROM[0xC19405] = ASMLoadAddress06(MenuActionTargets)
+
+ROM[0xC13432] = ASMLoadAddress06(OutOfBattleMenu)
+
+ROM[0xC1C99D] = ASMLoadAddress0E(PSIMenu_PPCost)
+
+ROM[0xC1C907] = ASMLoadAddress06(PSIMenu_PSITarget)
+ROM[0xC1C96F] = ASMLoadAddress06(PSIMenu_PSITarget)
+
+ROM[0xC120EF] = ASMLoadAddress0E(PSIMenu_RowTo)
+ROM[0xC1219A] = ASMLoadAddress06(PSIMenu_RowFront)
+ROM[0xC1218E] = ASMLoadAddress06(PSIMenu_RowBack)
+
+ROM[0xC1BBBD] = ASMLoadAddress06(PSITypes)
+ROM[0xC1CBEE] = ASMLoadAddress06(PSITypes)
+
+ROM[0xC1F096] = { JSL(repoint_past_continue) NOP }
+ROM[0xC1F0CF] = { JSL(repoint_past_copy) NOP }
+ROM[0xC1F10C] = JSL(repoint_past_delete)
+ROM[0xC1F12A] = JSL(repoint_past_setup)
+
+ROM[0xC1F3D4] = ASMLoadAddress0E(FileSelect_SelectSpeed)
+ROM[0xC1F57A] = ASMLoadAddress0E(FileSelect_SelectSound)
+ROM[0xC1F6F5] = ASMLoadAddress0E(FileSelect_WindowStyle)
+ROM[0xC1F2C8] = ASMLoadAddress0E(FileSelect_ConfirmDelete)
+
+ROM[0xC1F38A] = JSL(repoint_past_confirmdeleteyes)
+ROM[0xC1F36E] = JSL(repoint_past_confirmdeleteno)
+
+ROM[0xC1F185] = JML(repoint_past_copytowhere1)
+ROM[0xC1F204] = JML(repoint_past_copytowhere2)
+
+ROM[0xC1F58A] = ASMLoadAddress0A(FileSelect_Sound)
+
+ROM[0xC1EE05] = ASMLoadAddress12(FileSelect_StartNewGame)
+//ROM[0xC1EF4D] = ASMLoadAddress12(FileSelect_Speed)
+
+ROM[0xC1EF7E] = ASMLoadAddress06(FileSelect_TextSpeeds)
+ROM[0xC1F3E4] = ASMLoadAddress06(FileSelect_TextSpeeds)
+
+ROM[0xC1EE9B] = ASMLoadAddress12(FileSelect_Level)
+ROM[0xC1F326] = ASMLoadAddress0E(FileSelect_Level)
+
+ROM[0xC1F949] = ASMLoadAddress06(NamingScreen)
+ROM[0xC1F9AC] = ASMLoadAddress06(NamingScreen)
+ROM[0xC1FA00] = ASMLoadAddress06(NamingScreen)
+ROM[0xC1FA52] = ASMLoadAddress06(NamingScreen)
+
+ROM[0xC1FB0F] = { JSL(repoint_past_confirmfood1) JSR(0x0EFC) JSL(repoint_past_confirmfood2) }
+ROM[0xC1FBC1] = { JSL(repoint_past_confirmpsi1) JSR(0x0EFC) JSL(repoint_past_confirmpsi2) }
+ROM[0xC1FC73] = { JSL(repoint_past_confirmall1) JSR(0x0EFC) JSL(repoint_past_confirmall2) }
+
+ROM[0xC1FC8D] = JSL(repoint_past_confirmallyep)
+ROM[0xC1FCAB] = JSL(repoint_past_confirmallnope)
+
+ROM[0xC198C5] = ASMLoadAddress0E(Other_PSIPrompt)
+ROM[0xC19A5D] = ASMLoadAddress0E(Other_EscargoExpress)
+ROM[0xC19465] = { JSL(repoint_past_phonetitle) BRA(0) }
+
+ROM[0xC1EB54] = ASMLoadAddress0E(Other_PlayerName)
+
+ROM[0xC48402] = LDA_xl(LumineText)
+
+// <----------------------------->
+
+// Multiplier and length changes.
+
+ROM[0xC19832] = JSL(Size32)
+
+ROM[0xC2367C] = LDA_i(0x20)
+ROM[0xC236AF] = LDA_i(0x80)
+ROM[0xC23728] = LDA_i(0x40)
+ROM[0xC23752] = LDA_i(0x100)
+
+ROM[0xC1A20A] = LDA_i(16)
+ROM[0xC1A2FC] = LDA_i(16)
+
+ROM[0xC19FB9] = { ASL ASL BRA(1) }
+ROM[0xC1A002] = { ASL ASL BRA(1) }
+ROM[0xC1A04B] = { ASL ASL BRA(1) }
+ROM[0xC1A093] = { ASL ASL BRA(1) }
+
+ROM[0xC1A7D4] = JSL(Size16_CLC)
+
+ROM[0xC1A16D] = LDX_i(0x10)
+ROM[0xC1A179] = BRA(1)
+
+ROM[0xC136AB] = { ASL ASL }
+
+ROM[0xC19416] = { ASL NOP }
+
+ROM[0xC13442] = { ASL NOP }
+
+ROM[0xC1C9A7] = LDA_i(20)
+
+ROM[0xC120F9] = LDA_i(20)
+ROM[0xC121AC] = LDA_i(20)
+
+ROM[0xC1BBC9] = JSL(Size16_CLC)
+ROM[0xC1CBFA] = JSL(Size16_CLC)
+
+ROM[0xC1F3DE] = LDA_i(64)
+ROM[0xC1F584] = LDA_i(64)
+ROM[0xC1F6FF] = LDA_i(64)
+ROM[0xC1F2D2] = LDA_i(64)
+
+ROM[0xC1F193] = LDA_i(32)
+ROM[0xC1F212] = LDA_i(32)
+
+ROM[0xC1F5CF] = LDA_i(0x10)
+
+ROM[0xC1EE0F] = LDA_i(0x19)
+ROM[0xC1EE18] = STZ_a(0x9CB8)
+
+ROM[0xC1EF92] = { ASL ASL ASL BRA(0) }
+ROM[0xC1EFA2] = LDA_i(0x10)
+ROM[0xC1F421] = LDA_i(0x10)
+ROM[0xC1F450] = LDA_i(0x20)
+
+ROM[0xC1EEA5] = LDA_i(0x10)
+ROM[0xC1F330] = LDA_i(0x10)
+ROM[0xC1EEAE] = STZ_a(0x9CA9)
+
+ROM[0xC1F959] = { ASL NOP }
+ROM[0xC1F9BC] = { ASL NOP }
+ROM[0xC1FA10] = { ASL NOP }
+ROM[0xC1FA62] = { ASL NOP }
+
+ROM[0xC198CF] = LDA_i(0x40)
+
+ROM[0xC19A4B] = LDY_i(0x9CAF)
+ROM[0xC19A67] = LDX_i(0x10)
+
+ROM[0xC1EB5E] = LDA_i(64)
+
+// Multiplier routines.
+
+Size16: { ASL ASL ASL ASL RTL }
+Size16_CLC: { ASL ASL ASL ASL CLC RTL }
+Size32: { ASL ASL ASL ASL ASL RTL }
+
+// <----------------------------->
+
+// CoilSnake-past repoint subroutines.
+// For some strings, CoilSnake's misc text module repoints after CCScript compilation, so we need to go past it.
+
+repoint_past_pray: {
+	ASMLoadAddress0E(BattleMenu_Pray)
+	LDA_i(0)
+	STA_d(0x12)
+	RTL
+}
+
+repoint_past_shoot: {
+	ASMLoadAddress0E(BattleMenu_Shoot)
+	LDA_i(0)
+	STA_d(0x12)
+	RTL
+}
+
+repoint_past_spy: {
+	ASMLoadAddress0E(BattleMenu_Spy)
+	LDA_i(0)
+	STA_d(0x12)
+	RTL
+}
+
+repoint_past_mirror: {
+	ASMLoadAddress0E(BattleMenu_Mirror)
+	LDA_i(0)
+	STA_d(0x12)
+	RTL
+}
+
+repoint_past_donothing: {
+	ASMLoadAddress0E(BattleMenu_DoNothing)
+	LDA_i(0)
+	STA_d(0x12)
+	RTL
+}
+
+repoint_past_unequip: {
+	ASMLoadAddress0E(EquipMenu_Unequip)
+	LDA_i(0)
+	STA_d(0x12)
+	RTL
+}
+
+repoint_past_to: {
+	ASMLoadAddress0E(EquipMenu_To)
+	LDX_i(0x10)
+	LDA_i(5)
+	RTL
+}
+
+repoint_past_continue: {
+	ASMLoadAddress0E(FileSelect_Continue)
+	LDA_i(0)
+	STA_d(0x12)
+	RTL
+}
+
+repoint_past_copy: {
+	ASMLoadAddress0E(FileSelect_Copy)
+	LDA_i(0)
+	STA_d(0x12)
+	RTL
+}
+
+repoint_past_delete: {
+	ASMLoadAddress0E(FileSelect_Delete)
+	LDA_i(0)
+	STA_d(0x12)
+	RTL
+}
+
+repoint_past_setup: {
+	ASMLoadAddress0E(FileSelect_SetUp)
+	LDA_d(0x06)
+	STA_d(0x12)
+	RTL
+}
+
+repoint_past_confirmdeleteyes: {
+	ASMLoadAddress0E(FileSelect_ConfirmDeleteYes)
+	LDA_d(0x06)
+	STA_d(0x12)
+	RTL
+}
+
+repoint_past_confirmdeleteno: {
+	ASMLoadAddress0E(FileSelect_ConfirmDeleteNo)
+	LDA_d(0x06)
+	STA_d(0x12)
+	RTL
+}
+
+repoint_past_copytowhere1: {
+	JSL(0xC3E4D4)
+	ASMLoadAddress0E(FileSelect_CopyToWhere)
+	JML(0xC1F193)
+}
+
+repoint_past_copytowhere2: {
+	JSL(0xC3E4D4)
+	ASMLoadAddress0E(FileSelect_CopyToWhere)
+	JML(0xC1F212)
+}
+
+repoint_past_confirmfood1: {
+	ASMLoadAddress0E(Summary_ConfirmFood)
+	LDA_i(0x20)
+	RTL
+}
+
+repoint_past_confirmfood2: {
+	LDA_i(0x981F)
+	STA_d(0x06)
+	RTL
+}
+
+repoint_past_confirmpsi1: {
+	ASMLoadAddress0E(Summary_ConfirmPSI)
+	LDA_i(0x20)
+	RTL
+}
+
+repoint_past_confirmpsi2: {
+	LDA_i(0x9829)
+	STA_d(0x06)
+	RTL
+}
+
+repoint_past_confirmall1: {
+	ASMLoadAddress0E(Summary_ConfirmAll)
+	LDA_i(0x20)
+	RTL
+}
+
+repoint_past_confirmall2: {
+	LDA_i(0)
+	STA_d(0x06)
+	RTL
+}
+
+repoint_past_confirmallyep: {
+	ASMLoadAddress0E(Summary_ConfirmAllYep)
+	LDA_d(0x06)
+	STA_d(0x12)
+	RTL
+}
+
+repoint_past_confirmallnope: {
+	ASMLoadAddress0E(Summary_ConfirmAllNope)
+	LDA_d(0x06)
+	STA_d(0x12)
+	RTL
+}
+
+repoint_past_phonetitle: {
+	ASMLoadAddress0E(Other_PhoneTitle)
+	LDX_i(0x10)
+	LDA_i(7)
+	RTL
+}
+
+// <----------------------------->
+
+// Extra code to change how the "Text Speed:" text is printed, to allow its expansion.
+
+ROM[0xC1EF4D] = { JSL(print_menu_text_speed) JSR(0x0EFC) JML(0xC1EF67) }
+
+ROM[0xC1EF67] = LDA_i(0x9C9F)
+ROM[0xC1EFAC] = LDA_i(OFFSET_X_TextSpeed_Setting)
+
+print_menu_text_speed: {
+	LDA_i(OFFSET_X_TextSpeed_Text)
+	LDX_d(0x1A)
+	JSL(0xC438A5)
+
+	ASMLoadAddress0E(FileSelect_Speed)
+	LDA_i(16)
+	RTL
+}
+
+// <----------------------------->
+
+// Extra code to fix the PSI description menu not opening if there's too much text.
+
+ROM[0xC1BBA7] = { JSL(psi_types_text_fix) NOP }
+
+psi_types_text_fix: {
+    LDA_i(8)
+    STA_a(0x8958) // Focus window 8.
+    JSL(0xC1DD53) // Clear focused window before opening 46.
+    JSL(0xC12DD5) // Advance window tick.
+    
+    STZ_d(0x02)
+    RTL
+}
+
+// <----------------------------->
+
+// Extra code for the Lumine Hall text.
+
+ROM[0xC483B9] = LDA_i(LumineHall_NessName)
+
+ROM[0xC4844C] = JSL(post_ness_text)
+
+post_ness_text: {
+	TXA
+	CLC
+	ADC_i(LumineHall_NessName)
+	TAX
+	LDA_xl(LumineText)
+	RTL
+}
+
+// Unknown? (but we use it to end after reading a null byte)...
+ROM[0xC486F4] = JML(unknown_lumine_offset)
+
+unknown_lumine_offset: {
+	TXA
+	CLC
+	ADC_i(0x06)
+	CLC
+	ADC_i(LumineHall_NessName)
+	TAX
+	LDA_xl(LumineText)
+	AND_i(0xFF)
+	BEQ(4)
+	JML(0xC486F8)
+	JML(0xC48717)
+}
+
+ROM[0xC48535] = { JSL(lumine_rest_to_print) NOP }
+
+lumine_rest_to_print: {
+	LDA_i(0xFF)
+	SEC
+	SBC_i(0x06)
+	SEC
+	SBC_i(LumineHall_NessName)
+	INC
+	STA_d(0x2C)
+	RTL
+}
+
+// <----------------------------->
+
+// Extra code for offsets.
+
+ROM[0xC23609] = JSL(offset_bash)
+offset_bash: { LDX_i(OFFSET_X_Bash) LDY_i(OFFSET_Y_Bash) RTL }
+
+ROM[0xC236A2] = LDY_i(OFFSET_Y_BattleGoods)
+ROM[0xC236A5] = LDX_i(OFFSET_X_BattleGoods)
+
+ROM[0xC23746] = { JSL(offset_auto_fight) NOP }
+offset_auto_fight: { LDX_i(OFFSET_X_AutoFight) LDY_i(OFFSET_Y_AutoFight) RTL }
+
+ROM[0xC237CC] = LDY_i(OFFSET_Y_BattlePSI)
+ROM[0xC237CF] = LDX_i(OFFSET_X_BattlePSI)
+
+ROM[0xC236D5] = LDY_i(OFFSET_Y_Defend)
+ROM[0xC236D8] = LDX_i(OFFSET_X_Defend)
+
+ROM[0xC23778] = { JSL(offset_run_away) NOP }
+offset_run_away: { LDX_i(OFFSET_X_RunAway) LDY_i(OFFSET_Y_RunAway) RTL }
+
+ROM[0xC2362A] = JSL(offset_shoot)
+offset_shoot: { LDX_i(OFFSET_X_Shoot) LDY_i(OFFSET_Y_Shoot) RTL }
+
+ROM[0xC237F4] = LDY_i(OFFSET_Y_Pray)
+ROM[0xC237F7] = LDX_i(OFFSET_X_Pray)
+
+ROM[0xC2379F] = LDY_i(OFFSET_Y_Spy)
+ROM[0xC237A2] = LDX_i(OFFSET_X_Spy)
+
+ROM[0xC2381C] = LDY_i(OFFSET_Y_Mirror)
+ROM[0xC2381F] = LDX_i(OFFSET_X_Mirror)
+
+ROM[0xC2364B] = JSL(offset_do_nothing)
+offset_do_nothing: { LDX_i(OFFSET_X_DoNothing) LDY_i(OFFSET_Y_DoNothing) RTL }
+
+ROM[0xC1A29A] = LDA_i(OFFSET_X_EquipLeftNumber)
+ROM[0xC1A480] = LDA_i(OFFSET_X_EquipLeftNumber)
+
+ROM[0xC1A4D9] = LDA_i(OFFSET_X_EquipRightNumber)
+ROM[0xC1A5C2] = LDA_i(OFFSET_X_EquipRightNumber)
+
+ROM[0xC3E964] = "[{ byte [0] OFFSET_X_LeftOptions } 00 { byte [0] OFFSET_X_RightOptions } 00 { byte [0] OFFSET_X_LeftOptions } 01 { byte [0] OFFSET_X_RightOptions } 01 { byte [0] OFFSET_X_LeftOptions } 02 { byte [0] OFFSET_X_RightOptions } 02]"
+
+ROM[0xC1F0A0] = JSL(offset_continue)
+offset_continue: { LDY_i(0) LDX_i(OFFSET_X_Continue) RTL }
+ROM[0xC1F0DC] = LDX_i(OFFSET_X_Copy)
+ROM[0xC1F117] = LDX_i(OFFSET_X_Delete)
+ROM[0xC1F135] = LDX_i(OFFSET_X_SetUp)
+
+ROM[0xC1EEB6] = LDA_i(OFFSET_X_Level_FileSelect)
+ROM[0xC1EF19] = LDA_i(OFFSET_X_Level_Number_FileSelect)
+ROM[0xC1F31F] = LDA_i(OFFSET_X_Level_Delete)
+ROM[0xC1F339] = LDA_i(OFFSET_X_Level_Number_Delete)
+
+ROM[0xC195AE] = LDA_i(OFFSET_X_Level_Number_Status)
+ROM[0xC197C9] = LDX_i(5)
+ROM[0xC197CC] = LDA_i(OFFSET_X_ExpForNextLevel_Number)
+ROM[0xC198BE] = LDA_i(OFFSET_X_PSIPrompt)
+
+// <----------------------------->
+
+// Special Status Window, this is actually CCScript. Thanks H.S. for making this ages ago.
+
+ROM[0xC19551] = ASMLoadAddress0E(StatusWindow)
+
+StatusWindow: {
+	text_pos(OFFSET_X_Level_Status, 0)
+	StatusLevel
+
+	text_pos(OFFSET_X_HitPoints, 3)
+	HitPoints
+
+	text_pos(OFFSET_X_PsychicPoints, 4)
+	PsychicPoints
+
+	text_pos(OFFSET_X_ExpPoints, 5)
+	ExpPoints
+
+	text_pos(OFFSET_X_ExpForNextLevel, 6)
+	ExpForNextLevel
+
+	text_pos(OFFSET_X_Offense, 0)
+	StatusOffense
+
+	text_pos(OFFSET_X_Defense, 1)
+	StatusDefense
+
+	text_pos(OFFSET_X_Speed, 2)
+	Speed
+
+	text_pos(OFFSET_X_Guts, 3)
+	Guts
+
+	text_pos(OFFSET_X_Vitality, 4)
+	Vitality
+
+	text_pos(OFFSET_X_IQ, 5)
+	IQ
+
+	text_pos(OFFSET_X_Luck, 6)
+	Luck
+
+	eob
+}
+
+// <----------------------------->
+
+// Script by Vittorio.

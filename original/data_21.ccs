@@ -1,0 +1,477 @@
+/*
+ * EarthBound Text Dump
+ * Time: 21:34:20 - 24/01/2013
+ * Generated using CCScriptWriter.
+ */
+
+command e(label) "{long label}"
+
+// Text Data
+l_0xc65237:
+    "{counter(84)}{set(flag 429)}" eob
+
+l_0xc6523d:
+    "{counter(23)}{set(flag 430)}" eob
+
+l_0xc65243:
+    "@Shhhhh! Be quiet!" linebreak
+    "  I look very important, but I'm not really....." next
+    "@I'm a cash dispenser man." next
+    "@If you want to withdraw cash....." next
+    "@I'll charge you a handling fee," next
+    "@which is the same amount as your withdrawal." next
+    "@So, do you want a withdrawal?" linebreak
+    call(data_36.l_0xc7dd4f) "[11]{clearline}[09 02 {e(l_0xc6530c)} {e(l_0xc652f1)}]" goto(l_0xc652f1)
+
+l_0xc652f1:
+    newline
+    "@...I'll be here, so..." linebreak
+    "  Come back any time." end
+
+l_0xc6530c:
+    "@You have $[1C 01 07] in your account now." linebreak
+    "[19 02]Withdrawal" eob
+
+l_0xc6532c:
+    "[19 02]Deposit" eob
+
+l_0xc65336:
+    "[1C 07 02][11]{clearline}[09 02 {e(l_0xc653a5)} {e(l_0xc6534a)}]" goto(l_0xc652f1)
+
+l_0xc6534a:
+    "[1D 17 7F 96 98 00][1B 02 {e(l_0xc654c4)}]" call(l_0xc65566) "[1B 02 {e(l_0xc652f1)}]{swap}[1D 14 00 00 00 00][1B 03 {e(l_0xc654de)}][1D 09 00 00][1D 06 00 00 00 00]{open_wallet}{sound(118)}{pause(10)}@I have registered your deposit" linebreak
+    "  of $[1C 0A 00 00 00 00]." next
+    goto(l_0xc65496)
+
+l_0xc653a5:
+    "[1D 17 01 00 00 00][1B 03 {e(l_0xc654f3)}][1D 14 9F 86 01 00][1B 02 {e(l_0xc6550e)}]" call(l_0xc6558c) "[1B 02 {e(l_0xc652f1)}]{swap}[1D 17 00 00 00 00][1B 03 {e(l_0xc65527)}][1D 07 00 00 00 00][1D 17 00 00 00 00][1B 03 {e(l_0xc65544)}]@Your cash withdrawal" linebreak
+    "  is $[1C 0A 00 00 00 00]," next
+    "@and the handling charge" linebreak
+    "  is $[1C 0A 00 00 00 00]." next
+    "@I will subtract this amount from your account." next
+    "@Is that okay with you?" linebreak
+    call(data_36.l_0xc7dd4f) "[11]{clearline}[09 02 {e(l_0xc65468)} {e(l_0xc6545d)}]" goto(l_0xc6545d)
+
+l_0xc6545d:
+    "[1D 06 00 00 00 00]" goto(l_0xc652f1)
+
+l_0xc65468:
+    "[1D 07 00 00 00 00][1D 08 00 00]{open_wallet}{sound(116)}{pause(10)}@Your withdrawal" linebreak
+    "  is $[1C 0A 00 00 00 00].[03]" goto(l_0xc65496)
+
+l_0xc65496:
+    newline
+    "@Okay..." next
+    "@Please don't bother yourself with me...you should continue your journey." end
+
+l_0xc654c4:
+    newline
+    "@I don't think you can deposit any more money." next
+    goto(l_0xc652f1)
+
+l_0xc654de:
+    newline
+    "@I don't think you have that much money." next
+    goto(l_0xc6534a)
+
+l_0xc654f3:
+    "@I don't think you have any savings in the bank.[03]" goto(l_0xc652f1)
+
+l_0xc6550e:
+    "@I don't think you can withdraw any more money." next
+    goto(l_0xc652f1)
+
+l_0xc65527:
+    "@I don't think you have that much money in your account." next
+    goto(l_0xc653a5)
+
+l_0xc65544:
+    "[1D 06 00 00 00 00]@I don't think you have enough money for my handling fee." next
+    goto(l_0xc653a5)
+
+l_0xc65566:
+    newline
+    "@How much will you deposit?" next
+    "@Balance: $[1C 01 07]" linebreak
+    call(data_18.l_0xc62fc5) eob
+
+l_0xc6558c:
+    newline
+    "@How much do you want to withdraw?" next
+    "@Balance: $[1C 01 07]" linebreak
+    call(data_18.l_0xc62fc5) eob
+
+l_0xc655b1:
+    "[06 03 00 {e(l_0xc65962)}]{set(flag 3)}@You're a foreigner, aren't you?" next
+    "@I am a world-wise Tenda." next
+    "@I was an exchange student who traveled to a country" next
+    "@that is known as an economic superpower." next
+    "@My name is Ay-go Stikke." next
+    "@Let me know if I can do anything for you." next
+    goto(l_0xc6564d)
+
+l_0xc6564d:
+    "@Shall I loan you some money?" linebreak
+    call(data_36.l_0xc7dd4f) "[11]{clearline}[09 02 {e(l_0xc65694)} {e(l_0xc65671)}]" goto(l_0xc65671)
+
+l_0xc65671:
+    "@I don't feel strange about it at all." linebreak
+    "  Please ask me any time." end
+
+l_0xc65694:
+    "@If you want to withdraw....." next
+    "@I will charge you a handling fee" next
+    "@that is equal to the amount of your withdrawal." next
+    "@Is that okay with you?" linebreak
+    call(data_36.l_0xc7dd4f) "[11]{clearline}[09 02 {e(l_0xc65713)} {e(l_0xc656f5)}]" goto(l_0xc656f5)
+
+l_0xc656f5:
+    "@I don't think you've ever really gotten into bad trouble." end
+
+l_0xc65713:
+    "@You have $[1C 01 07] in your account now." linebreak
+    "[19 02]Withdrawal" eob
+
+l_0xc65733:
+    "[19 02]Deposit" eob
+
+l_0xc6573d:
+    "[1C 07 02][11]{clearline}[09 02 {e(l_0xc657ac)} {e(l_0xc65751)}]" goto(l_0xc65671)
+
+l_0xc65751:
+    "[1D 17 7F 96 98 00][1B 02 {e(l_0xc658bb)}]" call(l_0xc65975) "[1B 02 {e(l_0xc65671)}]{swap}[1D 14 00 00 00 00][1B 03 {e(l_0xc658d4)}][1D 09 00 00][1D 06 00 00 00 00]{open_wallet}{sound(118)}{pause(10)}@I have registered your deposit" linebreak
+    "  of $[1C 0A 00 00 00 00]." next
+    goto(l_0xc65892)
+
+l_0xc657ac:
+    "[1D 17 01 00 00 00][1B 03 {e(l_0xc658e8)}][1D 14 9F 86 01 00][1B 02 {e(l_0xc65900)}]" call(l_0xc6599a) "[1B 02 {e(l_0xc65671)}]{swap}[1D 17 00 00 00 00][1B 03 {e(l_0xc65923)}][1D 07 00 00 00 00][1D 17 00 00 00 00][1B 03 {e(l_0xc6593e)}]@Your withdrawal" linebreak
+    "  is $[1C 0A 00 00 00 00]," next
+    "@and the handling fee" linebreak
+    "  is $[1C 0A 00 00 00 00]." next
+    "@Is it okay if I subtract this amount from your account?" linebreak
+    call(data_36.l_0xc7dd4f) "[11]{clearline}[09 02 {e(l_0xc65863)} {e(l_0xc65858)}]" goto(l_0xc65858)
+
+l_0xc65858:
+    "[1D 06 00 00 00 00]" goto(l_0xc656f5)
+
+l_0xc65863:
+    "[1D 07 00 00 00 00][1D 08 00 00]{open_wallet}{sound(116)}{pause(10)}@Your withdrawal" linebreak
+    "  is $[1C 0A 00 00 00 00]." next
+    goto(l_0xc65892)
+
+l_0xc65892:
+    newline
+    "@It was a very good opportunity for the both of us." next
+    "@Please come again." end
+
+l_0xc658bb:
+    "@I don't think you can deposit any more money." next
+    goto(l_0xc65671)
+
+l_0xc658d4:
+    "@I don't think you have that much money." next
+    goto(l_0xc65751)
+
+l_0xc658e8:
+    "@You don't have any money in your account." next
+    goto(l_0xc65671)
+
+l_0xc65900:
+    "@I think it's impossible for you to carry any more money." next
+    goto(l_0xc65671)
+
+l_0xc65923:
+    "@You don't have that much money in your account." next
+    goto(l_0xc657ac)
+
+l_0xc6593e:
+    "[1D 06 00 00 00 00]@I don't think you can cover my handling charge." next
+    goto(l_0xc657ac)
+
+l_0xc65962:
+    "@Hi!  I'm Ay-go." next
+    goto(l_0xc6564d)
+
+l_0xc65975:
+    newline
+    "@How much do you want to deposit?" next
+    "  (account:$[1C 01 07])" linebreak
+    call(data_18.l_0xc62fc5) eob
+
+l_0xc6599a:
+    newline
+    "@How much do you want to withdraw?" next
+    "  (account:$[1C 01 07])" linebreak
+    call(data_18.l_0xc62fc5) eob
+
+l_0xc659bf:
+    call(data_36.l_0xc7de72) "{window_open(1)}" eob
+
+l_0xc659c8:
+    eob
+
+l_0xc659c9:
+    "@Кімната з видом на море має гарний декор.{pause(15)}  Воно ось позаду." next
+    "@Таке прекрасне місце просто зворушує мене." end
+
+l_0xc65a18:
+    "[06 49 00 {e(l_0xc65a38)}]@Ти виглядаєш таким безпомічним.{pause(15)}  З тобою все гаразд?" end
+
+l_0xc65a38:
+    "@Ти вилядав більш безпомічним раніше." end
+
+l_0xc65a4c:
+    "[06 49 00 {e(l_0xc65ab6)}][06 B6 00 {e(l_0xc65a8c)}]@Слухи кажуть, що бос Акул тиняється десь біля Стопи Гіганта." end
+
+l_0xc65a8c:
+    "@Не думаю, що Френк звичайний божевільний чи тим паче дикун." end
+
+l_0xc65ab6:
+    "@Френка немає в аркадному залі." next
+    "@Він тепер в гамбургеній всім усміхається..." end
+
+l_0xc65ae9:
+    "[06 49 00 {e(l_0xc65b93)}][06 D2 00 {e(l_0xc65b66)}]@Це місто з'їхало з розуму." next
+    "@Якісь дикі хлопці тиняються по місту," next
+    "@ще й копи на всіх зриваються." next
+    "@Я розглядаю переїзд до Двосона,{pause(15)} місто, що на Півдні." end
+
+l_0xc65b66:
+    "@Хоч ті дикі хлопці й заспокоїлися,{pause(15)} усеодно не чую себе тут безпечно." end
+
+l_0xc65b93:
+    "@В цьому містечку, ти відомий." next
+    "@Я чула ти погукав дівчину з Двосона на побачення.{pause(20)}  Як її звати?" next
+    "@Ну знаєш, в тебе одне з тих дитячих облич, які дійсно приваблюють дівчат," next
+    "@та ти щасливий хлопець." end
+
+l_0xc65c01:
+    "@Якщо хтось з твоїх друзів знепритомнів," next
+    "@ти маєш його відвести до лікарні." next
+    "@Там підійдеш до медсестри, і вона вилікує твого друга." next
+    "@Чудова річ на запам'ятати,{pause(15)} але все гаразд, якщо ти забудеш." end
+
+l_0xc65c89:
+    "[06 D3 00 {e(l_0xc65ce1)}]@Бов-воув!{pause(20)}  (Не думаєш, що тобі потрібна буде зброя?" next
+    "@Ти знав, що в аптеці продаються речі, які ти можеш використати?" next
+    "@...Ось я про це знав.)" end
+
+l_0xc65ce1:
+    "@Бов-воув!" end
+
+l_0xc65cec:
+    "[06 63 00 {e(l_0xc65df2)}]@Не виглядає цей дім добре?{pause(20)}  Ти можеш його купити всього лише за $7500!" next
+    "@Він має вид на океан,{pause(15)} і з прекрасним заходом сонця." next
+    "@У людей мають бути свої власні хати." next
+    "@Хочеш його купити?" linebreak
+    "[19 02]Так" eob
+
+l_0xc65d6a:
+    " [19 02]Ні" eob
+
+l_0xc65d70:
+    "{open_wallet}[1C 07 02][11]{clearline}[09 02 {e(l_0xc65da6)} {e(l_0xc65d81)}]" goto(l_0xc65d81)
+
+l_0xc65d81:
+    "@Ти не можеш дозаолити мобі $7500?{pause(20)}  Балакати з тобою було лише тратою часу." end
+
+l_0xc65da6:
+    "[1D 14 4C 1D 00 00][1B 03 {e(l_0xc65d81)}]{sound(118)}[1D 09 4C 1D]{open_wallet}@Дякую." next
+    "@Тепер це все твоє.{pause(20)}  Дай собі трохи часу і відпочинь.{wait}{set(flag 99)}{set(flag 746)}[1F 1E 8B 00 06][1F 17 8C 00 0C 00 01]" eob
+
+l_0xc65df2:
+    "@Агов!{pause(15)}  У тебе тепер своє власне житло!" end
+
+l_0xc65e08:
+    "[06 6E 00 {e(l_0xc65e25)}]@Агов!{pause(15)}  У тебе тепер своє власне житло!" end
+
+l_0xc65e25:
+    "@Дім при таких чудових умовах не може бути дешевим." end
+
+l_0xc65e46:
+    "@Я маю бути найщасливішою людиною на світі." next
+    "@Я можу практикуватись на трубі в цьому мальовничому місці." next
+    "@Я відправлю свою нав'язливу мелодію всьому місту![03]{sound(22)}" eob
+
+l_0xc65ea3:
+    "[06 6B 01 {e(data_35.l_0xc7c588)}][06 40 00 {e(l_0xc65edb)}]@Хочеш побитися,{pause(15)} чи як?[03]" call(data_23.l_0xc683df) "[1B 03 {e(data_23.l_0xc683de)}]{pause(1)}[1F F1 8E 00 7B 02]{set(flag 363)}" eob
+
+l_0xc65edb:
+    "@Я не буду з тобою битися, так як ти сильніший, ніж я." end
+
+l_0xc65efc:
+    "[06 6C 01 {e(data_35.l_0xc7c588)}][06 40 00 {e(l_0xc65f4b)}]@Хочеш зустріти Френка?{pause(15)}  А ти не хочеш, щоб він тебе побив,{pause(15)} так же?[03]" call(data_23.l_0xc683e6) "[1B 03 {e(data_23.l_0xc683de)}]{pause(1)}[1F F1 8F 00 7B 02]{set(flag 364)}" eob
+
+l_0xc65f4b:
+    "@Виглядаєш доволі таки здоровий." end
+
+l_0xc65f5c:
+    "[06 69 00 {e(l_0xc65fa6)}]@Не балакай зі мною!{pause(15)}" linebreak
+    "  Я на чергуванні." next
+    "@Допоки не матиму дозвіл від Шефа Стронґа,{pause(15)} Я не можу дати тобі пройти!" end
+
+l_0xc65fa6:
+    "@Ти робеш все чудово.{pause(20)}  Так тримати." next
+    "@<Мапу Місцевості> можна взяти в бібліотеці." next
+    "@Також, ти можу її використовувати і в Двосоні.{pause(20)}  Дуже корисна річ." end
+
+l_0xc66002:
+    "[06 69 00 {e(l_0xc6605f)}]@Дорога до двосона" linebreak
+    "  закрита." next
+    "@Ти не можеш прослизекти скрізь блокпост,{pause(15)} якби ти не старався!" next
+    "@Одинет відомий своїми блокпостами!" end
+
+l_0xc6605f:
+    "@Агов,{pause(15)} ти раптом не [1C 02 01]?" next
+    "@Добре,{pause(15)} я отримав добро від Шефа Стронґа, щоб дати тобі пройти далі." next
+    "@Бережи себе там, добре?" end
+
+l_0xc660a6:
+    "[06 02 00 {e(l_0xc66392)}][06 40 00 {e(l_0xc66353)}][06 03 02 {e(l_0xc66469)}]@....." next
+    "@...Я Френк.{pause(30)}  А ти?" next
+    "@{pause(30)}Та ну,{pause(15)} ти не можеш хоча б ім'я своє сказати?[03]" call(data_23.l_0xc683fb) "[1B 03 {e(data_23.l_0xc683de)}][1F 01 00]{window_open(1)}@<Доказно-невдачний> Френк не може бути здоланим." next
+    "@Пюфф,{pause(10)} пюфф,{pause(10)} пюфф" linebreak
+    "  А ось це{pause(15)}" linebreak
+    "  <Френкіштайн Версії ІІ.>[03]{set(flag 515)}" call(data_23.l_0xc68402) "[1B 03 {e(data_23.l_0xc683de)}][1F F1 CA 00 7B 02]{pause(30)}{set(flag 64)}{window_open(1)}" goto(l_0xc66175)
+
+l_0xc66175:
+    newline
+    "@...Це мій перший провал." next
+    "@<Доказно-невдачний> Френк тепер просто <невдаха> Френк." next
+    "@Я знаю, що ти всіх питав навколо,{pause(15)} тому я позповім про Слід Гіганта." next
+    "@Схоже..." linebreak
+    "  на те..." linebreak
+    "  що це доволі всесильне місце." next
+    "@Щось типу особливої сили закладена там," next
+    "@яка дає певним людям творити різні дивовижні речі." next
+    "@Однак... чудовисько висмоктало всю енергію з того місця." next
+    "@Складно доволі дістатися до Сліду Гаганта.{pause(20)}  Це все, що я знаю..." next
+    "@Пропоную тобі самому дістати більше інфи." next
+    "@Вхід до шлязу, який веде до Сліду Гаганта знаходиться" next
+    "@за халупою гастролерів." next
+    "@Огіркович,{pause(15)} Мер Одинету,{pause(15)} має ключ до тієї халупи." next
+    "@[1C 02 01],{pause(15)} ти став сильнішим за мене!{pause(20)}  Твоя подорож лише починається...{wait}{set(flag 64)}{set(flag 697)}{set(flag 363)}{set(flag 364)}{unset(flag 365)}{set(flag 2)}" eob
+
+l_0xc66353:
+    "{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc663fe)}]@Виглядаєш сильнішим.{pause(20)}  Не хотів би відпочити?" linebreak
+    "[19 02]Так" eob
+
+l_0xc6637d:
+    " [19 02]Ні" eob
+
+l_0xc66383:
+    "[1C 07 02][11]{clearline}[09 02 {e(l_0xc663c5)} {e(l_0xc66392)}]" goto(l_0xc66392)
+
+l_0xc66392:
+    "@[1C 02 01],{pause(15)} ти став сильнішим за мене!{pause(20)}  Твоя подорож лише починається..." end
+
+l_0xc663c5:
+    call(data_49.l_0xc915d6) call(data_49.l_0xc91582) newline
+    "@[1C 02 01],{pause(15)} ти тепер сильніший, ніж я!{pause(20)}  Твоя подорож лише починається." end
+
+l_0xc663fe:
+    "@Що?{pause(20)}  Ти друг хлопця на ім'я [1C 02 01]?" next
+    "@[1C 02 01] теж є моїм другом," next
+    "@однак, не можу згадати як стати другом друга." next
+    "@Досить жартувати про <Дружнє Коло> і йдіть додому!" end
+
+l_0xc66469:
+    "@І знову ти..." next
+    "@Ти дійсно думаєш, що можеш перемогти <Френкіштайна Версії ІІ>?" next
+    "[19 02]Так" eob
+
+l_0xc664a5:
+    " [19 02]Ні" eob
+
+l_0xc664ab:
+    "[1C 07 02][11]{clearline}[09 02 {e(l_0xc66523)} {e(l_0xc664ba)}]" goto(l_0xc664ba)
+
+l_0xc664ba:
+    "@Ти прийшов сюди, чуючи не-у-формі?" next
+    "@Навіть і не думай дитися на те, що позаду мене,{pause(15)} тупоголовий." next
+    goto(l_0xc664f2)
+
+l_0xc664f2:
+    "@Пішов!{pause(20)}  <Френкіштайн Версії ІІ>!" next
+    call(data_23.l_0xc68402) "[1B 03 {e(data_23.l_0xc683de)}]{window_open(1)}" goto(l_0xc66175)
+
+l_0xc66523:
+    "@Ти що, занадто впеанений?" next
+    goto(l_0xc664f2)
+
+l_0xc6653b:
+    "[06 04 00 {e(l_0xc665e7)}]@Добрий день, чим я мо{pause(10)}.{pause(10)}.{pause(10)}.{pause(10)}?{pause(30)}  ...Ух...{pause(20)}  Ти раптом не [1C 02 01]?" next
+    "@Після нашої битви я став серйознішим,{pause(15)} і почав працювати над собою." next
+    "@Я навіть робив деякі тренування для...{pause(15)} для..." next
+    "@Добре,{pause(15)} трошки проф-реслінгу.{pause(20)}  Це поклик для мене,{pause(15)} крихітко..." next
+    goto(l_0xc665e7)
+
+l_0xc665e7:
+    "@Отже, ти повернувся живим.{pause(20)}  Ти мабуть багацько історій." next
+    "@Давай но підемо десь разом і вип'ємо чогось." next
+	"@Звісно, якщо в тебе буде можливість, щоб я міг почути про всі твої пригоди." next
+    "@...А і такоє я мав наувазі випити мінералки, звісно ж.{pause(15)}  Сам знаєш,{pause(15)} я ще неповнолітній.{wait}{set(flag 4)}" eob
+
+l_0xc66670:
+    "[06 BE 00 {e(data_35.l_0xc7c588)}]{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(data_24.l_0xc690a6)}]{music(155)}@Ти нарешті дістався сюди." next
+    "@Це перше місце <Твого Святилища>.{pause(20)}  Але тепер воно моє." next
+    "@Спробуй взяти його від мене,{pause(30)} якщо ти насмілишся...[03]" call(data_23.l_0xc68409) "[1B 03 {e(data_23.l_0xc683de)}][1F 1E D1 00 08]{pause(120)}{set(flag 190)}" eob
+
+l_0xc666ea:
+    "{window_open(1)}@...Отже [1C 02 01] друзяко,{pause(15)} Я знайшов доказ чудової знахідки... великої тяжості..." next
+    "@яаа,{pause(15)} хаа,{pause(10)} хаа...{pause(20)}" linebreak
+    "  Я тобі покажу,{pause(15)} але тільки тобі і нікому іншому.{pause(20)}  Ну ж бо.[03]{window_closeall}" call(data_16.l_0xc5f642) "{unset(flag 307)}{set(flag 308)}" eob
+
+l_0xc66762:
+    "[06 49 00 {e(data_29.l_0xc73ab9)}][06 D2 00 {e(l_0xc6681d)}]@Якщо це знак того, що лежить під землею,{pause(15)} мені потрібно трохи часу." next
+    "@Моя доля{pause(15)} - знайти і відкопати замурований скарб." next
+    "@Я їстиму часник і працюватиму над своїм поліпшенням." next
+    "@Тепер йди додому.{pause(20)}  Ти заважаєш мені працювати." next
+    "@Бо ти ще можеш почати думати жадібними думками..." end
+
+l_0xc6681d:
+    "{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc66a06)}][06 02 00 {e(l_0xc668e4)}][06 65 00 {e(l_0xc66980)}]@Агов [1C 02 01],{pause(15)} хлопче." next
+    "@Тут був чувак, який наполягав, що він хоче купити цю золоту статую,{pause(15)} тому я продав її йому." next
+    "@Не так, щоб мені потрібні були гроші..." next
+    "@Просто його неосяжна манія подіяла на мене." next
+    "@Сам знаєш,{pause(15)} я вразливий до почуттів." next
+    "@А тепер, бувай.{wait}{set(flag 101)}{set(flag 2)}" eob
+
+l_0xc668e4:
+    "@Агов [1C 02 01],{pause(15)} хлопче." next
+    "@Тут був чувак, який наполягав, що він хоче купити цю золоту статую,{pause(15)} тому я продав її йому." next
+    "@Не так, щоб мені потрібні були гроші..." next
+    "@Просто його неосяжна манія подіяла на мене." next
+    "@Сам знаєш,{pause(15)} я вразливий до почуттів." next
+    "@А тепер, бувай." end
+
+l_0xc66980:
+    "@Я не був в змозі протягнути свої руки до скарбу..." next
+    "@Але коли я виконую роботу,{pause(15)} то виконую її на добре.{pause(20)}  Я{pause(10)} чувак{pause(5)}а чувак." next
+    "@Коли гра закінчена,{pause(15)} я можу бути героєм." next
+    "@Зараз можеш мене ігнорувати,{pause(15)} але ти пізніше побачиш..." end
+
+l_0xc66a06:
+    "@Йди вперед і смійся наді мною." next
+    "@Але коли я роблю виконую,{pause(15)} то виконую її на добре.{pause(20)}  Я{pause(10)} чувак{pause(5)}а чувак." next
+    "@Коли ця гра закінчиться,{pause(15)} я можу бути героєм." next
+    "@Ти можеш зараз мене ігнорувати,{pause(15)} але ти ще пізніше побачиш..." next
+    eob
+
+l_0xc66a83:
+    "@(Золота Статуя дивно світиться...){sound(113)}" end
+
+l_0xc66aa4:
+    "[06 49 00 {e(data_31.l_0xc7625e)}][06 B4 02 {e(data_22.l_0xc66bc0)}][06 B5 02 {e(data_22.l_0xc66c7d)}][06 78 02 {e(l_0xc66b33)}][06 61 00 {e(data_31.l_0xc76112)}][06 D6 01 {e(l_0xc66afe)}]@Агов,{pause(10)} братику.{pause(20)}  Тебе розбудив той звук?" next
+    "@Ти злякався?{wait}{set(flag 470)}" eob
+
+l_0xc66afe:
+    "@Гадаєш, мама дозвилить мені ходити по дому пізно вночі?" next
+    "@Бо я щось не можу лягти спатки." end
+
+l_0xc66b33:
+    "@Я можу лише допомогти тобі зберігаючи тут твої речі..." next
+    "@Я тебе підитримую цілим серцем.{pause(20)}  Тому сильно не хвилюйся." next
+    "@...Я буду сильною, поки тебе не тут не буде." next
+    goto(data_19.l_0xc64672)
+

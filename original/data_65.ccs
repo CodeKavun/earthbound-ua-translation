@@ -1,0 +1,410 @@
+/*
+ * EarthBound Text Dump
+ * Time: 21:34:20 - 24/01/2013
+ * Generated using CCScriptWriter.
+ */
+
+command e(label) "{long label}"
+
+// Text Data
+l_0xef8b2f:
+    newline
+    "{sound(25)}@{user} вистрілює" linebreak
+    "  променем!{sound(77)}[03]{pause(1)}" eob
+
+l_0xef8b4a:
+    newline
+    "{sound(25)}@{user} тицяє" linebreak
+    "  списом![03]" eob
+
+l_0xef8b65:
+    newline
+    "{sound(25)}@{user} наступає" linebreak
+    "  своєю здоровезною стопою![03]" eob
+
+l_0xef8b89:
+    newline
+    "{sound(25)}@{user} розмахує" linebreak
+    "  своїм обручем.{sound(26)}[03]" eob
+
+l_0xef8ba8:
+    newline
+    "{sound(25)}@{user} кидається" linebreak
+    "  вперед![03]" eob
+
+l_0xef8bc0:
+    newline
+    "{sound(25)}@{user} люто" linebreak
+    "  прокатується на скейтборді![03]" eob
+
+l_0xef8be8:
+    newline
+    "{sound(25)}@{user} сильно" linebreak
+    "  тебе вдаряє![03]" eob
+
+l_0xef8bfb:
+    newline
+    "{sound(25)}@{user} жаліється" linebreak
+    "  на нинішню молодь!{sound(84)}[03]" eob
+
+l_0xef8c1d:
+    newline
+    "{sound(25)}@{user} почанає" linebreak
+    "  вчити тебе!{sound(84)}[03]" eob
+
+l_0xef8c3a:
+    newline
+    "{sound(25)}@{user} гостро" linebreak
+    "  нахмурюється!{sound(84)}[03]" eob
+
+l_0xef8c58:
+    newline
+    "{sound(25)}@{user} випускає" linebreak
+    "  кепський запах![03]" eob
+
+l_0xef8c75:
+    newline
+    "{sound(25)}@{user} кричить" linebreak
+    "  голосним голосом![03]" eob
+
+l_0xef8c92:
+    newline
+    "{sound(25)}@{user} верещить плачем війни!" linebreak
+	"[03]" eob
+
+l_0xef8cac:
+    newline
+    "{sound(25)}@{user} зав'язує" linebreak
+    "  свого лоба![03]" eob
+
+l_0xef8cc7:
+    "[1D 21 03][09 03 {e(l_0xef8cfb)} {e(l_0xef8d17)} {e(l_0xef8d2f)}]" goto(l_0xef8cdd)
+
+l_0xef8cdd:
+    newline
+    "{sound(25)}@{user} втрачає" linebreak
+    "  шестерню та гвинтики![03]" eob
+
+l_0xef8cfb:
+    newline
+    "{sound(25)}@{user} перевикористовує" linebreak
+    "  бинт![03]" eob
+
+l_0xef8d17:
+    newline
+    "{sound(25)}@{user} очищає" linebreak
+    "  зону![03]" eob
+
+l_0xef8d2f:
+    newline
+    "{sound(25)}@{user} закортілось піти" linebreak
+    "  по батарейки![03]" eob
+
+l_0xef8d4c:
+    newline
+    "@{user} з'їдає" linebreak
+    "  сендвіч!{sound(68)}" next
+    call(data_61.l_0xef69a1) eob
+
+l_0xef8d72:
+    newline
+    "{sound(25)}@{user} вистрілює" linebreak
+    "  променем`який`призводить`до`нічної`душноти![03]" eob
+
+l_0xef8d9f:
+    newline
+    "{sound(25)}@{user} випромінює" linebreak
+    "  бліде зелене світле![03]" eob
+
+l_0xef8dc1:
+    newline
+    "{sound(25)}@{user} згорговується" linebreak
+    "  навколо тебе й атакував![03]" eob
+
+l_0xef8dde:
+    newline
+    "@Аж раптом," next
+    "@{user} віддав" linebreak
+    "  веселкою кольорів!{sound(65)}[1C 13 28 00]{pause(30)}{sound(65)}[1C 13 28 00]{pause(30)}{sound(65)}[1C 13 28 00]{pause(30)}" eob
+
+l_0xef8e27:
+    newline
+    "@{user}[19 1F]{swap} використовує" linebreak
+    "  [1C 05 00]![03]" eob
+
+l_0xef8e3c:
+    newline
+    "@{user}[19 1F]{swap} використовує" linebreak
+    "  [1C 05 00]!{pause(30)}{sound(54)}{pause(30)}[1C 13 00 01]{pause(60)}[03]" eob
+
+l_0xef8e5e:
+    newline
+    "@{user}[19 1F]{swap} використовує" linebreak
+    "  [1C 05 00]!{pause(30)}{sound(59)}[1C 13 00 04]{pause(60)}[03]" eob
+
+l_0xef8e7e:
+    newline
+    "@{user}[19 1F]{swap} використовує" linebreak
+    "  [1C 05 00]!{pause(30)}{sound(59)}[1C 13 00 1E]{pause(60)}[03]" eob
+
+l_0xef8e9e:
+    newline
+    "@{user}[19 1F]{swap} використовує" linebreak
+    "  [1C 05 00]!{pause(30)}{sound(99)}[1C 13 00 1B]{pause(60)}[03]" eob
+
+l_0xef8ebe:
+    newline
+    "{sound(25)}@{user} випускає" linebreak
+    "  дуже смердючий газ![03]" eob
+
+l_0xef8ee2:
+    call(data_59.l_0xc9ee2f) "{pause(40)}{window_clear}@Ви не можете відчути справжню" linebreak
+    "  форму атаки {user}а![1C 13 31 00][1C 13 36 00]{sound(81)}{pause(40)}{sound(81)}" eob
+
+l_0xef8f17:
+    call(data_59.l_0xc9ee68) "{window_clear}@Ви не можете відчути справжню" linebreak
+    "  форму атаки {user}а![1C 13 31 00][1C 13 36 00]{sound(81)}{pause(40)}{sound(81)}" eob
+
+l_0xef8f4a:
+    call(data_59.l_0xc9ee2f) "{pause(40)}{window_clear}" call(data_59.l_0xc9ee2f) "{pause(40)}{window_clear}" call(data_59.l_0xc9ee2f) "{pause(40)}{window_clear}@Ви не можете відчути справжню" linebreak
+    "  форму атаки {user}а![1C 13 31 00][1C 13 36 00]{sound(81)}{pause(40)}{sound(81)}" eob
+
+l_0xef8f91:
+    call(data_59.l_0xc9ee2f) "{pause(40)}{window_clear}" call(data_59.l_0xc9ee2f) "{pause(40)}{window_clear}" call(data_59.l_0xc9ee2f) "{pause(40)}{window_clear}" eob
+
+l_0xef8fad:
+    "[1D 19 02][1B 03 {e(l_0xef8fc9)}][19 10 02][1D 0D 00 01 02][1B 03 {e(l_0xef8fc9)}] each." eob
+
+l_0xef8fc9:
+    "." eob
+
+l_0xef8fcb:
+    "[06 82 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 B6 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 386)}{pause(1)}" eob
+
+l_0xef8fe4:
+    "[06 83 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 B7 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 387)}{pause(1)}[1F F1 53 05 7B 02]" eob
+
+l_0xef9003:
+    "[06 84 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 B7 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 388)}{pause(1)}[1F F1 5B 05 7B 02]" eob
+
+l_0xef9022:
+    "[06 85 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 B8 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 389)}{pause(1)}[1F F1 56 05 7B 02]" eob
+
+l_0xef9041:
+    "[06 86 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 BB 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 390)}{pause(1)}[1F F1 8E 04 7B 02]" eob
+
+l_0xef9060:
+    "[06 87 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 BB 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 391)}{pause(1)}[1F F1 8F 04 7B 02]" eob
+
+l_0xef907f:
+    "[06 88 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 BB 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 392)}{pause(1)}[1F F1 90 04 7B 02]" eob
+
+l_0xef909e:
+    "[06 89 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 BB 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 393)}{pause(1)}[1F F1 91 04 7B 02]" eob
+
+l_0xef90bd:
+    "[06 8A 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 BB 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 394)}{pause(1)}[1F F1 94 04 7B 02]" eob
+
+l_0xef90dc:
+    "[06 8B 01 {e(data_35.l_0xc7c588)}][1F 23 BB 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 395)}{pause(1)}[1F F1 95 04 7B 02]" eob
+
+l_0xef90f9:
+    "[06 8C 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 BB 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 396)}{pause(1)}[1F F1 96 04 7B 02]" eob
+
+l_0xef9118:
+    "[06 8D 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 BB 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 397)}{pause(1)}[1F F1 98 04 7B 02]" eob
+
+l_0xef9137:
+    "[06 8E 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 BB 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 398)}{pause(1)}[1F F1 9A 04 7B 02]" eob
+
+l_0xef9156:
+    "[06 8F 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 BB 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 399)}{pause(1)}[1F F1 9D 04 7B 02]" eob
+
+l_0xef9175:
+    "[06 90 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 BB 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 400)}{pause(1)}[1F F1 9E 04 7B 02]" eob
+
+l_0xef9194:
+    "[06 91 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 BB 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 401)}{pause(1)}[1F F1 9F 04 7B 02]" eob
+
+l_0xef91b3:
+    "[06 92 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 BB 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 402)}{pause(1)}[1F F1 A1 04 7B 02]" eob
+
+l_0xef91d2:
+    "[06 93 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 BB 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 403)}{pause(1)}[1F F1 A2 04 7B 02]" eob
+
+l_0xef91f1:
+    "[06 94 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 BB 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 404)}{pause(1)}[1F F1 A4 04 7B 02]" eob
+
+l_0xef9210:
+    "[06 95 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 BB 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 405)}{pause(1)}[1F F1 A5 04 7B 02]" eob
+
+l_0xef922f:
+    "[06 96 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 BB 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 406)}{pause(1)}[1F F1 A6 04 7B 02]" eob
+
+l_0xef924e:
+    "[06 97 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 BC 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 407)}{pause(1)}[1F F1 92 04 7B 02]" eob
+
+l_0xef926d:
+    "[06 98 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 BC 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 408)}{pause(1)}[1F F1 93 04 7B 02]" eob
+
+l_0xef928c:
+    "[06 99 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 BC 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 409)}{pause(1)}[1F F1 97 04 7B 02]" eob
+
+l_0xef92ab:
+    "[06 9A 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 BC 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 410)}{pause(1)}[1F F1 99 04 7B 02]" eob
+
+l_0xef92ca:
+    "[06 9B 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 BC 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 411)}{pause(1)}[1F F1 9B 04 7B 02]" eob
+
+l_0xef92e9:
+    "[06 9C 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 BC 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 412)}{pause(1)}[1F F1 A0 04 7B 02]" eob
+
+l_0xef9308:
+    "[06 9D 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 BC 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 413)}{pause(1)}[1F F1 A3 04 7B 02]" eob
+
+l_0xef9327:
+    "[06 9E 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 BC 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 414)}{pause(1)}[1F F1 A7 04 7B 02]" eob
+
+l_0xef9346:
+    "[06 9F 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 BC 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 415)}{pause(1)}[1F F1 A8 04 7B 02]" eob
+
+l_0xef9365:
+    "[06 A0 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 BD 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 416)}{pause(1)}[1F F1 A6 02 7B 02]" eob
+
+l_0xef9384:
+    "[06 A1 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 BD 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 417)}{pause(1)}[1F F1 A7 02 7B 02]" eob
+
+l_0xef93a3:
+    "[06 A2 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 BE 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 418)}{pause(1)}[1F F1 A8 02 7B 02]" eob
+
+l_0xef93c2:
+    "[06 A3 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 BE 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 419)}{pause(1)}[1F F1 A9 02 7B 02]" eob
+
+l_0xef93e1:
+    "[06 A4 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 BF 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 420)}{pause(1)}[1F F1 AA 02 7B 02]" eob
+
+l_0xef9400:
+    "[06 A5 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 BF 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 421)}{pause(1)}[1F F1 AB 02 7B 02]" eob
+
+l_0xef941f:
+    "[06 B2 01 {e(data_35.l_0xc7c588)}]" call(data_26.l_0xc6cfc5) "{window_closeall}[1F 23 D2 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 434)}{pause(1)}[1F F1 A0 02 7B 02]" call(data_50.l_0xc92be3) eob
+
+l_0xef9448:
+    "[06 B3 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 D4 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 435)}{pause(1)}[1F F1 9C 04 7B 02]" eob
+
+l_0xef9467:
+    "[06 B4 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 D3 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 436)}{pause(1)}[1F F1 4A 05 7B 02]" eob
+
+l_0xef9486:
+    "[06 B5 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 D3 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 437)}{pause(1)}[1F F1 4B 05 7B 02]" eob
+
+l_0xef94a5:
+    "[06 B6 01 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 D3 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 438)}{pause(1)}[1F F1 4C 05 7B 02]" eob
+
+l_0xef94c4:
+    "[06 59 02 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 BA 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 601)}{pause(1)}[1F F1 0F 04 7B 02]" eob
+
+l_0xef94e3:
+    "[06 5A 02 {e(data_35.l_0xc7c588)}]{window_closeall}[1F 23 BA 01][1B 03 {e(data_32.l_0xc77eff)}]{set(flag 602)}{pause(1)}[1F F1 10 04 7B 02]" eob
+
+l_0xef9502:
+    "[06 5B 02 {e(data_35.l_0xc7c588)}]{window_open(1)}" call(data_61.l_0xef681a) "{window_closeall}[1F 23 E2 01][1B 03 {e(data_32.l_0xc77eff)}]" call(data_61.l_0xef68d7) "{set(flag 603)}{pause(1)}[1F F1 4E 02 7B 02]" eob
+
+l_0xef952e:
+    "[06 44 00 {e(l_0xef9737)}][06 56 00 {e(l_0xef970f)}][06 0A 00 {e(l_0xef95a3)}]@...Хто?..." next
+    "@...Ти [1C 02 01]?" next
+    "@[1C 02 01]!  Я така рада, що це ти!" next
+    "@В мене був сон, що хлопець на ім'я [1C 02 01] буде моєю долею." next
+    "@Знаю, в це тяжко повірити." next
+    goto(l_0xef95a3)
+
+l_0xef95a3:
+    "@Тому,{pause(15)} я знала, що ти б мене визволяв." next
+    "@Якби ти не прийшов,{pause(15)} я б спробувала якось вибратись звідси." next
+    "@Ти не можеш відкрити двері." next
+    "@Ти маєш отримати цей ключ від Карпейнтера.  Він його десь сховав." next
+    "@Я чула, що той Карпейнтер вміє контролювати блискавкою." next
+    "@В такому випадку,{pause(15)} ти маєш одягти цей [1C 05 01], добре?[1D 03 FF][1B 02 {e(l_0xef96d3)}][1D 0E 00 01]" call(data_36.l_0xc7dcb6) next
+    "{set(flag 86)}{set(flag 45)}{unset(flag 634)}{unset(flag 635)}@А поки, я на тебе буду тут чекати." next
+    "@Як тільки ти пореможеш Карпейнтера, вертайся сюди і витягни мене звідси." next
+    "@Не переживай за мене, просто роби свою справу, я вірю в тебе!{wait}{set(flag 11)}[1F 41 05]" eob
+
+l_0xef96d3:
+    "{sound(5)}@Що--{pause(15)}ти хочеш піджаритись блискавкою?" next
+    "@Викинь щось і тоді я зможу тобі дати [1C 05 01].{wait}" linebreak
+    "{set(flag 10)}" eob
+
+l_0xef970f:
+    "@Якби ти не прийшов,{pause(15)} я б спробувала якось вибратись звідси." next
+    eob
+
+l_0xef9737:
+    "@[1C 02 01]!  В тебе ключ!" next
+    "@Ти поранився?" linebreak
+    "[19 02]Так" eob
+
+l_0xef9756:
+    " [19 02]Ні" eob
+
+l_0xef975c:
+    "[1C 07 02][11]{clearline}[09 02 {e(l_0xef976b)} {e(l_0xef976b)}]" goto(l_0xef976b)
+
+l_0xef976b:
+    "@Пробач, що я дала тобі купу неприємностей." end
+
+l_0xef9785:
+    "@(Міст до Щасливого-Щасливого Селища)" end
+
+l_0xef97a2:
+    "[06 BF 00 {e(data_35.l_0xc7c588)}]{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(data_24.l_0xc690a6)}]{music(155)}@You finally got here." next
+    "@This is the second <Your Sanctuary> location.{pause(20)}  But it's mine now." next
+    "@Take it from me,{pause(30)} if you dare...[03]" call(data_23.l_0xc68410) "[1B 03 {e(data_23.l_0xc683de)}][1F 1E C3 01 08]{pause(120)}{set(flag 191)}" eob
+
+l_0xef981c:
+    call(data_47.l_0xc900f9) eob
+
+l_0xef9822:
+    "@I wonder who made the bridge impassable?" next
+    "@Why would someone do this?{pause(15)}  Crud..." end
+
+l_0xef9857:
+    "@(I'm not an enemy." next
+    "@I'm just a regular mole." next
+    "@Would you like to know about how to survive battles?)" next
+    "[19 02]Yes" eob
+
+l_0xef9898:
+    " [19 02]No" eob
+
+l_0xef989e:
+    "[1C 07 02][11]{clearline}[09 02 {e(l_0xef98d3)} {e(l_0xef98ad)}]" goto(l_0xef98ad)
+
+l_0xef98ad:
+    "@(Well, you seem to know a lot already, even if you don't look like it.)" end
+
+l_0xef98d3:
+    "@(You may have noticed that,{pause(15)} when you have been badly hurt in battle," next
+    "@you may survive a mortal attack and still have 1 HP.{pause(20)}  If this has happened," next
+    "@it was because of your Guts.{pause(20)}  Your survival may depend on your Guts level." next
+    "@Also,{pause(15)} more Guts helps you get more SMAAAAASHing hits." next
+    "@Beyond Guts,{pause(15)} you should have noticed that it takes some time" next
+    "@for damage to be taken from you." next
+    "@This is because of the rolling action of your HP meter.{pause(15)}  Oops!{pause(20)}  I mean your life." next
+    "@If an enemy deals mortal damage to you,{pause(15)} but you defeat all enemies" next
+    "@before your life is gone,{pause(15)} you survive.{pause(30)}  This is all I know.)" end
+
+l_0xef9a47:
+    newline
+    "{sound(25)}@{user} кличе" linebreak
+    "  по допомогу!{sound(72)}[03]" eob
+
+l_0xef9a5e:
+    "{sound(25)}" newline
+    "@{user} сіє" linebreak
+    "  насіння біля себе!{sound(72)}[03]" eob
+
+l_0xef9a7e:
+    newline
+    "{sound(25)}@{user} вибухає" linebreak
+    "  на частинки!{sound(91)}[03]{pause(30)}" eob
+

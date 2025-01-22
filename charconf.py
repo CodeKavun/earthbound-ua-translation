@@ -1,0 +1,78 @@
+CYRILLIC_TO_LATIN = {
+    'А': 'A',
+    'Б': 'B',
+    'В': 'C',
+    'Г': 'D',
+    'Ґ': 'E',
+    'Д': 'F',
+    'Е': 'G',
+    'Є': 'H',
+    'Ж': 'I',
+    'З': 'J',
+    'И': 'K',
+    'І': 'L',
+    'Й': 'M',
+    'Ї': 'N',
+    'К': 'O',
+    'Л': 'P',
+    'М': 'Q',
+    'Н': 'R',
+    'О': 'S',
+    'П': 'T',
+    'Р': 'U',
+    'С': 'V',
+    'Т': 'W',
+    'У': 'X',
+    'Ф': 'Y',
+    'Х': 'Z',
+    'а': 'a',
+    'б': 'b',
+    'в': 'c',
+    'г': 'd',
+    'ґ': 'e',
+    'д': 'f',
+    'е': 'g',
+    'є': 'h',
+    'ж': 'i',
+    'з': 'j',
+    'и': 'k',
+    'і': 'l',
+    'й': 'm',
+    'ї': 'n',
+    'к': 'o',
+    'л': 'p',
+    'м': 'q',
+    'н': 'r',
+    'о': 's',
+    'п': 't',
+    'р': 'u',
+    'с': 'v',
+    'т': 'w',
+    'у': 'x',
+    'ф': 'y',
+    'х': 'z',
+    'Ц': '[b0]',
+    'Ч': '[b1]',
+    'Ш': '[b2]',
+    'Щ': '[b3]',
+    'Ю': '[b4]',
+    'Я': '[b5]',
+    'ц': '[b6]',
+    'ч': '[b7]',
+    'ш': '[b8]',
+    'щ': '[b9]',
+    'ь': '[ba]',
+    'ю': '[bb]',
+    'я': '[bc]'
+}
+
+def interprete_to_latin(cyrillic_text: str) -> str:
+    interpreted_text = ""
+
+    for char in cyrillic_text:
+        if CYRILLIC_TO_LATIN.get(char) is not None:
+            interpreted_text += CYRILLIC_TO_LATIN[char]
+        else:
+            interpreted_text += char
+    
+    return interpreted_text

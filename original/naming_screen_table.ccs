@@ -1,0 +1,250 @@
+/* Expanded Naming Screens
+ * Last updated 2020-06-01
+ * 
+ * Made by PhoenixBound
+ * Original Naming Screen editing script by TragicManner
+ * Shifted positions for buttons by ShadowOne333 and PhoenixBound
+ */
+
+import asm65816
+
+/**
+ * LAYOUTS
+ * (aka what the textbox looks like)
+ * The character [2F] is used to tell the game where the cursor can go.
+ * Besides that, every layout is just a normal script.
+ *
+ * Here's an example layout by ShadowOne333 in MaternalBound Redux that adds a
+ * row of characters from the expanded expanded font:
+ *
+ * text_pos(0, 0) "[2F]A[2F]B[2F]C[2F]D[2F]E[2F]F[2F]G[2F]H[2F]I"            text_pos(22, 0) "[2F]-[2F]#"
+ * text_pos(0, 1) "[2F]J[2F]K[2F]L[2F]M[2F]N[2F]O[2F]P[2F]Q[2F]R"            text_pos(22, 1) "[2F]'[2F]~"
+ * text_pos(0, 2) "[2F]S[2F]T[2F]U[2F]V[2F]W[2F]X[2F]Y[2F]Z[2F] "            text_pos(22, 2) "[2F].[2F][5F]"
+ * text_pos(0, 3) "[2F][B0][2F][B1][2F][B2][2F][B3][2F][B4][2F][B5][2F][B7]" text_pos(22, 3) "[2F][B8][2F]?"
+ * text_pos(0, 4) "[2F]0[2F]1[2F]2[2F]3[2F]4[2F]5[2F]6[2F]7[2F]8[2F]9"       text_pos(22, 4) "[2F][B9][2F]!"
+ *                                                                           text_pos(22, 5) "[2F][AC][2F][AF]"
+ * eob
+ */
+
+
+// Original offset: EFA460
+main_capital: {
+    text_pos(0, 0) "[2F]А[2F]Б[2F]В[2F]Г[2F]Ґ[2F]Д[2F]Е[2F]Є[2F]Ж"      text_pos(22, 0) "[2F]-[2F]#"
+    text_pos(0, 1) "[2F]З[2F]И[2F]І[2F]Й[2F]Ї[2F]К[2F]Л[2F]М[2F]Н"      text_pos(22, 1) "[2F]'[2F]~"
+    text_pos(0, 2) "[2F]О[2F]П[2F]Р[2F]С[2F]Т[2F]У[2F]Ф[2F]Х[2F] "      text_pos(22, 2) "[2F].[2F][5F]"
+	text_pos(0, 3) "[2F]Ц[2F]Ч[2F]Ш[2F]Щ[2F]Ю[2F]Я" 					text_pos(22, 3) "[2F]![2F][AC]"
+    text_pos(0, 4) "[2F]0[2F]1[2F]2[2F]3[2F]4[2F]5[2F]6[2F]7[2F]8[2F]9" text_pos(22, 4) "[2F]?[2F][AF]"
+    eob
+}
+
+// Original offset: EFA4E3
+main_small: {
+    text_pos(0, 0) "[2F]а[2F]б[2F]в[2F]г[2F]ґ[2F]д[2F]е[2F]є[2F]ж"      text_pos(22, 0) "[2F]-[2F]#"
+    text_pos(0, 1) "[2F]з[2F]и[2F]і[2F]й[2F]ї[2F]к[2F]л[2F]м[2F]н"      text_pos(22, 1) "[2F]'[2F]~"
+    text_pos(0, 2) "[2F]о[2F]п[2F]р[2F]с[2F]т[2F]у[2F]ф[2F]х[2F] "      text_pos(22, 2) "[2F].[2F][5F]"
+    text_pos(0, 3) "[2F]ц[2F]ч[2F]ш[2F]щ[2F]ь[2F]ю[2F]я" 				text_pos(22, 3) "[2F]![2F][AC]"
+    text_pos(0, 4) "[2F]0[2F]1[2F]2[2F]3[2F]4[2F]5[2F]6[2F]7[2F]8[2F]9" text_pos(22, 4) "[2F]?[2F][AF]"
+    eob
+}
+
+// Original offset: EFA566
+player_capital: {
+    text_pos(0, 0) "[2F]А[2F]Б[2F]В[2F]Г[2F]Ґ[2F]Д[2F]Е[2F]Є[2F]Ж"      text_pos(22, 0) "[2F]-[2F]#"
+    text_pos(0, 1) "[2F]З[2F]И[2F]І[2F]Й[2F]Ї[2F]К[2F]Л[2F]М[2F]Н"      text_pos(22, 1) "[2F]'[2F]~"
+    text_pos(0, 2) "[2F]О[2F]П[2F]Р[2F]С[2F]Т[2F]У[2F]Ф[2F]Х[2F] "      text_pos(22, 2) "[2F].[2F][5F]"
+	text_pos(0, 3) "[2F]Ц[2F]Ч[2F]Ш[2F]Щ[2F]Ю[2F]Я" 					text_pos(22, 3) "[2F]![2F][AC]"
+    text_pos(0, 4) "[2F]0[2F]1[2F]2[2F]3[2F]4[2F]5[2F]6[2F]7[2F]8[2F]9" text_pos(22, 4) "[2F]?[2F][AF]"
+    eob
+}
+
+// Original offset: EFA5E9
+player_small: {
+    text_pos(0, 0) "[2F]а[2F]б[2F]в[2F]г[2F]ґ[2F]д[2F]е[2F]є[2F]ж"      text_pos(22, 0) "[2F]-[2F]#"
+    text_pos(0, 1) "[2F]з[2F]и[2F]і[2F]й[2F]ї[2F]к[2F]л[2F]м[2F]н"      text_pos(22, 1) "[2F]'[2F]~"
+    text_pos(0, 2) "[2F]о[2F]п[2F]р[2F]с[2F]т[2F]у[2F]ф[2F]х[2F] "      text_pos(22, 2) "[2F].[2F][5F]"
+    text_pos(0, 3) "[2F]ц[2F]ч[2F]ш[2F]щ[2F]ь[2F]ю[2F]я" 				text_pos(22, 3) "[2F]![2F][AC]"
+    text_pos(0, 4) "[2F]0[2F]1[2F]2[2F]3[2F]4[2F]5[2F]6[2F]7[2F]8[2F]9" text_pos(22, 4) "[2F]?[2F][AF]"
+    eob
+}
+
+/**
+ * FOOTERS
+ *
+ * They're pretty much the same as the layouts.
+ * However, you must use the `define`s listed, or else these buttons will not
+ * function properly.
+ */
+
+define capital_x = 0
+define small_x = 7
+define dontcare_x = 0
+define backspace_x = 17
+define ok_x = 25
+
+define capital_small_y = 5
+define dontcare_backspace_ok_y = 6
+
+// Original offset: EFA66C
+footer_main: {
+    text_pos(capital_x, capital_small_y)           "[2F]ВЕЛИКІ"
+    text_pos(small_x, capital_small_y)             "[2F]малі"
+    text_pos(dontcare_x, dontcare_backspace_ok_y)  "[2F]Без поняття"
+    text_pos(backspace_x, dontcare_backspace_ok_y) "[2F]Стерти"
+    text_pos(ok_x, dontcare_backspace_ok_y)        "[2F]ОК"
+    eob
+}
+
+// Original offset: EFA6A7
+footer_player: {
+    text_pos(capital_x, capital_small_y)           "[2F]ВЕЛИКІ"
+    text_pos(small_x, capital_small_y)             "[2F]малі"
+    text_pos(backspace_x, dontcare_backspace_ok_y) "[2F]Стерти"
+    text_pos(ok_x, dontcare_backspace_ok_y)        "[2F]ОК"
+    eob
+}
+
+/**
+ * CHARACTER CONVERSION TABLE
+ *
+ * This table is more difficult to explain.
+ * TL;DR: Every number in the table tells the game how far to look in the
+ *   layout script in order to find the character to add to a name.
+ *
+ *
+ * Imagine that the naming screen is divided into rows of 16x16 squares.
+ * In the vanilla game, that would make a rectangle 14 squares wide and 7
+ * squares tall, with only 5 of those occupied by letters.
+ * When the player presses A to select a letter, the game figures out what
+ * square the menu cursor is in. Then it looks at that position in the
+ * character table.
+ *
+ * Say you select A, which is in the very top left corner. The game will look
+ * at the character_table value in the top left corner, in this case 05.
+ *
+ * Say you select ~, which is on the second row at the end. It's in the
+ * second-to-last 16x16 square for that row. So the game uses the second-to-
+ * last value in the second row of the table, in this case 3B.
+ *
+ * You may wonder why there are "FF"s in the gaps where there are no letters to
+ * enter. There is no reason. FF is just a cool number. As mentioned earlier,
+ * places where the cursor can go are determined by the layout script, not this
+ * character conversion table.
+ *
+ *
+ * Now, let's talk about how to figure out what value should go in the table.
+ *
+ * Open your hacked ROM in a hex editor and go to one of the offsets above for
+ * one of the capital/small layouts. I'll pick main_capital.
+ * Check main_capital's address in summary.txt. For example's sake, let's say
+ * main_capital's address is F12345.
+ * Use Windows' calculator in programmer mode to do the following math with hex
+ * numbers:
+ *     (Subtract: F12345 - C00000 = 312345 for an unheadered ROM.)
+ *     (Add: 312345 + 200 = 312545 for a headered ROM.)
+ * Go to (Ctrl+G) this offset in your ROM in the hex editor.
+ * At this offset, there are some bytes:
+ *     18 05 00 00 2F 71 2F 72 2F 73 2F 74 2F 75 2F 76 ...
+ * This corresponds to the script you made. "text_pos" is the control code
+ * [18 05 XX YY], and then there is the 2F, and character 0x71, which is A.
+ *
+ *
+ * Let's again imagine that you selected A in the naming screen. A is in the
+ * top left corner, so the game takes the value in the top left of the table.
+ * This is "05." Or just 5.
+ * The game adds this 5 to the address of the layout script -- that F12345
+ * number. Let's do that in Windows' calculator:
+ *     (Add: 312345 + 05 = 31234A)
+ * Now go to this new offset in your hex editor, and see where the text cursor
+ * is. It should be on the 71 mentioned above that corresponds to A.
+ * Thus, the game adds this letter, A, to whatever name is being entered.
+ *
+ * If you instead picked B, the letter in the second square of the first row,
+ * the game would instead add the second number in the table, 07:
+ *     (Add: 312345 + 07 = 31234C)
+ * And it would add the character at that address (72, which is B) into that
+ * name.
+ *
+ *
+ * To create these numbers for your own layout, simply find the right character
+ * in the hex editor, note its offset, and subtract:
+ *     (character's offset - script's offset)
+ * And put the result in the corresponding position in the table.
+ *
+ *
+ * This is the character table that ShadowOne333 used with the example layout
+ * up above:
+ * "[05 07 09 0B 0D 0F 11 13 15 FF FF 1B 1D FF]"
+ * "[23 25 27 29 2B 2D 2F 31 33 FF FF 39 3B FF]"
+ * "[41 43 45 47 49 4B 4D 4F 51 FF FF 57 59 FF]"
+ * "[5F 61 63 65 67 69 6B FF FF FF FF 71 73 FF]"
+ * "[79 7B 7D 7F 81 83 85 87 89 8B FF 91 93 FF]"
+ * "[FF FF FF FF FF FF FF FF FF FF FF 99 9B FF]"
+ *
+ *
+ * Unfortunately, there is only one character table, and it is used with all 
+ * layouts. This means all of your naming screen layouts must all be structured
+ * similarly to each other.
+ */
+
+// Original offset: C20912
+character_table: {
+    "[05 07 09 0B 0D 0F 11 13 15 FF FF 1B 1D FF]"
+    "[23 25 27 29 2B 2D 2F 31 33 FF FF 39 3B FF]"
+    "[41 43 45 47 49 4B 4D 4F 51 FF FF 57 59 FF]"
+    "[5F 61 63 65 67 69 6B 6D 6F 71 FF 77 79 FF]"
+    "[FF FF FF FF FF FF FF FF FF FF FF 7F 81 FF]"
+}
+
+/**
+ * MAGIC
+ * Do not edit anything past this point in the file.
+ */
+
+ROM[0xEFA6D3] = {
+    main_capital
+    main_small
+    player_capital
+    player_small
+    footer_main
+    footer_player
+}
+
+ROM[0xC1E929] = JML (line6checks)
+ROM[0xC1E997] = JML (line4checks)
+ROM[0xC1E992] = CMP_i (capital_small_y)
+ROM[0xC440A2] = LDA_xl (character_table)
+
+line6checks: {
+    LDA_d (0x22)
+    CMP_i (dontcare_backspace_ok_y)
+    BNE_a (not_line6)
+    LDA_d (0x20)
+    CMP_i (dontcare_x)
+    BEQ_a (dontcare_selected)
+    CMP_i (backspace_x)
+    BEQ_a (backspace_selected)
+    CMP_i (ok_x)
+    BEQ_a (ok_selected)
+    JML (0xC1EA07)
+not_line6:
+    JML (0xC1E989)
+dontcare_selected:
+    JML (0xC1E941)
+backspace_selected:
+    JML (0xC1E956)
+ok_selected:
+    JML (0xC1E97F)
+}
+
+line4checks: {
+    LDA_d (0x20)
+    CMP_i (capital_x)
+    BEQ_a (capital_selected)
+    CMP_i (small_x)
+    BEQ_a (small_selected)
+    JML (0xC1E9AF)
+capital_selected:
+    JML (0xC1E9A2)
+small_selected:
+    JML (0xC1E9A7)
+}

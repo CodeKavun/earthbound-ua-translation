@@ -1,0 +1,446 @@
+/*
+ * EarthBound Text Dump
+ * Time: 21:34:20 - 24/01/2013
+ * Generated using CCScriptWriter.
+ */
+
+command e(label) "{long label}"
+
+// Text Data
+l_0xc7c1f7:
+    call(data_57.l_0xc9b226) "[06 80 01 {e(l_0xc7c204)}]" eob
+
+l_0xc7c204:
+    "{set(flag 546)}" eob
+
+l_0xc7c208:
+    "[1F 15 6A 00 60 01 01]    {unset(flag 2)}               " call(data_36.l_0xc7dd6b) "{music(36)}" call(l_0xc7c54b) "{set(flag 2)}               [1F 61]                      {counter(1)}" call(data_36.l_0xc7dc7f) "[1B 02 {e(l_0xc7c258)}]{window_open(1)}@The power of Magnet Hill" call(l_0xc7c55d) goto(l_0xc7c258)
+
+l_0xc7c258:
+    call(l_0xc7c57d) "{set(flag 4)}{music_resume}[06 BA 00 {e(l_0xc7c2c5)}]{window_open(1)}@[1C 02 01] saw a baby's bottle, but just for an instant.[03]{pause(60)}" linebreak
+    "@[1C 02 01]'s Sound Stone recorded the melody of Magnet Hill.{wait}{set(flag 186)}{set(flag 494)}{window_closetop}" goto(l_0xc7c2c5)
+
+l_0xc7c2c5:
+    eob
+
+l_0xc7c2c6:
+    "[1F 15 6A 00 60 01 01]    {unset(flag 2)}               " call(data_36.l_0xc7dd6b) "{music(37)}" call(l_0xc7c54b) "{set(flag 2)}               [1F 61]                      {counter(1)}" call(data_36.l_0xc7dc7f) "[1B 02 {e(l_0xc7c317)}]{window_open(1)}@The power of Pink Cloud" call(l_0xc7c55d) goto(l_0xc7c317)
+
+l_0xc7c317:
+    call(l_0xc7c57d) "{set(flag 4)}{music_resume}[06 BB 00 {e(l_0xc7c38a)}]{window_open(1)}@[1C 02 01] had a short vision of seeing his mother when she was young.[03]{pause(60)}" linebreak
+    "@[1C 02 01]'s Sound Stone recorded the melody of the Pink Cloud.{wait}{set(flag 187)}{window_closetop}" goto(l_0xc7c38a)
+
+l_0xc7c38a:
+    call(data_57.l_0xc9b226) "[06 80 01 {e(l_0xc7c397)}]" eob
+
+l_0xc7c397:
+    "{set(flag 547)}" eob
+
+l_0xc7c39b:
+    "[06 BC 00 {e(l_0xc7c3c2)}]" call(l_0xc7c57d) "{pause(1)}[1F E1 1A 02 3C][1F 14 01][1F 15 6A 00 61 01 01]       [1F 61]                                              " goto(l_0xc7c3c2)
+
+l_0xc7c3c2:
+    "[1F 15 6A 00 60 01 01]    {unset(flag 2)}               " call(data_36.l_0xc7dd6b) "{music(38)}" call(l_0xc7c54b) "{set(flag 2)}               [1F 61]                      {counter(1)}" call(data_36.l_0xc7dc7f) "[1B 02 {e(l_0xc7c412)}]{window_open(1)}@The power of Lumine Hall" call(l_0xc7c55d) goto(l_0xc7c412)
+
+l_0xc7c412:
+    "{set(flag 4)}" call(l_0xc7c57d) "{music_resume}[06 BC 00 {e(l_0xc7c478)}]{window_open(1)}@[1C 02 01] saw a vision of his father holding him.[03]{pause(60)}" linebreak
+    "@[1C 02 01]'s Sound Stone recorded the melody of Lumine Hall.{wait}{set(flag 188)}{window_closetop}" goto(l_0xc7c478)
+
+l_0xc7c478:
+    eob
+
+l_0xc7c479:
+    "[1F 15 6A 00 60 01 01]    {unset(flag 2)}               " call(data_36.l_0xc7dd6b) "{music(39)}" call(l_0xc7c54b) "{set(flag 2)}               [1F 61]                      {counter(1)}" call(data_36.l_0xc7dc7f) "[1B 02 {e(l_0xc7c4c9)}]{window_open(1)}@The power of Fire Spring" call(l_0xc7c55d) goto(l_0xc7c4c9)
+
+l_0xc7c4c9:
+    "{set(flag 4)}" call(l_0xc7c57d) "{music_resume}[06 BD 00 {e(l_0xc7c53a)}]{window_open(1)}@[1C 02 01] had the feeling that he was being watched by himself as a baby.[03]{pause(60)}" linebreak
+    "@[1C 02 01]'s Sound Stone recorded the melody of the Fire Spring.{wait}{set(flag 189)}{window_closetop}" goto(l_0xc7c53a)
+
+l_0xc7c53a:
+    call(data_57.l_0xc9b226) "[06 80 01 {e(l_0xc7c547)}]" eob
+
+l_0xc7c547:
+    "{set(flag 548)}" eob
+
+l_0xc7c54b:
+    "{pause(120)}{pause(120)}{pause(120)}{pause(120)}{pause(120)}" eob
+
+l_0xc7c556:
+    "{set(flag 3)}{unset(flag 524)}" eob
+
+l_0xc7c55d:
+    " flowed into [1C 02 01]." next
+    "@[1C 02 01] was revived.[03]{window_closeall}" eob
+
+l_0xc7c57d:
+    call(data_49.l_0xc915f4) "{sound(37)}{pause(90)}" eob
+
+l_0xc7c588:
+    "[06 94 02 {e(data_25.l_0xc6bef9)}]@З ким ти говориш?" end
+
+l_0xc7c59e:
+    "[06 B0 01 {e(data_09.l_0xc58ebb)}]@Тут немає ніяких проблем." end
+
+l_0xc7c5b0:
+    "[19 19 00 00]{store_registers}" call(data_36.l_0xc7dc85) "{load_registers}{swap}" eob
+
+l_0xc7c5c0:
+    "{load_registers}{swap}" eob
+
+l_0xc7c5c5:
+    "himself." end
+
+l_0xc7c5cd:
+    "{store_registers}" call(data_36.l_0xc7dc85) "[1B 03 {e(l_0xc7c5e4)}]{load_registers}{swap}[1C 02 00].[03]" eob
+
+l_0xc7c5e4:
+    "{load_registers}{swap}[1C 02 00]'s belongings.[03]" eob
+
+l_0xc7c5f7:
+    "{swap}[1C 02 00] ###failed.[03]" end
+
+l_0xc7c609:
+    "{store_registers}[19 19 00 00]{swap}{result_is(104)}[1B 03 {e(l_0xc7c669)}]{load_registers}[19 19 00 00][1D 0B 00][1B 02 {e(l_0xc7c655)}]{load_registers}[1D 0F 00 00]{store_registers}" call(data_36.l_0xc7dc85) "[1B 03 {e(l_0xc7c693)}]{load_registers}{swap}@[1C 02 00] викидає" linebreak
+    "  {swap}[1C 05 00]." end
+
+l_0xc7c655:
+    "@[1C 05 00] не може бути викинутим." end
+
+l_0xc7c669:
+    "@Don't spit your gum out. " next
+    "@Even if it has lost its flavor..." end
+
+l_0xc7c693:
+    "{load_registers}{swap}@" call(data_37.l_0xc7e74e) linebreak
+    "  викидає" linebreak
+    "  {swap}[1C 05 00] від [1C 02 00]." end
+
+l_0xc7c6b6:
+    "[19 1F]{swap}@[1C 05 00] не може бути" linebreak
+    "  тобою використана ." end
+
+l_0xc7c6c9:
+    "[19 19 00 00]{swap}@Тільки [1C 02 00] є тим, хто може" linebreak
+    "  використати {swap}[1C 05 00]." end
+
+l_0xc7c6f1:
+    "[19 1F]{swap}@[1C 05 00] не може бути використана тут." end
+
+l_0xc7c705:
+    "{store_registers}[19 19 00 00]{swap}{result_is(104)}[1B 03 {e(l_0xc7c761)}]{load_registers}[19 19 00 00]@Why would you do that?" linebreak
+    "  The [1C 05 00] would probably make you barf." end
+
+l_0xc7c742:
+    "[19 19 00 00]@The [1C 05 00] is one of the items that can be equipped." end
+
+l_0xc7c761:
+    "{load_registers}[19 19 00 00]{swap}@[1C 02 00] chewed" linebreak
+    "  the {swap}[1C 05 00]." end
+
+l_0xc7c77e:
+    "@[1C 02 00] got sunstroke." end
+
+l_0xc7c78f:
+    "@[1C 02 00] was horribly poisoned and collapsed." end
+
+l_0xc7c7af:
+    "@Alert!" next
+    "@{user}'s condition is critical." next
+    "@" call(data_36.l_0xc7e61d) " will collapse if " call(data_37.l_0xc7e66e) " condition isn't treated." next
+    "@Be careful!" end
+
+l_0xc7c802:
+    "@There is only one seat,{pause(15)} so you can't ride the bike now." end
+
+l_0xc7c823:
+    "@You cannot ride your bike here." end
+
+l_0xc7c833:
+    "@You should ride your bike in a less confining area." end
+
+l_0xc7c850:
+    "[06 F2 02 {e(l_0xc7c865)}]@You cannot teleport here." end
+
+l_0xc7c865:
+    "[06 F4 02 {e(l_0xc7c93f)}][06 B4 00 {e(l_0xc7c8c0)}][06 B5 00 {e(l_0xc7c912)}][06 85 02 {e(l_0xc7c912)}][06 BE 01 {e(l_0xc7c8e8)}][06 86 02 {e(l_0xc7c8e8)}][06 87 02 {e(l_0xc7c8e8)}][06 88 02 {e(l_0xc7c8e8)}][06 A3 02 {e(l_0xc7c912)}][06 B6 02 {e(l_0xc7c912)}][06 B7 02 {e(l_0xc7c912)}]@You cannot teleport now." end
+
+l_0xc7c8c0:
+    "@You should wait to teleport until after the pizza arrives." end
+
+l_0xc7c8e8:
+    "@You should wait to teleport until after a customer has shown up." end
+
+l_0xc7c912:
+    "@You should wait to teleport until after Escargo Express arrives." end
+
+l_0xc7c93f:
+    "@You cannot teleport while Dungeon Man is with you." end
+
+l_0xc7c95e:
+    "[19 10 01]{swap}@[1C 02 00] got off the bike." end
+
+l_0xc7c973:
+    newline
+    "@We're very sorry..." next
+    "@but the record of adventure number {delta} has been lost..." end
+
+l_0xc7c9a8:
+    "[06 49 00 {e(l_0xc7ca3c)}][19 10 01]{swap}@Hello,{pause(15)} this is the Stoic Club." next
+    "@Oh,{pause(15)} [1C 02 00], {swap}" call(data_37.l_0xc7e6b3) "!{pause(20)}" linebreak
+    "  Would you like to make a reservation? " next
+    "@Certainly." next
+    "@We are looking forward to having you here.{pause(15)}  Thank you." next
+    "@Click!  Beep-beep-beep... {wait}{sound(11)}{set(flag 337)}" eob
+
+l_0xc7ca3c:
+    "@Yo, this is the <The Lazy Cowpoke Stop'n Go>" next
+    "@Yeah, we're a new truck stop... we just opened..." next
+    "@What's that?  The Stoic Club?!  That lame old place shut down ages ago!" next
+    "@We totally remodeled the place!" next
+    "@Now we've got loud music, great food, and really rowdy crowds..." next
+    "@Listen, buddy, I'm too busy to talk to you right now! " next
+    "@Just drop by anytime!" linebreak
+    "  You come, you enjoy...  I promise! " next
+    "@Click!  Beep-beep-beep...{wait}{sound(11)}" eob
+
+l_0xc7cb5f:
+    "[19 10 01]{rtoarg}{result_is(1)}[1B 02 {e(l_0xc7d1c1)}][06 49 00 {e(l_0xc7d226)}]{isset(flag 688)}[1B 02 {e(l_0xc7cc35)}][1D 0D 01 06 02][1B 03 {e(l_0xc7cdae)}][1D 0D 01 01 08][1B 03 {e(l_0xc7ccec)}][06 B1 02 {e(l_0xc7ce96)}][1D 21 07][09 07 {e(l_0xc7cbba)} {e(l_0xc7cbba)} {e(l_0xc7cf6c)} {e(l_0xc7cf6c)} {e(l_0xc7d05a)} {e(l_0xc7d05a)} {e(l_0xc7d102)}]" goto(l_0xc7cbba)
+
+l_0xc7cbba:
+    "@[1C 01 08]?" next
+    "@....." next
+    "@Нічого не кажи; Я точно знаю, про що ти думаєш." next
+    "@Синочку, хто б міг подумати, що він такий хоробрий хлопчик?" next
+    "@Ох, так... ти герой, дорогенький!..." next
+    "@Клік!  Біп-біп-біп...{wait}{sound(11)}" eob
+
+l_0xc7cc35:
+    "@Це раптом не ти, [1C 01 08]?" next
+    "@Ти задзвонив скоріше, ніж я думала..." next
+    "@У всіх тут все добре." next
+    "@А так, Трейсі почала працбвати на неповну ставку в  Ескарґо Експрес." next
+    "@Ось, я дам тобі з нею побалакати." next
+    "@І дзвони мені, коли в тебе буде час.  ... Ох... в тебе взагалі немає вільного часу?" next
+    "@Добре, а ось і Трейсі.[03]{pause(20)}" linebreak
+    "{set(flag 201)}{set(flag 688)}" goto(data_19.l_0xc636e5)
+
+l_0xc7ccec:
+    "@Алло, [1C 01 08]!" linebreak
+    "  Тебе погано чути!" next
+    "@Ти застудився чи що?" next
+    "@Які б небезпечні речі ти не робів, пом'ятай, що добре здоров'я це важливо! " next
+    "@Постарайся бути якомога здоровіше, навіть, якщо воно тебе вбиває!" next
+    "@Добре, мені краще б піти, бо омлет мабуть вже підгорає!  Бувай!" next
+    "@Клік!  Біп-біп-біп... {wait}{sound(11)}" eob
+
+l_0xc7cdae:
+    "@Привіт, [1C 01 08]?" linebreak
+    "  Що з тобою?  Ти такий сумний..." next
+    "@Ти сумуєш за домом?...  Добре, я знала, що будуть такі дні. " next
+    "@Це має покращити твоє самопочуття, слухаючи солодкий голос твоєї мами." next
+    "@...Тож, тепер ти почуваєш себе краще?" next
+    "@Гаразд, мені краще йти.  Я зараз на середені прасування.  Бувай!" next
+    "{sound(11)}  Клік!  Біп-біп-біп...[03]{window_closeall}" goto(l_0xc7ce73)
+
+l_0xc7ce73:
+    "{pause(30)}{window_open(1)}@[1C 01 08] перестав сумувати за домом.[19 05 01 06 01]{sound(37)}{wait}{window_closeall}" eob
+
+l_0xc7ce96:
+    "@Алло, [1C 01 08]?" next
+    "@Отже, я чула, що ти знайшов собі дівчину підчас подорожі..." next
+    "@Гаразд, чому тобі не розповісти про неї пізніше..." next
+    "@Розумієш, в мене передчуття, що вона прямо біля тебе, або щось типу того." next
+    "@Добре, якщо вона біля тебе, то передай їй привіт від мене." next
+    "@А тепер я маю йти... Я прямо на середені чищення тоалету... Бувай!" next
+    "{sound(11)}  Клік!  Біп-біп-біп...{wait}{unset(flag 689)}" eob
+
+l_0xc7cf6c:
+    "@Алло, [1C 01 08]?" next
+    "@Отже, як йде твоя подорож?" next
+    "@...Хмммм, розумію..." linebreak
+    "  Звучить так, неначе в тебе важкий період зараз." next
+    "@Твій вчитель тут заскочив, чекає на тебе... не хвилюйся--я пояснила йому." next
+    "@У нас тут все гаразд... просто йди в своєму русі!" next
+    "@Добре, моя мильна опера наближається до дуже зайнятої частини, тому мені краще піти." next
+    "@Бувай!" next
+    "{sound(11)}@Клік!  Біп-біп-біп..." end
+
+l_0xc7d05a:
+    "@Алло?  Алло?!" linebreak
+    "  Це ти, [1C 01 08]?" next
+    "@Мені тяжко розібрати, про що ти говориш..." next
+    "@Звучить так, неначе ти дзвониш прямо з місяця, або типу того." next
+    "@...Якщо з тобою все гаразд, то це чудово. " next
+    "@Слухай, я маю йти.  [1C 01 03] має прийняти ванну від бліх." next
+    "@Бувай!" linebreak
+    "{sound(11)}  Клік!  Біп-біп-біп..." end
+
+l_0xc7d102:
+    "@Клік!  Біп-біп-біп..." next
+    "@...Ні, ні... я просто пожартувала..." next
+    "@Я хотіла побачити, чи моє нове вираження здивувало б тебе." next
+    "@З усіма тут все гаразд.  *затяжка*" next
+    "@Маю надію, що і з тобою все гаразд." next
+    "@Добре, мені краще йти... я на середені моєї танцювальної аеробіки!" next
+    "@Бувай!" linebreak
+    "{sound(11)}  Клік!  Біп-біп-біп..." end
+
+l_0xc7d1c1:
+    "[19 10 01]{swap}@Ох, це ж раптом не друг мого синочка [1C 02 00]?" next
+    "@З моїм золотцем [1C 01 08] все гаразд?" next
+    "@Будь-ласка завітай до нас, коли перепаде час." next
+    "{sound(11)}@Клік!  Біп-біп-біп..." end
+
+l_0xc7d226:
+    "[06 83 02 {e(l_0xc7d2f6)}]@Алло, [1C 01 08]?" linebreak
+    "  Ти нарешті пожеш повернутися додому?  ...То це означає..." next
+    "@Ох, дякувати Богові!" next
+    "@Ти пройшов це і ти в безпеці!  Я точно не знаю, що ти зробив, але..." next
+    "@У будь-якому випадку, якщо ти прийдеш швидко, я зроблю тобі [1C 01 04]." next
+    "@Повертайся як найскоріш." next
+    "@Не можу дочекатися твого ясного й блискочого обличка!" next
+    "{sound(11)}@Клік!  Біп-біп-біп..." end
+
+l_0xc7d2f6:
+    "@Я думала, що ми б могли роздивитися твій альбом разом..." next
+    "@Отже, що ти робиш, дзвонячи мені?" linebreak
+    "{sound(11)}  Клік!  Біп-біп-біп..." end
+
+l_0xc7d33e:
+    "[06 49 00 {e(data_55.l_0xc9992f)}]{music(115)}{pause(60)}{wait}[1F 01 00]{sound(11)}[06 10 00 {e(l_0xc7d36e)}][06 95 00 {e(l_0xc7d4af)}][06 0E 00 {e(l_0xc7d36e)}][06 80 00 {e(l_0xc7d627)}]" goto(l_0xc7d36e)
+
+l_0xc7d36e:
+    "{window_open(1)}[19 10 01]{result_is(1)}[1B 02 {e(l_0xc7d630)}]@Алло, це твій тато." next
+    "@Я вже з тобою не балакав досить довгий час..." next
+    "@Я не маю втручатись" linebreak
+    "  в твої справи," next
+    "@але чи не думаєш, що було б кращою ідеєю взяти перерву?" next
+    "[19 02]Так" eob
+
+l_0xc7d3de:
+    "  [19 02]Ні" eob
+
+l_0xc7d3e5:
+    " [1C 07 02][11]{clearline}[09 02 {e(l_0xc7d43b)} {e(l_0xc7d3f5)}]" goto(l_0xc7d3f5)
+
+l_0xc7d3f5:
+    "@Аа, розумію..." next
+    "@Гаразд, це, звісно, не робить мене щасливим," next
+    "@але я розумію твою позицію про долю всього світу." next
+    call(data_36.l_0xc7de54) eob
+
+l_0xc7d43b:
+    "@Гаразд.{pause(20)}  Тобі треба знайти місце для відпочинку в найближчому місті." next
+    "@Коли ти знайдеш готель,{pause(15)} задзвони своєму старому доброму татусю." next
+    "@І так, будь пильним перед поганими хлопцями![03]" call(data_36.l_0xc7de54) eob
+
+l_0xc7d4af:
+    "{window_open(1)}@Алло, це твій тато." next
+    "@Я вже з тобою не балакав досить довгий час..." next
+    "@Я не маю втручатись в твої справи," next
+    "@але чи не думаєш, що було б кращою ідеєю взяти перерву?" next
+    "[19 02]Так" eob
+
+l_0xc7d510:
+    "  [19 02]Ні" eob
+
+l_0xc7d517:
+    "[1C 07 02][11]{clearline}[09 02 {e(l_0xc7d585)} {e(l_0xc7d526)}]" goto(l_0xc7d526)
+
+l_0xc7d526:
+    "@Аххх... а ти хто...?  Отже, це не [1C 01 08]." next
+    "@А добре, усе гаразд...  Як там як, не наружуй себе на пригоди." next
+    "@Щасти... ким би ти там не був.[03]" call(data_36.l_0xc7de54) eob
+
+l_0xc7d585:
+    "@Аххх... а ти хто...?  Отже, це не [1C 01 08]." next
+    "@Мені приємно, що ти все ж таки взяв мою рекомендацію." next
+    "@Гаразд, тоді.  Піди до найближчого міста і відпочинь." next
+    "@Перед тим як ти відпочинеш, задзвони мені." next
+    "@Будь обережним перед підозрілими типами...[03]" call(data_36.l_0xc7de54) eob
+
+l_0xc7d627:
+    "{window_open(1)}" call(l_0xc7d4af) eob
+
+l_0xc7d630:
+    "{window_open(1)}[19 10 01]@Алло, це твій тато." next
+    "@Я вже з тобою не балакав досить довгий час..." next
+    "@Я не маю втручатись в твої справи," next
+    "@але чи не думаєш, що було б кращою ідеєю взяти перерву?" next
+    "[19 02]Так" eob
+
+l_0xc7d694:
+    "  [19 02]Ні" eob
+
+l_0xc7d69b:
+    "[1C 07 02][11]{clearline}[09 02 {e(l_0xc7d748)} {e(l_0xc7d6aa)}]" goto(l_0xc7d6aa)
+
+l_0xc7d6aa:
+    "@Аххх... а ти хто...?  Отже, це не [1C 01 08]." next
+    "@Я не знаю хто ви, але дякую, що дбаєте про мого сина, [1C 01 08]." next
+    "@Коли ви продовжите свою подорож, не перетруджуйте себе." next
+    "@Ви мабуть роботящі, якщо ви друзі мого сина [1C 01 08]." next
+    "@Пам'ятайте, я на вас покладаюсь![03]" call(data_36.l_0xc7de54) eob
+
+l_0xc7d748:
+    "@Аххх... а ти хто...?  Отже, це не [1C 01 08]." next
+    "@Ким би ви там не були, дякую, що ви наглядаєте за моїм сином, [1C 01 08]." next
+    "@Я бажаю, щоб ви добре відпочили." next
+    "@Ви себе будете відчувати більш відновленими." next
+    "@Ви також, мабуть, матимете більше вдачі в своїй пригоді." next
+    "@Підіть до найближчого міста і відпочиньте." next
+    "@Якщо побачите телефон, будь-ласка, задзвоніть татусю хлопчика на ім'я [1C 01 08]..." next
+    "@гаразд, насправді, це я." next
+    "@І, обходьте забіяк десятою дорогою.[03]" call(data_36.l_0xc7de54) eob
+
+l_0xc7d84f:
+    "{set(flag 226)}" call(l_0xc7d87f) "{unset(flag 226)}" eob
+
+l_0xc7d85b:
+    "{set(flag 227)}" call(l_0xc7d87f) "{unset(flag 227)}" eob
+
+l_0xc7d867:
+    "{set(flag 228)}" call(l_0xc7d87f) "{unset(flag 228)}" eob
+
+l_0xc7d873:
+    "{set(flag 229)}" call(l_0xc7d87f) "{unset(flag 229)}" eob
+
+l_0xc7d87f:
+    "{store_registers}[1F A2][1B 05][19 10 01]{swap}" call(l_0xc7d90d) "{sound(16)}[1F A0]" next
+    "[1B 06][1B 03 {e(l_0xc7d907)}]" call(l_0xc7d92a) "{load_registers}[1B 02 {e(l_0xc7d8ee)}]{swap}" call(l_0xc7d947) "[1D 03 FF][1B 02 {e(l_0xc7d8e6)}]{store_registers}" call(data_36.l_0xc7dc85) "[1B 03 {e(l_0xc7d8d9)}]{load_registers}{swap}" call(l_0xc7d958) "[1D 0E 00 00]{sound(116)}" eob
+
+l_0xc7d8d9:
+    call(l_0xc7d967) "[1D 0E 00 00]{sound(116)}" eob
+
+l_0xc7d8e6:
+    call(l_0xc7d991) "[1F A1]" eob
+
+l_0xc7d8ee:
+    "{swap}[1B 02 {e(l_0xc7d907)}]{swap}[1D 08 00 00]{open_wallet}" call(data_36.l_0xc7d9ae) "{sound(116)}" eob
+
+l_0xc7d907:
+    call(data_36.l_0xc7d9cf) eob
+
+l_0xc7d90d:
+    "[06 E2 00 {e(data_36.l_0xc7d9ec)}][06 E3 00 {e(data_36.l_0xc7da0c)}][06 E4 00 {e(data_36.l_0xc7da58)}][06 E5 00 {e(data_36.l_0xc7da8f)}]" eob
+
+l_0xc7d92a:
+    "[06 E2 00 {e(data_36.l_0xc7d9fc)}][06 E3 00 {e(data_36.l_0xc7da23)}][06 E4 00 {e(data_36.l_0xc7da68)}][06 E5 00 {e(data_36.l_0xc7daa1)}]" eob
+
+l_0xc7d947:
+    newline
+    "@Тут знаходиться [1C 05 00] всередені![03]" eob
+
+l_0xc7d958:
+    newline
+    "@[1C 02 00] бере це.{swap}" end
+
+l_0xc7d967:
+    "[19 10 01]{swap}" newline
+    "@[1C 02 00] додає{load_registers} [1C 05 00] " linebreak
+    " до речей {swap}[1C 02 00](-а[ 5F ]-и).{swap}" end
+
+l_0xc7d991:
+    newline
+    "[19 10 01]@Але, " call(data_36.l_0xc7e5f3) " має вже забагато речей." end
+

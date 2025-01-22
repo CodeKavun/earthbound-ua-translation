@@ -1,0 +1,468 @@
+/*
+ * EarthBound Text Dump
+ * Time: 21:34:20 - 24/01/2013
+ * Generated using CCScriptWriter.
+ */
+
+command e(label) "{long label}"
+
+// Text Data
+l_0xef6bef:
+    newline
+    "@{target} тепер має" linebreak
+    "  затверділе тіло!{sound(83)}[03]" eob
+
+l_0xef6c0b:
+    newline
+    "@{target} не може" linebreak
+    "  зконцентруватися!{sound(83)}" next
+    "@{target} не може" linebreak
+    "  використовувати ПСІ![03]" eob
+
+l_0xef6c3a:
+    newline
+    "@{target} відчуває себе" linebreak
+    "  трохи дивно...{sound(83)}[03]" eob
+
+l_0xef6c55:
+    newline
+    "@{target} засинає!{sound(83)}[03]" eob
+
+l_0xef6c6b:
+    newline
+    "@{target} поранено й падає...{sound(32)}[03]" eob
+
+l_0xef6c84:
+    newline
+    "@{target} поранено" linebreak
+    "  й падає...{sound(32)}{unset(flag 587)}" next
+    "[06 CF 00 {e(l_0xef6ce2)}][06 CE 00 {e(l_0xef6cd9)}][06 CD 00 {e(l_0xef6cd0)}][06 CC 00 {e(l_0xef6cc7)}]{set(flag 204)}" call(l_0xef6ceb) eob
+
+l_0xef6cc7:
+    "{set(flag 205)}" call(l_0xef6ceb) eob
+
+l_0xef6cd0:
+    "{set(flag 206)}" call(l_0xef6ceb) eob
+
+l_0xef6cd9:
+    "{set(flag 207)}" call(l_0xef6ceb) eob
+
+l_0xef6ce2:
+    "{set(flag 208)}" call(l_0xef6ceb) eob
+
+l_0xef6ceb:
+    "[19 10 02]{store_registers}{result_is(11)}[1B 02 {e(l_0xef6cfc)}][1F 12 0B]" eob
+
+l_0xef6cfc:
+    "{load_registers}{result_is(12)}[1B 02 {e(l_0xef6d0a)}][1F 12 0C]" eob
+
+l_0xef6d0a:
+    "{load_registers}{result_is(13)}[1B 02 {e(l_0xef6d18)}][1F 12 0D]" eob
+
+l_0xef6d18:
+    "{load_registers}{result_is(14)}[1B 02 {e(l_0xef6d26)}][1F 12 0E]" eob
+
+l_0xef6d26:
+    "[1F 12 0F]" eob
+
+l_0xef6d2a:
+    newline
+    "@{target} стає" linebreak
+    "  купкою пуху...{sound(32)}" next
+    "[1D 01 FF 02]" eob
+
+l_0xef6d4c:
+    newline
+    "@{target} стає" linebreak
+    "  великою купкою пуху...{sound(32)}" next
+    "[1D 01 FF 03]" eob
+
+l_0xef6d71:
+    newline
+    "@{target} було здолано!{sound(33)}" eob
+
+l_0xef6d83:
+    newline
+    "@{target} перестає рухатись!{sound(33)}" eob
+
+l_0xef6d96:
+    newline
+    "@{target} заспокоюється!{sound(33)}" eob
+
+l_0xef6da7:
+    newline
+    "@{target} зникає!{sound(33)}" eob
+
+l_0xef6db8:
+    newline
+    "@Фігура у вигляді {target} розчиняється в повітрі!{sound(33)}" eob
+
+l_0xef6dd8:
+    newline
+    "@{target} розламується на частини!{sound(33)}" eob
+
+l_0xef6df0:
+    newline
+    "@{target} знищено!{sound(33)}" eob
+
+l_0xef6e03:
+    newline
+    "@{target} остаточно зламано!{sound(33)}" eob
+
+l_0xef6e19:
+    newline
+    "@{target} повертається до свого нормального обліку!{sound(33)}" eob
+
+l_0xef6e31:
+    newline
+    "@{target} закопується під землю!{sound(33)}" eob
+
+l_0xef6e4a:
+    newline
+    "@{target} тепер має" linebreak
+    "  відновлене тіло!{sound(37)}[03]" eob
+
+l_0xef6e67:
+    newline
+    "@{target} тепер має" linebreak
+    "  пройдене оніміння!{sound(37)}[03]" eob
+
+l_0xef6e81:
+    newline
+    "@{target} відчуває себе" linebreak
+    "  більш-менш краще!{sound(37)}[03]" eob
+
+l_0xef6e97:
+    newline
+    "@Отруєння було видалено з" linebreak
+    "  тіла {target}(-а[ 5F ]-и)!{sound(37)}[03]" eob
+
+l_0xef6ebc:
+    newline
+    "@{target} виліковується" linebreak
+    "  від простуди!{sound(37)}[03]" eob
+
+l_0xef6ed1:
+    newline
+    "@{target} нарешті" linebreak
+    "  перестає плакати...{sound(37)}[03]" eob
+
+l_0xef6eed:
+    newline
+    "@{target} тепер знову" linebreak
+    "  вільно рухається!{sound(37)}[03]" eob
+
+l_0xef6f0b:
+    newline
+    "@{target} може" linebreak
+    "  рухатися!{sound(37)}[03]" eob
+
+l_0xef6f1e:
+    newline
+    "@{target} знову" linebreak
+    "  отямується!{sound(37)}[03]" eob
+
+l_0xef6f38:
+    newline
+    "@{target} виліковується" linebreak
+    "  від сонячного удару!{sound(37)}[03]" eob
+
+l_0xef6f54:
+    newline
+    "@{target} просинається!{sound(37)}[03]" eob
+
+l_0xef6f64:
+    newline
+    "@{target} може" linebreak
+    "  концентруватись!{sound(37)}[03]" eob
+
+l_0xef6f7c:
+    newline
+    "@{target} оживає!{sound(37)}[03]" eob
+
+l_0xef6f8e:
+    newline
+    "@Не працює...[03]" eob
+
+l_0xef6f9a:
+    newline
+    "@Тіло {target}(-а[ 5F ]-и) захищено щитом світла![03]" eob
+
+l_0xef6fbd:
+    newline
+    "@Щит {target}(-а[ 5F ]-и) посилено![03]" eob
+
+l_0xef6fd3:
+    newline
+    "@Тіло {target}(-а[ 5F ]-и) захищено посиленим щитом світла![03]" eob
+
+l_0xef6ff4:
+    newline
+    "@Посилений щит {target}(-а[ 5F ]-и) посилено![03]" eob
+
+l_0xef700c:
+    newline
+    "@Тіло {target}(-а[ 5F ]-и) захищено психічним щитом![03]" eob
+
+l_0xef7032:
+    newline
+    "@Психічний щит {target}(-а[ 5F ]-и) посилено![03]" eob
+
+l_0xef7050:
+    newline
+    "@Тіло {target}(-а[ 5F ]-и) захищено посиленним психічним щитом!" eob
+
+l_0xef707a:
+    newline
+    "@Посилений психічний щит {target}(-а[ 5F ]-и) посилено![03]" eob
+
+l_0xef7099:
+    newline
+    "@Щит {target}(-а[ 5F ]-и)" linebreak
+    "  зник![03]" eob
+
+l_0xef70b1:
+    newline
+    "@Посилений щит" linebreak
+    "  відбив атаку!{sound(93)}{pause(30)}[03]" eob
+
+l_0xef70d2:
+    newline
+    "@Посилений психічний щит" linebreak
+    "[19 1F]{swap}  відбив [1C 12 00]!{sound(93)}[03]" eob
+
+l_0xef70fa:
+    newline
+    "@Психічний щит {target}(-а[ 5F ]-и) нейтралізував[19 1F]{swap} [1C 12 00]![03]" eob
+
+l_0xef7123:
+    newline
+    "@Ефекти з ПСІ у" linebreak
+    "  {target}(-а[ 5F ]-и) зникли!{sound(41)}[03]" eob
+
+l_0xef7142:
+    newline
+    "@[1C 01 4A] повертається" linebreak
+    "  до своєї істинної форми![03]" eob
+
+l_0xef7160:
+    newline
+    "@Значок Франкліна відбив" linebreak
+    "  блискавку!{sound(93)}[03]" eob
+
+l_0xef7186:
+    newline
+    "@{user} не може рухатися![03]" eob
+
+l_0xef7192:
+    newline
+    "@{user} має оніміле" linebreak
+    "  тіло й " call(data_36.l_0xc7e602) " не може рухатися![03]" eob
+
+l_0xef71b4:
+    newline
+    "@{user} відчуває себе" linebreak
+    "  занадто хворим, щоб рухатися...[03]" eob
+
+l_0xef71cc:
+    newline
+    "@{target} має" linebreak
+    "  отруєння![03]" eob
+
+l_0xef71df:
+    newline
+    "@{user} впадає" linebreak
+    "  в сон![03]" eob
+
+l_0xef71f6:
+    newline
+    "@{user} не може" linebreak
+    "  рухатись навколо![03]" eob
+
+l_0xef720c:
+    newline
+    "[1F 41 08][1B 02 {e(l_0xef721e)}]{sound(55)}" goto(l_0xef7221)
+
+l_0xef721e:
+    "{sound(29)}" goto(l_0xef7221)
+
+l_0xef7221:
+    "@{user}[19 1F]{swap} застосовує" linebreak
+    "  [1C 12 00]!{sound(87)}" next
+    "@Але не дуже й то працює![03]" eob
+
+l_0xef7249:
+    newline
+    "@{target} в" linebreak
+    "  обороні![03]" eob
+
+l_0xef725a:
+    newline
+    "@{user} з'їжджає з глузду" linebreak
+    "  дзирячись на <Мед Мух>![03]" eob
+
+l_0xef727f:
+    "[1D 21 03][09 03 {e(l_0xef72a0)} {e(l_0xef72b9)} {e(l_0xef72db)}]" newline
+    "@{user} затужив за домом.[03]" eob
+
+l_0xef72a0:
+    newline
+    "@{user} раптово подумав про свою Маму.[03]" eob
+
+l_0xef72b9:
+    newline
+    "@{user} захотів з'їсти [1C 01 04] і почав жадати цього.[03]" eob
+
+l_0xef72db:
+    newline
+    "@{user} втратив всю мотивацію" linebreak
+    "  під час битви.[03]" eob
+
+l_0xef72f6:
+    eob
+
+l_0xef72f7:
+    newline
+    "@Чорний дим пішов з" linebreak
+    "  тіла {user}а!{prompt}" linebreak
+    "@" call(data_37.l_0xc7e6d7) " було" linebreak
+    "  покрито димом!{prompt}" linebreak
+    "@Ви не можите бачити нічого!{prompt}" eob
+
+l_0xef733d:
+    newline
+    "@Аж раптом," linebreak
+    "  якісь хлопці увірвались в кімнату!{prompt}{music(149)}{pause(60)}" newline
+    "@Це була Бігуча П'ятірка!{prompt}{window_closetop}{pause(30)}{window_open(1)}" newline
+    "[1F 62 00]@Щасливчик швидко пригнув за роботом!{prompt}{sound(11)}{pause(60)}{window_clear}@<Я перемкнув вимикач, і він зупинився. >" next
+    "@<Ха ха ха ха..." linebreak
+    "  Дідько, що за робот-невдаха.  Це ж так легко його було зупинити!>{pause(20)}{prompt}{window_clear}@<Це було діло в один клік!>{prompt}{pause(60)}[1F 62 01]{window_closetop}{window_open(14)}{set(flag 318)}" eob
+
+l_0xef7415:
+    "[1F 71 04 02]" newline
+    "@Аж раптом, [1C 02 04] спустився" linebreak
+    "  з неба!" eob
+
+l_0xef743b:
+    newline
+    "@[1C 02 04] використав свою нову силу,{prompt}" linebreak
+    "  ПК Зорепад!{prompt}" linebreak
+    eob
+
+l_0xef745f:
+    "[1D 21 08][09 08 {e(l_0xef749d)} {e(l_0xef74b0)} {e(l_0xef74c9)} {e(l_0xef74e6)} {e(l_0xef74fa)} {e(l_0xef7514)} {e(l_0xef7530)} {e(l_0xef7548)}]" newline
+    "@[1C 01 08] був використаний" linebreak
+    "  Поркі як щит![03]" eob
+
+l_0xef749d:
+    newline
+    "@Поркі прикинувся мертвим![03]" eob
+
+l_0xef74b0:
+    newline
+    "@Поркі претендує" linebreak
+    "  на плач![03]" eob
+
+l_0xef74c9:
+    newline
+    "@Поркі рясно" linebreak
+    "  вибачився![03]" eob
+
+l_0xef74e6:
+    newline
+    "@Поркі подумав" linebreak
+    "  про себе![03]" eob
+
+l_0xef74fa:
+    newline
+    "@Поркі задіяв" linebreak
+    "  всю невинність![03]" eob
+
+l_0xef7514:
+    newline
+    "@Поркі нещиро" linebreak
+    "  усміхнувся![03]" eob
+
+l_0xef7530:
+    newline
+    "@Поркі поскаржився" linebreak
+    "  на [1C 01 08]![03]" eob
+
+l_0xef7548:
+    newline
+    "@Поркі спробував" linebreak
+    "  приблизитись до ворога![03]" eob
+
+l_0xef7569:
+    newline
+    "@{user} гавкає![03]" eob
+
+l_0xef7579:
+    newline
+    "@{user} скандлює" linebreak
+    "  магічне заклинання![03]" eob
+
+l_0xef7591:
+    newline
+    eob
+
+l_0xef7593:
+    newline
+    "@{user} чухає" linebreak
+    "  своєю головою![03]" eob
+
+l_0xef75ab:
+    newline
+    "{sound(46)}@{target} отримує" linebreak
+    "  {delta} ПЗ шкоди![03]" eob
+
+l_0xef75c2:
+    newline
+    "{sound(30)}@{target} отримує" linebreak
+    "  {delta} ПЗ шкоди![03]" eob
+
+l_0xef75d9:
+    newline
+    "{sound(46)}@{target} отримує" linebreak
+    "  {delta} ПЗ шкоди![03]" eob
+
+l_0xef75f0:
+    newline
+    "{sound(30)}@{target} отримує" linebreak
+    "  {delta} ПЗ шкоди![03]" eob
+
+l_0xef7607:
+    newline
+    "{sound(47)}@{target} отримує" linebreak
+    "  {delta} ПЗ смертельної шкоди![03]" eob
+
+l_0xef7624:
+    newline
+    "{sound(31)}  [1C 08 01]" linebreak
+    "[03]" eob
+
+l_0xef7630:
+    newline
+    "  [1C 08 01]" linebreak
+    "{sound(47)}[03]" eob
+
+l_0xef763c:
+    newline
+    "{sound(35)}@{target} швидко" linebreak
+    "  увертається![03]" eob
+
+l_0xef7655:
+    newline
+    "{sound(35)}@{target} швидко" linebreak
+    "  увертається![03]" eob
+
+l_0xef766e:
+    newline
+    "@Не працює" linebreak
+    "  на {target}(-а[ 5F ]-у)![03]" eob
+
+l_0xef7682:
+    newline
+    "@Не працює" linebreak
+    "  на {target}(-а[ 5F ]-у)![03]" eob
+
