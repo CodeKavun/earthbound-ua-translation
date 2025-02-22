@@ -494,12 +494,12 @@ l_0xc6a3de:
     "@By the way, just what is PP anyway?..." end
 
 l_0xc6a458:
-    "@I came to buy condiments..." next
-    "@I wonder what would be good..." next
-    "@The right condiment makes a dish taste better," next
-    "@while the wrong one makes it taste worse." next
-    "@If the condiment matches the food," next
-    "@you will get more power than if you ate the food item plain." end
+    "@Я прийшла купити приправи..." next
+    "@Не знаю, яка краще..." next
+    "@правильна поліпшує смак їжі," next
+    "@тоді як погана погіршує смак." next
+    "@Якщо приправа підходить під їжу," next
+    "@то ти отримаєш більше сили, ніж якби ти їв просто їжу." end
 
 l_0xc6a4f2:
     "@I live rent-free in the mouse's house." next

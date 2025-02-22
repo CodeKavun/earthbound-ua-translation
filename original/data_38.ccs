@@ -392,83 +392,83 @@ l_0xc80bf2:
     "@Then,{pause(20)} later I'll be old lady [1C 02 02]." end
 
 l_0xc80c31:
-    "[06 49 00 {e(l_0xc81087)}][06 55 00 {e(l_0xc80e61)}][06 0C 00 {e(data_33.l_0xc798bf)}][06 0D 00 {e(data_33.l_0xc7970b)}][06 76 00 {e(l_0xc80e03)}][06 42 01 {e(l_0xc80dd8)}]@So,{pause(15)} you wanna see [1C 02 02]?" next
-    "@Many come here to see her miraculous powers,{pause(15)} but they're just leeches." next
-    "@So... are you from a TV station, or what?" linebreak
-    "[19 02]Yes" eob
+    "[06 49 00 {e(l_0xc81087)}][06 55 00 {e(l_0xc80e61)}][06 0C 00 {e(data_33.l_0xc798bf)}][06 0D 00 {e(data_33.l_0xc7970b)}][06 76 00 {e(l_0xc80e03)}][06 42 01 {e(l_0xc80dd8)}]@Отже,{pause(15)} ти хочеш побачитись з моєю донькою [1C 02 02]?" next
+    "@Багато хто приходить, щоб побачити її надзвичайні сили,{pause(15)} але вони такі діставучі." next
+    "@Тож... ти репортер телеканалу, чи що?" linebreak
+    "[19 02]Так" eob
 
 l_0xc80cbf:
-    " [19 02]No" eob
+    " [19 02]Ні" eob
 
 l_0xc80cc5:
     "[1C 07 02][11]{clearline}[09 02 {e(l_0xc80dab)} {e(l_0xc80cd4)}]" goto(l_0xc80cd4)
 
 l_0xc80cd4:
-    "@To meet you or not to meet you can only be decided by [1C 02 02]." next
-    "@[1C 02 02] has said that she would only meet with a boy named [1C 02 01]." next
-    "@So you're [1C 02 01]!" next
-    "@You're the one that was in" linebreak
-    "  [1C 02 02]'s dream." next
-    "@You will save the world!" next
-    "@Let me go call [1C 02 02].[03]" call(data_33.l_0xc7903b) "@She doesn't seem to be here." next
-    "@I wonder where she went?{pause(20)}  I'm sorry,{pause(20)} could you come back later?{wait}{set(flag 322)}{set(flag 635)}" eob
+    "@Застрітись чи не зустрітись, це вирішує сама [1C 02 02]." next
+    "@[1C 02 02] казала, що вона зустріниться тільки з хлопцем на ім'я [1C 02 01]." next
+    "@Отже ти і є [1C 02 01]!" next
+    "@Ти був тим, який снився" linebreak
+    "  моїй доньці." next
+    "@Ти врятуєш світ!" next
+    "@Зараз я її покличу.[03]" call(data_33.l_0xc7903b) "@Її схоже тут немає." next
+    "@І куди є вона пішла?{pause(20)}  Пробач,{pause(20)} не міг би ти прийти пізніше?{wait}{set(flag 322)}{set(flag 635)}" eob
 
 l_0xc80dab:
-    "@Please leave." next
-    "@My daughter doesn't want to talk to media monkeys like you." end
+    "@Будь-ласка, йди геть." next
+    "@Моя донька не хоче балакати з телевізійними мавпами як ти." end
 
 l_0xc80dd8:
-    "@Now where did she go?" next
-    "@I'm sorry,{pause(15)} could you come back after a while?" end
+    "@Тепер куди вона пішла?" next
+    "@Вибач,{pause(15)} не міг би ти піти на якусь мить?" end
 
 l_0xc80e03:
-    "{counter(1)}[19 11 02]{rtoarg}@[1C 03 00]{pause(5)} [1C 03 00]{pause(5)} [1C 02 02]'s not home yet." next
-    "@Everdred in Burglin Park might know something." next
-    "@Oh, boy!{pause(20)}  Now I'm really worried.{wait}{set(flag 321)}" eob
+    "{counter(1)}[19 11 02]{rtoarg}@[1C 03 00]{pause(5)} [1C 03 00]{pause(5)} [1C 02 02] ще не вдома." next
+    "@Евердред з Парку Бурґлін може щось знає." next
+    "@Оо, хлопче!{pause(20)}  Знав би ти, як я переживаю.{wait}{set(flag 321)}" eob
 
 l_0xc80e61:
-    "[06 08 03 {e(l_0xc80f1c)}]{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc80f94)}]{counter(2)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc80f1c)}]@You're both fine... I'm so relieved!" next
-    "@Why don't you get some rest here?" linebreak
-    "[19 02]Yes" eob
+    "[06 08 03 {e(l_0xc80f1c)}]{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc80f94)}]{counter(2)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc80f1c)}]@З вами обома гаразд... Я такий радий!" next
+    "@Чому б вам не відпочити?" linebreak
+    "[19 02]Так" eob
 
 l_0xc80eae:
-    " [19 02]No" eob
+    " [19 02]Ні" eob
 
 l_0xc80eb4:
     "[1C 07 02][11]{clearline}[09 02 {e(l_0xc80ef3)} {e(l_0xc80ec3)}]" goto(l_0xc80ec3)
 
 l_0xc80ec3:
-    "@Come on,{pause(15)} why don't you put your dogs up" linebreak
-    "  and re{pause(5)}e{pause(5)}e{pause(5)}e{pause(5)}lax." end
+    "@Та годі,{pause(15)} чому б тобі не розслабитися" linebreak
+    "  і в{pause(5)}і{pause(5)}і{pause(5)}і{pause(5)}дпоч{pause(5)}и{pause(5)}и{pause(5)}ити." end
 
 l_0xc80ef3:
-    "@[1C 02 01], you'll sleep on the couch in the den...[03]" call(data_49.l_0xc91693) "[1F 21 22]{unset(flag 383)}" newline
+    "@[1C 02 01], ти спатимеш на давені у веранді...[03]" call(data_49.l_0xc91693) "[1F 21 22]{unset(flag 383)}" newline
     eob
 
 l_0xc80f1c:
-    "{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc81027)}]@Hey!  Come on in!" next
-    "@No, I don't need to hear about what happened...{pause(20)}  [1C 02 02] will be okay." next
-    "@Why don't you just rest for now." next
-    "@You know where the couch in the den is...[03]" call(data_49.l_0xc91693) "[1F 21 22]{unset(flag 383)}" eob
+    "{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc81027)}]@Агов!  Підходь сюди!" next
+    "@Ні, я не хочу чути про те, що сталося...{pause(20)}  [1C 02 02] буде в нормі." next
+    "@Чому б тобі зараз не відпочити." next
+    "@Ти жу знаєш де знаходиться диван у веранді...[03]" call(data_49.l_0xc91693) "[1F 21 22]{unset(flag 383)}" eob
 
 l_0xc80f94:
-    "{counter(2)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc81027)}]@Oh [1C 02 02]!" next
-    "@So even a tomboy like you thinks of her father occasionally!" next
-    "@You should rest,{pause(15)} seeing how this is your own home." next
-    "@How about we share a piece of pie like we used to?  Ha ha ha![03]" call(data_49.l_0xc91693) "[1F 21 22]{unset(flag 383)}" eob
+    "{counter(2)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc81027)}]@О, [1C 02 02]!" next
+    "@Отже, навіть така шибениця як ти думає періодично про свого татуся!" next
+    "@Ти маєш відпочити,{pause(15)} розуміючи, що це твій власний дім." next
+    "@Як щодо по шматочку пирога як в старі добрі?  Ха ха ха![03]" call(data_49.l_0xc91693) "[1F 21 22]{unset(flag 383)}" eob
 
 l_0xc81027:
-    "@Hmm... I understand." next
-    "@So you're a friend of [1C 02 02]'s?" next
-    "@Look me in the eye...{pause(20)}  Yes, you're telling the truth." next
-    "@Would you like to get some shut eye?[03]" call(data_49.l_0xc91693) "[1F 21 22]{unset(flag 383)}" eob
+    "@Хмм... Розумію." next
+    "@Отже ти друг моєї доньки [1C 02 02]?" next
+    "@Подивись мені в очі...{pause(20)}  Так, ти кажеш мені правду." next
+    "@Не хотів би ти лягти і закрити очі?[03]" call(data_49.l_0xc91693) "[1F 21 22]{unset(flag 383)}" eob
 
 l_0xc81087:
-    "@You're a very strong, young man.{pause(20)}  My opinion of you has changed." next
-    "@Perhaps you should continue dating [1C 02 02]." next
-    "@Just treat her right..." next
-    "@Come by and visit anytime." next
-    "@You can even sleep on the living room couch instead of the one in the den..." end
+    "@А ти дуже сильний, юначе.{pause(20)}  Моя думка про тебе змінилася." next
+    "@Можливо,{pause(20)} ти моєш продовжити йти на побачення з моєю донькою [1C 02 02]." next
+    "@Тільки поводься з нею чемно..." next
+    "@Приходи і завітай до нас в будь-який час." next
+    "@Ти можеш навіть спати на дивані у вітальні, замість того, що на веранді..." end
 
 l_0xc81122:
     "[06 49 00 {e(data_39.l_0xc8159f)}][06 75 00 {e(data_39.l_0xc81318)}][06 55 01 {e(data_39.l_0xc814b9)}]@Greetings.{pause(20)}  I'm Orange Kid, the inventor." next

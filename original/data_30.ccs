@@ -208,20 +208,20 @@ l_0xc74874:
     "@Це чудова ідея, розмовляти з багатьма людьми." end
 
 l_0xc7488d:
-    "[06 97 02 {e(l_0xc748be)}]@If she's in a good mood,{pause(15)} a lady in the library will kiss you." end
+    "[06 97 02 {e(l_0xc748be)}]@Якщо вона в хорошому настрої,{pause(15)} та панянка в бібліотеці поцілує тебе." end
 
 l_0xc748be:
-    "@Hey!{pause(15)}  You have lipstick on your cheek." end
+    "@Агов!{pause(15)}  У тебе губна помада на твоїй щоці." end
 
 l_0xc748d8:
-    "[06 49 00 {e(l_0xc74999)}]@(I'm not an enemy.{pause(20)}  I'm just a friendly mole." next
-    "@I'll tell you how to distinguish between your friends and enemies." next
-    "@It's easy to tell an enemy just by looking at them." next
-    "@Enemies look like humans with weird-colored faces.{pause(15)}  Beware of them." next
-    "@However... you can't get more powerful if you avoid your enemies.)" end
+    "[06 49 00 {e(l_0xc74999)}]@(Я не твій ворог.{pause(20)}  Я просто дружелюбний кріт." next
+    "@Я розкажу тобі, як відрізняти своїх друзів від ворогів." next
+    "@Можна легко впізнпти ворога прямо з їхнього вигляду." next
+    "@Вороги виглядають як люди з дивно-кольорою мордою.{pause(15)}  Обходь їх десятою дорогою." next
+    "@Однак... ти й не зможеш стати сильнішим, якщо їх уникатимеш.)" end
 
 l_0xc74999:
-    "@(You listened to my advise and fought courageously.{pause(15)}  You rock!)" end
+    "@(Ти прислухався до моєї поради і бився як живчик.{pause(15)}  Ти крутезний!)" end
 
 l_0xc749c7:
     "[06 40 00 {e(l_0xc749ef)}]@Аркадний зал наповнений Акулами.{pause(20)}  Я не можу там грати." end

@@ -8,33 +8,33 @@ command e(label) "{long label}"
 
 // Text Data
 l_0xc94b32:
-    "@Oh yeah!{pause(15)}  Let's go!{pause(20)}  Get on the bus!{wait}[1F F1 75 01 B5 00]" eob
+    "@Ооо так!{pause(15)}  Поїхали!{pause(20)}  Всідайте в автобус!{wait}[1F F1 75 01 B5 00]" eob
 
 l_0xc94b57:
-    "[06 D3 00 {e(l_0xc94bad)}][06 0D 00 {e(l_0xc94b8e)}][06 0C 00 {e(l_0xc94b8e)}]@I heard [1C 02 02] was kidnapped, but it's still unconfirmed." end
+    "[06 D3 00 {e(l_0xc94bad)}][06 0D 00 {e(l_0xc94b8e)}][06 0C 00 {e(l_0xc94b8e)}]@Я чув, що [1C 02 02] була викрадена, але, поки що, непідтверджено." end
 
 l_0xc94b8e:
-    "@Congratulations on solving the kidnapping." end
+    "@Вітаю із розв'язанням проблеми з викраденням." end
 
 l_0xc94bad:
-    "@This town feels so much more peaceful and safe..." end
+    "@Це місто відчувається більш миролюбним і безпечним..." end
 
 l_0xc94bc9:
-    "[06 D3 00 {e(l_0xc94c2e)}]@I'm nuts about this one kid inventor." next
-    "@No,{pause(15)} not that airheaded, dweeby Apple Kid." next
-    "@I'm talking about the incredibly hot Orange Kid!" end
+    "[06 D3 00 {e(l_0xc94c2e)}]@Я шаленію від того хлопця винахідника." next
+    "@Ні,{pause(15)} я не про того зарозумілого, незграбного Яблуко-Хлопця." next
+    "@Я кажу про неймовірно запального Апельсино-Хлопця!" end
 
 l_0xc94c2e:
-    "@The Orange Kid is deep into a world-class invention." next
-    "@It must be hard being an ultra-genius." end
+    "@Апельсино-Хлопець занурений в винаході світого класу." next
+    "@Це має бути важко  бути надгенієм." end
 
 l_0xc94c6d:
-    "[06 8F 00 {e(l_0xc94cc8)}]@That stupid slob, the Apple Kid, always asks me for something to eat." next
-    "@He's the inventor--he should invent some food for himself." end
+    "[06 8F 00 {e(l_0xc94cc8)}]@Цей тупий сопляк, Яблуко-Хлопець, завжди випрошує в мене пожерти." next
+    "@Він винахідник--от і хай собі винайде їжу." end
 
 l_0xc94cc8:
-    "@That stupid slob, the Apple Kid, is suddenly missing." next
-    "@I think the town seems cleaner somehow." end
+    "@Цей тупий сопляк, Яблуко-Хлопець, раптово зник." next
+    "@Гадаю, якимось чином місто стало чистішим." end
 
 l_0xc94d0c:
     "[06 55 01 {e(l_0xc94d5b)}]@A while ago,{pause(15)} I saw an inventor, the something-or-other kid," next
@@ -152,8 +152,8 @@ l_0xc95365:
     "@(One of the biggest markets you'll ever find--now in Burglin Park.)" end
 
 l_0xc95393:
-    "@I always see you walking around." next
-    "@Walking is good for your health." end
+    "@Я завжди бачу, що ти тут гуляєш навколо." next
+    "@Прогулянка це добре для твого здоров'я." end
 
 l_0xc953bf:
     "@I'm so excited!{pause(20)}  I might just wet myself.{pause(20)}  My heart is going pitter patter!" end
@@ -283,61 +283,61 @@ l_0xc95ba0:
     "@I've got definite rules about how I handle my money matters..." end
 
 l_0xc95c0e:
-    "[06 55 00 {e(l_0xc960d7)}][06 0C 00 {e(l_0xc95f0a)}][06 0D 00 {e(l_0xc95df9)}][06 42 00 {e(l_0xc95dc6)}]@Wah ha ha ha ha!{pause(20)}" linebreak
-    "  Why don't we chat later-after  we've locked horns![03]" call(data_23.l_0xc6846b) "[1B 03 {e(data_23.l_0xc683de)}]{window_open(1)}@Yes, I'm Everdred, boss of Burglin Park." next
-    "@When I jumped off the roof,{pause(15)} I twisted my ankle." next
-    "@Anyway, I lost and nothing will change that." next
-    "@You know,{pause(15)} you're pretty strong." next
-    "@Yeah, I know that you want to find out about a girl named [1C 02 02]." next
-    "@She went off to a secret hideout in the Peaceful Rest Valley." next
-    "@A chubby boy and a weird guy in a blue outfit have kidnapped her, though." next
-    "@They said that they were going to make [1C 02 02] some sort of human sacrifice." next
-    "@They were definitely hard-core strange." next
-    "@You know, she might be gone already.{pause(20)}" linebreak
-    "  You'd better hurry." next
+    "[06 55 00 {e(l_0xc960d7)}][06 0C 00 {e(l_0xc95f0a)}][06 0D 00 {e(l_0xc95df9)}][06 42 00 {e(l_0xc95dc6)}]@Ваа ха ха ха ха!{pause(20)}" linebreak
+    "  Чому б нам не поспілкуватись коли ми побадаємось![03]" call(data_23.l_0xc6846b) "[1B 03 {e(data_23.l_0xc683de)}]{window_open(1)}@Так, я Евердред, бос Парку Бурґлін." next
+    "@Коли я стрибнув з даху,{pause(15)} я вдарився об коліно." next
+    "@У будь-якому випадку, я програв і нічого це не змінить." next
+    "@Сам знаєш,{pause(15)} ти дуже сильний." next
+    "@Так, я знаю, що знаходиш подробиці про дівчину на ім'я [1C 02 02]." next
+    "@Вона пішла до таємного сховку в Долині Мирного Спокою." next
+    "@Який товстун і дивний чувак в синьому одязі схопили її, однак." next
+    "@Вони казали, що хотіли зробити з тією дівчиною щось типу людського жертвоприношення." next
+    "@Вони точно були до дідька дивні." next
+    "@Сам знаєш, може бути пізно.{pause(20)}" linebreak
+    "  Тому, краще поспіши." next
     goto(l_0xc95dc6)
 
 l_0xc95dc6:
-    "@If you save [1C 02 02],{pause(15)} be sure to come back here, okay?{pause(15)}  Don't{pause(20)} forget!{wait}{window_closeall}{set(flag 66)}" eob
+    "@Якщо ти врятуєш дівчину [1C 02 02],{pause(15)} повернись сюди, добре?{pause(15)}  Не{pause(20)} забудь!{wait}{window_closeall}{set(flag 66)}" eob
 
 l_0xc95df9:
-    "{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc95e73)}]{counter(2)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc95ea5)}]@First, you must take her to her parents.{pause(20)}  They're really worried." next
-    "@I also have something to give you,{pause(15)} so be sure to come back here." next
-    "@Promise?{pause(20)}  All right." end
+    "{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc95e73)}]{counter(2)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc95ea5)}]@Спершу, ти маєш відвести її до батьків.{pause(20)}  Вони справді переживають." next
+    "@Я також маю для тебе деякий сюрприз,{pause(15)} тому повертайся сюди." next
+    "@Обіцяєш?{pause(20)}  Тожі все гаразд." end
 
 l_0xc95e73:
     "@[1C 01 1E]!" next
-    "@I thought you were with your little hero, the kid in the red cap." next
-    "@You seem cold." end
+    "@Я думав, що ти будеш зі своїм малим героєм, хлопець в червоній кепці." next
+    "@Ти якась прохолодна." end
 
 l_0xc95ea5:
-    "@I heard that you've been pretty proud of yourself since you saved [1C 02 02]'s life." next
-    "@Think about it,{pause(15)} you didn't actually save her." next
-    "@Come back when you've accomplished something." end
+    "@Я чув, що ти такий задоволений собою від тоді як ти врядував життя [1C 02 02]." next
+    "@От тільки подумай,{pause(15)} ти її насправді не врятував." next
+    "@Повертайся, коли ти щось та й виконаєш." end
 
 l_0xc95f0a:
-    "{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc960ab)}]@I was going to ask you to be my partner," next
-    "@but I know you'll refuse.{pause(20)}  It's written all over your face." next
-    "@If you accepted,{pause(15)} I was going to give you some money." next
-    "@Actually, I can't keep the money now anyway.{pause(20)}  Let me give this to you." next
-    "@It's 10,000 dollars." next
-    "@Use the money any way you like.{pause(20)}  You cannot refuse my generosity.{pause(20)}  Just accept it." next
-    "@Now I plan on looking for the evil Mani Mani Statue" next
-    "@that Lier X. Agerate unearthed in Onett." next
-    "@I'll see you at another time, in another space.[03][1D 03 FF][1B 02 {e(l_0xc9605d)}][1D 0E 00 B4]" call(data_36.l_0xc7dcb6) "{set(flag 85)}" end
+    "{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc960ab)}]@Я хотів попросити тебе бути моїм партнером," next
+    "@але я знаю, що ти відмовиш.{pause(20)}  Це написано прямо на твоєму лобі." next
+    "@Я ти приймеш,{pause(15)} я дам тобі якісь грощі." next
+    "@Насправді, я не може більше тримати ці грощі.{pause(20)}  Дозволь мені но дати їх тобі." next
+    "@Це 10,000 долларів." next
+    "@Витрачай ті грощі де тобі заманеться.{pause(20)}  Ти не можеш відмовитись від моєї щедрості.{pause(20)}  Просто прийми їх." next
+    "@Зараз я планую дещо на злу Статую Мані Мані," next
+    "@який Брехунь Х. Еґерейт розкопав в Одинеті." next
+    "@Побачимось в іншому часі, в іншому просторі.[03][1D 03 FF][1B 02 {e(l_0xc9605d)}][1D 0E 00 B4]" call(data_36.l_0xc7dcb6) "{set(flag 85)}" end
 
 l_0xc9605d:
     "{pause(60)}" linebreak
-    "{sound(5)}@Your backpack is filled with junk.{pause(20)}  Get rid of something!" next
-    "@I'll put the money in a safe place until you get back." end
+    "{sound(5)}@Твій рюкзак наповнений всілякою чухнею.{pause(20)}  Викинь щось!" next
+    "@Я покладу грощі в безпечному місці, поки ви не повернетесь." end
 
 l_0xc960ab:
-    "@I need to talk to [1C 02 01]." next
-    "@Even if you're his friend,{pause(15)} I won't talk to you." end
+    "@Мені потрібно порозмовляти з [1C 02 01]." next
+    "@Навіть якщо ти його друг,{pause(15)} я не розмавлятиму з тобою." end
 
 l_0xc960d7:
-    "{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc960ab)}]@Please use the 10,000 dollars any way you wish." next
-    "@You cannot refuse my generosity,{pause(15)} just accept it." end
+    "{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc960ab)}]@Прошу, витратіть ті 10,000 долларів на все, що завгодно." next
+    "@Ви не можете відмовитись від моєї щедрості,{pause(15)} просто прийміть це." end
 
 l_0xc96124:
     "[06 49 00 {e(l_0xc96267)}][06 CA 00 {e(l_0xc961d1)}]@Welcome to Mach Pizza!" next
