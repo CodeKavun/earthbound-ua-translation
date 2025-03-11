@@ -99,53 +99,53 @@ l_0xc5bc4c:
     eob
 
 l_0xc5bc70:
-    "@I like to sell my goodies on the street." next
-    "@Sure, flies land on them, but in my opinion, it makes them taste even better!" next
+    "@Я люблю продавати різну цікаву їжу на вулиці." next
+    "@Звісно, мухи на них сідають, але на мою думку, це навіть додає їм смаку!" next
     eob
 
 l_0xc5bcc2:
-    "@Thanks a lot." end
+    "@Дякую величезне." end
 
 l_0xc5bcca:
-    "@Please come again." end
+    "@Будь-ласка, приходьте ще." end
 
 l_0xc5bcd2:
-    "@What would you like?[03]" eob
+    "@І чого б ти хотів?[03]" eob
 
 l_0xc5bcdd:
     "@[1C 05 00]?" next
     eob
 
 l_0xc5bce5:
-    "@Who is going to carry this?[03]" eob
+    "@Хто ж тоді понесе це?[03]" eob
 
 l_0xc5bcf4:
-    "@Please come again." next
+    "@Будь-ласка, приходьте ще." next
     eob
 
 l_0xc5bcfd:
-    "@It looks like you don't have enough money." next
+    "@Схоже, в тебе недостатньо грошей." next
     eob
 
 l_0xc5bd0c:
-    "@You are already carrying too much stuff." next
-    "@You should sell some things, or throw them away, or just leave them somewhere." end
+    "@В тебе вже забагато речей." next
+    "@Ти маєш щось продати, або ж викинути, обо залишити їх десь." end
 
 l_0xc5bd49:
-    "@Thank you very much." next
+    "@Дуже тобі дякую." next
     eob
 
 l_0xc5bd53:
-    "@Thanks." next
+    "@Дякую." next
     eob
 
 l_0xc5bd59:
-    "@Do you want to buy anything else?" linebreak
+    "@Хочеш купити щось ще?" linebreak
     eob
 
 l_0xc5bd62:
-    "@[1C 02 00] is carrying too many things already." next
-    "@Can anyone else carry it for {swap}" call(data_37.l_0xc7e6a4) "?" linebreak
+    "@[1C 02 00] несе забагато речей на собі." next
+    "@Може хтось інший понесе {swap}" call(data_37.l_0xc7e6a4) "?" linebreak
     eob
 
 l_0xc5bd92:
@@ -203,58 +203,58 @@ l_0xc5becd:
     eob
 
 l_0xc5bef9:
-    "@Hello!  Would you like some seasonings to add to your foods at meal time?" next
-    "@They are really quite miraculous!" next
-    "@Whenever you eat something, the seasonings will sprinkle automatically." next
-    "@They come in these cute little packets and jars." next
+    "@Здоров!  Ти б не хотів додати деякі приправи до своєї хавки, так?" next
+    "@Вони просто до нестями смачнющі!" next
+    "@Якщо ти з'їш що-небудь, приправи використуються автоматично." next
+    "@Вони упаковані в цих миленьких пакетиках і баночках." next
     eob
 
 l_0xc5bf87:
-    "@Come again." end
+    "@Приходь ще." end
 
 l_0xc5bf8e:
-    "@Come again." end
+    "@Приходь ще." end
 
 l_0xc5bf95:
-    "@What kind do you like?[03]" eob
+    "@Яка з них тобі довподоби?[03]" eob
 
 l_0xc5bfa1:
-    "@You want" linebreak
-    "  the [1C 05 00]?" next
+    "@Ти хочеш" linebreak
+    "  [1C 05 00]?" next
     eob
 
 l_0xc5bfb0:
-    "@Who is going to take it?" next
+    "@І хто ж це візьме?" next
     eob
 
 l_0xc5bfbf:
-    "@Come again." next
+    "@Приходь ще." next
     eob
 
 l_0xc5bfc7:
-    "@Oh, you don't have enough money." next
+    "@Оо, в тебе немає достатньо грошей." next
     eob
 
 l_0xc5bfd3:
-    "@You already have the maximum number of things you can carry." next
-    "@You're going to have to sell some things, or just throw them away." next
-    "@Then come again." end
+    "@Кількість речей, які ти носиш, вже на приділі." next
+    "@Тобі краще щось продати, або ж взагалі викинути." next
+    "@А потім прийдеш пізніше." end
 
 l_0xc5c025:
-    "@Thank you." next
+    "@Дякую." next
     eob
 
 l_0xc5c02c:
-    "@Thank you." next
+    "@Дякую." next
     eob
 
 l_0xc5c033:
-    "@Do you want to buy anything else?" linebreak
+    "@Хочеш придбати щось ще?" linebreak
     eob
 
 l_0xc5c03c:
-    "@[1C 02 00] is already carrying too many things." next
-    "@Can someone else carry it?" linebreak
+    "@[1C 02 00] вже носить забагато речей." next
+    "@Може хтось інший понесе?" linebreak
     eob
 
 l_0xc5c05f:

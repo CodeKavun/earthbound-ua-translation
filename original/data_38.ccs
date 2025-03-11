@@ -183,94 +183,94 @@ l_0xc80000:
     call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc8045b)}][06 71 00 {e(l_0xc8037f)}][06 7E 02 {e(l_0xc80027)}][06 0C 00 {e(l_0xc803ac)}][06 0D 00 {e(l_0xc803ac)}]" goto(l_0xc80027)
 
 l_0xc80027:
-    "@This is the cycle shop{pause(5)} <Punk-Sure>!" next
-    "@Bicycles are so much fun and are so convenient..." next
-    "@It's a lot faster than walking." next
-    "@You'll be really popular with the biking crowd." next
-    "@Do you want a bicycle?" linebreak
-    "[19 02]Yes" eob
+    "@Це велосипедний магазин{pause(5)} <Впевен-Поц>!" next
+    "@Велики такі круті і такі зручні..." next
+    "@Набагато швидше, ніж йти пішки." next
+    "@Ти дійсно будеш популярний серед натовпу велосипедистів." next
+    "@Хочеш велик?" linebreak
+    "[19 02]Так" eob
 
 l_0xc800ac:
-    " [19 02]No" eob
+    " [19 02]Ні" eob
 
 l_0xc800b2:
     "[1C 07 02][11]{clearline}[09 02 {e(l_0xc800f5)} {e(l_0xc800c1)}]" goto(l_0xc800c1)
 
 l_0xc800c1:
-    "[1D 05 FF B0][1B 03 {e(l_0xc802e6)}][06 51 00 {e(l_0xc8034d)}]@Oh... you don't know how to ride a bike." next
-    "@Me neither." end
+    "[1D 05 FF B0][1B 03 {e(l_0xc802e6)}][06 51 00 {e(l_0xc8034d)}]@Ох... ти не вмієш кататись на велику." next
+    "@Я також." end
 
 l_0xc800f5:
-    "[06 51 00 {e(l_0xc802b9)}]@Unfortunately, we don't have any more bikes for sale.{pause(20)}  We only have rentals." next
-    "@Do you want to rent one?" linebreak
-    "[19 02]Yes" eob
+    "[06 51 00 {e(l_0xc802b9)}]@Нажаль, ми більше не продаємо велики.{pause(20)}  У нас тут тільки орендою." next
+    "@Хочеш орендувати один?" linebreak
+    "[19 02]Так" eob
 
 l_0xc80140:
-    " [19 02]No" eob
+    " [19 02]Ні" eob
 
 l_0xc80146:
     "[1C 07 02][11]{clearline}[09 02 {e(l_0xc8015a)} {e(l_0xc800c1)}]" goto(l_0xc800c1)
 
 l_0xc8015a:
-    "@I really like your straight-forward style." next
-    "@I'll tell you what,{pause(15)} I'll let you borrow a bike for free." next
+    "@Мені дійсно подобається твій прямо-лінійний стиль." next
+    "@Я скажу тобі дещо,{pause(15)} я дозволю тобі взяти велик задармо." next
     "[1D 03 FF][1B 02 {e(l_0xc80277)}][1D 0E 00 B0]" call(data_36.l_0xc7dccf) next
-    "{set(flag 81)}@You know that two people can't ride on one bicycle," next
-    "@so of course three or four people on a bike would be impossible!" next
-    "@Did you also know that you can't ride a bike with anything following you?" next
-    "@Teddy bears, for example..." next
-    "@Carrying a bear and riding is impossible for you." next
-    "@And don't even think about riding a bike into a cave." end
+    "{set(flag 81)}@Ти же знаєш, що двоє не можуть їздити на велику," next
+    "@тому, ясне діло, троє або четверо на велику це якась казка!" next
+    "@А чи ти знав, що ти не можеш їхати, якщо хтось або щось слідкує за тобою?" next
+    "@Плюшеві ведмеді, наприклад..." next
+    "@Нести ведмедика і гасати на велику це щось неможливе." next
+    "@І навіть не думай про їзду великом в печері." end
 
 l_0xc80276:
     eob
 
 l_0xc80277:
     newline
-    "{sound(5)}@You have too many items.{pause(20)}  Why don't you get rid of something and come back." next
-    "@I know you want it now,{pause(15)} but my hands are tied..." end
+    "{sound(5)}@В тебе забагато речей.{pause(20)}  Чому б тобі не викинути щось." next
+    "@Я знаю, що ти хочеш прямо зараз,{pause(15)} але руки мої прив'язані..." end
 
 l_0xc802b9:
     newline
-    "@Didn't you already borrow a bicycle?{pause(20)}  We don't have any more right now..." end
+    "@Ти ж наче забрав один велик?{pause(20)}  Зараз в нас більше нема..." end
 
 l_0xc802e6:
     newline
-    "[1D 01 FF B0]@You're here to return your bike?" next
-    "{set(flag 113)}{unset(flag 81)}@Look how low your seat is!{pause(20)}  Geez,{pause(15)} you must have short legs." next
-    "@That's it!{pause(20)}  I'll call you stubby legs!{wait}{sound(118)}" eob
+    "[1D 01 FF B0]@Ти тут, щоб повернути велик?" next
+    "{set(flag 113)}{unset(flag 81)}@Подивись, наскільки низьке крісло!{pause(20)}  Дідько,{pause(15)} ну і коротунські твої ноги." next
+    "@Ось так!{pause(20)}  Я називатиму тебе Пан Коротунські Ноги!{wait}{sound(118)}" eob
 
 l_0xc8034d:
     newline
-    "@Yeah,{pause(10)} yeah,{pause(5)} sure, sure.{pause(20)}  You've already borrowed a bicycle." end
+    "@Так,{pause(10)} так,{pause(5)} звісно, звісно.{pause(20)}  ти вже взяв один велик." end
 
 l_0xc8037f:
-    "@Hey!{pause(15)}  Stubby legs!" next
+    "@Агов!{pause(15)}  Пан Коротунські Ноги!" next
     "[06 7E 02 {e(l_0xc80027)}][06 0D 00 {e(l_0xc803ac)}][06 0C 00 {e(l_0xc803ac)}]" goto(l_0xc80027)
 
 l_0xc803ac:
-    "{counter(1)}@Do you wanna ride a bike?" next
-    "@That's not gonna work... two people on one bike is strictly forbidden.[03][1D 05 FF B0][1B 03 {e(l_0xc803f8)}]" end
+    "{counter(1)}@Хочеш покататись на велику?" next
+    "@Ні, так не працюватиме... двоє на одному велику суворо заборонено.[03][1D 05 FF B0][1B 03 {e(l_0xc803f8)}]" end
 
 l_0xc803f8:
     next
-    "@You're here to return the bicycle?" linebreak
-    "[19 02]Yes" eob
+    "@Ти тут, щоб повернути велик?" linebreak
+    "[19 02]Так" eob
 
 l_0xc80416:
-    " [19 02]No" eob
+    " [19 02]Ні" eob
 
 l_0xc8041c:
     "[1C 07 02][11]{clearline}[09 02 {e(l_0xc802e6)} {e(l_0xc8042b)}]" goto(l_0xc8042b)
 
 l_0xc8042b:
-    "@Well,{pause(15)} don't forget to return it...{pause(20)}  You're gonna have to sooner or later." end
+    "@Що ж,{pause(15)} не забудь повернути...{pause(20)}  Ти зробиш це рано чи пізно." end
 
 l_0xc8045b:
-    "@You know that two people can't ride a bike," next
-    "@but did you know that you can't ride a bike" next
-    "@when you are carrying an unconscious friend's stuff?" next
-    "@Carrying a lot of items and riding aroud is impossible for you." end
+    "@Ти же знаєш, що двоє не можуть їздити на велику," next
+    "@але чи ти знав, що ти також не можеш їхати на ньому," next
+    "@коли ти носиш речі свого непритомного друга?" next
+    "@Нести багато речей і ганяти по вулиці це задачка неможлива для тебе." end
 
 l_0xc804d1:
     "[06 49 00 {e(l_0xc808bd)}][06 08 03 {e(l_0xc8054d)}][06 55 00 {e(l_0xc807bc)}][06 54 00 {e(l_0xc806bb)}][06 0D 00 {e(l_0xc80579)}]@Whistle, whistle anywhere.{pause(10)}" linebreak
@@ -341,14 +341,14 @@ l_0xc808bd:
     "@Why don't you drop by more often?{pause(20)}  I'm working at making better [1C 01 04]." end
 
 l_0xc80939:
-    "[06 0C 00 {e(l_0xc8097b)}][06 0D 00 {e(l_0xc8097b)}]@[1C 02 02] isn't here!" next
-    "@She suddenly left,{pause(15)} and I don't know where she went." end
+    "[06 0C 00 {e(l_0xc8097b)}][06 0D 00 {e(l_0xc8097b)}]@[1C 02 02] немає тут!" next
+    "@Вона раптово зникла,{pause(15)} і я не знаю, куди вона пішла." end
 
 l_0xc8097b:
-    "{counter(2)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc80997)}]@(He's smiling)." end
+    "{counter(2)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc80997)}]@(Він посміхається)." end
 
 l_0xc80997:
-    "@Oh, [1C 02 02]!{pause(20)}  Uh... sorry,{pause(15)} I thought you were [1C 02 02]." end
+    "@О, [1C 02 02]!{pause(20)}  Ух... пробач,{pause(15)} Я думав, що ти [1C 02 02]." end
 
 l_0xc809ba:
     "[19 10 01]{result_is(2)}[1B 03 {e(l_0xc80a47)}][06 0C 00 {e(l_0xc809fc)}][06 0D 00 {e(l_0xc809fc)}]@Well,{pause(15)} I wanted to play with [1C 02 02],{pause(15)} but she's gone somewhere..." end

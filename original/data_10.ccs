@@ -134,25 +134,25 @@ l_0xc5a57f:
     " [1C 0A FD 00 00 00]DS.[03]" goto(l_0xc5a57f)
 
 l_0xc5b3ba:
-    "@Since I'm dealing in some pretty rough stuff," next
-    "@I can't run my business in town." next
+    "@Так як я займаюсь дуже м'якими речами," next
+    "@я не можу займатися бізнесом в місті." next
     eob
 
 l_0xc5b3eb:
-    "@See you later." end
+    "@Побачимось пізніше." end
 
 l_0xc5b3f6:
-    "@See you... later." end
+    "@Побачимось... пізніше." end
 
 l_0xc5b405:
-    "@I've got a wide selection.  What are you looking for?[03]" eob
+    "@У мене для тебе широкий вибір.  Чого бажаєш?[03]" eob
 
 l_0xc5b426:
     "@[1C 05 00]?" next
     eob
 
 l_0xc5b42e:
-    "@Who's going to get this?[03]" eob
+    "@І хто ж його візьме?[03]" eob
 
 l_0xc5b43c:
     "@Do you want to equip it here?" linebreak
@@ -230,91 +230,91 @@ l_0xc5b5fe:
     eob
 
 l_0xc5b625:
-    "@Hey mon!  You got to expand your mind an' use this stuff creatively." next
-    "@C'mon, buy some of my junk!" linebreak
+    "@Гей Вась!  Ти маєш розширити креативне сприйняття і використання таких речей." next
+    "@Давай но, купи щось з мого мотлоху!" linebreak
     eob
 
 l_0xc5b666:
-    "@Take care, mon!" end
+    "@Дивись там, Вась!" end
 
 l_0xc5b674:
-    "@A scientific mon might be able to make good use of this here thing..." end
+    "@Науковий дружбан мав би змогу зробити щось корисне з цієї чухні..." end
 
 l_0xc5b69d:
-    "@So, what would you like, mon?[03]" eob
+    "@Отже, що тобі, Вась?[03]" eob
 
 l_0xc5b6af:
     "@[1C 05 00]?" next
     eob
 
 l_0xc5b6b7:
-    "@Who's goin' to take it?[03]" eob
+    "@І хто ж це потягне?[03]" eob
 
 l_0xc5b6ca:
-    "@Thank you, mon." next
-    "@Do you want to equip that here then?" linebreak
+    "@Дякую, Вась." next
+    "@Хочеш екіпірувати це прямо зараз?" linebreak
     eob
 
 l_0xc5b6e2:
-    "@Would you be liking me to buy" linebreak
-    "  your [1C 05 00]" linebreak
-    "  for {swap}$[1C 0A 00 00 00 00]?" next
+    "@Ти би закортіти купити" linebreak
+    "  у тебе [1C 05 00]" linebreak
+    "  за {swap}$[1C 0A 00 00 00 00]?" next
     eob
 
 l_0xc5b70b:
-    "@[1C 02 00] cannot equip this here thing." next
-    "@Are you still willing to buy it?" linebreak
+    "@[1C 02 00] не може одягнути цю штукенцію." next
+    "@Все ще хочеш купити?" linebreak
     eob
 
 l_0xc5b72d:
-    "@Ah, I see mon.  That's too bad." next
+    "@Аа, Зрозумів Вась.  Шкода." next
     eob
 
 l_0xc5b746:
-    "@Ah, mon, you are short of the green stuff, if you know what I mean, mon." next
+    "@Ах, Вась, в тебе диряві кишені, якщо ти знаєш, про що я, Вась." next
     eob
 
 l_0xc5b76f:
-    "@Well, you're straining with too many things now." next
-    "@I'll buy the things you don't need, mon." linebreak
+    "@Мтааак, ти задовбуєшся з перебором речей." next
+    "@Я куплю речі, які тобі непотробні, Вась." linebreak
     eob
 
 l_0xc5b799:
-    "@What is it you want to sell?[03]" eob
+    "@І шо це ти хочеш продати?[03]" eob
 
 l_0xc5b7a6:
     "@[1C 05 00]?" linebreak
-    "  Oh, I can give you" linebreak
-    "  about {swap}$[1C 0A 00 00 00 00], OK?" next
+    "  Оо, я можу дать тобі" linebreak
+    "  десь {swap}$[1C 0A 00 00 00 00], ага?" next
     eob
 
 l_0xc5b7cd:
-    "@Not goin' to go for it, eh mon?  No problem." next
+    "@Ти не хочеш цього робити, ее Вась?  Без проблем." next
     eob
 
 l_0xc5b7f2:
-    "@But look, you don't have any things to sell!" next
+    "@Але дивись, в тебе нема нічого, шо можна продати!" next
     eob
 
 l_0xc5b807:
-    "@Hold on, mon.  We don't carry that kind of stuff." next
+    "@Зачекай, Вась.  Ми не тримаємо такого роду штукенції." next
     eob
 
 l_0xc5b826:
-    "@Thanks a lot, mon." next
+    "@Дяка тобі здорова, Вась." next
     eob
 
 l_0xc5b833:
-    "@There you go." linebreak
-    "  Thanks a lot, mon." next
+    "@Ось тобі." linebreak
+    "  Дяка тобі здорова, Вась." next
     eob
 
 l_0xc5b84e:
-    "@Is there anything else you need, mon?" linebreak
+    "@Тобі щось ще потрібно, Вась?" linebreak
     eob
 
 l_0xc5b860:
-    "@Lay it on me." linebreak
+    "@Залиш це на мені." linebreak
     eob
 
 l_0xc5b86d:

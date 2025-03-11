@@ -138,7 +138,7 @@ l_0xc9946f:
     "@Even if I become someone's steak dinner,{pause(15)} I'll still respect him.)" end
 
 l_0xc994cb:
-    "@(Peaceful Rest Valley ahead.{pause(20)}  Proceed through cave.)" end
+    "@(Попереду Долина Мирного Спокою.{pause(20)}  Прямуйте через печеру.)" end
 
 l_0xc994f5:
     call(data_48.l_0xc903ed) eob

@@ -219,19 +219,19 @@ l_0xc78ed8:
     "[1D 14 00 00 00 00][1B 03 {e(l_0xc78e98)}][1D 09 00 00]{open_wallet}{sound(118)}@Okay,{pause(15)} let's give it a shot!{wait}{window_closeall}[1F 1F 52 00 06]{counter(0)}{ctoarg}{swap}" eob
 
 l_0xc78f12:
-    "{window_open(1)}{sound(96)}@Woooo!{pause(20)}  Wooo!{pause(15)}  Wooooooo!" next
-    "@(Go back!{pause(15)}  Go back!)[03]{window_closeall}" eob
+    "{window_open(1)}{sound(96)}@Вуууу!{pause(20)}  Вууу!{pause(15)}  Вууууууу!" next
+    "@(Йди геть!{pause(15)}  Йди геть!)[03]{window_closeall}" eob
 
 l_0xc78f4a:
-    "{window_open(1)}{sound(96)}@Woooo!{pause(20)}  Wooo!{pause(15)}  Wooooooo!" next
-    "@(Go back!{pause(15)}  Go back!)[03]{window_closeall}[1F 15 31 01 5B 00 01][1F 15 31 01 5C 00 01][1F 61][06 38 01 {e(l_0xc78fb1)}][1F 21 0F][1F 15 6A 00 5D 00 01][1F EF 6A 00][1F E8 FF][1F 61][1F ED]{unset(flag 315)}" eob
+    "{window_open(1)}{sound(96)}@Вуууу!{pause(20)}  Вууу!{pause(15)}  Вууууууу!" next
+    "@(Йди геть!{pause(15)}  Йди геть!)[03]{window_closeall}[1F 15 31 01 5B 00 01][1F 15 31 01 5C 00 01][1F 61][06 38 01 {e(l_0xc78fb1)}][1F 21 0F][1F 15 6A 00 5D 00 01][1F EF 6A 00][1F E8 FF][1F 61][1F ED]{unset(flag 315)}" eob
 
 l_0xc78fb1:
     "[1F 21 12][1F 15 6A 00 5D 00 01][1F EF 6A 00][1F E8 FF][1F 61][1F ED]{unset(flag 312)}" eob
 
 l_0xc78fca:
-    "{window_open(1)}{sound(96)}@Woooo!{pause(20)}  Wooo!{pause(15)}  Wooooooo!" next
-    "@(Go back!{pause(15)}  Go back!)[03]{window_closeall}[1F 15 31 01 63 00 01][1F 15 31 01 64 00 01][1F 61][1F 21 10][1F 15 6A 00 5D 00 01][1F EF 6A 00][1F E9 FF 00][1F 61][1F ED]" eob
+    "{window_open(1)}{sound(96)}@Вуууу!{pause(20)}  Вууу!{pause(15)}  Вууууууу!" next
+    "@(Йди геть!{pause(15)}  Йди геть!)[03]{window_closeall}[1F 15 31 01 63 00 01][1F 15 31 01 64 00 01][1F 61][1F 21 10][1F 15 6A 00 5D 00 01][1F EF 6A 00][1F E9 FF 00][1F 61][1F ED]" eob
 
 l_0xc79028:
     "[1F F1 DE 00 65 00][1F 61]{set(flag 4)}" eob

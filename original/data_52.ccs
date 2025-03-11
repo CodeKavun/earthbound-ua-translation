@@ -93,15 +93,15 @@ l_0xc94ff9:
     goto(l_0xc94f49)
 
 l_0xc95019:
-    "@It's just a hunch," next
-    "@but I think the ghosts in the tunnel don't like anything upbeat and cheerful." next
-    "@When I was driving in the tunnel," next
-    "@I was playing some grooving tunes and the ghosts moved slower." next
-    "@I think the ghosts can't stand anything positive." end
+    "@Це просто передчуття," next
+    "@але мені здається, що привиди в тунелі ненавидять все веселе і чілове." next
+    "@Коли я їхав цим тунелем," next
+    "@в мене були увіменені гучно динаміки і привиди рухались повільніше." next
+    "@Гадаю, привиди не витримують все позитивне." end
 
 l_0xc950b2:
-    "@[1C 02 01],{pause(15)} I guess it's time for you to go home." next
-    "@Everyone is probably worried about you." end
+    "@[1C 02 01],{pause(15)} Думаю, настав час тобі повертатися додому." next
+    "@Усі мабуть переживають за тебе." end
 
 l_0xc950e8:
     "@Hey, you " call(data_37.l_0xc7e758) "... how did you get " call(l_0xc95124) "?{pause(15)}  What are you," next
@@ -400,11 +400,11 @@ l_0xc963f6:
     "@I'm sure everyone is talking about it,{pause(20)} but don't worry about me." end
 
 l_0xc96425:
-    "[06 47 00 {e(l_0xc96479)}]@I'm thinking about catching a bus to Threed.{pause(20)}  I heard there are ghosts along the way." next
-    "@I wonder if the bus will have to turn around and come back." end
+    "[06 47 00 {e(l_0xc96479)}]@Я думаю про поїздку автобусом до Триду.{pause(20)}  Я чув, що там привиди на шляху." next
+    "@Не здивуюсь, якщо автобус розвернеться і повернеться назад." end
 
 l_0xc96479:
-    "@To get to Threed,{pause(15)} the bus is most convenient." end
+    "@Щоб дістатися Триду,{pause(15)} автобус то саме те." end
 
 l_0xc9649a:
     "[06 47 00 {e(l_0xc964d9)}]@To take the bus, or not to take the bus... hmmm." next

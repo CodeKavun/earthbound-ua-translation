@@ -319,52 +319,52 @@ l_0xc5ccf5:
     eob
 
 l_0xc5cd18:
-    "@Would you like some bananas?" next
+    "@Ти б не хотів собі прикупити бананів?" next
     eob
 
 l_0xc5cd29:
-    "@Thank you." end
+    "@Дякую." end
 
 l_0xc5cd2f:
-    "@Well, when you want to eat bananas, I'll be here, selling them!" end
+    "@Добре, коли ти захочеш з'їсти банани, я завжди тут, продаю їх!" end
 
 l_0xc5cd51:
-    "@Hey kid!" linebreak
-    "  Do you want to buy some?" next
+    "@Агов хлопче!" linebreak
+    "  Хочиш купити один?" next
     eob
 
 l_0xc5cd64:
-    "@You want" linebreak
-    "  the [1C 05 00]?" next
+    "@Ти хочеш" linebreak
+    "  [1C 05 00]?" next
     eob
 
 l_0xc5cd73:
-    "@Who is going to carry it?[03]" eob
+    "@Хто ж тоді понесе це?[03]" eob
 
 l_0xc5cd7f:
-    "@You don't want any?  Whatever you say." end
+    "@Жоден не хочеш?  Як скажеш, любий." end
 
 l_0xc5cd97:
-    "{load_registers}@You can't buy the bananas if you don't have enough money." end
+    "{load_registers}@Ти не можеш купити банани, якщо в тебе недостатньо грошей." end
 
 l_0xc5cdb3:
-    "@You cannot carry any more." end
+    "@Ти не можеш їх більше впихнути." end
 
 l_0xc5cdc0:
-    "@Thank you, thank you." next
+    "@Дякую, дякую тобі любий." next
     eob
 
 l_0xc5cdcc:
-    "@Thank you, thank you." next
+    "@Дякую, дякую тобі любий." next
     eob
 
 l_0xc5cdd8:
-    "@I have more bananas...  Do you want some more?" linebreak
+    "@В мене ще багато бананів...  Ти б хотів більше?" linebreak
     eob
 
 l_0xc5cdf2:
-    "@[1C 02 00] has too many things to carry a banana." next
-    "@Will someone else carry it for {swap}" call(data_37.l_0xc7e6a4) "?" linebreak
+    "@[1C 02 00] несе забагато речей, щоб забрати банан." next
+    "@Мабуть, хтось інший понесе {swap}" call(data_37.l_0xc7e6a4) "?" linebreak
     eob
 
 l_0xc5ce22:
