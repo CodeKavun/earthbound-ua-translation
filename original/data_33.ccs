@@ -343,34 +343,34 @@ l_0xc795c1:
     "@Let's head back to Twoson![03]{window_closeall}[1F F1 B5 01 F1 00][1F 61][1F 1E B6 01 06][1F 61][1F 1E B5 01 06][1F 11 02]{music(11)}{pause(120)}{pause(120)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@[1C 02 02] joined you.[03]{window_closeall}{set(flag 13)}{set(flag 198)}{unset(flag 118)}{set(flag 321)}{set(flag 689)}{set(flag 483)}" eob
 
 l_0xc796ee:
-    "@(You must use the [1C 05 AB] to open this.){wait}{window_closeall}" eob
+    "@(В тебе має бути [1C 05 AB], щоб відкрити це.){wait}{window_closeall}" eob
 
 l_0xc79707:
     "[1F E6 D9 00]" goto(l_0xc7970b)
 
 l_0xc7970b:
-    "{counter(2)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc798fe)}]{window_open(1)}@Oh [1C 02 02]![03]{window_closeall}[19 22 01 02 D9 00][1F 13 01 00][19 22 02 02 D9 00][1F 13 02 00][1F E9 D9 00][1F 61][1F E6 D9 00][1F 16 D9 00 03]{window_open(1)}{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(data_34.l_0xc79942)}]@[1C 02 01],{pause(15)} thank you so much!" next
-    "@You must be the boy who will save the world,{pause(15)} like in" linebreak
-    "  [1C 02 02]'s dream." next
+    "{counter(2)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc798fe)}]{window_open(1)}@О [1C 02 02]![03]{window_closeall}[19 22 01 02 D9 00][1F 13 01 00][19 22 02 02 D9 00][1F 13 02 00][1F E9 D9 00][1F 61][1F E6 D9 00][1F 16 D9 00 03]{window_open(1)}{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(data_34.l_0xc79942)}]@[1C 02 01],{pause(15)} thank you so much!" next
+    "@Ти мусиш бути тим хлопцем, який врятує світ," linebreak
+    "@прямо як в снах, які мала [1C 02 02]." next
     goto(l_0xc79796)
 
 l_0xc79796:
-    "@[1C 02 02],{pause(15)} I'm sure you'd be a big help to [1C 02 01]." next
-    "@It's not every day a father lets his daughter embark on a journey to save the world![03]{window_closeall}{set(flag 12)}[19 22 02 02 D9 00][1F 13 02 00][1F 1C 02 01]{pause(60)}[1F 1D 02]{window_open(1)}@Dad,{pause(15)} don't worry about me." next
-    "@[1C 02 01] and I will be able to take care of ourselves." next
-    "@In Threed, the next town,{pause(15)} we'll meet another friend." next
-    "@If the three of us can combine our power,{pause(15)} no one can beat us." next
-    "@Now wipe your eyes,{pause(15)} blow your nose,{pause(15)} and smile before we take off.[03]{window_closeall}{set(flag 611)}[1F 41 05]{pause(10)}" goto(l_0xc798bf)
+    "@[1C 02 02],{pause(15)} я певен, ти даш велику допомогу для [1C 02 01]." next
+    "@Не кожен день батько дає дочці приєднатися до подорожі, щоб врятувати світ![03]{window_closeall}{set(flag 12)}[19 22 02 02 D9 00][1F 13 02 00][1F 1C 02 01]{pause(60)}[1F 1D 02]{window_open(1)}@Тату,{pause(15)} не переживай за мене." next
+    "@[1C 02 01] і я зможемо про себе подбати." next
+    "@В Триді, наступному місті,{pause(15)} ми зустрінемось з ще одним другом." next
+    "@Якщо троє з нас об'єднають сили,{pause(15)} ніхто нас не подолає." next
+    "@А тепер протри свої очі,{pause(15)} висморкайся,{pause(15)} і посміхнись перед тим, як ми підемо.[03]{window_closeall}{set(flag 611)}[1F 41 05]{pause(10)}" goto(l_0xc798bf)
 
 l_0xc798bf:
-    "{window_open(1)}@Goodbye [1C 02 02].{pause(20)}" linebreak
-    "  Don't worry,{pause(15)} I won't cry anymore...{wait}{window_closeall}[06 01 00 {e(l_0xc798f7)}]{set(flag 1)}" eob
+    "{window_open(1)}@Прощавай [1C 02 02].{pause(20)}" linebreak
+    "  Не переживай,{pause(15)} я більше не буду плакати...{wait}{window_closeall}[06 01 00 {e(l_0xc798f7)}]{set(flag 1)}" eob
 
 l_0xc798f7:
     "[1F F1 D9 00 2B 00]" eob
 
 l_0xc798fe:
-    "{window_open(1)}@Oh, [1C 02 02]!" next
+    "{window_open(1)}@О, [1C 02 02]!" next
     "@....." next
-    "@Am I dreaming?{pause(20)}  I feel like she just came home...[1F 16 D9 00 03][03]{sound(8)}{window_closeall}{pause(20)}{sound(9)}[1F 1E D9 00 06]" eob
+    "@Я сплю?{pause(20)}  В мене таке відчуття, що вона тільки прийшла додому...[1F 16 D9 00 03][03]{sound(8)}{window_closeall}{pause(20)}{sound(9)}[1F 1E D9 00 06]" eob
 

@@ -52,7 +52,7 @@ l_0xc9688a:
     "@The other day,{pause(15)} did you speak to a boy who invents stuff?" end
 
 l_0xc968ae:
-    "@Meow." end
+    "@Мяв." end
 
 l_0xc968b6:
     call(data_20.l_0xc64dd0) eob

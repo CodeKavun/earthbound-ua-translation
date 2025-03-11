@@ -273,46 +273,47 @@ l_0xc8045b:
     "@Нести багато речей і ганяти по вулиці це задачка неможлива для тебе." end
 
 l_0xc804d1:
-    "[06 49 00 {e(l_0xc808bd)}][06 08 03 {e(l_0xc8054d)}][06 55 00 {e(l_0xc807bc)}][06 54 00 {e(l_0xc806bb)}][06 0D 00 {e(l_0xc80579)}]@Whistle, whistle anywhere.{pause(10)}" linebreak
-    "  It makes me smile{pause(10)}" linebreak
-    "  all the while." next
-    "@I'm [1C 02 02]'s mo" goto(l_0xc80530)
+    "[06 49 00 {e(l_0xc808bd)}][06 08 03 {e(l_0xc8054d)}][06 55 00 {e(l_0xc807bc)}][06 54 00 {e(l_0xc806bb)}][06 0D 00 {e(l_0xc80579)}]@Свист, свист десь там.{pause(10)}" linebreak
+    "  Робить радість{pause(10)}" linebreak
+    "  на всю мить." next
+    "@Я ма" goto(l_0xc80530)
 
 l_0xc80530:
-    "ther.{pause(20)}  I'm busy taking care of these kids." next
+    "тір дівчини [1C 02 02].{pause(20)}  Я зайнята вихованням дітей." next
     goto(l_0xc8054d)
 
 l_0xc8054d:
-    "@You shouldn't worry about [1C 02 02].{pause(20)}  She has a guardian angel,{pause(15)} it seems." end
+    "@Ти не маєш переживати за [1C 02 02].{pause(20)}  З нею янгол-охоронець,{pause(15)} схоже." end
 
 l_0xc80579:
-    "{counter(2)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc80673)}]{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc80718)}]@Yahoo!{pause(5)}  I knew it!{pause(20)}  You saved [1C 02 02]." next
+    "{counter(2)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc80673)}]{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc80718)}]@Урааа!{pause(5)}  Я знала!{pause(20)}  Ти врятував мою доньку [1C 02 02]." next
     call(l_0xc806bb) linebreak
     goto(l_0xc805ba)
 
 l_0xc805ba:
-    "@[1C 02 02] if you must take a trip,{pause(15)} be sure to bring this along." next
-    "@It's my very own hand-made band-aid!{pause(20)}  Ooo!{pause(15)} That rhymes!" next
-    "@I know, I'll call it a Hand-aid!" next
+    "@[1C 02 02], якщо підеш у подорож,{pause(15)} то візьми краще це з собою." next
+    "@Це мій власний пластир ручної роботи!" next
+    "@Ручна робота{pause(15)} -- завжди найкраща, чи не так?" next
+    "@І звісно, я назву її Ручною допомогою!" next
     "[1D 03 FF][1B 02 {e(l_0xc8082a)}][1D 0E 00 BC]" call(data_36.l_0xc7dccf) "{wait}{set(flag 84)}" newline
-    "@Did you meet Dad?" next
-    "@He is sorry that he suspected Mr. Everdred of Burglin Park.{wait}   " eob
+    "@Ти навідувала Тата?" next
+    "@Йому шкода, що він підозрював Евердреда з Парку Бурґлін.{wait}   " eob
 
 l_0xc80673:
-    "@Is that you, [1C 02 02]?{pause(20)}  Oh,{pause(15)} I thought she would be back,{pause(15)} but not yet..." next
-    "@Oh no, I'm not worried... I'll be okay." end
+    "@Це ж ти, [1C 02 02]?{pause(20)}  Оо,{pause(15)} я думала, що вона повернулася,{pause(15)} але ще ні..." next
+    "@О ні ні, я не переживаю... зі мною все гаразд." end
 
 l_0xc806bb:
-    "{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc807ac)}]@I don't really understand it," next
-    "@but I know that [1C 02 02]'s miraculous power" next
-    "@and your great courage will allow you to stand up to any challenge." end
+    "{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc807ac)}]@Не можу цього до кінця зрозуміти," next
+    "@але я знаю, що велична сила моєї доньки" next
+    "@і твоя хороюрість дозволять вам долати перешкоди." end
 
 l_0xc80718:
-    "@Yahoo!{pause(15)}  I knew it!{pause(20)}  You got back here with no problem." next
-    "@Isn't [1C 02 01] with you?" next
-    "@...[1C 02 02],{pause(15)} your mom is trusting his courage and your miraculous power." next
-    "@I won't say I'm not worried." next
-    "@But I'll let you go along...  It's for a good cause..." goto(l_0xc807ac)
+    "@Ураа!{pause(15)}  Я знала!{pause(20)}  Ти повернешся сюди без всіляких проблем." next
+    "@А чи не має [1C 02 01] бути з тобою?" next
+    "@...[1C 02 02],{pause(15)} твоя мама довіряє його хоробрості і твоїй величній силі." next
+    "@Не скажу що я переживаю." next
+    "@Але я не дам тобі йти самій...  Про всяк випадок..." goto(l_0xc807ac)
 
 l_0xc807ac:
     "[06 54 00 {e(l_0xc807ba)}]" next
@@ -322,23 +323,25 @@ l_0xc807ba:
     end
 
 l_0xc807bc:
-    "[06 54 00 {e(l_0xc8087a)}]@[1C 02 02],{pause(15)} if you must go,{pause(15)} be sure to bring this along." next
-    "@It's my very own hand-made band-aid!{pause(20)}  I love the way that rhymes!" next
+    "[06 54 00 {e(l_0xc8087a)}]@[1C 02 02],{pause(15)} якщо ти маєш йти,{pause(15)} то візьми краще це з собою." next
+    "@Це мій власний пластир ручної роботи!" next
+    "@Ручна робота{pause(15)} -- завжди найкраща, чи не так?"
     "[1D 03 FF][1B 02 {e(l_0xc8082a)}][1D 0E 00 BC]" call(data_36.l_0xc7dccf) "{wait}{set(flag 84)}" eob
 
 l_0xc8082a:
     newline
-    "@What's that?{pause(15)}  You're being a little impatient..." next
-    "@You need to sell,{pause(15)} use or drop something.{pause(20)}  After that,{pause(15)} I can give this to you." end
+    "@Що це?{pause(15)}  Ти трошки не маєш терпіння..." next
+    "@Тобі потрібно продати,{pause(15)} викоримтати або викинути щось." next
+    "@Після цього,{pause(15)} я дам тобі це." end
 
 l_0xc8087a:
-    "[19 10 01]{rtoarg}@Well, here you are,{pause(15)} [1C 02 01]." next
-    "@I'll make you some [1C 01 04],{pause(20)} even though I'm not a very good cook.[03]" call(data_49.l_0xc915d6) call(data_49.l_0xc91582) eob
+    "[19 10 01]{rtoarg}@Що ж, а ось і ти,{pause(15)} [1C 02 01]." next
+    "@Я приготую тобі [1C 01 04],{pause(20)} незважаючи на те, що я не так добре готую.[03]" call(data_49.l_0xc915d6) call(data_49.l_0xc91582) eob
 
 l_0xc808bd:
-    "@You've lost some weight since I saw you last, [1C 02 01]." next
-    "@[1C 02 02] must have had quite an adventure!{pause(20)}  I'm glad you live so close to us." next
-    "@Why don't you drop by more often?{pause(20)}  I'm working at making better [1C 01 04]." end
+    "@А ти втратив вагу, відколи я тебе в останнє бачила, [1C 02 01]." next
+    "@[1C 02 02] точно мала чудові пригоди!{pause(20)}  Я рада, що ти живеш так близько до нас." next
+    "@Чому б тобі не навідувати нас почастіше?{pause(20)}  Я намагаюсь готувати [1C 01 04] ліпше." end
 
 l_0xc80939:
     "[06 0C 00 {e(l_0xc8097b)}][06 0D 00 {e(l_0xc8097b)}]@[1C 02 02] немає тут!" next
@@ -351,45 +354,45 @@ l_0xc80997:
     "@О, [1C 02 02]!{pause(20)}  Ух... пробач,{pause(15)} Я думав, що ти [1C 02 02]." end
 
 l_0xc809ba:
-    "[19 10 01]{result_is(2)}[1B 03 {e(l_0xc80a47)}][06 0C 00 {e(l_0xc809fc)}][06 0D 00 {e(l_0xc809fc)}]@Well,{pause(15)} I wanted to play with [1C 02 02],{pause(15)} but she's gone somewhere..." end
+    "[19 10 01]{result_is(2)}[1B 03 {e(l_0xc80a47)}][06 0C 00 {e(l_0xc809fc)}][06 0D 00 {e(l_0xc809fc)}]@Що ж,{pause(15)} я хотіла погратись з [1C 02 02],{pause(15)} але вона кудись пішла..." end
 
 l_0xc809fc:
-    "[06 08 03 {e(l_0xc80a2c)}]{counter(2)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc80a2c)}]@Thank you for saving [1C 02 02].{pause(20)}  You are my hero." end
+    "[06 08 03 {e(l_0xc80a2c)}]{counter(2)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc80a2c)}]@Дякую тобі за врятування [1C 02 02].{pause(20)}  Ти мій герой." end
 
 l_0xc80a2c:
-    "@Help [1C 02 02]!{pause(20)}  Hurry, hurry!" end
+    "@Допоможи їй!{pause(20)}  Хучіш, хучіш!" end
 
 l_0xc80a47:
-    "@[1C 02 02],{pause(15)} I was worried about you." next
-    "@I'm not going to ask the two of you where you were wandering..." end
+    "@[1C 02 02],{pause(15)} я переживала за тебе." next
+    "@Я не буду питати вас двох, де ви гуляли..." end
 
 l_0xc80a7e:
-    "[19 10 01]{result_is(2)}[1B 03 {e(l_0xc80b4b)}]{counter(2)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc80b02)}]@[1C 02 02] is like a mother to me." next
-    "@You may not be able to comprehend my emotions." next
-    "@I might have a baby face,{pause(15)} but I possess the mind of an adult." next
-    "@I beg your pardon." end
+    "[19 10 01]{result_is(2)}[1B 03 {e(l_0xc80b4b)}]{counter(2)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc80b02)}]@[1C 02 02] для мене як мати." next
+    "@Ти ек можеш зрозуміти мої емоції." next
+    "@Може я й маю дитяче обличча,{pause(15)} але володію розумом як у дорослих." next
+    "@Я прошу в тебе пардон." end
 
 l_0xc80b02:
     "@[1C 02 02]?" next
-    "@You know,{pause(15)} I thought I saw her" next
-    "@for a second out of the corner of my eye... maybe I was just dreaming..." end
+    "@Знаєш,{pause(15)} я думав, що побачив її" next
+    "@на секунду прямо десь у краю мого ока... мабуть я просто спав..." end
 
 l_0xc80b4b:
-    "@[1C 02 02],{pause(15)} you look nice and healthy.{pause(20)}  What great timing having you show up now!" end
+    "@[1C 02 02],{pause(15)} ти виглядаєш здоровою й чудовою.{pause(20)}  Ти з'явилась якраз в чудовий час!" end
 
 l_0xc80b7f:
-    "[19 10 01]{result_is(2)}[1B 03 {e(l_0xc80bc6)}]{counter(2)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc80be4)}]@When I grow up,{pause(15)} I wanna be" linebreak
-    "  ju{pause(5)}u{pause(5)}u{pause(5)}u{pause(5)}st like [1C 02 02]." end
+    "[19 10 01]{result_is(2)}[1B 03 {e(l_0xc80bc6)}]{counter(2)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc80be4)}]@Коли я виросту,{pause(15)} я хочу бути" linebreak
+    "  пря{pause(5)}а{pause(5)}а{pause(5)}а{pause(5)}мо як [1C 02 02]." end
 
 l_0xc80bc6:
-    "[06 D3 00 {e(l_0xc80bf2)}]@You skinned your knee,{pause(10)} huh." end
+    "[06 D3 00 {e(l_0xc80bf2)}]@В тебе подерте коліно,{pause(10)} га." end
 
 l_0xc80be4:
-    "@What happened to [1C 02 02]?" end
+    "@Що сталося з [1C 02 02]?" end
 
 l_0xc80bf2:
-    "@When I get big,{pause(15)} I'm gonna be grown-up [1C 02 02]." next
-    "@Then,{pause(20)} later I'll be old lady [1C 02 02]." end
+    "@Коли я виросту,{pause(15)} я буду як доросла [1C 02 02]." next
+    "@А потім,{pause(20)} потім я буду як бабуся [1C 02 02]." end
 
 l_0xc80c31:
     "[06 49 00 {e(l_0xc81087)}][06 55 00 {e(l_0xc80e61)}][06 0C 00 {e(data_33.l_0xc798bf)}][06 0D 00 {e(data_33.l_0xc7970b)}][06 76 00 {e(l_0xc80e03)}][06 42 01 {e(l_0xc80dd8)}]@Отже,{pause(15)} ти хочеш побачитись з моєю донькою [1C 02 02]?" next

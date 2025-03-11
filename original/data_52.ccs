@@ -44,52 +44,52 @@ l_0xc94d5b:
     "@Even though it's junk,{pause(15)} someone could use it for something." end
 
 l_0xc94d7a:
-    "[06 47 00 {e(l_0xc94df6)}]@I got bit by zombies in Threed,{pause(15)} the next town over,{pause(15)} so I'm stuck in this hospital." next
-    "@I left something good at the Threed Hospital," next
-    "@but now I can't go get it{pause(10)} because the bus can't get through the tunnel." end
+    "[06 47 00 {e(l_0xc94df6)}]@Мене вкусив зомбі в Триді,{pause(15)} наступному місті,{pause(15)} тому я застряг в цій лікарні." next
+    "@Я залишив щось цінне в Лікарні Триду," next
+    "@але я не можу піти і забрати,{pause(10)} бо автобус не може проїхати через тунель." end
 
 l_0xc94df6:
-    "@I'm in perfect, tip-top health now.{pause(20)}  I just wish I had more visitors." next
-    "@*cough* *hack, hack* *cough*" end
+    "@Тепер в мене пречудове, тіп-топове здоров'я.{pause(20)}  Надіюсь в мене буде більше відвідувачей." next
+    "@*кашель* *хек, хек* *кашель*" end
 
 l_0xc94e44:
-    "[19 19 00 00]{swap}{result_is(206)}[1B 02 {e(data_35.l_0xc7c6b6)}]@Thank you!{pause(15)}  You've made me so happy!" next
-    "@After my life,{pause(15)} this is the second most important thing to me!" next
-    "@Because you're so kind,{pause(15)} I want to give you this [1C 05 63]." next
-    "@It's a souvenir from Scaraba." next
+    "[19 19 00 00]{swap}{result_is(206)}[1B 02 {e(data_35.l_0xc7c6b6)}]@Дякую тобі!{pause(15)}  Ти мене зробив таким щасливим!" next
+    "@Після мого життя,{pause(15)} це друга найважливіша річ для мене!" next
+    "@І тому що ти такий сердечний,{pause(15)} я дам тобі [1C 05 63]." next
+    "@Це сувенір з Скараби." next
     "[1D 01 FF CE][1D 0E 00 63]" call(data_36.l_0xc7dccf) end
 
 l_0xc94ed9:
-    "[06 44 00 {e(l_0xc94f01)}]@I had an argument with my friend about Happy-Happyism." end
+    "[06 44 00 {e(l_0xc94f01)}]@В мене була суперечка з моїм другом щодо Щасливого Братства." end
 
 l_0xc94f01:
-    "@My friend who joined the Happy-happy religion came to see me a while ago." next
-    "@We've became friends again." end
+    "@Мій друг, який приєднався до Щасливого Братства, тільки що прийшов побачитись зі мною." next
+    "@І ми знову стали друзями." end
 
 l_0xc94f42:
     "[06 47 00 {e(l_0xc94f88)}]" goto(l_0xc94f49)
 
 l_0xc94f49:
-    "@I wanted to see the circus in Threed, the next town over," next
-    "@but I hurt my leg in the Peaceful Rest Valley." end
+    "@Я хотів побачити цирк в Триді, наступному місті," next
+    "@але я побив свою ногу в Долині Мирного Спокою." end
 
 l_0xc94f88:
-    "@You look healthy,{pause(15)} but you spend a lot of time at the hospital." next
-    "@My story is the same.{pause(20)}  Do you want to hear it again?" linebreak
-    "[19 02]Yes" eob
+    "@Так виглядаєш здоровим,{pause(15)} але ти витрачаєш багато часу в лікарні." next
+    "@Моя історія така ж.{pause(20)}  Хочеш її знову послухати?" linebreak
+    "[19 02]Так" eob
 
 l_0xc94fd3:
-    " [19 02]No" eob
+    " [19 02]Ні" eob
 
 l_0xc94fd9:
     "[1C 07 02][11]{clearline}[09 02 {e(l_0xc94ff9)} {e(l_0xc94fe8)}]" goto(l_0xc94fe8)
 
 l_0xc94fe8:
-    "@Well, it's not important." end
+    "@Що ж, вона й не така важлива." end
 
 l_0xc94ff9:
-    "@Okay,{pause(15)} you asked for it..." next
-    "@ready?" next
+    "@Добре,{pause(15)} ти попросив..." next
+    "@готовий?" next
     goto(l_0xc94f49)
 
 l_0xc95019:
@@ -337,57 +337,58 @@ l_0xc960ab:
 
 l_0xc960d7:
     "{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc960ab)}]@Прошу, витратіть ті 10,000 долларів на все, що завгодно." next
-    "@Ви не можете відмовитись від моєї щедрості,{pause(15)} просто прийміть це." end
+    "@Ви не можете відмовитись від моєї щедрості,{pause(15)} просто візьміть це." end
 
 l_0xc96124:
-    "[06 49 00 {e(l_0xc96267)}][06 CA 00 {e(l_0xc961d1)}]@Welcome to Mach Pizza!" next
-    "@We don't sell pizza here.{pause(20)}  We only deliver." next
-    "@Let me give you our number so you can place an order sometime." next
-    "@The best pizza is Mach Pizza.{pause(20)}  The number is... *psst psst psst*." next
-    "@You got that?{wait}{sound(116)}{set(flag 202)}" eob
+    "[06 49 00 {e(l_0xc96267)}][06 CA 00 {e(l_0xc961d1)}]@Вітаємо в Мач Піца!" next
+    "@Ми тут не продаємо піцу.{pause(20)}  Ми тільки доставляємо." next
+    "@Дай но я дам тобі наш номер, щоб ти міг замовити в будь-який час." next
+    "@Найкраща піца це Мач Піца.{pause(20)}  Номер... *псц псц псц*." next
+    "@Ну ти зрозумів?{wait}{sound(116)}{set(flag 202)}" eob
 
 l_0xc961d1:
-    "[06 0A 00 {e(l_0xc9623f)}]@*Munch*{pause(30)}munch*{pause(30)}gulp*" next
-    "@Uh... no,{pause(15)} I didn't take a piece of pizza.{pause(20)}  I would never think of doing that!" next
-    "@It was delicious, though.{pause(20)}  Enjoy!" next
+    "[06 0A 00 {e(l_0xc9623f)}]@*Жує*{pause(30)}жує*{pause(30)}ковтає*" next
+    "@Ух... ні,{pause(15)} я не взяла шматок піци.{pause(20)}  Я б ніколи не подумала, щоб зробити це!" next
+    "@Було смачно, хоча б.{pause(20)}  Насолоджуйся!" next
     goto(l_0xc9623f)
 
 l_0xc9623f:
-    "@As you may know,{pause(15)} you need to order by phone, okay?{wait}{set(flag 10)}" eob
+    "@Як можеш здогадатися,{pause(15)} тобі потрібно замовляти через тефон, ОК?{wait}{set(flag 10)}" eob
 
 l_0xc96267:
-    "@I wonder if we're going out of business?" next
-    "@I thought business was pretty good." next
-    "@Oh well,{pause(15)} I don't think I want to deliver pizza.{pause(20)}  I'd just get too tired..." end
+    "@Я не здивуюся, якщо ми збанкрутуємо?" next
+    "@Я думала, що бізнес йшов гладко." next
+    "@Ну що ж,{pause(15)} не думаю, що я буду возити піцу." next
+    "@Я би була просто занадто втомленою..." end
 
 l_0xc962c2:
     call(data_22.l_0xc680e2) eob
 
 l_0xc962c8:
-    "@You must be quite a rich boy to stay at such a nice,{pause(15)} first class hotel like this one." end
+    "@Маєш бути багатим хлопцем, щоб залишитись в чудовому,{pause(15)} першо-класному готелі як цей." end
 
 l_0xc96304:
-    "[06 01 00 {e(l_0xc963ce)}]@Do I have a mushroom on my head?" linebreak
-    "  [19 02]Yes" eob
+    "[06 01 00 {e(l_0xc963ce)}]@Чи є в мене на голові гриб?" linebreak
+    "  [19 02]Так" eob
 
 l_0xc96328:
-    "  [19 02]No" eob
+    "  [19 02]Ні" eob
 
 l_0xc9632f:
     "[1C 07 02][11]{clearline}[09 02 {e(l_0xc9633e)} {e(l_0xc9639f)}]" goto(l_0xc9633e)
 
 l_0xc9633e:
     newline
-    "{set(flag 1)}@That's what I thought..." next
-    "@Recently,{pause(15)} I couldn't walk quite right.{pause(20)}  It was because of this mushroom." next
-    "@It's actually kind of fun, so I'll leave it there." end
+    "{set(flag 1)}@Я так і думав..." next
+    "@Недавно,{pause(15)} я не міг правильно ходити.{pause(20)}  Це все було через той гриб." next
+    "@Насправді це трохи весело, тому я залишу його там." end
 
 l_0xc9639f:
     newline
-    "@You're one of those people that says <no> right off the bat to any question, right?" end
+    "@Ти один з тих людей, які кажуть <ні> одразу від початку будь-якого питання, так?" end
 
 l_0xc963ce:
-    "@Don't you think I look stylish with the mushroom?" end
+    "@Чи не думаєш, що я виглядаю стильно з цим грибом?" end
 
 l_0xc963ea:
     call(data_47.l_0xc90095) eob
@@ -396,8 +397,8 @@ l_0xc963f0:
     call(data_47.l_0xc90008) eob
 
 l_0xc963f6:
-    "@My shot didn't hurt." next
-    "@I'm sure everyone is talking about it,{pause(20)} but don't worry about me." end
+    "@Мій заряд незашкодив." next
+    "@Я впевнена, багато хто про це говорить,{pause(20)} але не переживай за мене." end
 
 l_0xc96425:
     "[06 47 00 {e(l_0xc96479)}]@Я думаю про поїздку автобусом до Триду.{pause(20)}  Я чув, що там привиди на шляху." next

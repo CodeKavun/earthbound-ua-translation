@@ -190,84 +190,84 @@ l_0xc849ed:
     call(data_40.l_0xc841de) "{ctoarg}{swap}[1F C0 1D {e(l_0xc84aad)} {e(l_0xc84aad)} {e(l_0xc84aad)} {e(l_0xc84aad)} {e(l_0xc84aad)} {e(l_0xc84aad)} {e(l_0xc84ad7)} {e(l_0xc84b3f)} {e(l_0xc84b5e)} {e(l_0xc84bbb)} {e(l_0xc84bee)} {e(l_0xc84bee)} {e(l_0xc84bee)} {e(l_0xc84bee)} {e(l_0xc84bee)} {e(l_0xc84c1b)} {e(l_0xc84c1b)} {e(l_0xc84cac)} {e(l_0xc84cfa)} {e(l_0xc84d38)} {e(l_0xc84d6b)} {e(l_0xc84d9c)} {e(l_0xc84dbc)} {e(l_0xc84deb)} {e(l_0xc84e1f)} {e(l_0xc84e64)} {e(l_0xc84f19)} {e(l_0xc84f55)} {e(l_0xc84f98)}]" eob
 
 l_0xc84a6e:
-    "@How about reading the newspaper before you go?" next
+    "@Як щодо прочитання газети перед прогулянкою?" next
     eob
 
 l_0xc84a8a:
-    "@Here is this morning's Twoson Tribune headline..." next
+    "@Ось найголовніший заголовок ранкової Трибуни Двосона..." next
     eob
 
 l_0xc84aad:
-    call(l_0xc84a6e) call(l_0xc84a8a) "@<Ghosts found to inhabit tunnel to Threed>" end
+    call(l_0xc84a6e) call(l_0xc84a8a) "@<Привиди вирішили заселитися в тунелі до Триду>" end
 
 l_0xc84ad7:
-    call(l_0xc84a6e) call(l_0xc84a8a) "@<The brave local hero named [1C 02 01] who broke up the Sharks has left Onett." next
-    "@Reports that the Mayor stopped the Sharks have been proven to be false>" end
+    call(l_0xc84a6e) call(l_0xc84a8a) "@<Хоробрий місцевмй хлопець на ім'я [1C 02 01], який знищив Акул, покинув Одинет." next
+    "@Заяви щодо зупинення Акул Мером були фальшивими>" end
 
 l_0xc84b3f:
-    call(l_0xc84a6e) call(l_0xc84a8a) "@<Missing girl still not found>" end
+    call(l_0xc84a6e) call(l_0xc84a8a) "@<Пропавшу дівчину все ще не знайдено>" end
 
 l_0xc84b5e:
-    call(l_0xc84a6e) call(l_0xc84a8a) "@<Regarding Mr. Carpainter" linebreak
-    "  Follower states Happy Happyism is wrong" next
-    "@Follower claims temporary insanity...>" end
+    call(l_0xc84a6e) call(l_0xc84a8a) "@<Хоч Послідовник" linebreak
+    "  Пана Карпейнтера каже, що Щасливе Братство це погано" next
+    "@Послідовник здається якимось божевільним...>" end
 
 l_0xc84bbb:
-    call(l_0xc84a6e) call(l_0xc84a8a) "@<[1C 02 02] found safe!" linebreak
-    "  Parents delighted to have her back>" end
+    call(l_0xc84a6e) call(l_0xc84a8a) "@<[1C 02 02] знайдено живою!" linebreak
+    "  Батьки в захваті її поверненню>" end
 
 l_0xc84bee:
-    call(l_0xc84a6e) call(l_0xc84a8a) "@<Ghosts continue to inhabit tunnel to Threed>" end
+    call(l_0xc84a6e) call(l_0xc84a8a) "@<Привиди продовжують заселяти тунель до Триду>" end
 
 l_0xc84c1b:
-    call(l_0xc84a6e) "@This morning's Twoson Tribune..." next
-    "@...Ooops!  My mistake... I brought the TwosonStar newspaper instead..." next
-    "@Well, let me read this anyway..." next
-    "@<Tessie in Lake Tess is cousin of Nessie>" next
-    "@...That's about it." end
+    call(l_0xc84a6e) "@Цією ранковою Трибуною Двосона..." next
+    "@...Ооой!  Переплутав... Я замість цбого взяв газету ЗіркоДвосон..." next
+    "@Що ж, мабуть все ж таки прочитаю для вас це..." next
+    "@<Тессі з Озера Тесс є кузином Нессі>" next
+    "@...Ось і все." end
 
 l_0xc84cac:
-    call(l_0xc84a6e) call(l_0xc84a8a) "@<Explosion heard recently caused by unknown craft crashing" next
-    "@into the graveyard in Threed>" end
+    call(l_0xc84a6e) call(l_0xc84a8a) "@<Вибух, почутий недавно, було спричинено невідомим об'єктом," next
+    "@який впав прямо в могилу в Триді>" end
 
 l_0xc84cfa:
-    call(l_0xc84a6e) call(l_0xc84a8a) "@<Runaway Five present popular show at the Topolla Theater" next
-    "@in downtown Fourside>" end
+    call(l_0xc84a6e) call(l_0xc84a8a) "@<Бродяча П'ятірка презентує популярне шоу в Театрі Тополла" next
+    "@в місті Чотирстрон>" end
 
 l_0xc84d38:
-    call(l_0xc84a6e) call(l_0xc84a8a) "@<Everdred, Burglin Park crime boss, missing>" end
+    call(l_0xc84a6e) call(l_0xc84a8a) "@<Евердред, кримінальний бос Парку Бурґлін, зник>" end
 
 l_0xc84d6b:
-    call(l_0xc84a6e) call(l_0xc84a8a) "@<Runaway Five's debut release sells out in minutes>" end
+    call(l_0xc84a6e) call(l_0xc84a8a) "@<Дубютеий вихід Бродячої П'ятірки продається в лічені хвилини>" end
 
 l_0xc84d9c:
-    call(l_0xc84a6e) "@...There was no morning edition today..." end
+    call(l_0xc84a6e) "@...Сьогодні немає жодних ранкових новин..." end
 
 l_0xc84dbc:
-    call(l_0xc84a6e) call(l_0xc84a8a) "@<Prince [1C 02 04] of Dalaam secretly visiting Twoson?>" end
+    call(l_0xc84a6e) call(l_0xc84a8a) "@<Принц [1C 02 04] з Далааму таємно відвідує Двосон?>" end
 
 l_0xc84deb:
-    call(l_0xc84a6e) call(l_0xc84a8a) "@<Former Happy Happyism followers claim to have been naive>" end
+    call(l_0xc84a6e) call(l_0xc84a8a) "@<Колишні послідовники Щасливого Братства стверджують, що вони були наївні>" end
 
 l_0xc84e1f:
-    call(l_0xc84a6e) call(l_0xc84a8a) "@<You!  With the controller in your hand! Have you been getting enough sleep lately?>" end
+    call(l_0xc84a6e) call(l_0xc84a8a) "@<Ти!  З контроллером в руках! Ти ж спиш достатньо?>" end
 
 l_0xc84e64:
-    call(l_0xc84a6e) "@There's an interesting advertisement in today's Twoson Tribune." next
-    "@<Are you shy?  Do you have trouble talking to people you don't know?" next
-    "@If so, the book <Overcoming Shyness> is your self-help guide to becoming more outgoing." next
-    "@This title is now available at your local bookstore or library.>" end
+    call(l_0xc84a6e) "@Тут є цікава реклама в сьогоднішній Трибуні Двосона." next
+    "@<Ти соромишся?  І тебе проблеми зі спілкуванням з людьми, про які ти не знаєш?" next
+    "@Якщо так, то книга <Перебороти Сором'язливість> стане тобі на допомогу у вирішані цьому." next
+    "@Цей твір тепер достуаний в твоїй місцевій книгарні або бібліотеці.>" end
 
 l_0xc84f19:
-    call(l_0xc84a6e) call(l_0xc84a8a) "@<In Twoson, Nintendo's eight-bit system, the NES, makes a comeback!>" end
+    call(l_0xc84a6e) call(l_0xc84a8a) "@<В Двосон, Нінтендівська 8-бітна система, НЕС, повертається!>" end
 
 l_0xc84f55:
-    call(l_0xc84a6e) call(l_0xc84a8a) "@<Onett Times a better newspaper than we imagined here at the Twoson Tribune>" end
+    call(l_0xc84a6e) call(l_0xc84a8a) "@<Голос Одинету таки краща газета, ніж ми уявляли в Трибуні Двосона>" end
 
 l_0xc84f98:
-    call(l_0xc84a6e) call(l_0xc84a8a) "@<Monsters disappear!" linebreak
-    " Animals calm down!" linebreak
-    " The town is at peace!>" end
+    call(l_0xc84a6e) call(l_0xc84a8a) "@<Чудовиська зникли!" linebreak
+    " Звірі заспокоїлися!" linebreak
+    " Місто в мирі!>" end
 
 l_0xc84fd8:
     call(data_40.l_0xc841de) "{ctoarg}{swap}[1F C0 1D {e(l_0xc850ff)} {e(l_0xc850ff)} {e(l_0xc850ff)} {e(l_0xc850ff)} {e(l_0xc850ff)} {e(l_0xc850ff)} {e(l_0xc850ff)} {e(l_0xc850ff)} {e(l_0xc850ff)} {e(l_0xc850ff)} {e(l_0xc850ff)} {e(l_0xc850ff)} {e(l_0xc8514f)} {e(l_0xc8519e)} {e(l_0xc851e9)} {e(l_0xc8522f)} {e(l_0xc85291)} {e(l_0xc852f0)} {e(l_0xc8533a)} {e(l_0xc85370)} {e(l_0xc853b0)} {e(l_0xc8544c)} {e(l_0xc8549d)} {e(l_0xc854cc)} {e(l_0xc85507)} {e(l_0xc85548)} {e(l_0xc855d4)} {e(l_0xc85610)} {e(l_0xc85651)}]" eob

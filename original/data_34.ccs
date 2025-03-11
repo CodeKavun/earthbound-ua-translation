@@ -8,9 +8,9 @@ command e(label) "{long label}"
 
 // Text Data
 l_0xc79942:
-    "@Where's [1C 02 01]?" next
-    "@He isn't here?{pause(20)}  I just wanted to thank him." next
-    "@You know,{pause(15)} I bet he's the boy you dreamt would save the world..." next
+    "@А де [1C 02 01]?" next
+    "@Його тут немає?{pause(20)}  Я просто хотів подякувати йому." next
+    "@Сама знаєш,{pause(15)} б'юсь об заклад, він і є хлопцем з твоїх снів, який врятує світ..." next
     goto(data_33.l_0xc79796)
 
 l_0xc79997:

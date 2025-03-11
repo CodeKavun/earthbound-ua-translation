@@ -210,62 +210,62 @@ l_0xc690ff:
     "@Вітаємо на самому кінці найбільших в світі заторів!" end
 
 l_0xc69121:
-    "[06 E2 02 {e(l_0xc692ea)}][06 E1 02 {e(l_0xc691e9)}][06 09 00 {e(l_0xc691c2)}][06 08 00 {e(l_0xc691b5)}][06 07 00 {e(l_0xc691a7)}][06 06 00 {e(l_0xc6919d)}][06 05 00 {e(l_0xc69191)}][06 04 00 {e(l_0xc69185)}][06 03 00 {e(l_0xc6917b)}][06 02 00 {e(l_0xc6916f)}]@What?{wait}{set(flag 2)}" eob
+    "[06 E2 02 {e(l_0xc692ea)}][06 E1 02 {e(l_0xc691e9)}][06 09 00 {e(l_0xc691c2)}][06 08 00 {e(l_0xc691b5)}][06 07 00 {e(l_0xc691a7)}][06 06 00 {e(l_0xc6919d)}][06 05 00 {e(l_0xc69191)}][06 04 00 {e(l_0xc69185)}][06 03 00 {e(l_0xc6917b)}][06 02 00 {e(l_0xc6916f)}]@Що тобі?{wait}{set(flag 2)}" eob
 
 l_0xc6916f:
-    "@So... what?{wait}{set(flag 3)}" eob
+    "@Отже... що тобі?{wait}{set(flag 3)}" eob
 
 l_0xc6917b:
-    "@Huh?{wait}{set(flag 4)}" eob
+    "@Га?{wait}{set(flag 4)}" eob
 
 l_0xc69185:
-    "@Pardon?{wait}{set(flag 5)}" eob
+    "@Пардон?{wait}{set(flag 5)}" eob
 
 l_0xc69191:
-    "@Geez...{wait}{set(flag 6)}" eob
+    "@Дідько...{wait}{set(flag 6)}" eob
 
 l_0xc6919d:
-    "@Mmm?{wait}{set(flag 7)}" eob
+    "@Ммм?{wait}{set(flag 7)}" eob
 
 l_0xc691a7:
-    "@You're annoying!{wait}{set(flag 8)}" eob
+    "@Ти дратуєш!{wait}{set(flag 8)}" eob
 
 l_0xc691b5:
-    "@Dang me!{wait}{set(flag 9)}" eob
+    "@Чорт забирай!{wait}{set(flag 9)}" eob
 
 l_0xc691c2:
-    "@Yeah, yeah!{wait}{set(flag 737)}{unset(flag 2)}{unset(flag 3)}{unset(flag 4)}{unset(flag 5)}{unset(flag 6)}{unset(flag 7)}{unset(flag 8)}{unset(flag 9)}" eob
+    "@Так, так!{wait}{set(flag 737)}{unset(flag 2)}{unset(flag 3)}{unset(flag 4)}{unset(flag 5)}{unset(flag 6)}{unset(flag 7)}{unset(flag 8)}{unset(flag 9)}" eob
 
 l_0xc691e9:
-    "[06 08 00 {e(l_0xc692a0)}][06 07 00 {e(l_0xc6928a)}][06 06 00 {e(l_0xc69278)}][06 05 00 {e(l_0xc69258)}][06 04 00 {e(l_0xc69243)}][06 03 00 {e(l_0xc69230)}][06 02 00 {e(l_0xc69226)}]@Ah, ha ha!{wait}{set(flag 2)}" eob
+    "[06 08 00 {e(l_0xc692a0)}][06 07 00 {e(l_0xc6928a)}][06 06 00 {e(l_0xc69278)}][06 05 00 {e(l_0xc69258)}][06 04 00 {e(l_0xc69243)}][06 03 00 {e(l_0xc69230)}][06 02 00 {e(l_0xc69226)}]@Ах, ха ха!{wait}{set(flag 2)}" eob
 
 l_0xc69226:
-    "@Hey, you!{wait}{set(flag 3)}" eob
+    "@Гей, ти!{wait}{set(flag 3)}" eob
 
 l_0xc69230:
-    "@Later days, pal!{wait}{set(flag 4)}" eob
+    "@Наступного разу, друже!{wait}{set(flag 4)}" eob
 
 l_0xc69243:
-    "@Ah!  Hah Hahhhh...{wait}{set(flag 5)}" eob
+    "@Ах!  Хаа Хаааахх...{wait}{set(flag 5)}" eob
 
 l_0xc69258:
-    "@It's so{pause(5)}o{pause(5)}o hot today." next
-    "@It rocks!{wait}{set(flag 6)}" eob
+    "@Сьогодні та{pause(5)}а{pause(5)}ак спекотно." next
+    "@Крутяк!{wait}{set(flag 6)}" eob
 
 l_0xc69278:
-    "@Is it cold today?{wait}{set(flag 7)}" eob
+    "@Сьогодні прохолодно?{wait}{set(flag 7)}" eob
 
 l_0xc6928a:
-    "@Oh ho ho!" next
-    "@See ya!{wait}{set(flag 8)}" eob
+    "@О хо хо!" next
+    "@Побачимось!{wait}{set(flag 8)}" eob
 
 l_0xc692a0:
-    "@Here, get yourself a juice or something..." next
-    "@*Ka-ching*" next
-    "[1D 08 32 00]{sound(116)}{open_wallet}{pause(60)}[19 10 01]{rtoarg}@([1C 02 01] got 50 dollars.){wait}{set(flag 738)}" eob
+    "@Ось, купи собі сік чи щось ще..." next
+    "@*Ка-чінг*" next
+    "[1D 08 32 00]{sound(116)}{open_wallet}{pause(60)}[19 10 01]{rtoarg}@([1C 02 01] отримує 50 долларів.){wait}{set(flag 738)}" eob
 
 l_0xc692ea:
-    "@Good luck, ok?" end
+    "@Щасти там, добре?" end
 
 l_0xc692f7:
     "{music(115)}{pause(60)}{wait}[1F 01 00]{sound(11)}{window_open(1)}@Sorry to bother you, big bro..." next

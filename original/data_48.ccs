@@ -20,7 +20,7 @@ l_0xc9038d:
     call(l_0xc90fd4) eob
 
 l_0xc90393:
-    "[06 7F 01 {e(l_0xc903e7)}][1D 15 32 00]{swap}@Welcome to Hotel Twoson." next
+    "[06 7F 01 {e(l_0xc903e7)}][1D 15 32 00]{swap}@Вітаємо в Готелі Двосона." next
     call(l_0xc90f3b) "[11]{clearline}[09 02 {e(l_0xc903c5)} {e(l_0xc903bf)}]" goto(l_0xc903bf)
 
 l_0xc903bf:
