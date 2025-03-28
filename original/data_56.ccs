@@ -237,7 +237,7 @@ l_0xc9a4e6:
     "@...Sheesh, look at me--I'm talking to myself!{wait}{window_closetop}" eob
 
 l_0xc9a56a:
-    "{sound(111)}{pause(40)}{window_open(1)}@If you're looking for Venus's house, it's next door.{wait}{window_closetop}" eob
+    "{sound(111)}{pause(40)}{window_open(1)}@Якщо ти хочеш заглянути в хату Венери, тобі до наступних дверей.{wait}{window_closetop}" eob
 
 l_0xc9a593:
     "{sound(111)}{pause(40)}{window_open(1)}@Yes, I'm coming!{pause(20)}" linebreak
@@ -245,33 +245,33 @@ l_0xc9a593:
     "@Uhhhh... I just fell down the stairs... I can't come to the door now.{wait}{window_closetop}" eob
 
 l_0xc9a604:
-    "{sound(111)}{pause(40)}{window_open(1)}[06 44 00 {e(l_0xc9a69f)}]@I've told you a thousand times. *munch, munch*" next
-    "@I won't join the Happy Happy Religious Group. *munch,munch, munch*" next
-    "@If you get pushy with me, I'll pelt you with peanuts! *munch, munch*{wait}{window_closetop}" eob
+    "{sound(111)}{pause(40)}{window_open(1)}[06 44 00 {e(l_0xc9a69f)}]@Я вже казав тисячу разів. *жує, жує*" next
+    "@Я не буду членом Релігійних Фанатиків Щасливого Щастя. *жує, жує, жує*" next
+    "@І якщо ти почнеш наїжджати на мене, я тебе заб'ю арахісами! *жує, жує*{wait}{window_closetop}" eob
 
 l_0xc9a69f:
-    "@Peanuts, Walnuts..." linebreak
-    "  Hazelnuts..." linebreak
-    "  Pecans..." next
-    "@Macadamia nuts..." linebreak
-    "  Cashews..." linebreak
-    "  Almonds..." next
-    "@Giant Pine Nuts..." linebreak
-    "  Pine Nuts..." linebreak
-    "  Sun Flower Seeds..." next
-    "@Pumpkin Seeds..." linebreak
-    "  Pistachios..." next
-    "@...Which one do you like?" linebreak
-    "[19 02]Yes" eob
+    "@Арахіси, Волоські Горіхи..." linebreak
+    "  Лісові..." linebreak
+    "  Пекан..." next
+    "@Горіхи Макадамські..." linebreak
+    "  Кешью..." linebreak
+    "  Мигдаль..." next
+    "@Гігантські Соснові Горіхи..." linebreak
+    "  Просто Соснові..." linebreak
+    "  Насіння Соняшника..." next
+    "@Насіння Гарбуза..." linebreak
+    "  Фісташки..." next
+    "@...Які тобі подобаються?" linebreak
+    "[19 02]Так" eob
 
 l_0xc9a752:
-    "[19 02]No" eob
+    "[19 02]Ні" eob
 
 l_0xc9a757:
     "[1C 07 02][11]{clearline}[09 02 {e(l_0xc9a766)} {e(l_0xc9a766)}]" goto(l_0xc9a766)
 
 l_0xc9a766:
-    "@I asked you <Which one do you like?>...{wait}{window_closeall}" eob
+    "@Я ж запитав у тебе <Які тобі подобаються?>...{wait}{window_closeall}" eob
 
 l_0xc9a783:
     "{sound(111)}{pause(40)}{window_open(1)}[06 47 00 {e(l_0xc9a7c8)}]@You a zombie?" next

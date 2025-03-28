@@ -474,18 +474,18 @@ l_0xc81087:
     "@Ти можеш навіть спати на дивані у вітальні, замість того, що на веранді..." end
 
 l_0xc81122:
-    "[06 49 00 {e(data_39.l_0xc8159f)}][06 75 00 {e(data_39.l_0xc81318)}][06 55 01 {e(data_39.l_0xc814b9)}]@Greetings.{pause(20)}  I'm Orange Kid, the inventor." next
-    "@Have you heard of me?{pause(20)}  I'm a bit embarrassed about my reputation." next
-    "@I have a lot of inventions in development, but I'm running short of cash." next
-    "@I'm basically a happy-go-lucky person,{pause(15)} so I'm not worried." next
-    "@You know,{pause(15)} I'm working on this machine" next
-    "@that would really help you in Peaceful Rest Valley." next
-    "@I hope it's ready soon... what?" next
-    "@You're actually willing to help finance the project?" linebreak
-    "[19 02]Yes" eob
+    "[06 49 00 {e(data_39.l_0xc8159f)}][06 75 00 {e(data_39.l_0xc81318)}][06 55 01 {e(data_39.l_0xc814b9)}]@Доброго дня.{pause(20)}  Я Апельсино-Хлопець, винахідник." next
+    "@Чув про мене?{pause(20)}  Я трохи збентежений своєю репутацією." next
+    "@В мене в розробці багато винаходів, але грошей у мене меньше й меньше." next
+    "@Я, вочевидь, щасливча-по-життю особистість,{pause(15)} тому я не хвилююсь." next
+    "@Сам знаєш,{pause(15)} я працюю над цією машиною," next
+    "@яка реально тобі допоможе в Долині Мирного Спокою." next
+    "@Надіюсь, воно скоро буде готове... що?" next
+    "@Ти справді хочеш допомогти мені з фінансами?" linebreak
+    "[19 02]Так" eob
 
 l_0xc81248:
-    " [19 02]No" eob
+    " [19 02]Ні" eob
 
 l_0xc8124e:
     "[1C 07 02][11]{clearline}[09 02 {e(data_39.l_0xc81286)} {e(data_39.l_0xc8125d)}]" goto(data_39.l_0xc8125d)

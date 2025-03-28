@@ -18,27 +18,27 @@ l_0xc96667:
     eob
 
 l_0xc96675:
-    "[06 5B 00 {e(l_0xc966d6)}]@My daughter left for the big city to become a superstar." next
-    "@She's using a stage name--{pause(20)}Vein... oh, vein something... she's working hard." end
+    "[06 5B 00 {e(l_0xc966d6)}]@Моя донька поїхала до великиго міста, щоб стати суперзіркою." next
+    "@У неї є подіумне прізвисько--{pause(20)}Вене... ох, якась вена... вона старанно працює." end
 
 l_0xc966d6:
-    "@I got a letter from my daughter.{pause(20)}  She wants me to see her next show." next
-    "@A book of photographs of her is coming out soon." next
-    "@I really hope she kept her clothes on...{pause(20)}  Times have sure changed..." end
+    "@Я отримала лист від своєї донечки.{pause(20)}  Вона хоче, щоб я була на її наступному шоу." next
+    "@Книга з її фотографіями вийде вже скоро." next
+    "@Я дуже сподіваюсь що вона залишила свій одяг...{pause(20)}  Часи, звісно, змінилися..." end
 
 l_0xc9675a:
-    "[06 49 00 {e(l_0xc9680e)}][06 44 00 {e(l_0xc967aa)}]@Dad and Mom have left for Happy-Happy Village." next
-    "@They wanna meet with the founder of the religion there." end
+    "[06 49 00 {e(l_0xc9680e)}][06 44 00 {e(l_0xc967aa)}]@Мама й Тато пішло в Щасливе Щастя." next
+    "@Вони хочуть зустратися з засновником релігії в тому селі." end
 
 l_0xc967aa:
-    "@Dad and Mom said they won't go to Happy-Happy Village." next
-    "@I'm not sure why, but now I'm happy." end
+    "@Мама й Тато сказали, що вони не підуть до Щасливого Щастя." next
+    "@Не знаю чому, але тепер я щасливий." end
 
 l_0xc967e7:
-    "@You woke me from that nightmare." end
+    "@Ти пробудив мене з нічних жахіть." end
 
 l_0xc967fb:
-    "@I'm sorry that I made you worry..." end
+    "@Пробач, що дала тобі переживання..." end
 
 l_0xc9680e:
     "@Now I get it.{pause(20)}  You're not from this town." next

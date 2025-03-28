@@ -514,10 +514,10 @@ l_0xc6a551:
     "@Believe me, those melancholy feelings will be gone before you know it." end
 
 l_0xc6a5e0:
-    "@I have a lot of old, broken junk, but I hate to throw anything away." next
-    "@If you have a friend who is knowledgeable about mechanics," next
-    "@that person might be able to fix something for you overnight..." next
-    "@Man, a friend like that would be so handy..." end
+    "@В мене багато старого, зламаного сміття, але бажання їх викидати нема." next
+    "@Якщо в тебе є друг, який знається на механіці," next
+    "@то він міг би полагодити щось для тебе за ніч..." next
+    "@Чорт, такий друг якраз би був в нагоді..." end
 
 l_0xc6a666:
     "{window_open(1)}@Коли купляєш річ, яка має бути екіпірована," next
