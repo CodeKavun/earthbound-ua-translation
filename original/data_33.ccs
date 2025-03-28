@@ -255,8 +255,8 @@ l_0xc79081:
     "[1F F1 A4 01 87 00]" eob
 
 l_0xc79088:
-    "@(For some weird reason," next
-    "@a pencil-shaped iron statue is blocking the path.)" end
+    "@(З якоїсь дивної причини," next
+    "@залізна статуя в формі олівця блокує тобі шлях.)" end
 
 l_0xc790c4:
     call(data_36.l_0xc7dd2c) "{result_is(184)}[1B 02 {e(data_35.l_0xc7c6f1)}]" call(l_0xc7911e) "[1F 1E C2 01 0A]{window_closeall}{set(flag 284)}{set(flag 482)}" eob
@@ -268,16 +268,15 @@ l_0xc79101:
     call(data_36.l_0xc7dd2c) "{result_is(184)}[1B 02 {e(data_35.l_0xc7c6f1)}]" call(l_0xc7911e) "[1F 1E 85 02 0A]{window_closeall}{set(flag 609)}" eob
 
 l_0xc7911e:
-    "[19 10 01]{rtoarg}@[1C 02 00] used the Pencil Eraser." next
-    "@For some weird reason, the iron pencil statue" linebreak
-    "  was erased![03]{sound(33)}" eob
+    "[19 10 01]{rtoarg}@[1C 02 00] використовує Затирач Олівців." next
+    "@З якоїсь дивної причини, залізну статую олівця було стерто![03]{sound(33)}" eob
 
 l_0xc7916c:
-    "{music(115)}{pause(60)}{wait}[1F 01 00]{sound(11)}{window_open(1)}@Hello... this is the Apple Kid." next
-    "@I've just finished work on this great invention!" next
-    "@Get over here as fast as you can!{pause(20)}  This thing is so{pause(5)}o{pause(5)}o{pause(5)}o{pause(15)} cool!" next
-    "@See you soon!{pause(15)}  Slam!{pause(20)}" linebreak
-    "  Beeeep...{wait}{window_closeall}{sound(11)}{set(flag 42)}{set(flag 339)}{set(flag 341)}{music_resume}" eob
+    "{music(115)}{pause(60)}{wait}[1F 01 00]{sound(11)}{window_open(1)}@Алло... це Яблуко-Хлопець." next
+    "@Я тільки що завершив роботу над своїм потужним винаходом!" next
+    "@Приходь як найшвидше!{pause(20)}  Ця штука таа{pause(5)}а{pause(5)}а{pause(5)}а{pause(15)}ка крутецька!" next
+    "@Скоро побачимось!{pause(15)}  Бувай!{pause(20)}" linebreak
+    "  Бііііп...{wait}{window_closeall}{sound(11)}{set(flag 42)}{set(flag 339)}{set(flag 341)}{music_resume}" eob
 
 l_0xc79211:
     "[1F F1 E2 00 78 00][1F 61]" eob
@@ -295,29 +294,29 @@ l_0xc792dc:
     "[1F ED][1F 1F 6A 00 06][1F 1F 5A 01 06][1F 1F BA 00 06][1F 1F B9 00 06][1F 1F BB 00 06][1F 1F 11 01 06]{pause(1)}[1F 1F 11 01 06]{unset(flag 751)}[1F 21 E6]{pause(1)}" eob
 
 l_0xc7930c:
-    "{window_open(1)}@Yeah!{pause(20)}  That's right!" next
-    "@Tonight,{pause(15)} you got the Chaos Theater's Soul Men comin' at ya!" next
-    "@Rockin' and rollin' live on this here stage for a limited time only!" next
-    "@The world's greatest Bluesmen," next
-    "@the Runaway Five!{pause(20)}  And here they come!{pause(15)}  Oh yeah!{pause(10)}  Baby![03]{window_closeall}" eob
+    "{window_open(1)}@Так!{pause(20)}  Саме так!" next
+    "@Сьогодні,{pause(15)} у вас увійде Чоловічий Дух Театру Хаос!" next
+    "@Рокінг й ролінг живе на цьому подіумі тільки на обмедений час!" next
+    "@Найвеличніші музиканти світу," next
+    "@Бродяча П'ятірка!{pause(20)}  А ось і вони!{pause(15)}  О так!{pause(10)}  Крихітко![03]{window_closeall}" eob
 
 l_0xc793be:
-    "@A young fan like you really gets into the Runaway Five's music?" next
-    "@Wow,{pause(15)} I'm impressed!" end
+    "@Такий юний фанат як ти розуміється в музиці Бродячої П'ятірки?" next
+    "@Вов,{pause(15)} я вражений!" end
 
 l_0xc793f3:
-    "[06 3F 01 {e(l_0xc79413)}]@Seeing the Runaway Five on stage is my life..." end
+    "[06 3F 01 {e(l_0xc79413)}]@Дивитися на Бродячу П'ятірку на подіумі це моє життя..." end
 
 l_0xc79413:
-    "@The Runaway Five are so sexy!{pause(20)}  My husband definitely is..." next
-    "@in need of some help in that area!" end
+    "@Бродяча П'ятірка такі сексуальні!{pause(20)}  Мій чоловік точно в..." next
+    "@в потребі на якусь допомогу в цій сфері!" end
 
 l_0xc7944e:
-    "[06 3F 01 {e(l_0xc79489)}]@When I sit close to the stage," next
-    "@sometimes I get sweat or spit on me from the Runaway Five." end
+    "[06 3F 01 {e(l_0xc79489)}]@Коли я сиджу прямо біля подіуму," next
+    "@то іноді отримую щось солоке або ж плювки від Бродячої П'ятірки." end
 
 l_0xc79489:
-    "@Oh,{pause(15)} that was almost too much!" end
+    "@Ох,{pause(15)} це було майже занадто!" end
 
 l_0xc7949e:
     "{unset(flag 2)}{unset(flag 3)}[1F E9 B7 01][1F 61][1F E6 B7 01]{window_open(1)}" goto(l_0xc794b1)

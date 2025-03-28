@@ -41,15 +41,15 @@ l_0xc967fb:
     "@Пробач, що дала тобі переживання..." end
 
 l_0xc9680e:
-    "@Now I get it.{pause(20)}  You're not from this town." next
-    "@So, where do you come from?{pause(15)}  Can you play with me again someday?" end
+    "@Тепер я розумію.{pause(20)}  Ти не з цього міста." next
+    "@Отже, звідки ти?{pause(15)}  Пограєшся зі мною коли-небудь?" end
 
 l_0xc9684f:
-    "[06 53 00 {e(l_0xc9688a)}]@Did you know that two young inventors live in this town?" next
-    "@I want to invent something, too." end
+    "[06 53 00 {e(l_0xc9688a)}]@Чи ти знав, що в цьому місті живуть двоє молодих винахідників?" next
+    "@Я теж хочу щось винайти." end
 
 l_0xc9688a:
-    "@The other day,{pause(15)} did you speak to a boy who invents stuff?" end
+    "@До речі,{pause(15)} а ти розмовляв з хлопцем, який винаходить всілякі речі?" end
 
 l_0xc968ae:
     "@Мяв." end
@@ -58,37 +58,37 @@ l_0xc968b6:
     call(data_20.l_0xc64dd0) eob
 
 l_0xc968bc:
-    "[06 77 00 {e(l_0xc969b2)}]@Do you want to buy a ticket for the Runaway Five show?" linebreak
-    "  [19 02]Yes" eob
+    "[06 77 00 {e(l_0xc969b2)}]@Хочете купити квиток на шоу Бродячої П'ятірки?" linebreak
+    "  [19 02]Так" eob
 
 l_0xc968e0:
-    "  [19 02]No" eob
+    "  [19 02]Ні" eob
 
 l_0xc968e7:
     "[1C 07 02][11]{clearline}[09 02 {e(l_0xc9690d)} {e(l_0xc968f6)}]" goto(l_0xc968f6)
 
 l_0xc968f6:
-    "@Oh, I mistook you for a customer." end
+    "@Ох, я переплутала вас з покупцем." end
 
 l_0xc9690d:
-    "@The main floor and balcony seats are sold out." next
-    "@We only have box seats, which cost 20 dollars.{pause(20)}  Would that be okay?" next
-    "@Oh, wait... the box seats sold out a long time ago.  Oops.{pause(20)}  My mistake." next
-    "@The box seats are the most popular." end
+    "@Сидіння головного поверху і балкону вже продані." next
+    "@У нас тільки катонні сидіння, які коштують 20 долларів.{pause(20)}  Ви ж не проти?" next
+    "@Ох, зачекайте... картонні сидіння були продані вже лкже давно.  Ой.{pause(20)}  Помилилася." next
+    "@Картонні сидіння користуються широкою популярністю." end
 
 l_0xc969b2:
-    "@Sorry.{pause(15)}  The Chaos Theater is being remodeled.{pause(20)}  There is no concert." end
+    "@Вибачте.{pause(15)}  Театрі Хаос реконструйовано.{pause(20)}  Там немає концертів." end
 
 l_0xc969e5:
     "[06 02 00 {e(l_0xc969ff)}][06 72 00 {e(l_0xc96a1f)}]" call(l_0xc969ff) "{set(flag 114)}{set(flag 2)}" eob
 
 l_0xc969ff:
-    "@This department store isn't crowded.{pause(20)}  I like that." end
+    "@Цей торгівельний центр не переповнений.{pause(20)}  Мені це подобається." end
 
 l_0xc96a1f:
-    "@Didn't you talk to me before?{pause(20)}  I believe I said," next
-    "@<This department store isn't crowded.{pause(20)}  I like that>..." next
-    "@or something to that effect." end
+    "@Чи не балакав ти зі мною до цього?{pause(20)}  Я вірю, що я казав," next
+    "@<Цей торгівельний центр не переповнений.{pause(20)}  Мені це подобається>..." next
+    "@або щось в такому дусі." end
 
 l_0xc96a72:
     call(data_13.l_0xc5d287) eob
@@ -97,21 +97,21 @@ l_0xc96a78:
     call(data_13.l_0xc5d293) eob
 
 l_0xc96a7e:
-    "[06 26 02 {e(l_0xc96aff)}]@I think that my grandchild is older than you.{pause(20)}  He's a famous inventor." next
-    "@He lives here, and people call him Orange Kid." next
-    "@He seems to be popular with the girls,{pause(15)} because he's... groovy?" end
+    "[06 26 02 {e(l_0xc96aff)}]@Думаю, що мій онук старший за тебе.{pause(20)}  Він відомий винахідник." next
+    "@Він тут живе, і люди називають його Апельсино-Хлопцем." next
+    "@Він, схоже, популярний серед дівчат,{pause(15)} бо він... класний?" end
 
 l_0xc96aff:
-    "@We've bumped into each other before.{pause(20)}  You seem to love department stores." next
-    "@I do too." end
+    "@Мене до цього вже один з одним перетиналися.{pause(20)}  Схоже ти любиш такі центри." next
+    "@Я також." end
 
 l_0xc96b37:
-    "[06 D7 00 {e(l_0xc96b79)}]@I heard a meteorite crashed onto a hilltop near Onett." next
-    "@That must have been exciting!" end
+    "[06 D7 00 {e(l_0xc96b79)}]@Я чув, що метеорит впав на вершину пагорба біля Одинету." next
+    "@Це мало б бути видовишним!" end
 
 l_0xc96b79:
-    "@I saw you a long time ago..." next
-    "@maybe about the time that the meteorite hit Onett..." end
+    "@Я бачив тебе дуже давно..." next
+    "@може приблизно в той час, коли метеорит впав в Одинеті..." end
 
 l_0xc96baf:
     call(data_13.l_0xc5d29f) eob
@@ -120,14 +120,14 @@ l_0xc96bb5:
     call(data_13.l_0xc5d2ab) eob
 
 l_0xc96bbb:
-    "@I wanna visit my boyfriend in Threed 'cept the bus won't go there." next
-    "@I wonder why." end
+    "@Я хочу провідати свого хлопця в Триді, що правда автобус туди не їздить." next
+    "@Не знаю чому." end
 
 l_0xc96bf2:
-    "[06 49 00 {e(l_0xc96cd4)}][06 D3 00 {e(l_0xc96c57)}][06 44 00 {e(l_0xc96c35)}]@Happy-Happy Village is getting to be more and more blue.{pause(20)}  Do you get it?" end
+    "[06 49 00 {e(l_0xc96cd4)}][06 D3 00 {e(l_0xc96c57)}][06 44 00 {e(l_0xc96c35)}]@Село Щасливе Щастя стає все більш і більш синім.{pause(20)}  Уявляєш?" end
 
 l_0xc96c35:
-    "@Someday, Happy-Happy Village will be truly happy." end
+    "@Колись, Щасливе Щастя буде справді щасливим." end
 
 l_0xc96c57:
     "@You're always wearing the same clothes..." next

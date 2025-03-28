@@ -349,7 +349,7 @@ l_0xc94883:
 
 l_0xc948dc:
     "{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc949a2)}]{counter(2)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc949ce)}][06 29 02 {e(l_0xc94a1c)}]@Агов,{pause(15)} ти прийшов з дівчиною [1C 02 02]!" next
-    "@Then you deserve a present, playboy." next
+    "@А ти заслуговуєш на подарунок, юначе." next
     "@Ось [1C 05 7D].{pause(20)}  Ти можеш піти на наше шоу!" next
     "[1D 03 FF][1B 02 {e(l_0xc94966)}][1D 0E 00 7D]" call(data_36.l_0xc7dccf) "{wait}{set(flag 553)}{set(flag 484)}" eob
 

@@ -160,41 +160,41 @@ l_0xc81a84:
     "{set(flag 522)}" eob
 
 l_0xc81a88:
-    "[06 D3 00 {e(l_0xc81ac4)}][06 02 00 {e(l_0xc81b04)}][06 77 00 {e(l_0xc81ade)}][19 22 FF 02 E2 00]" call(data_36.l_0xc7dc9b) "[1B 02 {e(l_0xc81ade)}]@Hello,{pause(15)} please present your ticket." end
+    "[06 D3 00 {e(l_0xc81ac4)}][06 02 00 {e(l_0xc81b04)}][06 77 00 {e(l_0xc81ade)}][19 22 FF 02 E2 00]" call(data_36.l_0xc7dc9b) "[1B 02 {e(l_0xc81ade)}]@Привіт,{pause(15)} прошу представити свій квиток." end
 
 l_0xc81ac4:
-    "@Sorry,{pause(15)} the show is on hold for a while." end
+    "@Пробачте,{pause(15)} шоу трохи затримується." end
 
 l_0xc81ade:
-    "@Oh, pardon me.[03]{window_closeall}[06 77 00 {e(l_0xc81afb)}]" call(data_33.l_0xc7921a) "{set(flag 2)}" eob
+    "@Ох, пробачте.[03]{window_closeall}[06 77 00 {e(l_0xc81afb)}]" call(data_33.l_0xc7921a) "{set(flag 2)}" eob
 
 l_0xc81afb:
     call(data_33.l_0xc79211) "{set(flag 2)}" eob
 
 l_0xc81b04:
-    "@See you." end
+    "@Побачимось." end
 
 l_0xc81b0c:
-    "{store_registers}[06 02 00 {e(l_0xc81baf)}][06 77 00 {e(l_0xc81b9b)}]{load_registers}[19 19 00 00]{swap}{store_registers}{result_is(125)}[1B 03 {e(l_0xc81b50)}][19 22 FF 02 E2 00]" call(data_36.l_0xc7dc9b) "[1B 02 {e(l_0xc81ade)}]@Please show me your ticket." end
+    "{store_registers}[06 02 00 {e(l_0xc81baf)}][06 77 00 {e(l_0xc81b9b)}]{load_registers}[19 19 00 00]{swap}{store_registers}{result_is(125)}[1B 03 {e(l_0xc81b50)}][19 22 FF 02 E2 00]" call(data_36.l_0xc7dc9b) "[1B 02 {e(l_0xc81ade)}]@Будь-ласка, покажіть свій білет." end
 
 l_0xc81b50:
-    "[19 22 FF 02 E2 00]" call(data_36.l_0xc7dc9b) "[1B 02 {e(l_0xc81ade)}]{sound(118)}@Here you go.{pause(15)}  Hurry!{pause(20)}  You're just in time to see the Runaway Five show![03]" call(data_33.l_0xc79211) "{set(flag 549)}{set(flag 2)}" eob
+    "[19 22 FF 02 E2 00]" call(data_36.l_0xc7dc9b) "[1B 02 {e(l_0xc81ade)}]{sound(118)}@Проходьте.{pause(15)}  Поспішайте!{pause(20)}  Ви якраз прийшли на початок вистави![03]" call(data_33.l_0xc79211) "{set(flag 549)}{set(flag 2)}" eob
 
 l_0xc81b9b:
-    "@The show is on hold for a while." end
+    "@Шоу трохи затримується." end
 
 l_0xc81baf:
-    "@How do you do?" end
+    "@Як ся мачє?" end
 
 l_0xc81bb8:
-    "@Oh, here you are!{pause(20)}  Hurry up, you're just in time to see the Runaway Five show.[03]" eob
+    "@Ох, а ось і ви!{pause(20)}  Поспішайте, ви якраз прийшли на початок вистави.[03]" eob
 
 l_0xc81be2:
-    "[06 77 00 {e(l_0xc81c2f)}]@I guess I lost my ticket,{pause(15)} so now I can't get in." next
-    "@The ticket counter at the department store was even sold out." end
+    "[06 77 00 {e(l_0xc81c2f)}]@Мені здається, що я загубив свій квиток,{pause(15)} і тепер я не можу пройти." next
+    "@Навіть лічильник квитків було продано в торговому центрі." end
 
 l_0xc81c2f:
-    "@*Sniff*{pause(15)} I suppose I'll never see the Runaway Five's show again." end
+    "@*Шмаркає*{pause(15)} Я так розумію, я більше ніколи не побачу шоу Бродячої П'ятірки." end
 
 l_0xc81c56:
     "@А хіба я не бачив тебе в Театрі Тополла в Чотирстроні?" next
@@ -206,49 +206,51 @@ l_0xc81c91:
     "@Ми почали хитатись, поки тебе чекали..." end
 
 l_0xc81cd6:
-    "[06 77 00 {e(l_0xc81dc3)}][06 73 00 {e(l_0xc81db5)}]@Lucky of the Runaway Five told me I could go backstage,{pause(15)} but I don't have a pass." next
-    "@I'm sure security will stop me.{pause(20)}  Hey!{pause(20)}  Really?{pause(30)}  You have a pass?" next
-    "@I can't believe it!{pause(20)}  Can you take me with you, please{pause(5)} please{pause(10)} please?" next
-    "@I could pose as your sister.{pause(15)}  Yes?  This rocks.{pause(15)}  Let's go." next
-    "@Ooo.{pause(15)} My heart is pounding.[03]{window_closeall}" call(data_34.l_0xc79997) "{unset(flag 43)}{set(flag 115)}" eob
+    "[06 77 00 {e(l_0xc81dc3)}][06 73 00 {e(l_0xc81db5)}]@Щасливчик з Бродячої П'ятірки сказав, що я могла би прийти за лаштунками," next
+    "@але в мене нема пропуску." next
+    "@Знаю, що охорона мене зупинить.{pause(20)}  Агов!{pause(20)}  Справді?{pause(30)}  У тебе пропуск?" next
+    "@Не можу повірити!{pause(20)}  Можеш мене забрати з собою, будь-ласка{pause(5)} будь-ласка{pause(10)} будь-ласка?" next
+    "@Я могла б позиціонувати себе як твоя сестра." next
+    "@Так?  Клас!{pause(15)}  Пішли." next
+    "@Ооо.{pause(15)} Моє серце б'ється.[03]{window_closeall}" call(data_34.l_0xc79997) "{unset(flag 43)}{set(flag 115)}" eob
 
 l_0xc81db5:
-    "@Thank you for your kindness!" end
+    "@Дякую за твою люб'язність!" end
 
 l_0xc81dc3:
-    "@I'm gonna miss the Runaway Five when they finally leave.{pause(20)}  But that's life!" end
+    "@Я сумуватиму за Бродячою П'ятіркою, коли вони поїдуть.{pause(20)}  Але ж це життя!" end
 
 l_0xc81df1:
-    "@The Runaway Five are going to be a world-famous band someday." end
+    "@Одного дня, Бродяча П'ятірка буде всесвітньо-відомою групою." end
 
 l_0xc81e0f:
-    "@Do you like baseball?" linebreak
-    "[19 02]Yes" eob
+    "@Тобі подобається бейзбол?" linebreak
+    "[19 02]Так" eob
 
 l_0xc81e23:
-    " [19 02]No" eob
+    " [19 02]Ні" eob
 
 l_0xc81e29:
     "[1C 07 02][11]{clearline}[09 02 {e(l_0xc81e7a)} {e(l_0xc81e38)}]" goto(l_0xc81e38)
 
 l_0xc81e38:
-    "@Ah... I see." next
-    "@Well, you don't look like you could figure out" next
-    "@a sophisticated game like baseball anyway." end
+    "@Аа... Розумію." next
+    "@Що ж, ти не здаєшся тим, хто розуміється на" next
+    "@таких витончених іграх як бейзбол." end
 
 l_0xc81e7a:
-    "{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc81ea3)}]@I knew it!{pause(20)}  Your cap gave it away." end
+    "{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(l_0xc81ea3)}]@Я знав це!{pause(20)}  Твоя кепка говорить сама за тебе." end
 
 l_0xc81ea3:
-    "@You have the graceful movement of a baseball player." next
-    "@I'm on a baseball team,{pause(15)} so I can recognize these things." end
+    "@У тебе витончені рухи бейзбольного гравця." next
+    "@Я в бейзбольній команді,{pause(15)} тому я впізнаю такі речі." end
 
 l_0xc81eee:
-    "@Hey, hey, hey!{pause(15)}  Don't get too close to me." next
-    "@I just farted,{pause(15)} heh, heh... sorry." end
+    "@Гей, гей, гей!{pause(15)}  Не підходь так близько до мене." next
+    "@Я просто перднув,{pause(15)} хе, хе... вибач." end
 
 l_0xc81f2a:
-    "@You kids are bouncing around,{pause(15)} talking to everyone.{pause(20)}  It's getting annoying." end
+    "@Ви діти скакаєте всюди,{pause(15)} балакаєте з кожним.{pause(20)}  Це вже так бісить." end
 
 l_0xc81f56:
     "[06 53 00 {e(l_0xc8207c)}]@Я чую себе замореним, бо я працював над цим цілу ніч," next

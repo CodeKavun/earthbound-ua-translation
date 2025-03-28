@@ -359,9 +359,9 @@ l_0xc69861:
     "  [52][1C 05 82].[52]{wait}{font_normal}" eob
 
 l_0xc698ca:
-    "@That teddy bear they sell over there...I heard it helps in battle." next
-    "@I don't know what they're talking about." next
-    "@It looks like a plain ol' teddy bear to me..." end
+    "@Цей плюшевий ведмідь, який там продається...Я чув, що він допомагає в боях." next
+    "@Не знаю, про що вони кажуть." next
+    "@Він виглядає для мене як на звичайного плюшевого ведмедя..." end
 
 l_0xc69928:
     "[06 49 00 {e(l_0xc69ac6)}]@Гав! Гав!" next
@@ -508,10 +508,10 @@ l_0xc6a4f2:
     "@I really love these guys!" end
 
 l_0xc6a551:
-    "@I always feel much better after hearing my mom's voice over the phone." next
-    "@I was really homesick recently, and my mom cheered me right up." next
-    "@You should call your mom sometime." next
-    "@Believe me, those melancholy feelings will be gone before you know it." end
+    "@Я завжди почуваю себе краще, коли я чую голос своєї мами по телефону." next
+    "@Я недавно дуже сумував за домом, і моя мама мене заспокоїла." next
+    "@Ти маєш іноді дзвонити своїх мамі." next
+    "@Повір мені, ті меланхольні почуття зникнуть до того, як ти дізнаєшся." end
 
 l_0xc6a5e0:
     "@В мене багато старого, зламаного сміття, але бажання їх викидати нема." next

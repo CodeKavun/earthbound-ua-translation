@@ -104,171 +104,172 @@ l_0xc950b2:
     "@Усі мабуть переживають за тебе." end
 
 l_0xc950e8:
-    "@Hey, you " call(data_37.l_0xc7e758) "... how did you get " call(l_0xc95124) "?{pause(15)}  What are you," next
-    "@the owner's " call(data_37.l_0xc7e758) " or something?" end
+    "@Агов, " call(data_37.l_0xc7e758) "... як ви сюди потрапили " call(l_0xc95124) "?{pause(15)}  Хто ви такі," next
+    "@"call(data_37.l_0xc7e758) " власника чи що?" end
 
 l_0xc95124:
-    "[19 10 02][1D 0D 00 01 02][1B 03 {e(l_0xc95147)}][19 10 02][1D 0D 00 01 03][1B 03 {e(l_0xc95147)}]tickets" eob
+    "[19 10 02][1D 0D 00 01 02][1B 03 {e(l_0xc95147)}][19 10 02][1D 0D 00 01 03][1B 03 {e(l_0xc95147)}]квитки" eob
 
 l_0xc95147:
-    "a ticket" eob
+    "квиток" eob
 
 l_0xc9514f:
-    "@I came here because it's tough to get in,{pause(15)} but I'm kind of disappointed." next
-    "@There are no good-looking waitresses," next
-    "@and there is no room for me to show off my latest dance moves." end
+    "@Я прийшов сюди сюди, бо тяжко сюди попасти,{pause(15)} але я щось розчарований." next
+    "@Тут нема запальних офіціанток," next
+    "@і тут нема камнати для, де б я показував свої останні танцювальні трюки." end
 
 l_0xc951b7:
-    "@Y'know, I think it's pretty tacky to entertain" next
-    "@our company's business partner by taking him to a Runaway Five show." next
-    "@...But since I'm new to the company, I better just toe the line." end
+    "@Знаєте, я думаю це трохи неправильно розважати" next
+    "@бізнес партнера нашої компанії взявши його до Бродячої П'ятірки." next
+    "@...Але так як я новенькийв компанії, я краще просто слідуватиму лініям." end
 
 l_0xc9522b:
-    "@Well, well...{pause(20)} I got a little kid here talking to me like [19 10 01]{result_is(2)}[1B 03 {e(l_0xc95257)}]he' s " goto(l_0xc95257)
+    "@Так, так...{pause(20)} до мене підходить юнак і балакає зі мною як [19 10 01]{result_is(2)}[1B 03 {e(l_0xc95257)}]ніби він " goto(l_0xc95257)
 
 l_0xc95257:
-    "an adult." next
-    "@I give you one thing---you got guts, kid..." end
+    "дорослий." next
+    "@Я скажу тобі одну річ---ти набрався впевненості, юначе..." end
 
 l_0xc9527c:
-    "@They seem too proud... I mean," next
-    "@they just filled up this little music hall after all..." end
+    "@Вони схоже занадто задоволені ... Я маю на увазі," next
+    "@вони всього лише наповнили зал своєю короткою музикою..." end
 
 l_0xc952b2:
-    "@My boyfriend lost the ticket that I gave him." next
-    "@He's waiting outside the entrance." next
-    "@He's got butter fingers, but he's nice." end
+    "@Мій хлопець загубив квиток, який я йому дала." next
+    "@Він чекає ззовні." next
+    "@Він обмазав свої пільці маслом, але він милий." end
 
 l_0xc95306:
-    "@La la La la" next
-    "@I just love ragtime!" end
+    "@Ля ля Ля ля" next
+    "@Я просто обожнюю музичний час!" end
 
 l_0xc95324:
-    "@La la Mi mi I'm tone-deaf.{pause(20)}" linebreak
-    "  My daughter brought me here." next
-    "@Fa la La mi." end
+    "@Ля ля Мі мі Я трохи глухий.{pause(20)}" linebreak
+    "  Моя доня повела мене сюди." next
+    "@Фа ля Ля мі." end
 
 l_0xc95365:
-    "@(One of the biggest markets you'll ever find--now in Burglin Park.)" end
+    "@(Один з найбільших ринків які ви знаєдете--тепер в Парку Бурґлін.)" end
 
 l_0xc95393:
     "@Я завжди бачу, що ти тут гуляєш навколо." next
     "@Прогулянка це добре для твого здоров'я." end
 
 l_0xc953bf:
-    "@I'm so excited!{pause(20)}  I might just wet myself.{pause(20)}  My heart is going pitter patter!" end
+    "@Я така щаслива!{pause(20)}  Я просто тану.{pause(20)}  Моє серце б'ється все дужче і дужче!" end
 
 l_0xc953f7:
-    "[06 03 00 {e(l_0xc954b3)}][06 3F 01 {e(l_0xc954b3)}]@Shaba do wap, diddly dee da.{pause(20)}  Shaba di doo bee, bop wah." next
-    "@I got those debt blues," linebreak
-    "  hm mm mm." next
-    "@If I had 10,000 dollars,{pause(15)} I could pay off my debts and move on to the next town." next
-    "@I wonder if our bus still runs.{pause(20)}  It may be rusted out..." end
+    "[06 03 00 {e(l_0xc954b3)}][06 3F 01 {e(l_0xc954b3)}]@Шаба ду вап, дідлі ді да.{pause(20)}  Шаба ді ду бі, боп ваа." next
+    "@Я отримав кляті борги," linebreak
+    "  хм мм мм." next
+    "@Якби я мав 10,000 зелених,{pause(15)} я міг би віддати борги і поїхати в наступне місто." next
+    "@Не знаю, чи нас автобус все ще працює.{pause(20)}  Він вже міг заржавіти..." end
 
 l_0xc954b3:
-    "@Mr. Poochyfud,{pause(15)} the Manager, is looking for you.{pause(20)}  I wonder what he wants?" end
+    "@Пан Пучіфуд,{pause(15)} менеджер клятий, чукає на вас.{pause(20)}  І чого він хоче?" end
 
 l_0xc954e1:
-    "[19 19 00 00]{swap}{result_is(180)}[1B 02 {e(data_35.l_0xc7c6b6)}]@Don't try to use your play money here, kid." next
-    "@Oh... my... gosh...!{pause(20)}  That's not real money,{pause(15)} is it?{pause(15)}  Wow!" end
+    "[19 19 00 00]{swap}{result_is(180)}[1B 02 {e(data_35.l_0xc7c6b6)}]@Навіть не намагайся заплатити іграшковими грошима, хлопче." next
+    "@О... Бо... же...!{pause(20)}  Це несправжні грощі,{pause(15)} чи не так?{pause(15)}  Вов!" end
 
 l_0xc95532:
-    "[06 03 00 {e(l_0xc9569a)}][06 3F 01 {e(l_0xc9560b)}]@Well,{pause(15)} yeah, in the old days,{pause(15)} there was lots o' dancers and acts at this theater." next
-    "@'cept now,{pause(15)} we're the only act playin' here." next
-    "@We even gone into debt here,{pause(15)} so we're pretty near stuck, hyuk, hyuk, hyuk." next
-    "@The folks of Twoson'll enjoy the Runaway Five show for quite a few years," next
-    "@it looks like ta me." end
+    "[06 03 00 {e(l_0xc9569a)}][06 3F 01 {e(l_0xc9560b)}]@Що ж,{pause(15)} так, в старі добрі часи,{pause(15)} тут було багато танцюристів і вистав в цьому театрі." next
+    "@На відмінну від зараз,{pause(15)} ми єдині, хто тут виступає." next
+    "@Ми навіть тут отримали борг,{pause(15)} тому ми прямо застрягли, х'юк, х'юк, х'юк." next
+    "@Люди Двосону будуть насолоджуватись Бродячою П'ятіркою це декілька років," next
+    "@мені так здається." end
 
 l_0xc9560b:
-    "@So, whaddya think?" next
-    "@Do ya wanna see one more show?" linebreak
-    "  [19 02]Yes" eob
+    "@Отже, як гадаєте?" next
+    "@Хочете подивитися це один виступ?" linebreak
+    "  [19 02]Так" eob
 
 l_0xc95639:
-    "  [19 02]No" eob
+    "  [19 02]Ні" eob
 
 l_0xc95640:
     "[1C 07 02][11]{clearline}[09 02 {e(l_0xc95673)} {e(l_0xc9564f)}]" goto(l_0xc9564f)
 
 l_0xc9564f:
-    "@So, our sound is too much for ya, right?{pause(20)}  I figured as much." end
+    "@Отже, ми забагато граємо, так?{pause(20)}  Я гадаю так само." end
 
 l_0xc95673:
-    "@This is your chance fer a once in a lifetime event.{wait}{unset(flag 319)}{set(flag 3)}" eob
+    "@Це ваш єдиний і останній шанс житті.{wait}{unset(flag 319)}{set(flag 3)}" eob
 
 l_0xc9569a:
-    "@Ya got a once in a lifetime opportunity.{pause(20)}  How 'bout watchin'{pause(15)} one more show?" end
+    "@Ви отримали єдину і останню можливість в житті.{pause(20)}  Я щодо показу{pause(15)} ще одного шоу?" end
 
 l_0xc956d6:
-    "[19 19 00 00]{swap}{result_is(180)}[1B 02 {e(data_35.l_0xc7c6b6)}]@Well, hello!  Ya got cash!{pause(20)}  And some nice stuff ta boot!  Hyuk, hyuk, hyuk." end
+    "[19 19 00 00]{swap}{result_is(180)}[1B 02 {e(data_35.l_0xc7c6b6)}]@Що ж, здоров!  У тебе грощі!{pause(20)}  І деякі чудові речі!  Х'юк, х'юк, х'юк." end
 
 l_0xc9571e:
-    "[06 03 00 {e(l_0xc9575e)}][06 3F 01 {e(l_0xc9575e)}]@Hey,{pause(15)} ya get to see our show, you lucky kid!{pause(20)}  I hope ya pay attention." end
+    "[06 03 00 {e(l_0xc9575e)}][06 3F 01 {e(l_0xc9575e)}]@Агов,{pause(15)} ти побачиш нашу виставу, а ти щасливець!" next
+    "@Сподіваюсь ти дивитимешся уважно." end
 
 l_0xc9575e:
-    "@That was a great gig!" next
-    "@We can't be this good all the time, can we? " end
+    "@А це було велике замовлення!" next
+    "@Ми не модемо добре стояти на ношах весь час, так же? " end
 
 l_0xc95786:
-    "[19 19 00 00]{swap}{result_is(180)}[1B 02 {e(data_35.l_0xc7c6b6)}]@If you give him a chance,{pause(15)} the theater manager will cheat you out of your money," next
-    "@he he he." end
+    "[19 19 00 00]{swap}{result_is(180)}[1B 02 {e(data_35.l_0xc7c6b6)}]@Якщо дасиш йому це шанс,{pause(15)} менеджер театру висмокче всі твої грощі," next
+    "@хі хі хі." end
 
 l_0xc957cb:
-    "[06 03 00 {e(l_0xc95881)}][06 3F 01 {e(l_0xc95881)}][06 02 00 {e(l_0xc957ff)}]@I wrote the lyrics to most of the Runaway Five songs." next
+    "[06 03 00 {e(l_0xc95881)}][06 3F 01 {e(l_0xc95881)}][06 02 00 {e(l_0xc957ff)}]@Я пишу слова всім пісням Бродячої П'ятірки." next
     goto(l_0xc957ff)
 
 l_0xc957ff:
-    "@Money, {pause(20)}that's what I want{pause(20)}" linebreak
-    "  money, {pause(20)}that's what is hot{pause(20)}" linebreak
-    "  money, {pause(20)}that's what I want" next
-    "@money, {pause(20)}it's what we ain't got 'cept freedom, freedom," next
-    "@freedom is what we've really sought!{wait}{set(flag 2)}" eob
+    "@Грощі, {pause(20)}це те, що я хочу{pause(20)}" linebreak
+    "  грощі, {pause(20)}це те, що в руках пече{pause(20)}" linebreak
+    "  грощі, {pause(20)}це те, що я хочу" next
+    "@грощі, {pause(20)}це те, що не дасть нам нічого окрім волі, волі," next
+    "@волі, яка нам дійсно потрібно!{wait}{set(flag 2)}" eob
 
 l_0xc95881:
-    "@Cash, {pause(20)}that's what I want{pause(20)}" linebreak
-    "  cash, {pause(20)}that's what is hot{pause(20)}" linebreak
-    "  cash, {pause(20)}that's what I want" next
-    "@...hey, I just made up a new song." end
+    "@Готівка, {pause(20)}це те, що я хочу{pause(20)}" linebreak
+    "  готівка, {pause(20)}це те, що пече в руках{pause(20)}" linebreak
+    "  готівка, {pause(20)}це те, що хочу" next
+    "@...агов, я тільки що написав нову пісню." end
 
 l_0xc958d7:
-    "[19 19 00 00]{swap}{result_is(180)}[1B 02 {e(data_35.l_0xc7c6b6)}]@Wow!  10,000 dollars!{pause(20)}" linebreak
-    "  I can make another song now." next
-    "@Ten G's,{pause(20)}  ten G's.{pause(20)}" linebreak
-    "  That's dollars,{pause(20)} baby, dollars.{pause(20)}" linebreak
-    "  Yeah yeah yeah." end
+    "[19 19 00 00]{swap}{result_is(180)}[1B 02 {e(data_35.l_0xc7c6b6)}]@Вов!  10,000 долларів!{pause(20)}" linebreak
+    "  Тепер я можу написати нову пісню." next
+    "@Десять Ка,{pause(20)}  Десять Ка.{pause(20)}" linebreak
+    "  Це доллари,{pause(20)} крихітко, доллари.{pause(20)}" linebreak
+    "  Так так так." end
 
 l_0xc9594d:
-    "[06 03 00 {e(l_0xc95988)}][06 3F 01 {e(l_0xc95988)}]@I want some bread." next
-    "@I need the coinage." next
-    "@I want more dough all the time." end
+    "[06 03 00 {e(l_0xc95988)}][06 3F 01 {e(l_0xc95988)}]@Я хочу хліба." next
+    "@Мені потрібна монетка." next
+    "@Я весь час хочу все більше тіста." end
 
 l_0xc95988:
-    "@I didn't make a spectacle of myself, did I?" end
+    "@Я ж не зробив з себе спектакль, так же?" end
 
 l_0xc959a5:
-    "[19 19 00 00]{swap}{result_is(180)}[1B 02 {e(data_35.l_0xc7c6b6)}]@That is exactly what I want." next
-    "@I can't believe that you have that much..." end
+    "[19 19 00 00]{swap}{result_is(180)}[1B 02 {e(data_35.l_0xc7c6b6)}]@Це якраз те, що я хочу." next
+    "@Не можу повірити, що у вас аж стільки..." end
 
 l_0xc959db:
     "[06 25 02 {e(l_0xc95ba0)}]" goto(l_0xc959e2)
 
 l_0xc959e2:
-    "[06 77 00 {e(l_0xc95a5f)}]@The Runaway Five owe me a lot of money." next
-    "@They'll stay here until they pay me back." next
-    "@They might be here for 100 years," next
-    "@unless you decide to pay off their debt...  Heh, heh, heh." end
+    "[06 77 00 {e(l_0xc95a5f)}]@Бродяча П'ятірка винна мені багато грошей." next
+    "@Вони тут залишуться поки не заплатять мені взамін." next
+    "@Вони можуть бути тут на 100 років," next
+    "@до поки ви не вирішете заплатити їхній борг...  Хе, хе, хе." end
 
 l_0xc95a5f:
-    "@The Runaway Five are free to leave." next
-    "@I've got no complaints now that I have my money." end
+    "@Бродяча П'ятірка тепер вільна." next
+    "@В мене немає жодних претензій, бо я отримав грощі." end
 
 l_0xc95a8d:
     "[19 19 00 00]{swap}{result_is(180)}[1B 03 {e(l_0xc95aa0)}]" goto(data_35.l_0xc7c6b6)
 
 l_0xc95aa0:
-    "{isset(flag 319)}[1B 02 {e(l_0xc95ba0)}][19 10 01][19 22 00 02 FD 00]{swap}{store_registers}{result_is(1)}[1B 03 {e(l_0xc95b64)}]{load_registers}{result_is(2)}[1B 03 {e(l_0xc95b64)}]{load_registers}{result_is(8)}[1B 03 {e(l_0xc95b64)}]{sound(118)}[19 23 FD 00 01 01 00][1F 16 FD 00 00]@Yipes!{pause(60)}  You surprised me.{pause(20)}  Now I'm not sure what to do." next
-    "[1D 01 FF B4]@I got the money, of course,{pause(15)} and now the Runaway Five are free to leave." next
-    "@I've got no complaints now that I have my money.[03]{set(flag 119)}{set(flag 309)}{unset(flag 624)}" goto(data_34.l_0xc799d7)
+    "{isset(flag 319)}[1B 02 {e(l_0xc95ba0)}][19 10 01][19 22 00 02 FD 00]{swap}{store_registers}{result_is(1)}[1B 03 {e(l_0xc95b64)}]{load_registers}{result_is(2)}[1B 03 {e(l_0xc95b64)}]{load_registers}{result_is(8)}[1B 03 {e(l_0xc95b64)}]{sound(118)}[19 23 FD 00 01 01 00][1F 16 FD 00 00]@Таакс!{pause(60)}  Ви мене здивували.{pause(20)}  Тепер я непевен, що робити." next
+    "[1D 01 FF B4]@Я отримав грощі, що очевидно,{pause(15)} і тепер Бродяча П'ятірка вільна." next
+    "@В мене немає жодних претензій, бо я отримав грощі.[03]{set(flag 119)}{set(flag 309)}{unset(flag 624)}" goto(data_34.l_0xc799d7)
 
 l_0xc95b63:
     eob
@@ -408,29 +409,29 @@ l_0xc96479:
     "@Щоб дістатися Триду,{pause(15)} автобус то саме те." end
 
 l_0xc9649a:
-    "[06 47 00 {e(l_0xc964d9)}]@To take the bus, or not to take the bus... hmmm." next
-    "@I get scared pretty easily..." end
+    "[06 47 00 {e(l_0xc964d9)}]@Піймати автобус, або не піймати... хммм." next
+    "@Я дуже легко лякаюсь..." end
 
 l_0xc964d9:
-    "@To take the bus, or not to take the bus... hmm." next
-    "@I get sick pretty easily..." end
+    "@Піймати автобус, або не піймати... хммм." next
+    "@Мені дуже легко стає погано..." end
 
 l_0xc9650f:
-    "@I was in the last war,{pause(20)} so I'm not scared of ghosts." next
-    "@Actually,{pause(15)} I'm more scared of my old lady, ha!" end
+    "@Я була на останній війні,{pause(20)} тому я не боюся привидів." next
+    "@Насправді,{pause(15)} я більше лякаюсь від себе самої, ха!" end
 
 l_0xc96552:
-    "@This town's bus system is a little strange." next
-    "@Be sure to check the bus stop signs.{pause(20)}  I wonder who came up with this system?" end
+    "@Автобусна комунікація в цьому місті трохи дивна." next
+    "@Впевнись, що ти перевірив знак зупинки.{pause(20)}  Не знаю, кому прийшло в голову таке?" end
 
 l_0xc965a4:
-    "@That's right,{pause(15)} I'm a bus driver.{pause(20)}  For now,{pause(15)} I'm resting." next
-    "@Life is long... take it easy,{pause(15)}[19 10 01][1F C0 04 {e(l_0xc96650)} {e(data_53.l_0xc96657)} {e(data_53.l_0xc96661)} {e(data_53.l_0xc96667)}]" next
-    "[1D 05 FF CA][1B 02 {e(l_0xc96625)}]@Why don't you check out your town map and learn about this area." end
+    "@Так,{pause(15)} я водій автобуса.{pause(20)}  Зараз,{pause(15)} я відпочиваю." next
+    "@Життя довге... сприймайте це з легкість,{pause(15)}[19 10 01][1F C0 04 {e(l_0xc96650)} {e(data_53.l_0xc96657)} {e(data_53.l_0xc96661)} {e(data_53.l_0xc96667)}]" next
+    "[1D 05 FF CA][1B 02 {e(l_0xc96625)}]@Чому б тобі не роздивитися свою мапу й не вивчити цю місцевість." end
 
 l_0xc96625:
-    "@You don't have a town map?{pause(15)}  You didn't borrow one from the Onett library?" end
+    "@У тебе немає мапи?{pause(15)}  Ти не позичив її з тої бібліотеки в Одинеті?" end
 
 l_0xc96650:
-    " chubs." eob
+    " головні." eob
 

@@ -228,37 +228,37 @@ l_0xc64cf8:
 
 l_0xc64dd0:
     newline
-    "@Would you like to return something?" linebreak
+    "@Ви б хотіли щось повернути?" linebreak
     call(data_36.l_0xc7dd4f) "[11]{clearline}[09 02 {e(l_0xc64e04)} {e(l_0xc64dee)}]" goto(l_0xc64dee)
 
 l_0xc64dee:
-    "@Oh, that's good." next
+    "@Ох, чудово." next
     goto(l_0xc64df8)
 
 l_0xc64df8:
-    "@Please stop by again." end
+    "@Будь-ласка, підходьте ще." end
 
 l_0xc64e04:
-    "@What do you want to return?[03]{open_wallet}" call(data_15.l_0xc5e456) newline
+    "@Хочете повернути?[03]{open_wallet}" call(data_15.l_0xc5e456) newline
     "[1B 02 {e(l_0xc64dee)}]{store_registers}[19 19 00 00][1D 0B 00][1B 02 {e(l_0xc64ea4)}]@The [1C 05 00]?" linebreak
-    "  We can give you" linebreak
-    "  back {swap}$[1C 0A 00 00 00 00]." next
-    "@Would you like to do that?" linebreak
+    "  Ми дамо вам в" linebreak
+    "  замін {swap}$[1C 0A 00 00 00 00]." next
+    "@Вас це задовольняє?" linebreak
     call(data_36.l_0xc7dd4f) "[11]{clearline}[09 02 {e(l_0xc64e6e)} {e(l_0xc64e69)}]" goto(l_0xc64e69)
 
 l_0xc64e69:
     goto(l_0xc64e86)
 
 l_0xc64e6e:
-    "[1D 08 00 00]{open_wallet}{sound(118)}{load_registers}[1D 0F 00 00]@Thank you very much." next
+    "[1D 08 00 00]{open_wallet}{sound(118)}{load_registers}[1D 0F 00 00]@Дуже вам дякую." next
     goto(l_0xc64e86)
 
 l_0xc64e86:
-    "@Do you have anything else?" linebreak
+    "@Щось ще?" linebreak
     call(data_36.l_0xc7dd4f) "[11]{clearline}[09 02 {e(l_0xc64e04)} {e(l_0xc64df8)}]" goto(l_0xc64df8)
 
 l_0xc64ea4:
-    "@We're very sorry, but we don't deal with that product." next
+    "@Пробачте, але ми не беремо ці товари." next
     goto(l_0xc64e86)
 
 l_0xc64eca:

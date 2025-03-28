@@ -42,10 +42,10 @@ l_0xc888af:
     "[1F ED][1F 15 CD 00 D8 00 FF][1F 21 48][1F EF CD 00]" eob
 
 l_0xc888c0:
-    "{unset(flag 534)}{music_resume}[1F 15 52 00 C6 01 01]     {window_open(1)}@Man!{pause(15)}  It's bumper to bumper!" next
-    "@My job is to drive,{pause(15)} so I can't get off the bus..." next
-    "@It's up to you if you want to get off the bus and walk around in the desert..." next
-    "@Hey,{pause(15)} it's a free country.[03]{window_closeall}[1F 1F 52 00 06][1F 15 6A 00 48 00 01]{pause(1)}[1F EF 6A 00][1F EC FF 01][1F E8 FF][1F 61][1F ED][1F E5 FF][1F EA CD 00][1F 61][1F 66 01 06 B1 9E C9 00]{unset(flag 11)}[1F 15 B9 01 0A 03 01]{set(flag 370)}" eob
+    "{unset(flag 534)}{music_resume}[1F 15 52 00 C6 01 01]     {window_open(1)}@Чорт!{pause(15)}  Тут бампер до бампера!" next
+    "@Я працюю водієм,{pause(15)} тому я не можу виходити з автобуса..." next
+    "@Ваш вибір, якщо ви хочете вийти з автобуса і йти по пустелі..." next
+    "@Агов,{pause(15)} це ж вільна країна.[03]{window_closeall}[1F 1F 52 00 06][1F 15 6A 00 48 00 01]{pause(1)}[1F EF 6A 00][1F EC FF 01][1F E8 FF][1F 61][1F ED][1F E5 FF][1F EA CD 00][1F 61][1F 66 01 06 B1 9E C9 00]{unset(flag 11)}[1F 15 B9 01 0A 03 01]{set(flag 370)}" eob
 
 l_0xc8897f:
     "[1F F1 51 03 78 00][1F 61]" eob
@@ -63,27 +63,27 @@ l_0xc88a3b:
     "[1F ED][1F 1F 6A 00 06]                  " eob
 
 l_0xc88a47:
-    "{window_open(1)}@Oh, baby{pause(5)} baby{pause(10)}" linebreak
-    "  ba{pause(5)}a{pause(5)}a{pause(5)}by{pause(5)}y{pause(5)}y!" next
-    "@Don't make me hurt so bad!" next
-    "@These guys are all stone cold gone for you..." next
-    "@Ow!!{pause(20)}  ...You cute,{pause(15)} sexy thing,{pause(15)} you!..." next
-    "@Baby,{pause(10)} sing to me!...{pause(20)}  Sing to me only!...  Baby!!{pause(15)}  Venus!" next
-    "@Just sing, and I can die a happy man!...  Baby!!..." next
-    "@I wanna hold you tight!...{pause(15)}  Venus!...{pause(20)}  Baby!..." next
-    "@*Boo,{pause(5)} hoo,{pause(5)} hoo* ...Venus!... *sob* *sob*[03]{window_closeall}" eob
+    "{window_open(1)}@О, крихітко{pause(5)} крихітко{pause(10)}" linebreak
+    "  кри{pause(5)}и{pause(5)}и{pause(5)}хітко{pause(5)}о{pause(5)}о!" next
+    "@Не роби мені боляче!" next
+    "@Ці хлопці як холодний камінь йдуть до тебе..." next
+    "@Оов!!{pause(20)}  ...Ти мила,{pause(15)} сексуальна штучка,{pause(15)} ти!..." next
+    "@Крихітко,{pause(10)} співай мені!...{pause(20)}  Співай тільки мені!...  Крихітко!!{pause(15)}  Венеро!" next
+    "@Просто співай, і я можу померти як щаслива людина!...  Крихітко!!..." next
+    "@Я хочу тебе міцно обійняти!...{pause(15)}  Венеро!...{pause(20)}  Крихітко!..." next
+    "@*Бу,{pause(5)} ху,{pause(5)} ху* ...Венеро!... *ридає* *ридає*[03]{window_closeall}" eob
 
 l_0xc88b6d:
-    "{window_closeall}{set(flag 536)}{music_resume}[1F 15 95 00 D4 01 01]   [1F 15 96 00 D5 01 01][1F 15 B9 00 D6 01 01][1F 15 BA 00 D7 01 01][1F 15 BB 00 D8 01 01][1F 61]                                              [1F F2 95 00 D9 01]     [1F 61][1F E7 95 00]{window_open(1)}@Sorry about bein' such troublemakers![03]{window_closeall}[1F EA 95 00]                   [1F 61][1F F2 96 00 D9 01]        [1F 61][1F E7 96 00]{window_open(1)}@We won't be so gullible anymore...{pause(20)}  Well,{pause(15)} our fans are waitin', baby..." next
-    "{window_closeall}[1F EA 96 00]                      [1F 61][1F F2 B9 00 D9 01] [1F 61][1F E7 B9 00]{window_open(1)}@Let's just do this one last show and then get outta here..." next
-    "{window_closeall}[1F EA B9 00]           [1F 61][1F F2 BA 00 D9 01]   [1F 61][1F E7 BA 00]{window_open(1)}@All right!{pause(20)}  Thanks again![03]{window_closeall}[1F EA BA 00]                 [1F 61][1F F2 BB 00 DA 01]        [1F 61][1F E7 BB 00]{window_open(1)}@Money, that's what I want." linebreak
-    "  Money, that's what is hot." linebreak
-    "  Money, that's what I want." next
-    "@Money, it's what we ain't got 'cept{pause(5)} freedom,{pause(15)} freedom," next
-    "@freedom is what we've really sought!" next
-    "{window_closeall}[1F EA BB 00]                     [1F 61][1F E7 BB 00]{window_open(1)}@Money, that's what I want." linebreak
-    "  Money, that's what is hot." linebreak
-    "  Money, that's what I want...[03]{window_closeall}[1F 15 95 00 DB 01 01]   [1F 61][1F EA BB 00][1F 61]                                      " eob
+    "{window_closeall}{set(flag 536)}{music_resume}[1F 15 95 00 D4 01 01]   [1F 15 96 00 D5 01 01][1F 15 B9 00 D6 01 01][1F 15 BA 00 D7 01 01][1F 15 BB 00 D8 01 01][1F 61]                                              [1F F2 95 00 D9 01]     [1F 61][1F E7 95 00]{window_open(1)}@Пробачте, що ми були вам кісткою в горлі![03]{window_closeall}[1F EA 95 00]                   [1F 61][1F F2 96 00 D9 01]        [1F 61][1F E7 96 00]{window_open(1)}@Ми більше не будемо лохами...{pause(20)}  Що ж,{pause(15)} фанати нас зачекались..." next
+    "{window_closeall}[1F EA 96 00]                      [1F 61][1F F2 B9 00 D9 01] [1F 61][1F E7 B9 00]{window_open(1)}@Давайте зробимо ще одне останнє шоу і забираємось звідси..." next
+    "{window_closeall}[1F EA B9 00]           [1F 61][1F F2 BA 00 D9 01]   [1F 61][1F E7 BA 00]{window_open(1)}@Гаразд!{pause(20)}  І знову дякую![03]{window_closeall}[1F EA BA 00]                 [1F 61][1F F2 BB 00 DA 01]        [1F 61][1F E7 BB 00]{window_open(1)}@Грощі, це те, що я хочу." linebreak
+    "  Грощі, це те, що в руках пече." linebreak
+    "  Грощі, це те, що я хочу." next
+    "@Грощі, це те, що не дасть нам нічого окрім{pause(5)} волі,{pause(15)} волі," next
+    "@волі, яка нам дійсно потрібна!" next
+    "{window_closeall}[1F EA BB 00]                     [1F 61][1F E7 BB 00]{window_open(1)}@Грощі, це те, що я хочу." linebreak
+    "  Грощі, це те, що в руках пече." linebreak
+    "  Грощі, це те, що я хочу...[03]{window_closeall}[1F 15 95 00 DB 01 01]   [1F 61][1F EA BB 00][1F 61]                                      " eob
 
 l_0xc88d91:
     "[1F E5 FF][1F 07 03]{window_closeall}[1F 15 6A 00 64 01 01][1F 61]" call(l_0xc88f35) "[1F 15 3C 01 74 01 01][1F 15 6A 00 63 01 01] [1F 15 11 01 75 01 01] [1F 15 11 01 76 01 01] [1F 15 5A 01 77 01 01] [1F 15 BA 00 78 01 01]       [1F 15 B9 00 79 01 01]   [1F 15 BB 00 7A 01 01]       [1F 15 FD 00 7B 01 01]       [1F 15 95 00 7F 01 01]   [1F 15 96 00 80 01 01] {pause(1)}[1F EF 6A 00]" eob
@@ -95,17 +95,17 @@ l_0xc88efe:
     "[1F ED][1F 1F 6A 00 06][1F 1F 5A 01 06][1F 1F BA 00 06][1F 1F B9 00 06][1F 1F BB 00 06][1F 1F FD 00 06][1F 1F B8 00 06][1F 1F B2 01 06][1F 1F 11 01 06]{pause(1)}[1F 1F 11 01 06]" eob
 
 l_0xc88f35:
-    "{window_open(1)}[06 18 02 {e(l_0xc88fb2)}]@Have I got a bombshell for you tonight,{pause(15)} kids!" next
-    "@aa{pause(5)}a{pause(5)}a{pause(5)}aA{pause(5)}A{pause(5)}A{pause(5)}A{pause(5)}AH!!!" next
-    "@Ka-{pause(1)}Boom!!" linebreak
-    "  The Runaway Five!!!  Yeah!!" next
-    "@3##{pause(30)}2##{pause(30)}1##{pause(30)}GO![03]{window_closeall}" eob
+    "{window_open(1)}[06 18 02 {e(l_0xc88fb2)}]@В мене є для вас бомба сьогодні,{pause(15)} дітлахи!" next
+    "@аа{pause(5)}а{pause(5)}а{pause(5)}аА{pause(5)}А{pause(5)}А{pause(5)}А{pause(5)}АА!!!" next
+    "@Ка-{pause(1)}Бум!!" linebreak
+    "  Бродяча П'ятірка!!!  Так!!" next
+    "@3##{pause(30)}2##{pause(30)}1##{pause(30)}ПОЇХАЛИ![03]{window_closeall}" eob
 
 l_0xc88fb2:
-    "@aaaaaAAAAH!" next
-    "@We've got huge talent tonight!{pause(20)}  You get a beautiful soul show!" next
-    "@Show your appreciation for the last great sinful pleasure..." next
-    "@The Runaway Five!!!{pause(15)}  Bring it on!{pause(5)}  Yeah![03]{window_closeall}" eob
+    "@аааааААААА!" next
+    "@У нас сьогодні величезний талант!{pause(20)}  Ви отримаєте прикрасно душевне шоу!" next
+    "@Покажіть свою зацікавленність для останнього великого грішного задоволення..." next
+    "@Бродяча П'ятірка!!!{pause(15)}  Тримаєтеся!{pause(5)}  Так![03]{window_closeall}" eob
 
 l_0xc89032:
     "{set(flag 55)}" eob
