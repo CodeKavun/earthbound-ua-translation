@@ -262,16 +262,16 @@ l_0xc64ea4:
     goto(l_0xc64e86)
 
 l_0xc64eca:
-    "@(We trust you.  Feel free to shop here.)" next
-    "@What would you like to buy?[03]{open_wallet}{open_hp}[1A 06 30]" newline
-    "[1B 02 {e(l_0xc64fb3)}]{swap}[1D 03 FF][1B 02 {e(l_0xc64fde)}]{store_registers}@How much do you want to pay?" linebreak
+    "@(Ми довіряємо тобі.  Можеш спокійно щось собі купити.)" next
+    "@Щоб ти хотів?[03]{open_wallet}{open_hp}[1A 06 30]" newline
+    "[1B 02 {e(l_0xc64fb3)}]{swap}[1D 03 FF][1B 02 {e(l_0xc64fde)}]{store_registers}@Скільки ти хочеш заплатити?" linebreak
     "[18 05 09 02]&[18 05 04 02]$[1F 52 04]{clearline}{swap}[1B 02 {e(l_0xc64fb3)}]{store_registers}[1D 14 00 00 00 00][1B 03 {e(l_0xc64ff3)}]{load_registers}{swap}[1B 02 {e(l_0xc64fc8)}]{swap}{result_is(190)}[1B 03 {e(l_0xc64f66)}][18 07 0C 00 00 00 01][1B 02 {e(l_0xc64fab)}]" goto(l_0xc64f73)
 
 l_0xc64f66:
     "[18 07 05 00 00 00 01][1B 02 {e(l_0xc64fab)}]" goto(l_0xc64f73)
 
 l_0xc64f73:
-    "{load_registers}[1D 09 00 00]{open_wallet}{sound(118)}@[1C 02 01] paid $[1C 0A 00 00 00 00] at the self-service stand.{wait}" goto(l_0xc64f9f)
+    "{load_registers}[1D 09 00 00]{open_wallet}{sound(118)}@[1C 02 01] заплатив $[1C 0A 00 00 00 00] на стенді самообслуги.{wait}" goto(l_0xc64f9f)
 
 l_0xc64f9f:
     "{load_registers}{swap}[1D 0E 01 00]{set(flag 120)}" eob
@@ -280,16 +280,16 @@ l_0xc64fab:
     "{set(flag 121)}" goto(l_0xc64f73)
 
 l_0xc64fb3:
-    "@[1C 02 01] decided not to buy anything." end
+    "@[1C 02 01] вирішив нічого не купувати." end
 
 l_0xc64fc8:
-    "@[1C 02 01] did not pay.{wait}{set(flag 121)}" goto(l_0xc64f9f)
+    "@[1C 02 01] не заплатив.{wait}{set(flag 121)}" goto(l_0xc64f9f)
 
 l_0xc64fde:
-    "@[1C 02 01] could not  carry any more stuff." end
+    "@[1C 02 01] не може тягти більше речей." end
 
 l_0xc64ff3:
-    "@[1C 02 01] did not have  that much money." end
+    "@[1C 02 01] не має стільки грошей." end
 
 l_0xc65009:
     call(data_13.l_0xc5d48b) eob

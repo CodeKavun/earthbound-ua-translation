@@ -9,133 +9,133 @@ command e(label) "{long label}"
 // Text Data
 l_0xc98db4:
     "[03][06 79 00 {e(l_0xc98dd9)}]" newline
-    "@Have you already paid?{pause(20)}  Ok, ok.{wait}{unset(flag 120)}" eob
+    "@Ти вже заплатив?{pause(20)}  Добре, добре.{wait}{unset(flag 120)}" eob
 
 l_0xc98dd9:
     newline
-    "@I noticed you didn't pay![03]" call(data_23.l_0xc6852a) "[1B 03 {e(data_23.l_0xc683de)}]{window_open(1)}" newline
+    "@Я побачив як ти не заплатив![03]" call(data_23.l_0xc6852a) "[1B 03 {e(data_23.l_0xc683de)}]{window_open(1)}" newline
     goto(l_0xc98df9)
 
 l_0xc98df9:
-    "@You won this confrontation." next
-    "@But the good side of you must ache with regret.  Ha ha ha.{wait}{set(flag 67)}" eob
+    "@Ти виграв цю конфронтацію." next
+    "@Але твоя добра сторона має ломити з пожалкуванням.  Ха ха ха.{wait}{set(flag 67)}" eob
 
 l_0xc98e33:
-    "@They said someone named Pokey stole all the food from the food stand." end
+    "@Вони сказали, що хтось, на ім'я Поркі вкрав всю їжу з того стенду." end
 
 l_0xc98e5e:
-    "@In a different way than before, Mr. Carpainter has become a very good man." end
+    "@В інший спосіб ніж до цього, Пан Карпейнтер став дуже доброю людиною." end
 
 l_0xc98e8d:
     "[06 44 00 {e(l_0xc98e9a)}]" call(data_20.l_0xc64eca) eob
 
 l_0xc98e9a:
-    "@(Thanks for your support over the years." next
-    "@The food stand is going out of business due to personal reasons.)" end
+    "@(Дякую за вашу підтримку напротязі років." next
+    "@Стенд з їжею закривається через особисті причини.)" end
 
 l_0xc98ede:
-    "[06 49 00 {e(data_54.l_0xc98940)}][06 44 00 {e(l_0xc98f27)}]@One day, Mr. Carpainter received a revelation." next
-    "@He now speaks the real truth." end
+    "[06 49 00 {e(data_54.l_0xc98940)}][06 44 00 {e(l_0xc98f27)}]@Одного дня, Пан Карпейнтер виявив одкровення." next
+    "@Тепер він каже найправдивішу правду." end
 
 l_0xc98f27:
-    "@I woke up from the dream." end
+    "@Я отямився від сну." end
 
 l_0xc98f37:
-    "[06 49 00 {e(data_54.l_0xc98940)}][06 44 00 {e(l_0xc99002)}]@You don't seem to understand,{pause(15)} so I'll explain it to you." next
-    "@When the world is changed to blue,{pause(15)} a peaceful country can be established." next
-    "@Do you understand now?" linebreak
-    "  [19 02]Yes" eob
+    "[06 49 00 {e(data_54.l_0xc98940)}][06 44 00 {e(l_0xc99002)}]@Ти схоже не розумієш,{pause(15)} тому я тобі зараз поясню." next
+    "@Коли світ змінений на синій,{pause(15)} зародиться мирна країна." next
+    "@Тепер ти розумієш?" linebreak
+    "  [19 02]Так" eob
 
 l_0xc98fa3:
-    "  [19 02]No" eob
+    "  [19 02]Ні" eob
 
 l_0xc98faa:
     "[1C 07 02][11]{clearline}[09 02 {e(l_0xc98fd3)} {e(l_0xc98fb9)}]" goto(l_0xc98fb9)
 
 l_0xc98fb9:
-    "@Although you don't understand now, some day you will." end
+    "@Хоч ти й зараз не розумієш, одного дня до тебе дійде." end
 
 l_0xc98fd3:
-    "@I can tell by your face that you're only pretending to understand." next
-    "@You just want something!" end
+    "@Можу сказати по твоїй міні, що ти тільки вдаєш, що розумієш." next
+    "@Ти просто щось хочеш!" end
 
 l_0xc99002:
-    "@I too was wrong in many ways." end
+    "@Я також, був неправий в багатьох речах." end
 
 l_0xc99018:
-    "[06 49 00 {e(l_0xc99088)}][06 44 00 {e(l_0xc99061)}]@Mr. Carpainter communicates with the divine," next
-    "@so he is able to deliver inspired messages." end
+    "[06 49 00 {e(l_0xc99088)}][06 44 00 {e(l_0xc99061)}]@Пан Карпейнтер спілкується через божества," next
+    "@тому він в змозі надавати надихаючі промови." end
 
 l_0xc99061:
-    "@We might have been listening to evil messages rather than good." end
+    "@Схоже, ми прислухались до злих промов, аніж добрих." end
 
 l_0xc99088:
-    "@Don't you think the mental health of everyone in the village is improved?" end
+    "@А чи не помітив ти, що ментальне здоров'я всіх в селі покращилося?" end
 
 l_0xc990b3:
-    "[06 49 00 {e(data_54.l_0xc98940)}][06 44 00 {e(l_0xc99104)}]@You might misunderstand what I have to say," next
-    "@But Carpainter's voice affects one's minds, like a hypnotist." end
+    "[06 49 00 {e(data_54.l_0xc98940)}][06 44 00 {e(l_0xc99104)}]@Може ти не зрозумієш, що я маю сказати," next
+    "@Але голос Карпейнтера впливає на наші думки, як гіпноз." end
 
 l_0xc99104:
-    "@Seems like I'm no longer hypnotized." end
+    "@Схоже, я більше незагіпнотизований." end
 
 l_0xc99120:
-    "[06 49 00 {e(l_0xc9919b)}][06 44 00 {e(l_0xc99171)}]@When I painted everything blue, as Mr. Carpainter said," next
-    "@my wife who had run out on me returned home!" end
+    "[06 49 00 {e(l_0xc9919b)}][06 44 00 {e(l_0xc99171)}]@Коли я вималював все в синій, як казав Карпейнтер," next
+    "@моя дружина, яка втікла, повернулась додому!" end
 
 l_0xc99171:
-    "@My wife has run away for a second time.{pause(20)}  I'm such a lucky man!" end
+    "@Моя дружина втікла вже другий раз.{pause(20)}  Я такий щасливчик!" end
 
 l_0xc9919b:
-    "@Wow, it's been a long time.{pause(20)}  Your cap...  Do you ever wash it?" end
+    "@Вов, пройшло багато часу.{pause(20)}  Твоя кепка...  Ти її взагалі миєш?" end
 
 l_0xc991c7:
-    "[06 D3 00 {e(l_0xc99260)}][06 44 00 {e(l_0xc9922d)}]@I think that those who won't paint everything blue are opposed to peace." next
-    "@I want them all to listen,{pause(15)} even if it requires kicking their butts." end
+    "[06 D3 00 {e(l_0xc99260)}][06 44 00 {e(l_0xc9922d)}]@Я думаю, що ті, хто не хочуть малювати все в синій, протистоять миру." next
+    "@Я хочу, щоб вони всі вислухали,{pause(15)} навіть якщо доведеться надерти їм дупи." end
 
 l_0xc9922d:
-    "@We need to return the town to its original colors.{pause(20)}  I'll be very busy." end
+    "@Ми маємо повернути наше містечко в її початкові барви.{pause(20)}  Я буду дуже зайнятий." end
 
 l_0xc99260:
-    "@I shouldn't be so desperate to chase after happiness." end
+    "@Я не маю бути відчайдушним в слідуванні за щасттям." end
 
 l_0xc99282:
-    "[06 49 00 {e(l_0xc992d1)}][06 44 00 {e(l_0xc992b6)}]@Blue, blue!" next
-    "@I wish for everything in this world to become blue." end
+    "[06 49 00 {e(l_0xc992d1)}][06 44 00 {e(l_0xc992b6)}]@Синь, синь!" next
+    "@Я бажаю всьому на світі стати синім." end
 
 l_0xc992b6:
-    "@It was hard on the eyes to have everything blue." end
+    "@Було важко очам, коли навколо все було синім." end
 
 l_0xc992d1:
-    "@Hey,{pause(15)} long time no see." next
-    "@You're a friend of the famous Runaway Five." end
+    "@Агов,{pause(15)} давно не бачилися." next
+    "@Ти друг знаменитої Бродячої П'ятірки." end
 
 l_0xc992fa:
-    "[06 49 00 {e(l_0xc99389)}][06 44 00 {e(l_0xc99362)}]@You want to talk to Mr. Carpainter directly?" next
-    "@You must think you're pretty important, and boy do you have a lot of nerve!" next
-    "@You deserve to be struck by lightning." end
+    "[06 49 00 {e(l_0xc99389)}][06 44 00 {e(l_0xc99362)}]@Ти хочеш поговорити з Панрм Кармейнтером напряму?" next
+    "@Ти маєш думати, що дуже важливий, і хлопче, в тебе забагато нахабства!" next
+    "@Ти заслуговуєш на бути вдареним блискавкою." end
 
 l_0xc99362:
-    "@Mr. Carpainter was pretty strange.{pause(20)}  But so was everyone else." end
+    "@Карпейнтер був дуже дивний.{pause(20)}  Але так само були й всі інші." end
 
 l_0xc99389:
-    "@Hi!{pause(20)}  I'm fine.{pause(30)}  You look fine also." end
+    "@Привіт!{pause(20)}  Зі мною все добре.{pause(30)}  Ти також виглядаєш добре." end
 
 l_0xc993a5:
-    "[06 49 00 {e(l_0xc9946f)}][06 44 00 {e(l_0xc99411)}][06 0A 00 {e(l_0xc99438)}][06 7B 00 {e(l_0xc99405)}]@(I'm just a plain ol' cow,{pause(15)}  but Mr. Carpainter's messages always mo{pause(5)}o{pause(5)}o{pause(5)}ve me.){wait}{set(flag 123)}" eob
+    "[06 49 00 {e(l_0xc9946f)}][06 44 00 {e(l_0xc99411)}][06 0A 00 {e(l_0xc99438)}][06 7B 00 {e(l_0xc99405)}]@(Я просто звичайна корова,{pause(15)}  але промови Карпейнтерп завжєди мене му{pause(5)}у{pause(5)}у{pause(5)}у рухають.){wait}{set(flag 123)}" eob
 
 l_0xc99405:
-    "@(Moo!){wait}{unset(flag 123)}" eob
+    "@(Муу!){wait}{unset(flag 123)}" eob
 
 l_0xc99411:
-    "@(The blue cow thing wasn't such a great idea after all, huh.)" end
+    "@(Синя корова не була взагалі хорошою ідеєю, га.)" end
 
 l_0xc99438:
-    "@(You got mo{pause(5)}o{pause(5)}o{pause(5)}o{pause(5)}ved here because you gave Mr. Carpainter some lip.)" end
+    "@(Тебе му{pause(5)}у{pause(5)}у{pause(5)}у{pause(5)}у перемістили сюди, бо ти був трохи зухвалий з Паном Карпейнтером.)" end
 
 l_0xc9946f:
-    "@(I have mo{pause(5)}o{pause(5)}o{pause(5)}o{pause(5)}re respect for Mr. Carpainter than others." next
-    "@Even if I become someone's steak dinner,{pause(15)} I'll still respect him.)" end
+    "@(У мене тепер му{pause(5)}у{pause(5)}у{pause(5)}у{pause(5)}у більше поваги до Паеа Карпейнтера ніж до інших." next
+    "@Навіть, якщо я стану чиїмсь стейком на вечерю,{pause(15)} я його все одно поважатиму.)" end
 
 l_0xc994cb:
     "@(Попереду Долина Мирного Спокою.{pause(20)}  Прямуйте через печеру.)" end
@@ -144,80 +144,81 @@ l_0xc994f5:
     call(data_48.l_0xc903ed) eob
 
 l_0xc994fb:
-    "[06 49 00 {e(l_0xc99555)}]@Blue, blue..." next
-    "@Oops!  I won't say it again." next
-    "@I fixed the bridge as a sign of apology.{pause(20)}  I'm just trying to help." end
+    "[06 49 00 {e(l_0xc99555)}]@Синь, синь..." next
+    "@Ой!  Я більше не буду цього казати." next
+    "@Я полагодив міст як знак вибачення.{pause(20)}  Я просто намагаюсь допомогти." end
 
 l_0xc99555:
-    "@Is that [1C 01 08]?{pause(15)}  You're always so cheerful!" next
-    "@Thanks for the help the other day." end
+    "@Це ж [1C 01 08]?{pause(15)}  Ти завжди такий веселий!" next
+    "@Дякуємо за твою допому." end
 
 l_0xc99582:
-    "[06 BF 00 {e(l_0xc99635)}][06 44 00 {e(l_0xc995e4)}]@There's a place ahead that can't be painted blue." next
-    "@It's a strange and anti-blue place." next
-    "@I can't stop thinking about it... and I can't even go near that place." end
+    "[06 BF 00 {e(l_0xc99635)}][06 44 00 {e(l_0xc995e4)}]@Попереду є місце, яке не можна розмалювати в синій." next
+    "@Це дивне і анти-синє місце." next
+    "@Не можу перестати думати про нього..." next
+    "@і я навіть не можу й близько до нього підходити." end
 
 l_0xc995e4:
-    "@I'm a changed person.{pause(20)}  I'm no longer a believer in Happy-happyism." next
-    "@Anyway, I'm very curious about the place that lies ahead of here." end
+    "@Я змінився.{pause(20)}  Я більше не віруючий Щасливого Братства." next
+    "@У будь-якому разі, мені дуже цікаво, що це за місце, яке лежить попереду." end
 
 l_0xc99635:
-    "@What was the anti-blue place like?" next
-    "@Was it scary?" linebreak
-    "[19 02]Yes" eob
+    "@Що це було за анти-синє місце?" next
+    "@Було страшно?" linebreak
+    "[19 02]Так" eob
 
 l_0xc9965a:
-    "[19 02]No" eob
+    "[19 02]Ні" eob
 
 l_0xc9965f:
     "[1C 07 02][11]{clearline}[09 02 {e(l_0xc99686)} {e(l_0xc9966e)}]" goto(l_0xc9966e)
 
 l_0xc9966e:
-    "@You seem to thrive in places like that." end
+    "@Ти схоже вже не перший раз бував в таких місцях." end
 
 l_0xc99686:
-    "@Did you see a huge mole, like I've heard lives there?" end
+    "@Ти бачив здоровезного крота, який, я чув, живе там?" end
 
 l_0xc996aa:
-    "@I heard many footprints exist deep down in the east cave." next
-    "@People call that place Lilliput Steps, and it makes them feel uneasy." end
+    "@Я чула про існування слідів там, в глибинах східної печери." next
+    "@Люди називають те місце Ліліпутовими Слідами, і воно дає мені нелегкі почуття." end
 
 l_0xc99703:
-    "@It looks like almost everyone woke up and left..." end
+    "@Схоже, що майже всі отямилися і пішли..." end
 
 l_0xc99720:
-    "@There are only three people remaining..." next
-    "@I don't want to stay.{pause(20)}  I'll get out of here..." end
+    "@Тут залишилося тільки троє..." next
+    "@Я не хочу тут бути.{pause(20)}  Я звалюю звідси..." end
 
 l_0xc99757:
-    "@Sorry about everything!{pause(15)}  Let's be buddies." end
+    "@Видач за все!{pause(15)}  Будьмо друзями." end
 
 l_0xc99776:
-    "@We wanted to join the Happy-Happy religious group." next
-    "@We're a married couple from Twoson." end
+    "@Ми хочемо приєднатися до Щасливого Братства." next
+    "@Ми заміжня пара з Двосону." end
 
 l_0xc997ae:
-    "@Our child is waiting for us in Twoson." next
-    "@As a souvenir we'd like to bring him some happiness." end
+    "@Наша дитина чукає на нас в Двосоні." next
+    "@Як сувенір, ми б хотіли принести йому щастя." end
 
 l_0xc997ee:
-    "@This is the famous Happy-Happyism counseling office." next
-    "@When you obtain happiness" next
-    "@you should visit the Happy-Happyism headquarters." next
-    "@It's located at the center of the village." end
+    "@Це відомий офіс консульства Щасливого Братства." next
+    "@Коли ти опануєш щастя," next
+    "@ти повинен відвідати штаб-квартиру Щасливого Братства." next
+    "@Воно знаходиться в центрі селища." end
 
 l_0xc9985a:
-    "@Hey [1C 01 08], it's been a long time." next
-    "@Since we last met, the whole town has woken up." next
-    "@The best happiness comes from being free... you kids made me realize that." end
+    "@Агов [1C 01 08], пройшло вже багато часу." next
+    "@З тих пір, як ми востаннє бачились, ціле містечко отямилось." next
+    "@Найкраще щастя приходить зі свободи... ви діти просвітили мені це." end
 
 l_0xc998c1:
-    "[06 44 00 {e(l_0xc998fd)}]@(All of our products are blessed.{pause(20)}" linebreak
-    "             --Blue-Blue Drugstore)" end
+    "[06 44 00 {e(l_0xc998fd)}]@(Всі наші товали -- святі.{pause(20)}" linebreak
+    "             --Синь-Синь Аптека)" end
 
 l_0xc998fd:
-    "@(Not all of our products are blessed." linebreak
-    "     --Nothing Blue Drugstore)" end
+    "@(Не всі наші товари -- святі." linebreak
+    "     --Аптека Нічого Синього)" end
 
 l_0xc9992f:
     eob
@@ -245,7 +246,7 @@ l_0xc999a1:
 
 l_0xc99a3c:
     "@[1C 01 08]!" next
-    "[19 22 01 01 05 00][1F 13 01 00]@You haven't got a clue about what to do.{wait}{window_closeall}{unset(flag 2)}" eob
+    "[19 22 01 01 05 00][1F 13 01 00]@Ти гадки не маєш, що робити.{wait}{window_closeall}{unset(flag 2)}" eob
 
 l_0xc99a6b:
     "{isset(flag 107)}[1B 02 {e(l_0xc9992f)}][1F 63 {e(l_0xc99a7b)}]" eob

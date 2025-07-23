@@ -304,15 +304,15 @@ l_0xc87c57:
     "  Поліція Одинету.)" end
 
 l_0xc87c8c:
-    "@(Twoson is different from Onett.  We have Burglin Park.)" end
+    "@(Двосон не такий як Одинет.  В нас є Парк Бурґлін.)" end
 
 l_0xc87cb8:
-    "@(Tonight, the boogie is back!" linebreak
-    "  It's the Runaway Five's night!)" end
+    "@(В темну ніч, бабай повертається!" linebreak
+    "  І це ніч Бродячої П'ятірки!)" end
 
 l_0xc87cd9:
-    "@(Do you play some sports?  ...If you do, that's fine by us." next
-    "@<Twoson Athletic Committee>`)" end
+    "@(Хочете зайнятись спортом?  ...Якщо так, то це чудово для нас." next
+    "@<Двосонський Комітет - Атлетики>`)" end
 
 l_0xc87d1f:
     "@(I won't say anything to you adults," next

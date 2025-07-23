@@ -141,15 +141,15 @@ l_0xc9a0b6:
     eob
 
 l_0xc9a0b7:
-    "[06 D5 00 {e(data_55.l_0xc9992f)}][06 44 00 {e(l_0xc9a10c)}]{sound(111)}{pause(40)}{window_open(1)}{font_saturn}@I not sure.{pause(20)}" linebreak
-    "  Boing!" next
-    "@Friends " next
-    "@in valley" linebreak
-    "  behind Threed." next
-    "@Ding! Ding!{wait}{window_closeall}{font_normal}" eob
+    "[06 D5 00 {e(data_55.l_0xc9992f)}][06 44 00 {e(l_0xc9a10c)}]{sound(111)}{pause(40)}{window_open(1)}{font_saturn}@Я певний ні.{pause(20)}" linebreak
+    "  Боін!" next
+    "@Друзі " next
+    "@в долина" linebreak
+    "  за Трид." next
+    "@Дін! Дін!{wait}{window_closeall}{font_normal}" eob
 
 l_0xc9a10c:
-    "{sound(111)}{pause(40)}{window_open(1)}{font_saturn}@Oh, Hi ho.{wait}{window_closeall}{font_normal}" eob
+    "{sound(111)}{pause(40)}{window_open(1)}{font_saturn}@О, Хай хо.{wait}{window_closeall}{font_normal}" eob
 
 l_0xc9a123:
     "{unset(flag 660)}{isset(flag 44)}[1B 02 {e(data_55.l_0xc9992f)}][1F 41 05][1F 63 {e(data_54.l_0xc98cd3)}]" eob
@@ -158,8 +158,8 @@ l_0xc9a139:
     "{isset(flag 211)}[1B 02 {e(l_0xc9a193)}]" goto(l_0xc9a142)
 
 l_0xc9a142:
-    "{isset(flag 68)}[1B 02 {e(data_55.l_0xc9992f)}]{window_open(1)}@(The Happy Happy Religious Group has broken up." next
-    "@This building is temporarily closed.){wait}{window_closeall}" eob
+    "{isset(flag 68)}[1B 02 {e(data_55.l_0xc9992f)}]{window_open(1)}@(Релігійний Культ Щасливого Братства розвалився." next
+    "@Ця будівля тимчасово зачинена.){wait}{window_closeall}" eob
 
 l_0xc9a193:
     "[06 44 00 {e(data_55.l_0xc9992f)}]{set(flag 660)}" goto(l_0xc9a142)

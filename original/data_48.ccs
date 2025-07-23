@@ -36,46 +36,46 @@ l_0xc903e7:
     call(l_0xc90fd4) eob
 
 l_0xc903ed:
-    "[1D 15 32 00]{swap}[06 44 00 {e(l_0xc9058d)}][06 7F 01 {e(l_0xc90554)}]@We're all like one big, happy family here in Happy Happy Village!" next
-    "@Basically, our policy is to only allow family members to stay here in the village." next
-    "@However, if you are interested in learning about Happy Happyism," next
-    "@we may make an exception and let you stay for $[1C 0A 00 00 00 00]." linebreak
+    "[1D 15 32 00]{swap}[06 44 00 {e(l_0xc9058d)}][06 7F 01 {e(l_0xc90554)}]@Ми всі як одна велика, щаслива сім'я тут, в Щасливому Щасті!" next
+    "@Загалом, нашим кодексом є дозвіл тільки членам сім'ї залишатися в селі." next
+    "@Однак, якщо ти зацікавлений в вивченні про Щасливе Братство," next
+    "@ми можемо зробити для тебе вийняток і дамо залишитись за $[1C 0A 00 00 00 00]." linebreak
     call(data_36.l_0xc7dd4d) "[11]{clearline}[09 02 {e(l_0xc904e3)} {e(l_0xc904ba)}]" goto(l_0xc904ba)
 
 l_0xc904ba:
-    "@Never have I heard such disrespect!" linebreak
-    "  Get out and stay out!" end
+    "@Я ще ніколи не чув такої неповаги!" linebreak
+    "  Вали і йди геть!" end
 
 l_0xc904e3:
-    "[1D 14 00 00 00 00][1B 03 {e(l_0xc9052e)}][1D 09 00 00]{open_wallet}{sound(118)}@Very well... be sure to do your <blue... blue...>" linebreak
-    "  chant before bed time.{wait}" call(data_49.l_0xc91693) "[1F 21 27]" eob
+    "[1D 14 00 00 00 00][1B 03 {e(l_0xc9052e)}][1D 09 00 00]{open_wallet}{sound(118)}@Дуже добре... тілки переконайся, що ти заспівав <синь... синь...>," next
+    "@перед початком сновидінь.{wait}" call(data_49.l_0xc91693) "[1F 21 27]" eob
 
 l_0xc9052e:
-    "@No faith..." linebreak
-    "  No money..." linebreak
-    "  You are a hopeless case." end
+    "@Нема долі..." linebreak
+    "  Нема грошей..." linebreak
+    "  Ти безнадійний випадок." end
 
 l_0xc90554:
-    "@Are you prepared to show the proper respect to Mr. Carpainter now?" next
-    "@Blue... blue...{wait}{unset(flag 383)}" eob
+    "@Тепер ти готовий показати справжню шану до Пана Карпейнтера?" next
+    "@Синь... синь...{wait}{unset(flag 383)}" eob
 
 l_0xc9058d:
-    "[06 7F 01 {e(l_0xc90663)}][19 10 01]{swap}@Greetings, [1C 02 00]." linebreak
-    "  Please forgive my lecture earlier." next
-    "@You are now welcome to stay free of charge." next
-    "@Would you like to stay?" linebreak
+    "[06 7F 01 {e(l_0xc90663)}][19 10 01]{swap}@Добрий день, [1C 02 00]." linebreak
+    "  Будь-ласка, забудь ті уроки до цього." next
+    "@Тепер ти спокійно можеш залишитись тут задармо." next
+    "@Не хотів би ти переночувати?" linebreak
     call(data_36.l_0xc7dd4f) "[11]{clearline}[09 02 {e(l_0xc90615)} {e(l_0xc905fd)}]" goto(l_0xc905fd)
 
 l_0xc905fd:
-    "@Very well.  Please come again, any time." end
+    "@Дуже добре.  Приходь ще, в будь-який час." end
 
 l_0xc90615:
-    "@Excellent.  Please make yourself comfortable, on your blue sheets..." next
-    "@No, no, I'm just kidding!  Ha ha hah!{wait}" call(data_49.l_0xc91693) "[1F 21 27]" eob
+    "@Чудово.  Будь-ласка, вмощуйся зручніше, на своєму синьому простирадлі..." next
+    "@Ні, ні, я подартував!  Ха ха хаа!{wait}" call(data_49.l_0xc91693) "[1F 21 27]" eob
 
 l_0xc90663:
-    "@Good morning." linebreak
-    "  Take care and good luck." end
+    "@Доброго ранку." linebreak
+    "  Бережи себе і щасти." end
 
 l_0xc9067d:
     "[06 7F 01 {e(l_0xc906e0)}][1D 15 3C 00]{swap}@Welcome to the Threed Sunset Hotel." next

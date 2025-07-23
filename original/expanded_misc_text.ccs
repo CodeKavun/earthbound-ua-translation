@@ -214,7 +214,7 @@ define OFFSET_X_TextSpeed_Setting = 21  // Offset for the text speed setting in 
 // Max Length 63 //
 define AskName1 = "[82][91][9a][93][9b] [9d][a3][94][a3], [92][a8][96][ba]-[a0][91][a6][9f][91]."
 define AskName2 = "[82][91][9a][93][9b] [9e][9e] [a7][91][9f][a3][99]."
-define AskName3 = "[82][91][9a][93][9b] [a6][93][a3][94][a3] [96][a5][a8][94][91]."
+define AskName3 = "Назви цього пєдіка."
 define AskName4 = "[82][91][9a][93][9b] [9c][a2][b8][a3][94][a3] [96][a5][a8][94][91]."
 define AskNamePet = "[82][91][9a][93][9b] [a6][93][a3][94][a3] [a4][a6][91]."
 define AskNameFood = "[88][a0][bb][92][a0][97][a2][91] [96][a3][a1][91][b8][a2][bc] [9e][99][91]?"

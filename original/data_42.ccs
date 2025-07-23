@@ -246,36 +246,36 @@ l_0xc8652a:
     "  <Рух Свіжого Вітерця>" end
 
 l_0xc86554:
-    "@Welcome to Happy Happy Village!" end
+    "@Вітаємо в селі Щасливе Щастя!" end
 
 l_0xc86568:
-    "@<Meager Livin' Farm>" linebreak
-    "  (Lodgings available)" end
+    "@<Дім-Ферма Худорлявого>" linebreak
+    "  (Доступне проживання)" end
 
 l_0xc86591:
-    "@<Entrance to Burglin Park>" next
-    "@No admittance to good kids or police officers." end
+    "@<Вхід до Парку Бурґлін>" next
+    "@Добрі діти і поліція не приймаються." end
 
 l_0xc865cb:
-    "@Twoson--" linebreak
-    "  we got this name because we weren't first." end
+    "@Двосон--" linebreak
+    "  нас так прозвали, бо ми неперші." end
 
 l_0xc865f3:
-    "@If you see a suspicious fellow,{pause(15)} just pretend not to see him." end
+    "@Якщо ти побачиш підозрілого типка,{pause(15)} просто вдай, що ти нічого не бачив." end
 
 l_0xc8661b:
-    "@If you have time to read this, go to the Chaos Theater immediately." end
+    "@Якщо у вас є час на прочитання цього, одразу йдіть до Театру Хаос." end
 
 l_0xc86646:
-    "@<Secret Entrance to Burglin Park>" end
+    "@<Чорний Вхід до Парку Бурґлін>" end
 
 l_0xc86663:
-    "@Are you happy now?{pause(20)}" linebreak
-    "  <Happy Happy Religious Group>" end
+    "@Тепер ти щасливий?{pause(20)}" linebreak
+    "  <Гурток Релігії Щасливого Братства>" end
 
 l_0xc86689:
-    "@<Two-Three Tunnel>{pause(20)}" linebreak
-    "  To the town of Threed." end
+    "@<Тунель Два-Три>{pause(20)}" linebreak
+    "  До міста Трид." end
 
 l_0xc866ab:
     "@(Дім Апельсино-Хлопця, винахідника)" end

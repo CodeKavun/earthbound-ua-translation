@@ -74,13 +74,13 @@ l_0xc7e729:
     eob
 
 l_0xc7e72a:
-    "[19 10 02]{swap} and [1C 02 00]" eob
+    "[19 10 02]{swap} та [1C 02 00]" eob
 
 l_0xc7e735:
-    " and [19 10 01]{result_is(2)}[1B 03 {e(l_0xc7e748)}]his friends" eob
+    " та [19 10 01]{result_is(2)}[1B 03 {e(l_0xc7e748)}]його друзі" eob
 
 l_0xc7e748:
-    "her friends" eob
+    "її друзі" eob
 
 l_0xc7e74e:
     "{store_registers}" call(l_0xc7e6d7) "{load_registers}" eob

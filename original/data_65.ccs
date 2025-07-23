@@ -353,45 +353,45 @@ l_0xef976b:
     "@Пробач, що я дала тобі купу неприємностей." end
 
 l_0xef9785:
-    "@(Міст до Щасливого-Щасливого Селища)" end
+    "@(Міст до села Щасливе Щастя)" end
 
 l_0xef97a2:
-    "[06 BF 00 {e(data_35.l_0xc7c588)}]{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(data_24.l_0xc690a6)}]{music(155)}@You finally got here." next
-    "@This is the second <Your Sanctuary> location.{pause(20)}  But it's mine now." next
-    "@Take it from me,{pause(30)} if you dare...[03]" call(data_23.l_0xc68410) "[1B 03 {e(data_23.l_0xc683de)}][1F 1E C3 01 08]{pause(120)}{set(flag 191)}" eob
+    "[06 BF 00 {e(data_35.l_0xc7c588)}]{counter(1)}" call(data_36.l_0xc7dc7f) "[1B 03 {e(data_24.l_0xc690a6)}]{music(155)}@Ти нарешті діставя сюди." next
+    "@Це друга локація <Твого Святилища>.{pause(20)}  Але тепер воно моє." next
+    "@Забери її від мене,{pause(30)} якщо ти посмієш...[03]" call(data_23.l_0xc68410) "[1B 03 {e(data_23.l_0xc683de)}][1F 1E C3 01 08]{pause(120)}{set(flag 191)}" eob
 
 l_0xef981c:
     call(data_47.l_0xc900f9) eob
 
 l_0xef9822:
-    "@I wonder who made the bridge impassable?" next
-    "@Why would someone do this?{pause(15)}  Crud..." end
+    "@Не знаю, хто зробив міст непроходимим?" next
+    "@Кому прийшло в голову таке зробити?{pause(15)}  Чортівня якась..." end
 
 l_0xef9857:
-    "@(I'm not an enemy." next
-    "@I'm just a regular mole." next
-    "@Would you like to know about how to survive battles?)" next
-    "[19 02]Yes" eob
+    "@(Я не твій ворог." next
+    "@Я просто звичайний кріт." next
+    "@Не хотів би дізнатися, як вижити в боях?)" next
+    "[19 02]Так" eob
 
 l_0xef9898:
-    " [19 02]No" eob
+    " [19 02]Ні" eob
 
 l_0xef989e:
     "[1C 07 02][11]{clearline}[09 02 {e(l_0xef98d3)} {e(l_0xef98ad)}]" goto(l_0xef98ad)
 
 l_0xef98ad:
-    "@(Well, you seem to know a lot already, even if you don't look like it.)" end
+    "@(Що ж, ти схоже вже багато що знаєш, навіть якщо ти не виглядаєш таким.)" end
 
 l_0xef98d3:
-    "@(You may have noticed that,{pause(15)} when you have been badly hurt in battle," next
-    "@you may survive a mortal attack and still have 1 HP.{pause(20)}  If this has happened," next
-    "@it was because of your Guts.{pause(20)}  Your survival may depend on your Guts level." next
-    "@Also,{pause(15)} more Guts helps you get more SMAAAAASHing hits." next
-    "@Beyond Guts,{pause(15)} you should have noticed that it takes some time" next
-    "@for damage to be taken from you." next
-    "@This is because of the rolling action of your HP meter.{pause(15)}  Oops!{pause(20)}  I mean your life." next
-    "@If an enemy deals mortal damage to you,{pause(15)} but you defeat all enemies" next
-    "@before your life is gone,{pause(15)} you survive.{pause(30)}  This is all I know.)" end
+    "@(Ти може помічав,{pause(15)} коли ти тебе потужно б'ють підчас бою," next
+    "@ти можеш пережити смертельну шкоду і ще мати 1 ПЗ.{pause(20)}  Якщо таке станеться," next
+    "@це буде через Впевненість.{pause(20)}  Твоє виживання залежить від рівня Впевненості." next
+    "@Також,{pause(15)} більше Впевненості допомагає робити більше БАААААМів." next
+    "@Окрім Впевненості,{pause(15)} ти мав зауважити, що має пройти деякий час" next
+    "@для шкоди, щоб ти її повністю отримав." next
+    "@Це через котючу дію твоїх ПЗ.{pause(15)}  Оой!{pause(20)}  Я мав на увазі твого життя." next
+    "@Якщо ворог наніс тобі смертельну шкоду,{pause(15)} але ти подолов всіх" next
+    "@до того як твоє життя скінчиться,{pause(15)} ти виживеш.{pause(30)}  Це все, що я знаю.)" end
 
 l_0xef9a47:
     newline
