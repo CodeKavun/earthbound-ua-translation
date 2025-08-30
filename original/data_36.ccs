@@ -223,7 +223,7 @@ l_0xc7de72:
 
 l_0xc7de7d:
     call(l_0xc7de11) call(data_24.l_0xc69082) "{window_open(1)}" call(l_0xc7dfa4) "@[1C 02 00]!" next
-    "@Схоже на те, що все навколо тебе потемніло." next
+    "@Схоже на те, що ти впав лицем на землю." next
     "@Тому, може ти не проти спробувати ще раз?" linebreak
     "[19 02]Так" eob
 
@@ -237,7 +237,7 @@ l_0xc7dee0:
     "@Ти впевнений?" next
     "@Наступного разу, коли ти почнеш свою пригоду," next
     "@ти почнеш там, де ти востаннє зберігся." next
-    "@Для тебе це ОК?" linebreak
+    "@Тобі так підійде?" linebreak
     "[19 02]Ні" eob
 
 l_0xc7df25:
@@ -261,119 +261,119 @@ l_0xc7dfb9:
     "{counter(1)}{ctoarg}" eob
 
 l_0xc7dfbe:
-    "[1F 13 01 02]{pause(16)}[1F 13 01 03]{pause(12)}[1F 13 01 04]{pause(8)}[1F 13 01 05]{pause(60)}{music(79)}[1F EA 6A 00][1F 61][1F E7 6A 00]{open_hp}[1F 41 0D]{window_open(1)}@[1C 01 08] was filled with the Power of the Giant Step!" next
-    "@[1C 01 08]'s Speed increased by 5!{sound(40)}[1E 0C 01 05]" next
-    "@[1C 01 08]'s Vitality increased by 5!{sound(40)}[1E 0D 01 05]" next
-    "@[1C 01 08] was filled with the Power of the Lilliput Steps!" next
-    "@[1C 01 08]'s Guts increased by 5!{sound(40)}[1E 0B 01 05]" next
-    "@[1C 01 08]'s Luck increased by 5!{sound(40)}[1E 0E 01 05]" next
-    "@[1C 01 08] was filled with the Power of the Milky Well!" next
-    "@[1C 01 08]'s Speed increased by 5!{sound(40)}[1E 0C 01 05]" next
-    "@[1C 01 08]'s IQ increased by 5!{sound(40)}[1E 0A 01 05]" next
-    "@[1C 01 08] was filled with the Power of the Magnet Hill!" next
-    "@[1C 01 08]'s Vitality increased by 5!{sound(40)}[1E 0D 01 05]" next
-    "@[1C 01 08]'s Luck increased by 5!{sound(40)}[1E 0E 01 05]" next
-    "@[1C 01 08] was filled with the Power of the Rainy Circle!" next
-    "@[1C 01 08]'s Guts increased by 5!{sound(40)}[1E 0B 01 05]" next
-    "@[1C 01 08]'s IQ increased by 5!{sound(40)}[1E 0A 01 05]" next
-    "@[1C 01 08] was filled with the Power of the Pink Cloud!" next
-    "@[1C 01 08]'s Speed increased by 5!{sound(40)}[1E 0C 01 05]" next
-    "@[1C 01 08]'s Guts increased by 5!{sound(40)}[1E 0B 01 05]" next
-    "@[1C 01 08] was filled with the Power of the Lumine Hole!" next
-    "@[1C 01 08]'s Luck increased by 5!{sound(40)}[1E 0E 01 05]" next
-    "@[1C 01 08]'s IQ increased by 5!{sound(40)}[1E 0A 01 05]" next
-    "@[1C 01 08] was filled with the Power of the Fire Spring!" next
-    "@[1C 01 08]'s Speed increased by 5!{sound(40)}[1E 0C 01 05]" next
-    "@[1C 01 08]'s Luck increased by 5!{sound(40)}[1E 0E 01 05][03]{window_closeall}[1F 41 0E]{pause(60)}{window_open(1)}@Instantly, [1C 01 08]'s mind cleared," next
-    "@and he realized that he had possessed great power!" next
-    "@At that moment, [1C 01 08]'s psychic powers radically expanded!{sound(40)}{set(flag 74)}[03]{window_closeall}{pause(30)}{window_open(14)}@[1C 01 08] gained 200,000 exp.[03][1E 09 01 40 0D 03]" linebreak
+    "[1F 13 01 02]{pause(16)}[1F 13 01 03]{pause(12)}[1F 13 01 04]{pause(8)}[1F 13 01 05]{pause(60)}{music(79)}[1F EA 6A 00][1F 61][1F E7 6A 00]{open_hp}[1F 41 0D]{window_open(1)}@[1C 01 08] був наповнений Силою Сліду Гіганта!" next
+    "@[1C 01 08] збільшує Швидкість на 5!{sound(40)}[1E 0C 01 05]" next
+    "@[1C 01 08] збільшує Живучість на 5!{sound(40)}[1E 0D 01 05]" next
+    "@[1C 01 08] був наповнений Силою Кроків Ліліпутів!!" next
+    "@[1C 01 08] збільшує Впевненість на 5!{sound(40)}[1E 0B 01 05]" next
+    "@[1C 01 08] збільшує Вдачу на 5!{sound(40)}[1E 0E 01 05]" next
+    "@[1C 01 08] був наповнений Силою Молочного Колодязю!" next
+    "@[1C 01 08] збільшує Швидкісь на 5!{sound(40)}[1E 0C 01 05]" next
+    "@[1C 01 08] збільшує Інтелект на 5!{sound(40)}[1E 0A 01 05]" next
+    "@[1C 01 08] був наповнений Силою Магнітного Пагорбу!!" next
+    "@[1C 01 08] збільшує Живучість на 5!{sound(40)}[1E 0D 01 05]" next
+    "@[1C 01 08] збільшує Вдачу на 5!{sound(40)}[1E 0E 01 05]" next
+    "@[1C 01 08] був наповнений Силою Дощового Кола!" next
+    "@[1C 01 08] збільшує Впевненість на 5!{sound(40)}[1E 0B 01 05]" next
+    "@[1C 01 08] збільшує Інтелект на 5!{sound(40)}[1E 0A 01 05]" next
+    "@[1C 01 08] був наповнений Силою Рожевої Хмари!" next
+    "@[1C 01 08] збільшує Швидкісь на 5!{sound(40)}[1E 0C 01 05]" next
+    "@[1C 01 08] збільшує Впевненість на 5!{sound(40)}[1E 0B 01 05]" next
+    "@[1C 01 08] був наповнений Силою Люмінової Діри!" next
+    "@[1C 01 08] збільшує Вдачу на 5!{sound(40)}[1E 0E 01 05]" next
+    "@[1C 01 08] збільшує Інтелект на 5!{sound(40)}[1E 0A 01 05]" next
+    "@[1C 01 08] був наповнений Силою Вогняного Фонтану!" next
+    "@[1C 01 08] збільшує Швидкісь на 5!{sound(40)}[1E 0C 01 05]" next
+    "@[1C 01 08] збільшує Вдачу на 5!{sound(40)}[1E 0E 01 05][03]{window_closeall}[1F 41 0E]{pause(60)}{window_open(1)}@Миттєво, [1C 01 08] очистив свій розум," next
+    "@і дізнався, що він володів великою силою!" next
+    "@У цю мить, [1C 01 08] розширив в рази свої психічні сили!{sound(40)}{set(flag 74)}[03]{window_closeall}{pause(30)}{window_open(14)}@[1C 01 08] отримує 200,000 дос.[03][1E 09 01 40 0D 03]" linebreak
     "[1F 04 03]" newline
-    "@And finally, he realized{sound(103)} he had the power of Teleport [8C].[1F 71 01 01][1F 71 01 04]{prompt}[1F 04 01]{window_closeall}{pause(120)}{pause(180)}{pause(10)}[1F EB 01 06][1F E5 FF][1F 15 01 00 05 03 01]{pause(10)}[1F EA 6A 00][1F 61]{window_open(1)}@[1C 01 08] made all of the hidden powers his own." next
-    "@[1C 01 08] absorbed the power of the land into his heart, and Magicant was no more.[03]{window_closeall}" goto(data_57.l_0xc9b4c9)
+    "@І нарешті, він дізнався,{sound(103)} що він мав сило Телепорту [8C].[1F 71 01 01][1F 71 01 04]{prompt}[1F 04 01]{window_closeall}{pause(120)}{pause(180)}{pause(10)}[1F EB 01 06][1F E5 FF][1F 15 01 00 05 03 01]{pause(10)}[1F EA 6A 00][1F 61]{window_open(1)}@[1C 01 08] зробив всі заховані сили власними." next
+    "@[1C 01 08] поглинув силу землі в своє серце, і Дивосвіту більше не існує.[03]{window_closeall}" goto(data_57.l_0xc9b4c9)
 
 l_0xc7e3f9:
     eob
 
 l_0xc7e3fa:
-    "[19 19 00 00]{swap}@[1C 02 00] rearranged {swap}" call(data_37.l_0xc7e660) "{swap} own items and the {swap}[1C 05 00] moved." end
+    "[19 19 00 00]{swap}@[1C 02 00] переставляє свої власні речі і {swap}[1C 05 00] здвинуто." end
 
 l_0xc7e42c:
-    "[19 19 00 00]{swap}@[1C 02 00] tried to give" linebreak
-    "  the {swap}[1C 05 00]" linebreak
-    "  to [1C 02 FF]," next
-    "{load_registers}@but " call(l_0xc7e5f3) " was already carrying too much stuff." end
+    "[19 19 00 00]{swap}@[1C 02 00] намагається дати" linebreak
+    "  {swap}[1C 05 00]" linebreak
+    "  до [1C 02 FF]," next
+    "{load_registers}@але " call(l_0xc7e5f3) " вже несе забагато речей." end
 
 l_0xc7e468:
-    "[19 19 00 00]{swap}@[1C 02 00] tried to add" linebreak
-    "  the {swap}[1C 05 00]" linebreak
-    "  to [1C 02 FF]'s stuff," next
-    "@but there was no room for it." end
+    "[19 19 00 00]{swap}@[1C 02 00] намагається додати" linebreak
+    "  {swap}[1C 05 00]" linebreak
+    "  до речей [1C 02 FF](-а-и)," next
+    "@але там немає місця." end
 
 l_0xc7e4a4:
-    "[19 19 00 00]{swap}@[1C 02 00] gave the {swap}[1C 05 00]" linebreak
-    "  to [1C 02 FF]." end
+    "[19 19 00 00]{swap}@[1C 02 00] дає {swap}[1C 05 00]" linebreak
+    "  до [1C 02 FF]." end
 
 l_0xc7e4c3:
-    "[19 19 00 00]{swap}@[1C 02 00] added" linebreak
-    "  the {swap}[1C 05 00]" linebreak
-    "  to [1C 02 FF]'s stuff." end
+    "[19 19 00 00]{swap}@[1C 02 00] додає" linebreak
+    "  {swap}[1C 05 00]" linebreak
+    "  до речей [1C 02 FF](-а-и)." end
 
 l_0xc7e4e9:
-    "[19 19 00 00]{swap}{store_registers}[19 10 01]{swap}@[1C 02 00]{load_registers} rearranged [1C 02 00]'s items and the {swap}[1C 05 00] moved." end
+    "[19 19 00 00]{swap}{store_registers}[19 10 01]{swap}@[1C 02 00]{load_registers} переставляє у [1C 02 00] речі і {swap}[1C 05 00] здвинуто." end
 
 l_0xc7e51c:
-    "[19 19 00 00]@[1C 02 FF] tried to take" linebreak
-    "  the [1C 05 00]" linebreak
-    "  from {swap}[1C 02 00]'s stuff," next
-    "{load_registers}@but " call(l_0xc7e5f3) " was already carrying too much stuff." end
+    "[19 19 00 00]@[1C 02 FF] намагається взяти" linebreak
+    "  [1C 05 00]" linebreak
+    "  з речей {swap}[1C 02 00]," next
+    "{load_registers}@але " call(l_0xc7e5f3) " вже несе забагато речей." end
 
 l_0xc7e559:
-    "[19 19 00 00]{swap}[1B 05][19 10 01]{swap}@[1C 02 00][1B 06] tried to add [1C 02 00]'s {swap}[1C 05 00]" linebreak
-    "  to [1C 02 FF]'s stuff," next
-    "@but there was no room for it." end
+    "[19 19 00 00]{swap}[1B 05][19 10 01]{swap}@[1C 02 00][1B 06] намашається додати з [1C 02 00] {swap}[1C 05 00]" linebreak
+    "  до речей [1C 02 FF]," next
+    "@але там немає місця." end
 
 l_0xc7e5a1:
-    "[19 19 00 00]@[1C 02 FF] took" linebreak
-    "  the [1C 05 00]" linebreak
-    "  from {swap}[1C 02 00]'s stuff." end
+    "[19 19 00 00]@[1C 02 FF] бере" linebreak
+    "  [1C 05 00]" linebreak
+    "  з речей {swap}[1C 02 00]." end
 
 l_0xc7e5c2:
-    "[19 19 00 00]{swap}[1B 05][19 10 01]{swap}@[1C 02 00][1B 06] added [1C 02 00]'s {swap}[1C 05 00]" linebreak
-    "  to [1C 02 FF]'s stuff." end
+    "[19 19 00 00]{swap}[1B 05][19 10 01]{swap}@[1C 02 00][1B 06] додає з [1C 02 00] {swap}[1C 05 00]" linebreak
+    "  до речей [1C 02 FF]." end
 
 l_0xc7e5f3:
-    "{result_is(2)}[1B 03 {e(l_0xc7e5fe)}]he" eob
+    "{result_is(2)}[1B 03 {e(l_0xc7e5fe)}]він" eob
 
 l_0xc7e5fe:
-    "she" eob
+    "вона" eob
 
 l_0xc7e602:
     "[1C 14 01][09 03 {e(l_0xc7e613)} {e(l_0xc7e616)} {e(l_0xc7e61a)}]" goto(l_0xc7e613)
 
 l_0xc7e613:
-    "he" eob
+    "він" eob
 
 l_0xc7e616:
-    "she" eob
+    "вона" eob
 
 l_0xc7e61a:
-    "it" eob
+    "воно" eob
 
 l_0xc7e61d:
     "[1C 14 01][09 03 {e(l_0xc7e62e)} {e(l_0xc7e631)} {e(l_0xc7e635)}]" goto(l_0xc7e62e)
 
 l_0xc7e62e:
-    "He" eob
+    "Він" eob
 
 l_0xc7e631:
-    "She" eob
+    "Вона" eob
 
 l_0xc7e635:
-    "It" eob
+    "Воно" eob
 
 l_0xc7e638:
     "[1C 15 01]{swap} [1C 0A 00 00 00 00] [1C 15 01][09 03 {e(l_0xc7e656)} {e(data_37.l_0xc7e659)} {e(data_37.l_0xc7e65d)}]" goto(l_0xc7e656)
 
 l_0xc7e656:
-    "he" eob
+    "він" eob
 

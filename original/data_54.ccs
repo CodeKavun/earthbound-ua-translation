@@ -140,72 +140,72 @@ l_0xc97cca:
 
 l_0xc97d21:
     newline
-    "@{user}[19 1F]{swap} sprayed a blast of" linebreak
+    "@{user}[19 1F]{swap} вистрілює бризгом" linebreak
     "  [1C 05 00]!{sound(71)}[03]" eob
 
 l_0xc97d43:
     newline
-    "@{user}[19 1F]{swap} used" linebreak
-    "  the [1C 05 00]!" next
-    "@Suddenly, something unknown burst from the box.[03]" eob
+    "@{user}[19 1F]{swap} використовує" linebreak
+    "  [1C 05 00]!" next
+    "@Раптом, щось невідоме вилізло з коробки.[03]" eob
 
 l_0xc97d75:
     newline
-    "@{user}[19 1F]{swap} used" linebreak
-    "  the [1C 05 00]!" next
-    "@Then, something sticky" linebreak
-    "  stuck to the enemy![03]" eob
+    "@{user}[19 1F]{swap} використовує" linebreak
+    "  [1C 05 00]!" next
+    "@Тоді ж, щось липке" linebreak
+    "  покрило ворога![03]" eob
 
 l_0xc97da3:
     newline
-    "@{user}[19 1F]{swap} used" linebreak
-    "  the [1C 05 00]!" next
-    "@Suddenly, some Trout Yogurt" linebreak
-    "  was produced![03]" eob
+    "@{user}[19 1F]{swap} використовує" linebreak
+    "  [1C 05 00]!" next
+    "@Раптом, Форельний Йогурт" linebreak
+    "  було вироблено![03]" eob
 
 l_0xc97ddc:
     newline
-    "@{user}[19 1F]{swap} fired" linebreak
-    "  the [1C 05 00]!{sound(70)}[03]" eob
+    "@{user}[19 1F]{swap} вистрілює" linebreak
+    "  з [1C 05 00]!{sound(70)}[03]" eob
 
 l_0xc97df5:
     newline
-    "@{user}[19 1F]{swap} fired" linebreak
-    "  the [1C 05 00]!{sound(70)}{pause(8)}{sound(70)}{pause(8)}{sound(70)}{pause(8)}{sound(70)}{pause(8)}{sound(70)}{pause(8)}[03]" eob
+    "@{user}[19 1F]{swap} вистрілює" linebreak
+    "  з [1C 05 00]!{sound(70)}{pause(8)}{sound(70)}{pause(8)}{sound(70)}{pause(8)}{sound(70)}{pause(8)}{sound(70)}{pause(8)}[03]" eob
 
 l_0xc97e24:
     newline
-    "@{user}[19 1F]{swap} fired" linebreak
-    "  the [1C 05 00]!{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}[03]" eob
+    "@{user}[19 1F]{swap} вистрілює" linebreak
+    "  з [1C 05 00]!{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}{sound(70)}{pause(4)}[03]" eob
 
 l_0xc97e9e:
     newline
-    "@{user}[19 1F]{swap} fired" linebreak
-    "  the [1C 05 00]!{sound(70)}[03]" eob
+    "@{user}[19 1F]{swap} вистрілює" linebreak
+    "  з [1C 05 00]!{sound(70)}[03]" eob
 
 l_0xc97eb7:
     newline
-    "@{user}[19 1F]{swap} threw" linebreak
-    "  the [1C 05 00]!{sound(70)}[03]" eob
+    "@{user}[19 1F]{swap} кидає" linebreak
+    "  [1C 05 00]!{sound(70)}[03]" eob
 
 l_0xc97ed1:
     "[19 1F]{swap}" newline
-    "@{user} took a snake" linebreak
-    "  out of the [1C 05 00]" next
-    "  and threw it![03]" eob
+    "@{user} бере змію" linebreak
+    "  з [1C 05 00]" next
+    "  і кидає його![03]" eob
 
 l_0xc97efa:
     newline
-    "@{user}[19 1F]{swap} used [1C 05 00] and " call(data_37.l_0xc7e66e) " teeth" next
-    "@were white and breath was fresh!" next
-    "@The brightness of" linebreak
-    "  {user}'s teeth" next
-    "@made the enemy scared![03]" eob
+    "@{user}[19 1F]{swap} використовує [1C 05 00] і " call(data_37.l_0xc7e66e) " тепер має" next
+    "@дуже білі зуби і дуже свіже повітря!" next
+    "@Яскравість тих" linebreak
+    "  зубів" next
+    "@налякало ворога![03]" eob
 
 l_0xc97f56:
     newline
-    "[19 1F]{swap}@{user} lashed out" linebreak
-    "  with the [1C 05 00]![03]" eob
+    "[19 1F]{swap}@{user} кидається" linebreak
+    "  з [1C 05 00]![03]" eob
 
 l_0xc97f72:
     newline
@@ -219,10 +219,10 @@ l_0xc97f89:
 
 l_0xc97f8a:
     newline
-    "@{user}[19 1F]{swap} threw" linebreak
-    "  the [1C 05 00]!" next
-    "@The [1C 05 00] is" linebreak
-    "  biting!" next
+    "@{user}[19 1F]{swap} кидає" linebreak
+    "  [1C 05 00]!" next
+    "@[1C 05 00]" linebreak
+    "  кусає!" next
     eob
 
 l_0xc98000:

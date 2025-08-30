@@ -334,8 +334,8 @@ l_0xef6954:
 
 l_0xef69a1:
     newline
-    "@ПЗ {target}(-а/-и)" linebreak
-    "  відновлено до максимуму!{sound(36)}[03]" eob
+    "@{target} відновлює" linebreak
+    "  ПЗ до максимуму!{sound(36)}[03]" eob
 
 l_0xef69ba:
     newline

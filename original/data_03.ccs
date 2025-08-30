@@ -75,27 +75,27 @@ l_0xc53c36:
 l_0xc53c46:
     newline
     " <[1C 05 31]>" next
-    "@A so-so weapon." end
+    "@Така-сяка зброя." end
 
 l_0xc53c5f:
     newline
     " <[1C 05 32]>" next
-    "@A decent little weapon." end
+    "@Нормальна мала зброя." end
 
 l_0xc53c7a:
     newline
     " <[1C 05 33]>" next
-    "@A pretty powerful weapon." end
+    "@Досить потужна зброя." end
 
 l_0xc53c95:
     newline
     " <[1C 05 34]>" next
-    "@A tough, strong weapon!" end
+    "@Тяжка, сильна зброя!" end
 
 l_0xc53caf:
     newline
     " <[1C 05 35]>" next
-    "@This one rocks, for sure." end
+    "@Ось цей просто крутяк, точно." end
 
 l_0xc53cc8:
     newline
@@ -106,50 +106,50 @@ l_0xc53cd8:
     newline
     " <[1C 05 37]>" next
     call(data_05.l_0xc56bc0) next
-    "@Also, it adds a bit of Speed." end
+    "@Також, додає трохи Швидкості." end
 
 l_0xc53d00:
     newline
     " <[1C 05 38]>" next
     call(data_05.l_0xc56bc0) next
-    "@It also increases your Speed." end
+    "@Також збільшує твою Швидкість." end
 
 l_0xc53d21:
     newline
     " <[1C 05 39]>" next
     call(data_05.l_0xc56bc0) next
-    "@It increases your Speed in a big way." end
+    "@Суттєво збільшує твою Швидкість." end
 
 l_0xc53d46:
     newline
     " <[1C 05 3A]>" next
-    call(data_05.l_0xc56bdf) "@It protects you from fire attacks." end
+    call(data_05.l_0xc56bdf) "@Захищає тебе від вогняних атак." end
 
 l_0xc53d6a:
     newline
     " <[1C 05 3B]>" next
-    call(data_05.l_0xc56bdf) "@It protects you from freeze attacks." end
+    call(data_05.l_0xc56bdf) "@Захищає тебе від льодяних атак." end
 
 l_0xc53d8f:
     newline
     " <[1C 05 3C]>" next
-    call(data_05.l_0xc56bdf) "@It absorbs the light of a flash attack." end
+    call(data_05.l_0xc56bdf) "@Поглинає світло зі спалаху." end
 
 l_0xc53db8:
     newline
     " <[1C 05 3D]>" next
-    call(data_05.l_0xc56bdf) "@It protects you from fire, freeze and flash attacks." end
+    call(data_05.l_0xc56bdf) "@Захищає тебе від вогню, льоду та спалахів." end
 
 l_0xc53de8:
     newline
     " <[1C 05 3E]>" next
-    call(data_05.l_0xc56bdf) "@It protects you from fire, freeze, flash and paralysis attacks." end
+    call(data_05.l_0xc56bdf) "@Захищає тебе від вогню, льоду, спалахів та оніміння." end
 
 l_0xc53e23:
     newline
     " <[1C 05 3F]>" next
-    "@[1C 02 04]'s body equipment." next
-    "@It increases his Defense." end
+    "@[1C 02 04] може одягти на своє тіло." next
+    "@Збільшує його захист." end
 
 l_0xc53e4f:
     newline
@@ -202,35 +202,34 @@ l_0xc53edd:
 l_0xc53ef4:
     newline
     " <[1C 05 49]>" next
-    "@To be equipped on" linebreak
-    "  [1C 02 04]'s arm." next
-    "@Helps protect from being hypnotized, and Luck goes up." next
-    "@Of course, Defense also goes up." end
+    "@[1C 02 04] може одягти на свої руки." next
+    "@Допомагає захищати від гіпнозу, і підіймає Вдачу." next
+    "@І звісно ж, підіймає Захист." end
 
 l_0xc53f58:
     newline
     " <[1C 05 4A]>" next
     call(data_05.l_0xc56c40) next
-    "@It has the logo of your favorite baseball team." end
+    "@Має логотип твоєї улюбденої бейзбольної команди." end
 
 l_0xc53f89:
     newline
     " <[1C 05 4B]>" next
     call(data_05.l_0xc56c40) next
-    "@It makes you feel like the great detective, Sherlock Holmes, when equipped." end
+    "@Ти відчуваєш наче великий детектив, Шерлок Холмз, коли споляджено." end
 
 l_0xc53fc9:
     newline
     " <[1C 05 4C]>" next
     call(data_05.l_0xc56c40) next
-    "@It is said to have been given to your friend by a famous player at the ballpark." end
+    "@Сказано, що воно було дано твоєму другу відомим гравцем в бейзбольному майданчику." end
 
 l_0xc5400a:
     newline
     " <[1C 05 4D]>" next
     call(data_05.l_0xc56c40) next
-    "@Should be worn when searching for buried treasure," next
-    "@or while you are at the construction site." end
+    "@Повинно бути одягнено, коли шукаєш замуровано золото," next
+    "@або ж коли ти знаходишся на будівництві." end
 
 l_0xc54055:
     newline
@@ -281,7 +280,7 @@ l_0xc540e5:
     newline
     " <[1C 05 57]>" next
     call(data_05.l_0xc56c91) next
-    "@It increases his Defense." end
+    "@Збільшує його захист." end
 
 l_0xc54106:
     newline
@@ -297,7 +296,7 @@ l_0xc54133:
     newline
     " <[1C 05 5A]>" next
     call(data_05.l_0xc56cb5) "50" call(data_05.l_0xc56cd6) next
-    "@100% beef." end
+    "@100% яловичина." end
 
 l_0xc54156:
     newline
@@ -308,24 +307,24 @@ l_0xc5416d:
     newline
     " <[1C 05 5C]>" next
     call(data_05.l_0xc56cb5) "80" call(data_05.l_0xc56cd6) next
-    "@So fresh, it's still warm!" end
+    "@Свіже, ще тепленьке!" end
 
 l_0xc54197:
     newline
     " <[1C 05 5D]>" next
     call(data_05.l_0xc56cb5) "80" call(data_05.l_0xc56cd6) next
-    "@There's even a slice of your favorite cake!" end
+    "@Тут є навіть шматочок, твого улюбленого тортика!" end
 
 l_0xc541cb:
     newline
     " <[1C 05 5E]>" next
-    "@This is a pasta dish which legend holds was a favorite of King Summers the Third" next
-    "@in the 16th century. Back then, there were many great chefs, confident of their" next
-    "@culinary skills, always going to and from Summer's Palace." next
-    "@Once day, King Summers wife, Anna Summers, said," next
-    "@<Oh what I wouldn't give for some really delicious pasta!> ... ... ..." next
-    "@...Well, let's just leave it at that. The story is too long to go through completely..." next
-    "@but it really is a beautiful, touching tale..." next
+    "@Це паста, яка за легендою, була найулюбленішою їжою Короля Літа Третього" next
+    "@в 16-ому столітті. В той час, було багато чудових шефів, впевнені в своїх" next
+    "@кулінарних здібностях, завжди приходили й виходили Палацу Літів." next
+    "@Одного дня, дружина короля, Анна Літа, сказала," next
+    "@<Ох, а чому я б не могла зробити дійсно смачну пасту!> ... ... ..." next
+    "@...Що ж, давайте тут і зупинимося. Історія досить довга, щоб по ній пройтися..." next
+    "@але це дійсно прекрасне, зворушливе оповідання..." next
     call(data_05.l_0xc56cb5) "110" call(data_05.l_0xc56cd6) end
 
 l_0xc54321:
@@ -336,37 +335,37 @@ l_0xc54321:
 l_0xc54339:
     newline
     " <[1C 05 60]>" next
-    "@This is today's special. It is highly recommended by our chef," next
-    "@who trained at a five-star restaurant in Paris." next
+    "@Це сьогоднішній ексклюзив. Високо зарекомендований нашим шефом," next
+    "@який тренувався в п'яти-зірковому ресторані в Парижі." next
     call(data_05.l_0xc56cb5) "200" call(data_05.l_0xc56cd6) end
 
 l_0xc543a4:
     newline
     " <[1C 05 61]>" next
-    "@Since it's a really big pizza, everyone can recover about 240 HP when eaten." end
+    "@Так як це реально здорова піца, кожен може відновити 240 ПЗ, коли скуштує." end
 
 l_0xc543da:
     newline
     " <[1C 05 62]>" next
-    "@Replenishes 20 PP." end
+    "@Поповнює 20 ПП." end
 
 l_0xc543f5:
     newline
     " <[1C 05 63]>" next
-    "@A dream-like delicacy" linebreak
-    "  that is said to grow at the base of trees" next
-    "@in wet, muddy places." next
-    "@It restores about 80 PP." end
+    "@Делікатес мрії," linebreak
+    "  який треба вирощувати на корі дерев" next
+    "@в вологих, болотних місцях." next
+    "@Відновлює 80 ПП." end
 
 l_0xc54451:
     newline
     " <[1C 05 64]>" next
-    call(data_05.l_0xc56cb5) "300 HP and about 50 PP." end
+    call(data_05.l_0xc56cb5) "300 ПЗ і приблизно 50 ПП." end
 
 l_0xc54471:
     newline
     " <[1C 05 65]>" next
-    "@When you eat this, it will increase either Speed, Guts, Vitality, IQ or Luck." end
+    "@Як з'їсиш, то в тебе збільшиться Швидкість, Впевненість, Живучість, Інтелект або ж Вдача." end
 
 l_0xc544af:
     newline
@@ -381,15 +380,15 @@ l_0xc544c6:
 l_0xc544dd:
     newline
     " <[1C 05 68]>" next
-    "@This is the Balloon Monkey's favorite." next
-    "@It will not help you recover, but" next
-    "@you'll also never run out, 'cause it's a super jumbo pack!" end
+    "@Це улюблена річ Кулько-Мавпи." next
+    "@Вона тобі нічого не відновить, але" next
+    "@вона в тебе ніколи не закінчеться, бо це супер джамбо набір!" end
 
 l_0xc5453e:
     newline
     " <[1C 05 69]>" next
-    "@Belch's most favorite food in the whole world." next
-    "@However... it smells REALLY, really nasty! We're talkin' major stinkage here!" end
+    "@Найулюбленіша їжа Майстра Відрижки на цілому світі." next
+    "@Однак... пахне воно СПРАВДІ, спавді кепсько! Ми зараз говоремо про конкретний смердіж!" end
 
 l_0xc545a1:
     newline
@@ -399,64 +398,64 @@ l_0xc545a1:
 l_0xc545b7:
     newline
     " <[1C 05 6B]>" next
-    "@The highest quality tea, produced by tea expert Mr. Y. Todaar," next
-    "@who carefully selects only hand-picked tea leaves." next
-    "@Long ago, only aristocrats at a king's court were allowed to drink this tea." next
+    "@Чай найвищої якості, зроблений чайним експертом Паном Й. Тодаар," next
+    "@який уважно обирає тільки підібрані вручну чайні листки." next
+    "@Колись давно, тільки аристократам при королівському дворі дозволялось пити цей чай." next
     call(data_05.l_0xc56cc5) "60" call(data_05.l_0xc56cd6) end
 
 l_0xc54660:
     newline
     " <[1C 05 6C]>" next
-    "@For building a stronger, healthier body." next
-    "@It gives you a blast of nourishment when you are fatigued." next
+    "@Для будування сильнішого, здоровішого тіла." next
+    "@Дає тобі заряд енергії, коли ти втомлений." next
     call(data_05.l_0xc56cc5) "80" call(data_05.l_0xc56cd6) end
 
 l_0xc546bc:
     newline
     " <[1C 05 6D]>" next
-    "@Soup made from the fin of the sea monster known as Kraken." next
-    "@This beast lives in the ocean off the shore of Summers." next
-    "@Very expensive, but a sizable power boost is guaranteed." end
+    "@Суп зроблений з плавця морського чудовиська, знаного як Кракен." next
+    "@Ця звірюга живе в океані за берегами Літ." next
+    "@Дуже дорогий, але значний приріст сил гарантований." end
 
 l_0xc54733:
     newline
     " <[1C 05 6E]>" next
-    "@When you drink it, your PP slightly increases." end
+    "@Коли вип'єш, твої ПП трохи збільшуться." end
 
 l_0xc5475a:
     newline
     " <[1C 05 6F]>" next
-    "@This is the most effective thing to take when you catch a cold." end
+    "@Найефективніша річ, коли ти піймаєш простуду." end
 
 l_0xc54789:
     newline
     " <[1C 05 70]>" next
-    "@This is the best thing to take when you get poisoned." end
+    "@Найкраща річ, коли ти отруївся." end
 
 l_0xc547b0:
     newline
     " <[1C 05 71]>" next
-    "@It increases your IQ when taken." end
+    "@Збільшує твій Інтелект, коли використаний." end
 
 l_0xc547cb:
     newline
     " <[1C 05 72]>" next
-    "@It increases your Guts when taken." end
+    "@Збільшує твою Впевненість, коли використаний." end
 
 l_0xc547e8:
     newline
     " <[1C 05 73]>" next
-    "@It increases your Speed when taken." end
+    "@Збільшує твою Швидкість, коли використаний." end
 
 l_0xc54806:
     newline
     " <[1C 05 74]>" next
-    "@It increases your Vitality when taken." end
+    "@Збільшує твою Живучість, коли використаний." end
 
 l_0xc54826:
     newline
     " <[1C 05 75]>" next
-    "@It increases your Luck when taken." end
+    "@Збільшує твою Вдачу, коли використаний." end
 
 l_0xc54842:
     newline
@@ -496,32 +495,32 @@ l_0xc548a2:
 l_0xc548b2:
     newline
     " <[1C 05 7D]>" next
-    "@It allows you go back stage at the Chaos Theater." next
-    "@Of course, you can also watch the show using the pass." end
+    "@Дозволяє тобі пройти до зали Театру Хаос." next
+    "@Звісно, ти теж можеш і дивитися й саме шоу." end
 
 l_0xc548fc:
     newline
     " <[1C 05 7E]>" next
-    "@Use by sprinkling it over food." next
-    "@It tastes good with any kind of food, thereby" next
-    "@increasing the recovery power of the food." end
+    "@Використовуй її мажучи на їжу." next
+    "@Добре смакує з будь-якою їжею, тим самим" next
+    "@збільшуючи силу їжі до відновлення ПЗ." end
 
 l_0xc54952:
     newline
     " <[1C 05 7F]>" next
-    "@It's great for those times that you get sunstroke." end
+    "@Чудово підходить коли в тебе сонячний удар." end
 
 l_0xc54979:
     newline
     " <[1C 05 80]>" next
-    "@It helps when you have been poisoned, or you are feeling nauseous." next
-    "@It also has other uses..." next
+    "@Допомагає тобі, коли ти отруївся, або якщо чуєш нудоту." next
+    "@Також має й інші використання..." next
     call(data_05.l_0xc56d02) call(data_05.l_0xc56d36) end
 
 l_0xc549c3:
     newline
     " <[1C 05 81]>" next
-    "@May revive a friend who is unconscious." next
+    "@Може відновити друга, який знепритомнів." next
     call(data_05.l_0xc56cdb) call(data_05.l_0xc56d02) next
     call(data_05.l_0xc56d36) call(data_05.l_0xc56d38) end
 
@@ -531,35 +530,35 @@ l_0xc549ff:
     goto(l_0xc54a08)
 
 l_0xc54a08:
-    "@Revives a friend who is unconscious." next
+    "@Відновлює друга, який знепритомнів." next
     call(data_05.l_0xc56cdb) call(data_05.l_0xc56d02) next
     call(data_05.l_0xc56d37) call(data_05.l_0xc56d38) end
 
 l_0xc54a3a:
     newline
     " <[1C 05 83]>" next
-    call(data_05.l_0xc56db7) "@Contains the enemy's PSI during a battle." next
+    call(data_05.l_0xc56db7) "@Вміщує ПСІ ворога під час битви." next
     call(data_05.l_0xc56d9b) end
 
 l_0xc54a6c:
     newline
     " <[1C 05 84]>" next
-    call(data_05.l_0xc56db7) "@Breaks through the enemy's shield during a battle." next
+    call(data_05.l_0xc56db7) "@Розламує щит ворога під час битви." next
     call(data_05.l_0xc56d9b) end
 
 l_0xc54aa1:
     newline
     " <[1C 05 85]>" next
     call(data_05.l_0xc56db7) call(data_05.l_0xc56dc5) next
-    "@Because of its explosive power," next
-    "@it may effect others besides the target creature." next
+    "@Через її вибухову силу," next
+    "@може теж задіти й інших, окрім вибраної цілі." next
     call(data_05.l_0xc56d9b) end
 
 l_0xc54af5:
     newline
     " <[1C 05 86]>" next
-    call(data_05.l_0xc56db7) "@Really dishes out a lot of damage to the enemy during a battle." next
-    "@Because of its explosive power," next
-    "@it may effect others besides the target creature." next
+    call(data_05.l_0xc56db7) "@Дає реально велику шкоду ворогу під час битви." next
+    "@Через її вибухову силу," next
+    "@може теж задіти й інших, окрім вибраної цілі." next
     call(data_05.l_0xc56d9b) end
 

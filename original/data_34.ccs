@@ -453,7 +453,7 @@ l_0xc7bd89:
     "@Looks like you're the world-class loser again!{wait}{window_closeall}{pause(20)}[1F 1F A9 01 06][1F EA 6A 00][1F E9 DD 03][1F E9 DE 03][1F E9 DF 03][1F 07 03][1F 61][1F 1F 6A 00 06][1F 1E DD 03 06][1F 1E DE 03 06][1F 1E DF 03 06]{pause(12)}{set(flag 672)}{unset(flag 11)}" eob
 
 l_0xc7beb9:
-    ":---------------------[1F 15 6A 00 60 01 01]    {unset(flag 2)}               " call(data_36.l_0xc7dd6b) "{music(32)}" call(data_35.l_0xc7c54b) "{set(flag 2)}               [1F 61]                      {counter(1)}" call(data_36.l_0xc7dc7f) "[1B 02 {e(l_0xc7bf1e)}]{window_open(1)}@The power of Giant Step" call(data_35.l_0xc7c55d) goto(l_0xc7bf1e)
+    ":---------------------[1F 15 6A 00 60 01 01]    {unset(flag 2)}               " call(data_36.l_0xc7dd6b) "{music(32)}" call(data_35.l_0xc7c54b) "{set(flag 2)}               [1F 61]                      {counter(1)}" call(data_36.l_0xc7dc7f) "[1B 02 {e(l_0xc7bf1e)}]{window_open(1)}@Сила Сліду Гіганта" call(data_35.l_0xc7c55d) goto(l_0xc7bf1e)
 
 l_0xc7bf1e:
     call(data_35.l_0xc7c57d) "{set(flag 4)}{music_resume}[06 B6 00 {e(l_0xc7bf94)}]{window_open(1)}@[1C 02 01] піймав проблиск малого, милого цуценя.[03]{pause(60)}" linebreak
@@ -463,11 +463,11 @@ l_0xc7bf94:
     eob
 
 l_0xc7bf95:
-    "[1F 15 6A 00 60 01 01]    {unset(flag 2)}               " call(data_36.l_0xc7dd6b) "{music(33)}" call(data_35.l_0xc7c54b) "{set(flag 2)}               [1F 61]                      {counter(1)}" call(data_36.l_0xc7dc7f) "[1B 02 {e(l_0xc7bfe8)}]{window_open(1)}@The power of Liliput step" call(data_35.l_0xc7c55d) goto(l_0xc7bfe8)
+    "[1F 15 6A 00 60 01 01]    {unset(flag 2)}               " call(data_36.l_0xc7dd6b) "{music(33)}" call(data_35.l_0xc7c54b) "{set(flag 2)}               [1F 61]                      {counter(1)}" call(data_36.l_0xc7dc7f) "[1B 02 {e(l_0xc7bfe8)}]{window_open(1)}@Сила Кроку Ліліпута" call(data_35.l_0xc7c55d) goto(l_0xc7bfe8)
 
 l_0xc7bfe8:
-    call(data_35.l_0xc7c57d) "{set(flag 4)}{music_resume}[06 B7 00 {e(l_0xc7c058)}]{window_open(1)}@[1C 02 01] briefly had a vision of a baby in a red cap.[03]{pause(60)}" linebreak
-    "@[1C 02 01]'s Sound Stone recorded the melody of the Lilliput Steps.{wait}{set(flag 183)}{window_closetop}" goto(l_0xc7c058)
+    call(data_35.l_0xc7c57d) "{set(flag 4)}{music_resume}[06 B7 00 {e(l_0xc7c058)}]{window_open(1)}@[1C 02 01] на короткий час привиділось немовля в червоній кепці.[03]{pause(60)}" linebreak
+    "@[1C 02 01] записав в Музичний Камінь мелодію Кроків Ліліпута.{wait}{set(flag 183)}{window_closetop}" goto(l_0xc7c058)
 
 l_0xc7c058:
     call(data_49.l_0xc915f4) call(data_57.l_0xc9b226) "[06 80 01 {e(l_0xc7c06a)}]" eob

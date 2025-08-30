@@ -75,12 +75,12 @@ l_0xc75827:
     "@Мені всеодно, що всі думають, що я там якийсь впертий дворняга.)" end
 
 l_0xc75865:
-    "@(At this point,{pause(15)} you guys just might be the strongest force in the world," next
-    "@don't you think?)" end
+    "@(В цю мить,{pause(15)} ви друзі маєте бути найсильнішою силою на світі," next
+    "@ви так не думаєте?)" end
 
 l_0xc75899:
-    "@(Other dogs haven't figured it out yet," next
-    "@but I know that you guys saved the world!)" end
+    "@(Інші собаки ще цього не дізналися," next
+    "@але я знаю, що ти врятував світ!)" end
 
 l_0xc758cc:
     "@(Я люблю бути в дома,{pause(10)} тихо відпочиваючи..." next

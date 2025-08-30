@@ -184,7 +184,7 @@
   - ness can use
   - paula can use
   - poo can use
-  Name: 'Зламана пушка'
+  Name: 'Зламана гармата'
   Type: 8
 12:
   Action: 1
@@ -277,7 +277,7 @@
   Help Text Pointer: $c539c4
   Misc Flags:
   - ness can use
-  Name: 'Поношена біта'
+  Name: 'Поношена бита'
   Type: 16
 18:
   Action: 239
@@ -290,7 +290,7 @@
   Help Text Pointer: $c539d4
   Misc Flags:
   - ness can use
-  Name: 'Бейзбольна біта'
+  Name: 'Бейзбольна бита'
   Type: 16
 19:
   Action: 239
@@ -303,7 +303,7 @@
   Help Text Pointer: $c539e4
   Misc Flags:
   - ness can use
-  Name: 'Піскова біта'
+  Name: 'Піскова бита'
   Type: 16
 20:
   Action: 239
@@ -316,7 +316,7 @@
   Help Text Pointer: $c539f4
   Misc Flags:
   - ness can use
-  Name: 'Біта другорядної ліги'
+  Name: 'Бита другорядної ліги'
   Type: 16
 21:
   Action: 239
@@ -329,7 +329,7 @@
   Help Text Pointer: $c53a04
   Misc Flags:
   - ness can use
-  Name: 'Біта Пана Бейзбола'
+  Name: 'Бита Пана Бейзбола'
   Type: 16
 22:
   Action: 239
@@ -342,7 +342,7 @@
   Help Text Pointer: $c53a14
   Misc Flags:
   - ness can use
-  Name: 'Біта великої ліги'
+  Name: 'Бита великої ліги'
   Type: 16
 23:
   Action: 239
@@ -355,7 +355,7 @@
   Help Text Pointer: $c53a47
   Misc Flags:
   - ness can use
-  Name: 'Біта зали слави'
+  Name: 'Бита зали слави'
   Type: 16
 24:
   Action: 239
@@ -368,7 +368,7 @@
   Help Text Pointer: $c53a57
   Misc Flags:
   - ness can use
-  Name: 'Біта Чарокраю'
+  Name: 'Бита Чарокраю'
   Type: 16
 25:
   Action: 239
@@ -381,7 +381,7 @@
   Help Text Pointer: $c53a67
   Misc Flags:
   - ness can use
-  Name: 'Легендарна біта'
+  Name: 'Легендарна бита'
   Type: 16
 26:
   Action: 239
@@ -394,7 +394,7 @@
   Help Text Pointer: $c53a77
   Misc Flags:
   - ness can use
-  Name: 'Біта впевненості'
+  Name: 'Бита впевненості'
   Type: 16
 27:
   Action: 239
@@ -407,7 +407,7 @@
   Help Text Pointer: $c53a9f
   Misc Flags:
   - ness can use
-  Name: 'Біта Касея'
+  Name: 'Бита Касея'
   Type: 16
 28:
   Action: 239
@@ -446,7 +446,7 @@
   Help Text Pointer: $c53b06
   Misc Flags:
   - paula can use
-  Name: 'Делюкс сковорідка'
+  Name: 'Делюксова сковорідка'
   Type: 16
 31:
   Action: 239
@@ -576,7 +576,7 @@
   Help Text Pointer: $c53bb6
   Misc Flags:
   - jeff can use
-  Name: 'Блискавична пушка'
+  Name: 'Блискавична гармата'
   Type: 17
 41:
   Action: 239
@@ -589,7 +589,7 @@
   Help Text Pointer: $c53bc6
   Misc Flags:
   - jeff can use
-  Name: 'Лазерна пушка'
+  Name: 'Лазерна гармата'
   Type: 17
 42:
   Action: 239
@@ -667,7 +667,7 @@
   Help Text Pointer: $c53c26
   Misc Flags:
   - jeff can use
-  Name: 'Промінь з Місяця'
+  Name: 'Місячний Промінь'
   Type: 17
 48:
   Action: 239

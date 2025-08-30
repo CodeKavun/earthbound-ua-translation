@@ -405,23 +405,23 @@ l_0xc900e8:
     "{set(flag 10)}{set(flag 659)}{counter(150)}" call(data_48.l_0xc9128d) "{unset(flag 659)}" eob
 
 l_0xc900f9:
-    "@Humm dee dum dum dum." linebreak
-    "  I'm hunting for mushrooms!" next
-    call(data_49.l_0xc91a91) "[1B 02 {e(l_0xc901a8)}]@Hey!  Would you be willing to sell that mushroom on your head for $50?" next
+    "@Хумм ді дюм дюм дюм." linebreak
+    "  Я полюю на гриби!" next
+    call(data_49.l_0xc91a91) "[1B 02 {e(l_0xc901a8)}]@Агов!  Не волів би ти продати той гриб на твоїй голові за $50?" next
     call(data_36.l_0xc7dd4b) "[11]{clearline}[09 02 {e(l_0xc9017f)} {e(l_0xc90165)}]" goto(l_0xc90165)
 
 l_0xc90165:
-    "@Ohhh..." linebreak
-    "  It's your special mushroom." end
+    "@Оууу..." linebreak
+    "  Це ж особливий гриб." end
 
 l_0xc9017f:
     call(data_49.l_0xc91b6f) newline
-    "@Thank you." linebreak
-    "  Such a great mushroom." linebreak
-    "  I'm so happy I got it." end
+    "@Дякую." linebreak
+    "  Такий чудовий гриб." linebreak
+    "  Я така щаслива, що отримала його." end
 
 l_0xc901a8:
-    "@I'm going to collect a ton!" end
+    "@Я збиратиму тоннами!" end
 
 l_0xc901bb:
     newline

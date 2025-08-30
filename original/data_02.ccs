@@ -343,8 +343,8 @@ l_0xc536e1:
 l_0xc53711:
     newline
     " <[1C 05 01]>" next
-    "@By keeping it as one of your items," next
-    "@it deflects a lightning attack back at the attacker." end
+    "@Беручі його як свій предмет," next
+    "@воно відбиваю блискавку до атакуючого." end
 
 l_0xc53750:
     newline
@@ -359,81 +359,81 @@ l_0xc53761:
 l_0xc53772:
     newline
     " <[1C 05 04]>" next
-    "@There's no way of knowing its original use." next
-    "@It's just some kind of broken gadget." next
+    "@Немає відомості про його початкове використвння." next
+    "@Це просто якийсь зламаний гаджет." next
     call(data_05.l_0xc56b6f) end
 
 l_0xc537bc:
     newline
     " <[1C 05 05]>" next
-    "@There's no way of knowing its original use." next
-    "@It's just some kind of broken mechanism." next
+    "@Немає відомості про його початкове використвння." next
+    "@Це просто якийсь зламаний механізм." next
     call(data_05.l_0xc56b6f) end
 
 l_0xc53809:
     newline
     " <[1C 05 06]>" next
-    "@A broken air gun." next
+    "@Зламана превматичний пістолет." next
     call(data_05.l_0xc56b6f) end
 
 l_0xc5382a:
     newline
     " <[1C 05 07]>" next
-    "@A broken spray can." next
+    "@Зламаний балончик спрею." next
     call(data_05.l_0xc56b6f) end
 
 l_0xc5384d:
     newline
     " <[1C 05 08]>" next
-    "@A broken laser gun." next
+    "@Зламана лазерна гармата." next
     call(data_05.l_0xc56b6f) end
 
 l_0xc53870:
     newline
     " <[1C 05 09]>" next
-    "@A contraption that looks like an iron." next
+    "@Щось дуже цікаве, яке виглядає як залізо." next
     call(data_05.l_0xc56b6f) end
 
 l_0xc53897:
     newline
     " <[1C 05 0A]>" next
-    "@It looks like a busted water pipe." next
+    "@Виглядає на зіпсовану водяну трубу." next
     call(data_05.l_0xc56b6f) end
 
 l_0xc538bc:
     newline
     " <[1C 05 0B]>" next
-    "@A broken beam cannon." next
+    "@Зламана променева гармата." next
     call(data_05.l_0xc56b6f) end
 
 l_0xc538e0:
     newline
     " <[1C 05 0C]>" next
-    "@A broken tube-shaped item." next
+    "@Зламана річ у вигляді труби." next
     call(data_05.l_0xc56b6f) end
 
 l_0xc53908:
     newline
     " <[1C 05 0D]>" next
-    "@A broken bazooka." next
+    "@Зламана базука." next
     call(data_05.l_0xc56b6f) end
 
 l_0xc53929:
     newline
     " <[1C 05 0E]>" next
-    "@A broken apparatus that is shaped like a trumpet." next
+    "@Зламаний апарат у формі музичною трубки." next
     call(data_05.l_0xc56b6f) end
 
 l_0xc53960:
     newline
     " <[1C 05 0F]>" next
-    "@A broken device that looks like a harmonica." next
+    "@Зламаний девайс, який виглядає як гармоніка." next
     call(data_05.l_0xc56b6f) end
 
 l_0xc5398e:
     newline
     " <[1C 05 10]>" next
-    "@A piece of broken equipment that looks like a satellite dish." next
+    "@Шмат зламаного спорядження, яке виглядає на супутникову тарілку." next
     call(data_05.l_0xc56b6f) end
 
 l_0xc539c4:

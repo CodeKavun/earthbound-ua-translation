@@ -322,24 +322,26 @@ l_0xc7949e:
     "{unset(flag 2)}{unset(flag 3)}[1F E9 B7 01][1F 61][1F E6 B7 01]{window_open(1)}" goto(l_0xc794b1)
 
 l_0xc794b1:
-    "@Hey [1C 02 01]!{pause(20)}  You're just here to bother me, aren't you." next
-    "@You can call me Master Pokey," next
-    "@since Mr. Carpainter made me an important person in Happy-Happyism." next
-    "@You should join us,{pause(15)} but I know you won't...{pause(15)} I'm glad I joined..." next
-    "@I'm not going to fight you,{pause(15)} but these guys will...{pause(15)} Later potater...[03]{window_closeall}{unset(flag 11)}{unset(flag 45)}[1F E9 B7 01][1F 61][1F F1 B8 01 12 01][1F F1 B9 01 13 01][1F F1 BA 01 14 01][1F 61][1F E6 B8 01][1F E6 B9 01][1F E6 BA 01]" call(data_23.l_0xc68531) "[1B 03 {e(l_0xc795bd)}]{pause(1)}[1F F1 B8 01 7B 02][1F F1 B9 01 7B 02][1F F1 BA 01 7B 02]{pause(60)}[1F 41 06]" eob
+    "@Агов [1C 02 01]!{pause(20)}  Ти тут, щоб заважати мені, чи не так." next
+    "@Можеш мене тепер називати Майстром Поркі," next
+    "@так як Пан Карпейнтер зробив мене важливою людиною в Щасливому Братстві." next
+    "@Ти повинен приєднатися до нас,{pause(15)} але я знаю, що ти цього не зробиш..." next
+    "@Я задоволений тим, що я приєднався..." next
+    "@Я не буду з тобою битися,{pause(15)} а ось ці хлопці так...{pause(15)} Побачимось дурнорилий...[03]{window_closeall}{unset(flag 11)}{unset(flag 45)}[1F E9 B7 01][1F 61][1F F1 B8 01 12 01][1F F1 B9 01 13 01][1F F1 BA 01 14 01][1F 61][1F E6 B8 01][1F E6 B9 01][1F E6 BA 01]" call(data_23.l_0xc68531) "[1B 03 {e(l_0xc795bd)}]{pause(1)}[1F F1 B8 01 7B 02][1F F1 B9 01 7B 02][1F F1 BA 01 7B 02]{pause(60)}[1F 41 06]" eob
 
 l_0xc795bd:
     "[1F 41 06]" eob
 
 l_0xc795c1:
-    "{store_registers}[19 19 00 00]{swap}{result_is(171)}[1B 02 {e(l_0xc796ee)}][1D 01 FF AB]@(" call(data_37.l_0xc7e74e) " used the [1C 05 AB].)" next
-    "{window_closeall}{sound(119)}[1F 1E B4 01 06]{pause(60)}{window_open(1)}@Thank you, [1C 02 01]!" next
-    "@You're just like I imagined you would be..." next
-    "@I'm sure that some people in Twoson are worried about me..." next
-    "@Getting back there may be dangerous," next
-    "@but we can do it if we combine our strength." next
-    "@I'm able to use a little psychic power that is actually pretty deadly..." next
-    "@Let's head back to Twoson![03]{window_closeall}[1F F1 B5 01 F1 00][1F 61][1F 1E B6 01 06][1F 61][1F 1E B5 01 06][1F 11 02]{music(11)}{pause(120)}{pause(120)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@[1C 02 02] joined you.[03]{window_closeall}{set(flag 13)}{set(flag 198)}{unset(flag 118)}{set(flag 321)}{set(flag 689)}{set(flag 483)}" eob
+    "{store_registers}[19 19 00 00]{swap}{result_is(171)}[1B 02 {e(l_0xc796ee)}][1D 01 FF AB]@(" call(data_37.l_0xc7e74e) " використовує [1C 05 AB].)" next
+    "{window_closeall}{sound(119)}[1F 1E B4 01 06]{pause(60)}{window_open(1)}@Дякую тобі, [1C 02 01]!" next
+    "@Ти прямо такий, як я собі й уявляла, яким ти є..." next
+    "@Впевнена, що деякі в Двосоні переживають за мене..." next
+    "@Повернення назад, може бути небезпечним," next
+    "@але ми можемо все подолати, якщо ми об'єднаємо наші сили." next
+    "@Я вмію користуватись маленькою психічною силою," next
+    "@яка насправді досить смертельна..." next
+    "@А тепер, давай повернемося до Двосону![03]{window_closeall}[1F F1 B5 01 F1 00][1F 61][1F 1E B6 01 06][1F 61][1F 1E B5 01 06][1F 11 02]{music(11)}{pause(120)}{pause(120)}{pause(120)}{pause(60)}{music_resume}{window_open(1)}@[1C 02 02] приєдналася до тебе.[03]{window_closeall}{set(flag 13)}{set(flag 198)}{unset(flag 118)}{set(flag 321)}{set(flag 689)}{set(flag 483)}" eob
 
 l_0xc796ee:
     "@(В тебе має бути [1C 05 AB], щоб відкрити це.){wait}{window_closeall}" eob

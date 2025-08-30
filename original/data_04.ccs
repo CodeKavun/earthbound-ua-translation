@@ -10,62 +10,62 @@ command e(label) "{long label}"
 l_0xc54b67:
     newline
     " <[1C 05 87]>" next
-    call(data_05.l_0xc56db7) "@Sucks up some HP from the target creature." next
-    "@The more HP an enemy has, the more you get." next
+    call(data_05.l_0xc56db7) "@Висмоктує деяке ПЗ з вибраної цілі." next
+    "@Чим більше у ворога ПЗ, тим більше ти отримаєш." next
     call(data_05.l_0xc56d9b) end
 
 l_0xc54bb0:
     newline
     " <[1C 05 88]>" next
-    call(data_05.l_0xc56db7) "@Sucks up some HP from all the enemies." next
-    "@The more HP the enemies have, the more you get." next
+    call(data_05.l_0xc56db7) "@Висмоктує деяке ПЗ зі всіх ворогів." next
+    "@Чим більше у ворогів ПЗ, тим більше ти отримаєш." next
     call(data_05.l_0xc56d9b) end
 
 l_0xc54bfa:
     newline
     " <[1C 05 89]>" next
-    "@Deals 200 points of damage to any bug when used during combat." next
+    "@Наносить 200 пунктів шкоди кожному жуку підчас бою." next
     call(data_05.l_0xc56d9b) end
 
 l_0xc54c32:
     newline
     " <[1C 05 8A]>" next
-    call(data_05.l_0xc56db7) "@Sprays a sticky substance that stops the enemy from moving." next
+    call(data_05.l_0xc56db7) "@Вибризгує липку субстанцію, яка зупиняє рух ворога." next
     call(data_05.l_0xc56d9b) end
 
 l_0xc54c6d:
     newline
     " <[1C 05 8B]>" next
-    call(data_05.l_0xc56db7) "@Invented by Apple Kid." next
-    "@If used during combat, some damage will be dealt to the enemy," next
-    "@though it's not understood why this happens... it's just yogurt after all..." next
+    call(data_05.l_0xc56db7) "@Винаядений Яблуко-Хломцем." next
+    "@Якщо застосувати в бою, якась шкода буде нанесена ворогу," next
+    "@хоч і незрозуміло, чому це стається... тим паче, це ж просто йогурт..." next
     call(data_05.l_0xc56d9b) end
 
 l_0xc54ceb:
     newline
     " <[1C 05 8C]>" next
-    "@You can even use this during battle!" next
+    "@Ти можеш виколистати навіть підчас битви!" next
     call(data_05.l_0xc56d9b) end
 
 l_0xc54d10:
     newline
     " <[1C 05 8D]>" next
-    "@During battle, a snake pops out of the bag and bites the enemy." next
-    "@There are thousands of small snakes living in the bag," next
-    "@so you should be able to use it over and over again." next
-    "@It can possibly poison the enemy, too." end
+    "@Підчас битви, вискочує змія з мішку і кусає ворога." next
+    "@Тут живе в мішку тисячі малих змійок," next
+    "@а отже в тебе є змога використати її багато разів." next
+    "@Також можливе отруєння ворога." end
 
 l_0xc54d99:
     newline
     " <[1C 05 8E]>" next
-    "@If used as a whip during battle, the enemy will take some damage" next
-    "@and stop moving for a while." next
+    "@Якщо використати як хлист підчас битви, ворог може отримати шкоду" next
+    "@і зупиниться рухатись на якийсь час." next
     call(data_05.l_0xc56dab) end
 
 l_0xc54ddc:
     newline
     " <[1C 05 8F]>" next
-    "@You can even use this during battle!" next
+    "@Ти можеш використати її навіть підчас битви!" next
     call(data_05.l_0xc56d9b) end
 
 l_0xc54e01:
@@ -80,58 +80,58 @@ l_0xc54e1d:
 l_0xc54e20:
     newline
     " <[1C 05 91]>" next
-    call(data_05.l_0xc56db7) "@Fires a fast, powerful bottle rocket." next
+    call(data_05.l_0xc56db7) "@Вистрілює швидку, потужну пляшкову ракету." next
     call(data_05.l_0xc56dab) end
 
 l_0xc54e54:
     newline
     " <[1C 05 92]>" next
-    call(data_05.l_0xc56db7) "@Possibly the strongest weapon around," next
-    "@it does a lot of damage due to its massive warhead." next
+    call(data_05.l_0xc56db7) "@Мабуть найсильніша зброя в околиці," next
+    "@наносить багато шкоди через її масивну боєголовку." next
     call(data_05.l_0xc56dab) end
 
 l_0xc54ea7:
     newline
     " <[1C 05 93]>" next
     call(data_05.l_0xc56dc5) next
-    "@Because of its explosive power," next
-    "@it may effect others besides the target creature. " next
+    "@Через її вибухову силу," next
+    "@може теж задіти й інших, окрім вибраної цілі." next
     call(data_05.l_0xc56dab) end
 
 l_0xc54ef7:
     newline
     " <[1C 05 94]>" next
-    "@Able to dish out some heavy-duty destruction in combat.  " next
-    "@Because of its explosive power," next
-    "@it may effect others besides the target creature." next
+    "@Може нанести доволі тяжкі руйнування в бою." next
+    "@Через її вибухову силу," next
+    "@може теж задіти й інших, окрім вибраної цілі." next
     call(data_05.l_0xc56dab) end
 
 l_0xc54f6a:
     newline
     " <[1C 05 95]>" next
-    "@Deals 100 points of damage to any bug when used during combat." next
+    "@Наносить 100 пунктів шкоди будь-якому жуку підчас бою." next
     call(data_05.l_0xc56dab) end
 
 l_0xc54fa2:
     newline
     " <[1C 05 96]>" next
-    "@Quickly rusts metallic enemies when used during battle." next
-    "@The enemy will take about 200 points of damage." next
+    "@Швидко ржавіє металевих ворогів, коли застосовано відчас бою." next
+    "@Ворог отримує 200 пунктів шкоди." next
     call(data_05.l_0xc56dab) end
 
 l_0xc54ff0:
     newline
     " <[1C 05 97]>" next
-    "@Causes almost instantaneous rusting" next
-    "@when used on metallic enemies during battle." next
-    "@The enemy takes about 400 points of damage." next
+    "@Наносить майже миттєве ржавіння," next
+    "@коли застосовано на металевих ворогів." next
+    "@Ворог отримує 400 пунктів шкоди." next
     call(data_05.l_0xc56dab) end
 
 l_0xc55057:
     newline
     " <[1C 05 98]>" next
-    "@When used during battle, the enemy gets so nauseous from the ripe odor," next
-    "@they cannot fight." next
+    "@Коли застосовано підчас битви, ворогів знудить від стиглого запаху," next
+    "@і вони не зможуть битися." next
     call(data_05.l_0xc56dab) end
 
 l_0xc5509e:

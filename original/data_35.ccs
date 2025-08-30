@@ -177,7 +177,7 @@ l_0xc7c93f:
     "@You cannot teleport while Dungeon Man is with you." end
 
 l_0xc7c95e:
-    "[19 10 01]{swap}@[1C 02 00] got off the bike." end
+    "[19 10 01]{swap}@[1C 02 00] вилізає з велика." end
 
 l_0xc7c973:
     newline
